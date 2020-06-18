@@ -168,23 +168,23 @@ github.io 형태의 URL로 서비스가 제공되는 <u>Jekyll 기반의 Github 
 만약 필자와 동일하게 Jekyll 기반의 GitHub Pages를 만드시기로 결정했다면 아래 순서대로 포스팅을 읽고 따라하시기만 하면 된다.(각 링크를 클릭) 필자와 다른 어떤 서비스를 이용하시든 쭉 훑어보는 것만으로도 큰 도움이 되실 것이므로 블로그를 구축하는 전체 과정에 대한 개요를 잡는다는 생각으로 읽어주시기 바란다. 대부분 구축방법은 이 범위 내 부분 집합일 뿐이다. 참고로 아직 링크가 걸리지 않은 경우, 조만간 포스팅할 예정이니 양해를 부탁드린다.
  
 * `블로그` 구축  
-  1. [블로그 테마(Themes) 고르기 및 환경설정](https://theorydb.github.io/envops/2019/05/02/envops-blog-theme/)
-  2. [GitHub 연동 및 Jekyll 설치](https://theorydb.github.io/envops/2019/05/03/envops-blog-github-pages-jekyll/)
-  3. [Prose.io 연동으로 포스팅을 쉽게! 배포는 더 쉽게!](https://theorydb.github.io/envops/2019/05/04/envops-blog-posting-prose-io/) 
+  1. [블로그 테마(Themes) 고르기 및 환경설정](https://zunoxi.github.io/envops/2019/05/02/envops-blog-theme/)
+  2. [GitHub 연동 및 Jekyll 설치](https://zunoxi.github.io/envops/2019/05/03/envops-blog-github-pages-jekyll/)
+  3. [Prose.io 연동으로 포스팅을 쉽게! 배포는 더 쉽게!](https://zunoxi.github.io/envops/2019/05/04/envops-blog-posting-prose-io/) 
   4. 개인의 취향에 맞도록 디자인 및 환경설정 변경
   5. 파비콘 만들기
   
 * `기능` 확장 및 연동  
-  1. [Tipue Search를 이용하여 블로그 검색 기능 만들기](https://theorydb.github.io/envops/2019/05/11/envops-blog-tipue-search/)
+  1. [Tipue Search를 이용하여 블로그 검색 기능 만들기](https://zunoxi.github.io/envops/2019/05/11/envops-blog-tipue-search/)
   1. 블로그 댓글기능 추가
   2. 구글 애널리틱스로 방문자 유입 분석
   3. 구글 검색엔진 등록을 유리하게
-  4. [구글 애드센스(Google Adsense) 적용하기](https://theorydb.github.io/envops/2020/04/20/envops-blog-how-to-register-google-adsense/)
+  4. [구글 애드센스(Google Adsense) 적용하기](https://zunoxi.github.io/envops/2020/04/20/envops-blog-how-to-register-google-adsense/)
   5. 편리한 운영을 위한 기타 설정 및 오류 발생시 대처방법
 
 * `글쓰기`를 편하게  
-  1. [GitHub & Jekyll 사용법](https://theorydb.github.io/envops/2019/05/21/envops-blog-how-to-use-git/)
-  2. [마크다운(Markdown) 사용법 및 예제](https://theorydb.github.io/envops/2019/05/22/envops-blog-how-to-use-md/)
+  1. [GitHub & Jekyll 사용법](https://zunoxi.github.io/envops/2019/05/21/envops-blog-how-to-use-git/)
+  2. [마크다운(Markdown) 사용법 및 예제](https://zunoxi.github.io/envops/2019/05/22/envops-blog-how-to-use-md/)
   3. 이미지 캡션 활용
 
 
