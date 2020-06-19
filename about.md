@@ -16,8 +16,10 @@ published: true
 > 값진 여러 경험들을 통해, 스스로가 한층 더 성장하고 있음을 확신합니다.
 
 - `Experience`
-	- 포스코 청년 AI/Bigdata 아카데미 6기
-	- Samsung youth SW 아카데미 2기
-    - Hyundai Autoever / Server Infra Engineer
+	- Suncheon National University / Computer Engineering ( 2012 ~ 2016 )
+    - ROKMC ICT Infra Officer ( 2016 ~ 2018 )
+    - POSCO AI/Bigdata Academy 6th ( 2019 )
+	- Samsung Software Academy For Youth(SSAFY) 2nd ( 2019 )
+    - Hyundai Autoever / Server Infra Engineer ( 2020 ~ )
     
-`More Info` : [http://zunoxi.ddns.net/](http://zunoxi.ddns.net/)
+`More Info` : [zunoxi's portfolio](http://zunoxi.ddns.net/main.html)
