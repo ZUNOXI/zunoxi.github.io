@@ -15,8 +15,9 @@ published: true
 
 > 값진 여러 경험들을 통해, 스스로가 한층 더 성장하고 있음을 확신합니다.
 
-- 'Experience'
+- Experience
 	- 포스코 청년 AI/Bigdata 아카데미 6기
-	- 삼성 청년 SW 아카데미 2기
+	- Samsung youth SW 아카데미 2기
+    - Hyundai Autoever / Server Infra Engineer
     
-page : http://zunoxi.ddns.net/
+'More Info' : [http://zunoxi.ddns.net/](http://zunoxi.ddns.net/)
