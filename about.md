@@ -22,5 +22,5 @@ published: true
 	- Samsung Software Academy For Youth(SSAFY) 2nd ( 2019 )
     - Hyundai Autoever / Server Infra Engineer ( 2020 ~ )
     
-`More Info` : [zunoxi's portfolio](http://zunoxi.ddns.net/main.html)
+`More Info` : ['zunoxi's portfolio'](http://zunoxi.ddns.net/main.html)
 [`tistory tech blog`](https://zunoxi.tistory.com/) / [`naver football blog`](https://blog.naver.com/cross9308) 
