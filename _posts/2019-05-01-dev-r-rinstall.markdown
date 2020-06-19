@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "[R] R 설치 및 환경구성(10분만에 끝내는)"
-subtitle:   "R 설치 및 환경구성(10분만에 끝내는)"
-categories: dev
-tags: r install
+title:  "포스팅 변경 테스트"
+subtitle:   "포스팅을 변경해봅니다!"
+categories: docker
+tags: docker test
 comments: true
 ---
 
