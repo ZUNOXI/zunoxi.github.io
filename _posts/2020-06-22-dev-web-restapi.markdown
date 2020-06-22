@@ -1,10 +1,11 @@
 ---
 layout: post
-title:  "Rest API에 대한 이해"
-subtitle:   "rest api와 restful api"
-categories: web
+title: Rest API에 대한 이해
+subtitle: rest api와 restful api
+categories: programming
 tags: web
 comments: true
+published: true
 ---
 
 ## 개요
@@ -76,6 +77,3 @@ POST 요청으로 테스트해볼 데이터내용을 입력후 execute
 ![그림12](https://zunoxi.github.io/assets/img/dev/web/restapi/console2.jpg)
 
 restapi에 대한 정리.
-
-
-
