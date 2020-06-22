@@ -5,7 +5,7 @@ subtitle:   "웹프로그래밍의 배포"
 categories: programming
 tags: programming web
 comments: true
-header-img: img/dev/web/jar/java.jpg
+header-img: img/dev/web/jar/Java.jpg
 ---
 
 ## 개요
