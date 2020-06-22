@@ -1,31 +1,59 @@
 ---
 layout: post
-title: JDBC, JNDI에 대한 이해
-subtitle: jdbc, jndi, datasource, connection pool
+title: JDBC에 대한 이해
+subtitle: jdbc, jndi, dbcp, datasource, connection pool
 categories: infra
 tags: infra db
 comments: true
 published: true
+header-img: img/db/jdbc/db.jpg
 ---
 
 ## 개요
 
-> `JDBC, JNDI` 가 무엇이고 datasource, connection pool에 대한 이해
+> `JDBC, JNDI` 와 datasource, connection pool에 대한 이해
 
 -   목차
     
-    -   [`JDBC란?`](#JDBC란 무엇인가?)
-        
-    -   [`Restful API?`](# Restful API?)
-        
-        [##_Image|kage@bbsb89/btqE4DK2J0J/RTd95su9yOKkmwUqKDwcJk/img.png|alignCenter|width="100%" data-origin-width="1200" data-origin-height="600" data-ke-mobilestyle="widthContent"|||_##]
+    -   `JDBC란?`        
+    -   `JNDI란?`
 
-# JDBC란?
+
+해당 [`포스팅`](https://eongeuni.tistory.com/43)이 내용을 정리하는데 큰 도움을 줬다.
+
+### JDBC란?
 
 ---
 
-RestAPI는 Representational State Transfer의 약자이며 클라이언트(웹브라우저, 모바일)가 필요한 자원이 있을때, 서버에게 요청하는 방식을 정의한 API 디자인이다.  
-기본적으로 웹의 기존 기술과 HTTP 프로토콜을 그대로 활용하기 때문에 웹의 장점을 최대한 활용할 수 있는 아키텍처 스타일이다.
+`JDBC`는 Java DataBase Connectivity의 약자이며, 데이터베이스를 조작하는 API이다. 
+JDBC, JNDI, DBCP 모두 JAVA에서 DB커넥션 할 때 사용하는 방법이다.
 
--   HTTP Method인 POST, GET, PUT, DELETE를 통해 해당 자원에 대한 CRUD 매커니즘이 적용가능한 개념이라고 할 수 있다.
--   CRUD(Create:생성(POST), Read:조회(GET), Update:수정(PUT), Delete:삭제(DELETE))
+- 특징 : JDBC는 인터페이스기반으로 구축되어있다. 데이터베이스 커넥션 인터페이스라고 이해할 수 있다.
+- 일반적인 JDBC는 데이터베이스풀 방식을 사용하지 않고 DB에서 정보를 가져올때마다 매번 디비연결을 열고 닫는다.
+- 따라서 상용 어플에는 JDBC 방식을 사용하는 경우가 거의 없다. 매우 비효율적이기 때문이다.
+
+
+### DBCP
+
+---
+
+그래서 일반적인 경우에는 Pool 방식을 사용한다.
+
+여기서 등장하는 용어가 `DBCP`(Database Connection Pool)이다.
+
+- 특징: 어플리케이션을 시작할 때 원하는 만큼 커넥션 객체를 만들어 놓고  pool에 넣어 놓은채 필요할때마다 가져다 쓰고 다시 만납하는 방식이다.
+- 다중스레드를 스레드풀로 관리하는것과 비슷한 방식이라고 한다.
+- DBCP는 보통 데이터베이스 커넥션 풀을 어플리케이션 소스단에 설정해놓은 방식이다.
+
+
+
+### JNDI
+
+---
+
+`JNDI`(Java Naming and Directory Interface)는 WAS단에 데이터베이스 커넥션 객체를 미리 네이밍 해두는 방식이다.
+
+사전적으로는 디렉토리 서비스에서 제공하는 데이터 및 객체를 발견하고 참고하기 위한 자바 API 라고 한다.
+
+- 특징 : DB커넥션을 WAS단에서 제어하면서 서버에서 하나의 커넥션 풀을 가진다.
+	- 장점 1 : DB 설정 정보를 파악하기 쉽다 > WAS단에 설정정보를 통해 디비가 몇개 붙어있는지 정보를 파악하기 수월하다.
