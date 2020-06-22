@@ -6,11 +6,10 @@ categories: infra
 tags: infra db
 comments: true
 published: true
-# header-img: img/infra/db/jdbc/db.jpg
+header-img: img/infra/db/jdbc/db.jpg
 ---
 
 ## 개요
-
 > `JDBC, JNDI` 와 datasource, connection pool에 대한 이해
 
 -   목차
