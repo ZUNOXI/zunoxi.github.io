@@ -6,7 +6,7 @@ categories: infra
 tags: infra db
 comments: true
 published: true
-header-img: img/db/jdbc/db.jpg
+header-img: img/infra/db/jdbc/db.jpg
 ---
 
 ## 개요
@@ -14,9 +14,9 @@ header-img: img/db/jdbc/db.jpg
 > `JDBC, JNDI` 와 datasource, connection pool에 대한 이해
 
 -   목차
-    
-    -   `JDBC란?`        
-    -   `JNDI란?`
+    - [`JDBC란?`]
+    - [`DBCP`]       
+    - [`JNDI`]
 
 
 해당 [`포스팅`](https://eongeuni.tistory.com/43)이 내용을 정리하는데 큰 도움을 줬다.
@@ -59,3 +59,7 @@ JDBC, JNDI, DBCP 모두 JAVA에서 DB커넥션 할 때 사용하는 방법이다
 	- 장점 1 : DB 설정 정보를 파악하기 쉽다 > WAS단에 설정정보를 통해 디비가 몇개 붙어있는지 정보를 파악하기 수월하다.
     - 장점 2 : DB 커넥션풀을 효율적으로 사용할 수 있다. 
     (WAS단에서 DB Pool을 하나로 관리하면 스태틱 객체를 생성 후에 쉽게 가져다 쓸 수 있기때문에 효율이 좋아진다.) 
+
+
+
+각 방법마다 장단점이 있기 때문에 무조건 좋은것은 없다.
