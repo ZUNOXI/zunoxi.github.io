@@ -5,7 +5,7 @@ subtitle: kubernetes의 기본개념
 categories: devops
 tags: devops kubernetes
 comments: true
-header-img: img/review/2019-04-18-review-book-dl-from-scratch-Cover.jpg
+header-img: img/devops/k8s/kube.png
 published: true
 ---
 
@@ -138,7 +138,3 @@ Cluster IP의 Service는 Cluster내부에서만 접근이 가능하다. (외부�
 (GCP, AWS Azures는 기본적으로 제공하며 사전에 ip를 지정해 줘야 한다.)
 
 외부 시스템 노출용은 type에 `LoadBalancer`를 지정해줘야한다.
-
-
-
-
