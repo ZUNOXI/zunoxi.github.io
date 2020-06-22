@@ -12,37 +12,26 @@ comments: true
   
 - 목차
 	- [`RestAPI란 무엇인가`](#RestAPI란 무엇인가?) 
-	- [R설치(Window PC 버전)](#r설치window-pc-버전)
+	- [`Restful API?`](#r설치window-pc-버전)
 	- [R Studio설치(Window PC 버전)](#r-studio설치window-pc-버전)
 	- [R Studio 환경설정](#r-studio-환경설정)
   
 ## RestAPI란 무엇인가?
 ---
 RestAPI는 Representational State Transfer의 약자이며 클라이언트(웹브라우저, 모바일)가 필요한 자원이 있을때, 서버에게 요청하는 방식을 정의한 API 디자인이다.
-기본적으로 웹의 기존 기술과 HTTP 프로토콜을 그대로 활용하기 때문에 웹의 장점을 최대한 활용할 수 있는 아키텍처 스타일이다.[`CRAN`](http://cran.r-project.org/web/views/)에서 이를 가능하게 하는 다양한 패키지를 제공한다. 더불어 참조할 수 있는 레퍼런스가 다양하고, Eco환경이 훌륭하여 데이터 분석을 위한 최고의 도구임에 손색이 없다고 할 수 있겠다.
+기본적으로 웹의 기존 기술과 HTTP 프로토콜을 그대로 활용하기 때문에 웹의 장점을 최대한 활용할 수 있는 아키텍처 스타일이다.
 
-## R설치(Window PC 버전)   
+- HTTP Method인 POST, GET, PUT, DELETE를 통해 해당 자원에 대한 CRUD 매커니즘이 적용가능한 개념이라고 할 수 있다.
+- CRUD(Create:생성(POST), Read:조회(GET), Update:수정(PUT), Delete:삭제(DELETE))
+
+## Restful API?   
 ---
-R의 설치는 그 어떤 개발언어의 IDE 설치 과정보다 쉽다.  
+Restful API에 대한것은 명확하게 정의내려진것이 없으며, 일반적으로 REST 구조를 만족시키는 포맷을 Restful 하다고 이야기한다. 
 
-1. R 공식사이트에 접속 후, `Download > CRAN`을 클릭 : [`http://www.r-project.org/`](http://www.r-project.org/)  
-![그림1](https://zunoxi.github.io/assets/img/dev/r/2019-05-01-dev-r-rinstall-1.png)   
-2. Ctrl+F을 눌러 `Korea` 검색 후, 원하는 사이트 아무데나 클릭  
-![그림2](https://zunoxi.github.io/assets/img/dev/r/2019-05-01-dev-r-rinstall-2.png)
-3. `Download R for Windows` 클릭  
-![그림3](https://zunoxi.github.io/assets/img/dev/r/2019-05-01-dev-r-rinstall-3.png)
-4. `base` 클릭  
-![그림4](https://zunoxi.github.io/assets/img/dev/r/2019-05-01-dev-r-rinstall-4.png)
-5. `Download R 3.6.0for Windows` 클릭 (버전은 계속 변경됨)   
-![그림5](https://zunoxi.github.io/assets/img/dev/r/2019-05-01-dev-r-rinstall-5.png)
-6. 다운로드 완료 후, `R-3.6.0-win.exe`파일을 더블 클릭하여 설치(디폴트로 `Next`만 누르면 설치됨)   
-![그림6](https://zunoxi.github.io/assets/img/dev/r/2019-05-01-dev-r-rinstall-6.png)
-7. 정상적으로 설치되었는지 확인하기 위해, 아래와 같이 소스코드를 입력  
-```r
-print("welcome")
-```
-8. 그림과 같이 입력한 문자열이 그대로 나오면 정상적으로 설치가 완료된 것이다. 
-![그림7](https://zunoxi.github.io/assets/img/dev/r/2019-05-01-dev-r-rinstall-7.png)
+## RestAPI에 대한 예시
+
+1. Front-end 개발단에서의 Restapi 활용
+![그림1]<img src="assets/img/dev/web/restapi/vscode.png"></img>
 
 
 ## R Studio설치(Window PC 버전)   
