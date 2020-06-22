@@ -14,12 +14,12 @@ published: true
 
   
 
-**1. `Pod(파드)`**
+### Pod(파드)
 
 ---
 파드는 쿠버네티스 애플리케이션의 기본 실행단위이자 가장 작고 간단한 배포의 단위이다.
 
-* 클러스터 : 노드(컨테이너화된 애플리케이션을 실행)라고 하는 워커머신의 집합
+* **클러스터** : 노드(컨테이너화된 애플리케이션을 실행)라고 하는 워커머신의 집합
 
 모든 클러스터는 최소 한개의 워커노드를 가진다. 
 
@@ -27,7 +27,7 @@ published: true
 (다른 컨테이너 런타임 역시 지원하지만 주로 도커를 사용한다.)
 
 
-> Pod(파드)의 특징
+> `Pod(파드)`의 특징
 
 하나의 독립적인 서비스를 구현할 수 있는 컨테이너들이 있다.
 
@@ -44,7 +44,7 @@ published: true
 
 
 
-(1)` Label(라벨)`
+**(1)` Label(라벨)`**
 
 라벨은 파드뿐만아니라 모든 오브젝트에 달 수 있고 일반적으로는 파드에 라벨이 가장 많이 달려있다.
 
@@ -54,7 +54,7 @@ published: true
 
 
 
-(2) `Replication Controller(레플리카 컨트롤러)`
+**(2) `Replication Controller(레플리카 컨트롤러)`**
 
 파드가 죽었을때 다시 생성해주는 관리자의 역할을 해준다.
 
@@ -66,7 +66,7 @@ published: true
 
 
 
-(3) `Node Schedule`
+**(3) `Node Schedule`**
 
 파드를 만들때 파드가 생성되는 워커노드를 지정해 줄 수 있다.
 
@@ -80,7 +80,7 @@ published: true
 
 
 
-**`2. Service(서비스)`**
+### 2. Service(서비스)
 
 ---
 파드의 경우 지정되는 IP가 랜덤하게 지정되고 재시작될때마다 변하기 떄문에 고정된 엔드포인트로의 호출이 어렵다.
@@ -95,7 +95,7 @@ published: true
 
 
 
-(1) `Cluster IP`
+**(1) `Cluster IP`**
 
 
 Cluster IP의 Service는 Cluster내부에서만 접근이 가능하다. (외부에서는 접근 불가)
@@ -107,7 +107,7 @@ Cluster IP의 Service는 Cluster내부에서만 접근이 가능하다. (외부�
 기본적으로 서비스 type의 기본값은 Cluster IP 이다.
 
 
-(2) `NodePort`
+**(2) `NodePort`**
 
 
 
@@ -129,7 +129,7 @@ Cluster IP의 Service는 Cluster내부에서만 접근이 가능하다. (외부�
 
 
 
-(3) `Load Balancer`
+**(3) `Load Balancer`**
 
 로드밸런서는 각각의 노드들에게 트래픽을 분산시켜 주는 기능을 제공한다.
 
