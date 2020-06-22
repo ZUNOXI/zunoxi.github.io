@@ -14,7 +14,7 @@ published: true
 
 - 목차
     - [`Pod?`](### Pod(파드)) 
-    - [`Service?`](### 2. Service(서비스))
+    - [`Service?`](### Service(서비스))
 
 
 ### Pod(파드)란?
@@ -94,7 +94,7 @@ published: true
 
 
 
-### 2. Service(서비스)란?
+### Service(서비스)란?
 
 ---
 파드의 경우 지정되는 IP가 랜덤하게 지정되고 재시작될때마다 변하기 떄문에 고정된 엔드포인트로의 호출이 어렵다.
