@@ -16,7 +16,7 @@ published: true
 
 >고민할시간에 행동하며 경험하는것을 선호합니다. 값진 여러 경험들을 통해, 스스로가 한층 더 성장하고 있음을 확신합니다.
 
-- `Experience`
+- `Tech Experience`
 	- Suncheon National University / Computer Engineering ( 2012 ~ 2016 )
     - ROKMC ICT Infra Officer ( 2016 ~ 2018 )
     - POSCO AI/Bigdata Academy 6th ( 2019 )
