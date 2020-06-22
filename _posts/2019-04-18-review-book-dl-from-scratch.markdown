@@ -1,6 +1,6 @@
 ---
 layout: post
-title: '[리뷰] 밑바닥부터 시작하는 딥러닝'
+title: 'Kubernetes #5. Kubernetes의 Pod와 Service'
 subtitle: kubernetes의 기본개념
 categories: devops
 tags: devops kubernetes
@@ -210,3 +210,7 @@ Cluster IP의 Service는 Cluster내부에서만 접근이 가능하다. (외부�
 (GCP, AWS Azures는 기본적으로 제공하며 사전에 ip를 지정해 줘야 한다.)
 
 외부 시스템 노출용은 type에 'LoadBalancer'를 지정해줘야한다.
+
+
+
+
