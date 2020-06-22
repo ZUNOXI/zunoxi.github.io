@@ -2,7 +2,7 @@
 layout: post
 title:  "Rest API에 대한 이해"
 subtitle:   "rest api와 restful api"
-categories: web
+categories: programming
 tags: restapi
 comments: true
 ---
@@ -31,7 +31,7 @@ Restful API에 대한것은 명확하게 정의내려진것이 없으며, 일반
 ## RestAPI에 대한 예시
 
 1. Front-end 개발단에서의 Restapi 활용
-![그림1]<img src="assets/img/dev/web/restapi/vscode.png"></img>
+![그림1](https://zunoxi.github.io/assets/img/dev/web/restapi/vscode.png)
 
 
 ## R Studio설치(Window PC 버전)   
