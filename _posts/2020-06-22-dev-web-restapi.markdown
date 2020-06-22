@@ -2,7 +2,7 @@
 layout: post
 title:  "Rest API에 대한 이해"
 subtitle:   "rest api와 restful api"
-categories: programming
+categories: web
 tags: web
 comments: true
 ---
