@@ -3,7 +3,7 @@ layout: post
 title: Rest API에 대한 이해
 subtitle: rest api와 restful api
 categories: programming
-tags: web
+tags: programming web
 comments: true
 published: true
 ---
