@@ -12,8 +12,8 @@ published: true
 > `RestAPI` 가 무엇이고 어떻게 사용해야하는가?
   
 - 목차
-	- [`RestAPI란 무엇인가`](#RestAPI란 무엇인가?) 
-	- [`Restful API?`](# Restful API?)
+	- [`RestAPI란 무엇인가`]
+	- [`Restful API?`]
   
 ## RestAPI란 무엇인가?
 ---
