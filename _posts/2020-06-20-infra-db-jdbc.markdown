@@ -22,7 +22,7 @@ header-img: img/infra/db/jdbc/db.jpg
 
 `아래 포스팅`들이 내용을 정리하는데 큰 도움을 줬다.
     - [`https://eongeuni.tistory.com/43`](#https://eongeuni.tistory.com/43)
-    - [`https://minwan1.github.io/2017/04/08/2017-04-08-Datasource,JdbcTemplate/`](#https://minwan1.github.io/2017/04/08/2017-04-08-Datasource,JdbcTemplate/)
+    - [`https://minwan1.github.io/2017/04/08/2017-04-08-Datasource,JdbcTemplate/`](https://minwan1.github.io/2017/04/08/2017-04-08-Datasource,JdbcTemplate/)
 
 
 
