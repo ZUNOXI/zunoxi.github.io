@@ -13,11 +13,11 @@ header-img: img/infra/db/jdbc/db.jpg
 > `JDBC, DBCP, JNDI` 와 datasource, connection pool에 대한 이해
 
 -   목차
-    - [`Connection과 Connection pool`](#Connection과-Connection-pool)
-    - [`Datasource`](#Datasource)
-    - [`JDBC`](#JDBC란?)
-    - [`DBCP`](#DBCP란?)       
-    - [`JNDI`](#JNDI란?)
+    - [`Connection과 Connection pool`](#Connection과-Connection-pool/)
+    - [`Datasource`](#Datasource/)
+    - [`JDBC`](#JDBC란?/)
+    - [`DBCP`](#DBCP란?/)       
+    - [`JNDI`](#JNDI란?/)
 
 [Datasource](#Datasource)
 
