@@ -13,7 +13,9 @@ header-img: img/infra/db/jdbc/db.jpg
 > `JDBC, DBCP, JNDI` 와 datasource, connection pool에 대한 이해
 
 -   목차
-    - [`JDBC란?`](#JDBC란?)
+    - [`Connection과 Connection pool`](#Connection과-Connection-pool)
+    - [`Datasource`](#Datasource)
+    - [`JDBC`](#JDBC란?)
     - [`DBCP`](#DBCP란?)       
     - [`JNDI`](#JNDI란?)
 
@@ -24,7 +26,7 @@ header-img: img/infra/db/jdbc/db.jpg
 
 
 
-### Connection
+### Connection과 Connection pool
 
 `DriverManager.getConnection()`은 실제 자바프로그램과 데이터베이스를 네트워크상에서 연결을 해주는 메소드이다.
 
@@ -40,6 +42,17 @@ JDBC framework에서 Close가 이루어지면 Connection을 Connection Pool에 �
 `Connection Pool` 이란 클라이언트의 요청 시점에 Connection을 연결하는 것이 아니라 
 
 **미리 일정수의 Connection을 만들어 놓고** 필요한 어플리케이션에 전달하여 이용하는 방법이다.
+
+
+
+
+### Datasource
+
+javax.sql.DataSource라는 인터페이스는 Connection Pool을 관리하는 목적으로 사용되는 객체이다.
+
+Appliction에서는 이 Datasource 인터페이스를 통해서 Connection을 얻어오고 반납하는 등의 작업을 구현해야한다.
+
+즉, Connection pool을 어플리케이션단에서 어떻게 관리할지를 구현하는 인터페이스라고 할 수 있다. 
 
 
 
@@ -100,6 +113,9 @@ JDBC, JNDI, DBCP 모두 JAVA에서 DB커넥션 할 때 사용하는 방법이다
 
     (WAS단에서 DB Pool을 하나로 관리하면 스태틱 객체를 생성 후에 쉽게 가져다 쓸 수 있기때문에 효율이 좋아진다.) 
 
+Spring-boot 같은 경우는 Embedded Tomcat을 사용하기 때문에 스프링앱을 실행시키면 내장 WAS가 
+
+기동전 connection 객체를 미리 pool에 생성해서 상용하게 된다.
 
 
 > 각 방법마다 장단점이 있기 때문에 무조건 좋은것은 없다.
