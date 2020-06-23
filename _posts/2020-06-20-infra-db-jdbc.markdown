@@ -47,7 +47,7 @@ JDBC framework에서 Close가 이루어지면 Connection을 Connection Pool에 �
 
 
 
-# Datasource
+### Datasource
 
 javax.sql.DataSource라는 인터페이스는 Connection Pool을 관리하는 목적으로 사용되는 객체이다.
 
