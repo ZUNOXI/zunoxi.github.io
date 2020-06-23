@@ -29,4 +29,4 @@ published: true
 
 
 >There is a difference between knowing the path and walking the path. 
-(길을 아는것과 길을 것는것은 다르다.) < Matrix >
+< Matrix >
