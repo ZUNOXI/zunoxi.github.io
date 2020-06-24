@@ -25,9 +25,12 @@ header-img: img/infra/db/jdbc/db.jpg
     - [`https://eongeuni.tistory.com/43`](https://eongeuni.tistory.com/43)
     - [`https://minwan1.github.io/2017/04/08/2017-04-08-Datasource,JdbcTemplate/`](https://minwan1.github.io/2017/04/08/2017-04-08-Datasource,JdbcTemplate/)
 
+---
 
 
 ### Connection과 Connection pool
+
+---
 
 `DriverManager.getConnection()`은 실제 자바프로그램과 데이터베이스를 네트워크상에서 연결을 해주는 메소드이다.
 
@@ -48,6 +51,8 @@ JDBC framework에서 Close가 이루어지면 Connection을 Connection Pool에 �
 
 
 ### Datasource
+
+---
 
 javax.sql.DataSource라는 인터페이스는 Connection Pool을 관리하는 목적으로 사용되는 객체이다.
 
