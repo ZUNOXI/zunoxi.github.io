@@ -2,8 +2,8 @@
 layout: post
 title: Docker Volume 활용 Tomcat log 저장
 subtitle: Docker Volume 활용해서 Tomcat log 호스트에 저장하기
-categories: infra
-tags: infra docker
+categories: devops
+tags: devops docker
 comments: true
 published: true
 header-img: img/devops/docker/logo.png

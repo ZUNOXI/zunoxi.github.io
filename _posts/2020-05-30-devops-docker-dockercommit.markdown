@@ -2,8 +2,8 @@
 layout: post
 title: Docker Commit 활용 컨테이너 이미지화
 subtitle: Docker Commit 활용해서 컨테이너를 이미지화시키기
-categories: infra
-tags: infra docker
+categories: devops
+tags: devops docker
 comments: true
 published: true
 header-img: img/devops/docker/logo.png
