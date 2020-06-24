@@ -47,7 +47,7 @@ header-img: img/dev/language/html/html.jpg
 그런면에서 CSS는 참 재미있는 언어이다.
 
 
-### JavaScript
+### JS(JavaScript)
 ---
 
 동적으로 컨텐츠를 바꾸고, 멀티미디어를 다루고 움직이는 이미지 등을 가능하게 하는 언어이다.
@@ -63,3 +63,8 @@ JavaScript로 짜여진 로직을 수행하기 위해서는 WAS(Web Application 
     - 변수안에 값을 저장할 수 있다. html/css와 다르게 조건문, 함수들을 사용할 수 있는 프로그래밍언어이다.
 
     - 그러므로 웹 페이지상의 이벤트에 응답하는 코드를 작성할 수 있다.
+
+    - 웹의 동적 처리를 담당한다. 콘텐츠를 바꾸고 움직이는 페이지의 동적 움직임을 가능하게 한다.
+
+
+다음 [`링크`](https://html-css-js.com/)를 참고하여 html/css/javascript에 대해 쉽게 이해할 수 있다.
