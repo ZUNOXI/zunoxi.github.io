@@ -13,12 +13,7 @@ header-img: img/infra/secure/tlsssl/tlsssl.jpg
 ---
 > TLS와 SSL에 대한 정의와 그차이
 
--   목차
-    - [`Java 프로젝트에서의 RESTapi`](#Java-프로젝트에서의-RESTapi)
-    - [`구조`](#구조)
-    - [`Sample 예제`](#Sample-예제)
-
-> [`해당 포스팅`](https://smartits.tistory.com/209)을 읽고 정리함.
+[`해당 포스팅`](https://smartits.tistory.com/209)을 읽고 정리함.
 
 
 ### SSL
