@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Java에서 Json 타입으로 RestAPI 사용하기
-subtitle: Java프로젝트에서 RestAPI 활용하여 POST 전송
+title: Java에서 Json 타입으로 RestAPI 활용
+subtitle: Java프로젝트에서 RestAPI 활용하여 POST 전송하기
 categories: programming
 tags: programming web
 comments: true
@@ -9,15 +9,16 @@ published: true
 ---
 
 ## 개요
+
+---
+
 > Java프로젝트에서 RestAPI 활용하여 Json 형식으로 POST
 
 -   목차
     - [`Java 프로젝트에서의 RESTapi`](#Java-프로젝트에서의-RESTapi)
-    - [`구조`](#구조/)
-    - [`Sample 예제`](#Sample-예제/)
+    - [`구조`](#구조)
+    - [`Sample 예제`](#Sample-예제)
 
-
----
 
 
 ### Java 프로젝트에서의 RESTapi
@@ -109,4 +110,4 @@ published: true
 > Restapi 서버 구조는 [`링크`](https://zunoxi.github.io/programming/2020/06/15/dev-web-restapi/)를 참고하면 될것같다.
 
 
-그리고 해당 java 파일을 실행시키면 RestAPI 서버상 데이터가 들어오는것을 확인할 수 있다.
+그리고 해당 java 파일을 실행시키고 RestAPI 서버를 확인하면 데이터가 들어오는것을 확인할 수 있다.
