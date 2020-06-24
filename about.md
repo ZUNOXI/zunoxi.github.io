@@ -16,11 +16,9 @@ published: true
 
 
 - `Tech Experience`
-	- Suncheon National University / Computer Engineering ( 2012 ~ 2016 )
-    - ROKMC ICT Infra Officer ( 2016 ~ 2018 )
     - POSCO AI/Bigdata Academy 6th ( 2019 )
 	- Samsung Software Academy For Youth(SSAFY) 2nd ( 2019 )
-    - Hyundai Autoever / Server Infra Engineer ( 2020 ~ )
+    - Hyundai Autoever / System Engineer ( 2020 ~ )
     
 `More Info Link`
 - [`resume`](http://zunoxi.ddns.net/main.html)
