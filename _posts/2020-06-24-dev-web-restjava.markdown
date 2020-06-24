@@ -1,12 +1,11 @@
 ---
 layout: post
-title: Java 프로젝트에서 Json 타입으로 RestAPI 사용하기
+title: Java에서 Json 타입으로 RestAPI 사용하기
 subtitle: Java프로젝트에서 RestAPI 활용하여 POST 전송
 categories: programming
 tags: programming web
 comments: true
 published: true
-header-img: img/dev/language/html/html.jpg
 ---
 
 ## 개요
@@ -14,8 +13,8 @@ header-img: img/dev/language/html/html.jpg
 
 -   목차
     - [`Java 프로젝트에서의 RESTapi`](#Java-프로젝트에서의-RESTapi)
-    - [`css`](#Datasource/)
-    - [`javascript`](#JDBC란?/)
+    - [`구조`](#구조/)
+    - [`Sample 예제`](#Sample-예제/)
 
 
 ---
@@ -41,7 +40,7 @@ header-img: img/dev/language/html/html.jpg
 ### 구조
 ---
 
-> java object => json 변환 => http post => server 전송 확인
+> java object => json 변환 => http post 전송 => server 데이터 전송 확인
 
 
 
@@ -50,13 +49,7 @@ header-img: img/dev/language/html/html.jpg
 
 - (1) `java 자료형 선언`
 
-
-    public class RestApiTest {
-
-	public static void main(String[] args) throws IOException {
-		// TODO Auto-generated method stub
 		JSONObject json = new JSONObject();     // JSON 변환용 오브젝트 선언
-
         String custMsgSn = "test";            // 서버에 전송할 데이터 선언
 		String senderKeyy = "test";
 		String phoneNum = "test";
@@ -112,3 +105,7 @@ header-img: img/dev/language/html/html.jpg
 
 - (4) `server` 구조
 
+> Restapi 서버 구조는 [`링크`](https://zunoxi.github.io/programming/2020/06/15/dev-web-restapi/)를 참고하면 될것같다.
+
+
+그리고 해당 java 파일을 실행시키면 RestAPI 서버상 데이터가 들어오는것을 확인할 수 있다.
