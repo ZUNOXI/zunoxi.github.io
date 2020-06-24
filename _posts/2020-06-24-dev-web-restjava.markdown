@@ -9,9 +9,7 @@ published: true
 ---
 
 ## 개요
-
 ---
-
 > Java프로젝트에서 RestAPI 활용하여 Json 형식으로 POST
 
 -   목차
