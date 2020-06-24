@@ -6,6 +6,7 @@ categories: infra
 tags: infra docker
 comments: true
 published: true
+header-img: img/devops/docker/logo.png
 ---
 
 ## 개요
