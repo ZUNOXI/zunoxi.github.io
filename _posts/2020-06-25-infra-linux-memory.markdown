@@ -19,9 +19,9 @@ header-img: img/infra/linux/memory/memory.jpg
 
 리눅스 쉘에 아래와 같은 명령어를 입력한다.
 
-> # free
+> `#free`
 
-![그림1](https://zunoxi.github.io/assets/infra/linux/memory/free.png)
+![그림1](https://zunoxi.github.io/assets/img/infra/linux/memory/free.png)
 
 - 용어 설명
     - total : 서버에 할당된 전체 물리적 메모리의 크기
