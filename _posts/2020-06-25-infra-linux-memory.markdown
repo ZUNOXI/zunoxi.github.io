@@ -64,7 +64,7 @@ header-img: img/infra/linux/memory/memory.jpg
 속도를 낼 수 없기때문에 궁극적인 램의 대응책이 될 수 없음을 유의한다.
 
 
-- 자주쓰는 옵션
+- 자주쓰는 옵션
 	- h : 가독성 높게 출력
 	- [-b | -k | -m | -g ] : 바이트, 키비바이트, 메비바이트, 기비바이트 단위로 출력한다.
 	- w : cache와 buffers를 따로 출력할 수 있게한다.
@@ -149,4 +149,4 @@ header-img: img/infra/linux/memory/memory.jpg
 	- shift + t : 프로세스가 돌아가고 있는 시간 순서대로 표시
 
 
-* 추가로 `ps -eo user,pid,ppid,rss,vsz,size,pmem,pcpu,time,comm` 명령어를 활용했을때도 프로세스별 사용량 확인 가능 
+> 추가로 `ps -eo user,pid,ppid,rss,vsz,size,pmem,pcpu,time,comm` 명령어를 활용했을때도 프로세스별 사용량 확인 가능 
