@@ -6,7 +6,7 @@ categories: infra
 tags: infra linux
 comments: true
 published: true
-header-img: img/infra/linux/memory.jpg
+header-img: img/infra/linux/memory/memory.jpg
 ---
 
 ## 개요
@@ -21,7 +21,7 @@ header-img: img/infra/linux/memory.jpg
 
 > # free
 
-![그림1](https://zunoxi.github.io/assets/linux/memory/free.png)
+![그림1](https://zunoxi.github.io/assets/infra/linux/memory/free.png)
 
 - 용어 설명
     - total : 서버에 할당된 전체 물리적 메모리의 크기
@@ -33,7 +33,11 @@ header-img: img/infra/linux/memory.jpg
 
 > [`Swapping?`]
 
+운영체제단에서 메모리 공간에서 용량한계 이상으로 프로세스 요청이 들어왔을 시
 
+가장 이벤트가 발생된지 오래된 프로세스를 하드디스크나 SSD같은 Secondary Storage에 저장(Swap out)하고
+
+새로 요청된 프로세스를 실행시키는 동작
 
 
 ### TLS
