@@ -13,7 +13,11 @@ header-img: img/infra/linux/memory/memory.jpg
 ---
 > Linux 메모리 사용량 확인 및 관리
 
-[`WhatTap`](https://www.whatap.io/ko/blog/37/)의 글이 포스팅 정리에 도움이 되었다.
+
+아래의 블로그들이 내용정리에 큰 도움이 되었다.
+[`WhatTap`](https://www.whatap.io/ko/blog/37/)
+[`https://brunch.co.kr/@alden/25`](https://brunch.co.kr/@alden/25)
+
 
 ### 리눅스 메모리 사용량 확인
 ---
@@ -74,4 +78,4 @@ header-img: img/infra/linux/memory/memory.jpg
 
 ### buffer?
 
-`buffer`는 버퍼캐시로 
+`buffer`는 버퍼캐시로 디바이스 블록에 대한 메타데이터들을 메모리에 캐싱한 크기.
