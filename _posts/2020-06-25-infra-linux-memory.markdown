@@ -21,6 +21,9 @@ header-img: img/infra/linux/memory/memory.jpg
 [`https://ironmask.net/355`](https://ironmask.net/355)
 
 
+
+
+
 ### 리눅스 메모리 사용량 확인
 
 ---
@@ -68,6 +71,8 @@ header-img: img/infra/linux/memory/memory.jpg
 	- t : 합계를 계산 한것 까지 출력한다.
 
 
+
+
 ### buffer? cache?
 
 ---
@@ -75,6 +80,8 @@ header-img: img/infra/linux/memory/memory.jpg
 리눅스는 항상 여유 메모리 공간을 `buffer`와 `cache`로 사용하려고 시도한다.
 
 이는 메모리에 데이터를 저장해서 느린 디스크로의 접근을 최대한 줄이려고 하는 것이다.
+
+
 
 
 
@@ -90,6 +97,8 @@ header-img: img/infra/linux/memory/memory.jpg
 
 
 
+
+
 ### buffer cache?
 
 `buffer`는 버퍼캐시로 디바이스 블록에 대한 메타데이터들을 메모리에 캐싱한 크기.
@@ -101,6 +110,8 @@ header-img: img/infra/linux/memory/memory.jpg
 > 장착된 램의 용량이 부족한경우 스왑을 사용할 수도 있기 때문에 메모리르 많이 사용할 떄 성능저하로 연결됨
 
 주기적으로 캐시메모리를 비워 서버를 관리하는 것이좋다.
+
+
 
 
 
