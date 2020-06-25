@@ -26,7 +26,13 @@ header-img: img/infra/linux/memory.jpg
 - 용어 설명
     - total : 서버에 할당된 전체 물리적 메모리의 크기
     - used : 실제 사용중인 메모리의 크기 
-    - 
+    - free : 사용중이 아닌 메모리 크기
+    - shared : 공유 메모리 크기
+    - buff/cache : 버퍼/캐시 메모리로 사용되고 있는 메모리 크기
+    - available : 실질적으로 사용가능한 메모리 크기(swapping 없이 할당 가능한 크기)
+
+> [`Swapping?`]
+
 
 
 
