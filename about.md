@@ -23,10 +23,9 @@ published: true
     - Hyundai Autoever / System Engineer ( 2020 ~ )
     
 `More Info Link`
-- [`resume`](http://zunoxi.ddns.net/main.html)
 - [`tistory tech blog`](https://zunoxi.tistory.com/)
 - [`naver football blog`](https://blog.naver.com/cross9308)
-
+- [`resume`](http://zunoxi.ddns.net/main.html)
 
 >There is a difference between knowing the path and walking the path. 
 < Matrix >
