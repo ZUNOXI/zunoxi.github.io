@@ -96,3 +96,15 @@ header-img: img/infra/linux/memory/memory.jpg
 
 
 
+### Top활용 프로세스별 메모리 확인
+
+---
+
+리눅스 쉘에서 다음과 같은 명령어를 입력한다.
+
+> `#top`
+
+![그림2](https://zunoxi.github.io/assets/img/infra/linux/memory/top.png)
+
+
+위 사진 처럼 프로세스별 메모리 확인을 할 수 있다.
