@@ -95,6 +95,10 @@ header-img: img/infra/linux/memory/memory.jpg
 
 페이지 캐시와 비슷한 용도이나 파일시스템의 메타데이터와 관련된 블록을 저장한다는 차이가 있다.
 
+> 장착된 램의 용량이 부족한경우 스왑을 사용할 수도 있기 때문에 메모리르 많이 사용할 떄 성능저하로 연결됨
+
+주기적으로 캐시메모리를 비워 서버를 관리하는 것이좋다.
+
 
 
 ### Top활용 프로세스별 메모리 확인
@@ -129,3 +133,6 @@ header-img: img/infra/linux/memory/memory.jpg
 	- shift + p : CPU 사용률이 높은 프로세스 순서대로 표시
 	- shift + m : 메모리 사용률이 높은 프로세스 순서대로 표시
 	- shift + t : 프로세스가 돌아가고 있는 시간 순서대로 표시
+
+
+* 추가로 `ps -eo user,pid,ppid,rss,vsz,size,pmem,pcpu,time,comm` 명령어를 활용했을때도 프로세스별 사용량 확인 가능 
