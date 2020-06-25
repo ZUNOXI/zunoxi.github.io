@@ -9,7 +9,8 @@ published: true
 header-img: img/infra/linux/memory/memory.jpg
 ---
 
-## 개요
+## 개요
+
 ---
 > Linux 메모리 사용량 확인 및 관리
 
@@ -20,7 +21,8 @@ header-img: img/infra/linux/memory/memory.jpg
 [`https://ironmask.net/355`](https://ironmask.net/355)
 
 
-### 리눅스 메모리 사용량 확인
+### 리눅스 메모리 사용량 확인
+
 ---
 
 리눅스 쉘에 아래와 같은 명령어를 입력한다.
@@ -66,7 +68,8 @@ header-img: img/infra/linux/memory/memory.jpg
 	- t : 합계를 계산 한것 까지 출력한다.
 
 
-### buffer? cache?
+### buffer? cache?
+
 ---
 
 리눅스는 항상 여유 메모리 공간을 `buffer`와 `cache`로 사용하려고 시도한다.
