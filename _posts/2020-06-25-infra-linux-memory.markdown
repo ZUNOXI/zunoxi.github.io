@@ -17,6 +17,7 @@ header-img: img/infra/linux/memory/memory.jpg
 아래의 블로그들이 내용정리에 큰 도움이 되었다.
 [`WhatTap`](https://www.whatap.io/ko/blog/37/)
 [`https://brunch.co.kr/@alden/25`](https://brunch.co.kr/@alden/25)
+[`https://ironmask.net/355`](https://ironmask.net/355)
 
 
 ### 리눅스 메모리 사용량 확인
@@ -108,3 +109,23 @@ header-img: img/infra/linux/memory/memory.jpg
 
 
 위 사진 처럼 프로세스별 메모리 확인을 할 수 있다.
+
+- 각 칼럼의 항목별 요약
+	
+	- PID : 프로세스 ID
+	- USER : 프로세스를 실행시킨 사용자 ID
+	- PRI : 프로세스의 우선순위 (priority)
+	- NI : nice value
+	- VIRT : 가상메모리의 사용량
+	- RES : 실제 사용하고 있는 물리 메모리 (Resident Size)
+	- SHR : 분할된 페이지
+	- S : 프로세스의 상태 [S:sleeping, R:running, W: swapped out process, Z:zombie]
+	- % CPU : 프로세스가 사용하는 CPU의 사용률
+	- % MEM : 프로세스가 사용하는 메모리의 사용률
+	- COMMAND : 실행된 명령어
+
+- top 실행후 옵션
+
+	- shift + p : CPU 사용률이 높은 프로세스 순서대로 표시
+	- shift + m : 메모리 사용률이 높은 프로세스 순서대로 표시
+	- shift + t : 프로세스가 돌아가고 있는 시간 순서대로 표시
