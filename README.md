@@ -5,4 +5,4 @@
 Gitpage로 호스팅하여 운영하는 블로그입니다. 기술스택의 공유보다는 스스로 공부하고 익혔던 스킬과 지식을 정리하는 목적의 블로그입니다.
 
 아래는 함께 운영하는 티스토리 블로그입니다.
-`tistroy blog` : https://zunoxi.tistory.com/
+`tistroy blog` :  [`링크`](https://zunoxi.tistory.com/)
