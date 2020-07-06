@@ -26,25 +26,25 @@ header-img: img/infra/linux/memory/memory.jpg
 
 ---
 
-1. `catalina.out` : 서버상에서 발생한 모든 내용(서버의 기동,정지,개시 등)을 기록한 파일이다. 
+(1). `catalina.out` : 서버상에서 발생한 모든 내용(서버의 기동,정지,개시 등)을 기록한 파일이다. 
 
 그렇기 때문에 생기는 로그의 양이 방대하다.
 
 날짜별, 혹은 시간별로 로그를 분리하는것은 일반적으로 catalina.out에 사용한다.
 
 
-2. `catalina.yyyy-mm-dd.log` : 톰캣에서 생기는 로그만을 기록한다.
+(2). `catalina.yyyy-mm-dd.log` : 톰캣에서 생기는 로그만을 기록한다.
 
 Standard output(표준 스트림), Standard error(표준에러)의 로깅은 제외
 
 
-3. `host-manager.log` : Tomcat Host Manager Web app 로그 (가상호스트 매니저)
+(3). `host-manager.log` : Tomcat Host Manager Web app 로그 (가상호스트 매니저)
 
 
-4. `manager.log` : Tomcat Manager Web App 로그 (웹콘솔)
+(4). `manager.log` : Tomcat Manager Web App 로그 (웹콘솔)
 
 
-5. `localhost.log` : host(특정 가상호스트 대상)한정 로그
+(5). `localhost.log` : host(특정 가상호스트 대상)한정 로그
 
 
 
