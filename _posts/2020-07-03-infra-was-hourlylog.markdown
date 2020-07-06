@@ -75,24 +75,30 @@ Standard output(표준 스트림), Standard error(표준에러)의 로깅은 제
 
 1. 실행파일 생성
 
-> cronLog.sh 생성
+> $ cronLog.sh 생성
+
 (파일명은 예시, 해당 파일에내에 아래와같이 설정한다.)
 
-> cp /Tomcat 홈 경로/logs/catalina.out /Tomcat 홈 경로/logs/catalina.out.$(date +\%y-\%m-\%d).log 2>&1 
+> $ cp /Tomcat 홈 경로/logs/catalina.out /Tomcat 홈 경로/logs/catalina.out.$(date +\%y-\%m-\%d).log 2>&1 
+
 (지금시간의 년, 월, 일로 복사한다.)
 
-> cat /dev/null > /Tomcat 홈 경로/logs/catalina.out
+> $ cat /dev/null > /Tomcat 홈 경로/logs/catalina.out
+
 (기존의 catalina.out 파일은 비워준다.)
 
-> find /Tomcat 홈 경로/logs -mtime +90 -name catalina\* -exec rm {} \;
+> $ find /Tomcat 홈 경로/logs -mtime +90 -name catalina\* -exec rm {} \;
+
 (catalina로 시작하는 파일중 생성일자가 90일 이후인 파일삭제)
 위와 같은 방법으로 localhost, host-manager, manager도 일정기간이 지나면 삭제되게 설정
 
-> chmod 755 cronLog.sh
+> $ chmod 755 cronLog.sh
+
 (읽기, 쓰기, 실행 권한을 부여함으로써 크론탭에서 실행 할 수 있게 설정)
 
 
-> crontab -e
+> $ crontab -e
+
 > 59 23 * * * /Tomcat 홈 경로/logs/cronLog.sh
 
 (crontab에 위내용을 추가, 매일 23시 59분에 해당 실행파일을 동작시키겠다는 뜻)
@@ -103,12 +109,14 @@ Standard output(표준 스트림), Standard error(표준에러)의 로깅은 제
 
 해당방법은 하루단위로 나눠도 2~3GB에 달하는 로그를 더 잘게 쪼개기위해 사용했다.
 
-사실 이부분은 crontab을 사용해도 시간단위로 로그를 쪼갤 수 있다.
+사실 이 부분 역시 crontab을 사용해도 시간단위로 로그를 쪼갤 수 있다.
 
 단, 해당 서버에 접근 하지 않을때의 로그까지 쪼개서 하루 24개의 로그를 만들 필요는 없다고 판단하여
 
 Tomcat 폴더/bin/catalina.sh 파일상에서 조금의 수정을 해줬다.
 
+
+> 
 
 
 
