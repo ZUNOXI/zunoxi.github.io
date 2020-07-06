@@ -84,7 +84,18 @@ Standard output(표준 스트림), Standard error(표준에러)의 로깅은 제
 > cat /dev/null > /Tomcat 홈 경로/logs/catalina.out
 (기존의 catalina.out 파일은 비워준다.)
 
-> 
+> find /Tomcat 홈 경로/logs -mtime +90 -name catalina\* -exec rm {} \;
+(catalina로 시작하는 파일중 생성일자가 90일 이후인 파일삭제)
+위와 같은 방법으로 localhost, host-manager, manager도 일정기간이 지나면 삭제되게 설정
+
+> chmod 755 cronLog.sh
+(읽기, 쓰기, 실행 권한을 부여함으로써 크론탭에서 실행 할 수 있게 설정)
+
+
+> crontab -e
+> 59 23 * * * /Tomcat 홈 경로/logs/cronLog.sh
+
+(crontab에 위내용을 추가, 매일 23시 59분에 해당 실행파일을 동작시키겠다는 뜻)
 
 
 
