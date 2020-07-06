@@ -3,7 +3,7 @@ layout: post
 title: Linux 메모리 사용량 확인 및 관리 
 subtitle: (CentOS)Linux 메모리 사용량 확인 및 관리
 categories: infra
-tags: infra linux
+tags: infra linux/aix
 comments: true
 published: true
 header-img: img/infra/linux/memory/memory.jpg
