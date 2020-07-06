@@ -6,7 +6,7 @@ categories: infra
 tags: infra was
 comments: true
 published: true
-header-img: img/infra/was/hourly/tomcat.png
+header-img: img/infra/server/hourly/tomcat.png
 ---
 
 ## 개요
