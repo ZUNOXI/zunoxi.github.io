@@ -6,7 +6,7 @@ categories: infra
 tags: infra was
 comments: true
 published: true
-header-img: img/infra/linux/memory/memory.jpg
+header-img: img/infra/was/hourly/tomcat.png
 ---
 
 ## 개요
