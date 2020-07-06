@@ -49,6 +49,7 @@ Standard output(표준 스트림), Standard error(표준에러)의 로깅은 제
 
 
 
+
 ### Log Handling
 
 ---
@@ -108,6 +109,7 @@ catalina로 시작하는 파일중 생성일자가 90일 이후인 파일삭제
 > 59 23 * * * /Tomcat 홈 경로/logs/cronLog.sh
 
 crontab에 위내용을 추가, 매일 23시 59분에 해당 실행파일을 동작시키겠다는 뜻
+
 
 
 
