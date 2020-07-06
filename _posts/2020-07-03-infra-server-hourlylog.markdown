@@ -3,7 +3,7 @@ layout: post
 title: Tomcat log에 대한 이해와 분리 방법
 subtitle: rotatelogs를 활용한 Tomcat log 시간단위 분리
 categories: infra
-tags: infra was
+tags: infra server
 comments: true
 published: true
 header-img: img/infra/server/hourly/tomcat.png
