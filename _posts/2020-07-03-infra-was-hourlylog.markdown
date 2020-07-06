@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tomcat log 시간단위 분리  
+title: Tomcat log에 대한 이해와 분리 방법
 subtitle: rotatelogs를 활용한 Tomcat log 시간단위 분리
 categories: infra
 tags: infra was
@@ -12,10 +12,10 @@ header-img: img/infra/linux/memory/memory.jpg
 ## 개요
 
 ---
-> 우리는 apache에서 제공하는 Rotatelogs를 사용함으로서 tomcat의 catalina.out 로그를 시간별로 분리 할 수 있다. 
+> Tomcat의 catalina.out 로그를 시간별로 분리 하여 효율적인 로그관리를 할 수 있다. 
 
 
-나름의 삽질 끝에 답을 알아낸듯 하다.
+3일 남짓, 나름의 삽질 끝에 답을 알아낸듯 하다.
 
 
 
@@ -26,27 +26,25 @@ header-img: img/infra/linux/memory/memory.jpg
 
 ---
 
-1. catalina.out : 서버상에서 발생한 모든 내용(서버의 기동,정지,개시 등)을 기록한 파일이다. 
+1. `catalina.out` : 서버상에서 발생한 모든 내용(서버의 기동,정지,개시 등)을 기록한 파일이다. 
 
 그렇기 때문에 생기는 로그의 양이 방대하다.
 
 날짜별, 혹은 시간별로 로그를 분리하는것은 일반적으로 catalina.out에 사용한다.
 
 
-2. catalina.yyyy-mm-dd.log : 톰캣에서 생기는 로그만을 기록한다.
+2. `catalina.yyyy-mm-dd.log` : 톰캣에서 생기는 로그만을 기록한다.
 
 Standard output(표준 스트림), Standard error(표준에러)의 로깅은 제외
 
-host-manager.log
+
+3. `host-manager.log` : Tomcat Host Manager Web app 로그 (가상호스트 매니저)
 
 
-3. host-manager.log : Tomcat Host Manager Web app 로그 (가상호스트 매니저)
+4. `manager.log` : Tomcat Manager Web App 로그 (웹콘솔)
 
 
-4. manager.log : Tomcat Manager Web App 로그 (웹콘솔)
-
-
-5. localhost.log : host(특정 가상호스트 대상)한정 로그
+5. `localhost.log` : host(특정 가상호스트 대상)한정 로그
 
 
 
@@ -63,12 +61,42 @@ host-manager.log
 
 따라서 보기 좋게, 혹은 안정성을 위해 날짜별로 쪼개고 그 날짜가 오래된것은 지우는 과정이 필요하다.
 
-지금까지 내가 알고있고, 또는 적용해본 로그 처리 방법은 2가지이다.
+
+> 지금까지 내가 알고있고, 또는 적용해본 로그 처리 방법은 2가지이다.
 
 
-(1) 로그를 봐야하는 사용자 혹은 개발자가 `tail -f catalina.out` 으로 실시간 확인이 필요한경우 
+
+#### (1) crontab을 사용하는 경우
+
+로그를 봐야하는 사용자 혹은 개발자가 `tail -f catalina.out` 으로 실시간 확인이 필요한경우 
+
+지난날짜 파일을 날짜라벨링을해주고 분리 후, catalina.out 파일의 내용을 비워준다. 
 
 
+1. 실행파일 생성
+
+> cronLog.sh 생성
+(파일명은 예시, 해당 파일에내에 아래와같이 설정한다.)
+
+> cp /Tomcat 홈 경로/logs/catalina.out /Tomcat 홈 경로/logs/catalina.out.$(date +\%y-\%m-\%d).log 2>&1 
+(지금시간의 년, 월, 일로 복사한다.)
+
+> cat /dev/null > /Tomcat 홈 경로/logs/catalina.out
+(기존의 catalina.out 파일은 비워준다.)
+
+> 
+
+
+
+#### (2) rotatelogs를 사용하는 경우
+
+해당방법은 하루단위로 나눠도 2~3GB에 달하는 로그를 더 잘게 쪼개기위해 사용했다.
+
+사실 이부분은 crontab을 사용해도 시간단위로 로그를 쪼갤 수 있다.
+
+단, 해당 서버에 접근 하지 않을때의 로그까지 쪼개서 하루 24개의 로그를 만들 필요는 없다고 판단하여
+
+Tomcat 폴더/bin/catalina.sh 파일상에서 조금의 수정을 해줬다.
 
 
 
