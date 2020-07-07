@@ -10,7 +10,6 @@ header-img: img/devops/jenkins/install/jenkins.jpg
 ---
 
 ## 개요
-
 ---
 > CentOS7에 Jenkins를 설치하고 외부에서 접근 할 수 있게 한다.
 
