@@ -23,23 +23,17 @@ header-img: img/devops/docker/logo.png
 
 ---
 
-### 1. 컨테이너 생성
+### 1. 컨테이너 생성 및 시작
 
+> docker container run [옵션] 이미지명[:태그명] [인수]
 
-(2). `catalina.yyyy-mm-dd.log` : 톰캣에서 생기는 로그만을 기록한다.
+`옵션`
 
-Standard output(표준 스트림), Standard error(표준에러)의 로깅은 제외
-
-
-(3). `host-manager.log` : Tomcat Host Manager Web app 로그 (가상호스트 매니저)
-
-
-(4). `manager.log` : Tomcat Manager Web App 로그 (웹콘솔)
-
-
-(5). `localhost.log` : host(특정 가상호스트 대상)한정 로그
-
-
+* -a, -attach : 표준 입력, 표준 출력, 표준 오류 출력을 어태치 한다.
+* -d, -detach : 컨테이너를 생성하고 백그라운드에서 실행
+* -p, -publish : 호스트의 임의의 포트를 컨테이너에 할당
+* --name : 컨테이너의 이름을 지정
+* -v, --volume : 호스트와 컨테이너의 디렉토리를 공유 ([`링크`](https://zunoxi.tistory.com/50?category=871486)참조)
 
 
 
