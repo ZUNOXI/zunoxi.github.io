@@ -29,7 +29,7 @@ header-img: img/devops/docker/logo.png
 
 위 명령어는 이미지를 이용해 컨테이너를 생성함과 동시에 시작한다.
 
-[`옵션`]
+`옵션`
 
 * -a, -attach : 표준 입력, 표준 출력, 표준 오류 출력을 어태치 한다.
 * -d, -detach : 컨테이너를 생성하고 백그라운드에서 실행
@@ -63,7 +63,8 @@ header-img: img/devops/docker/logo.png
 
 
 
+
+
 ### 참조
 
 - 도서 [`완벽한 IT인프라 구축을 위한 Docker`](http://www.yes24.com/Product/Goods/64728692)
-![그림1](https://zunoxi.github.io/assets/img/devops/docker/book.jpg)
