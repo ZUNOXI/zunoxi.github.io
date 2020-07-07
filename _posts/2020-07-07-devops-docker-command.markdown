@@ -13,7 +13,11 @@ header-img: img/devops/docker/logo.png
 ---
 > docker와 그 container를 다룰때 편리한 command들을 정리
 
-<br><br>
+<pre>
+
+
+
+</pre>
 
 ### Dokcer Command
 
@@ -37,14 +41,19 @@ header-img: img/devops/docker/logo.png
 아래 명령어는 기존에 만들어져있던 컨테이너를 구동시킨다.
 
 > docker container start [옵션] [컨테이너 식별자]
+<pre>
 
 
 
+</pre>
 ### 2. 컨테이너 가동 확인
 
 > docker container stats [컨테이너 식별자]
+<pre>
 
 
+
+</pre>
 ### 3. 컨테이너 정지 및 재시작
 
 
@@ -55,7 +64,25 @@ header-img: img/devops/docker/logo.png
 #### (2). 컨테이너 재시작
 
 > docker container restart [옵션] [컨테이너 식별자]
+<pre>
 
+
+
+</pre>
+### 4. 컨테이너 삭제
+
+
+#### (1). 특정 컨테이너 삭제
+
+> docker container rm [옵션] [컨테이너 식별자]
+
+`옵션`
+
+* -f, --force : 실행 중인 컨테이너를 강제로 삭제
+
+
+#### (2). 정지중인 모든 컨테이너 삭제
+> docker container prune 
 
 
 
