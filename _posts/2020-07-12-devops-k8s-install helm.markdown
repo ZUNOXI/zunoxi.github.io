@@ -1,6 +1,6 @@
 ---
 layout: post
-title: helm 설치하기
+title: [devops(1)] helm 설치하기
 subtitle: devops 파이프라인 구축하기
 categories: devops
 tags: devops k8s
@@ -21,7 +21,7 @@ header-img: img/devops/k8s/helm/logo.jpeg
 
 ---
 
-![그림1](https://zunoxi.github.io/assets/img/devops/jenkins/install/jenkins.jpg)
+![그림1](https://zunoxi.github.io/assets/img/devops/jenkins/install/structure.png)
 
 이번 포스팅에서는 필요한 프로그램 패키지를 쿠버네티스상의 파드로 배포하기 위해
 
@@ -102,7 +102,7 @@ docker hub에 내가 만든 이미지가 올라가있다면, 이를 이용해서
 
 > `$` helm version
 
-![그림6](https://zunoxi.github.io/assets/img/devops/k8s/helm/6.png)
+![그림6](https://zunoxi.github.io/assets/img/devops/k8s/helm/5.png)
 
 
 

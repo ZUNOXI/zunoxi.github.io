@@ -1,6 +1,6 @@
 ---
 layout: post
-title: jenkins와 Gitlab 연동
+title: 쿠버네티스에 깃랩서버 설치
 subtitle: jenkins를 활용한 파이프라인 구축
 categories: devops
 tags: devops jenkins
