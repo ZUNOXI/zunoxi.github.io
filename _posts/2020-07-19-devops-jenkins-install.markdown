@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 쿠버네티스에 깃랩서버 설치
+title: devops(2) Kubernetes에 Gitlab서버 설치
 subtitle: jenkins를 활용한 파이프라인 구축
 categories: devops
 tags: devops jenkins
