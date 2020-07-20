@@ -13,7 +13,7 @@ header-img: img/devops/jenkins/install/jenkins.jpg
 ---
 > Git push 부터 쿠버네티스 파드 배포 까지의 파이프라인 구축 첫단계
 
-[`Webhook을 통한 Gitlab과 jenkins 연동`]
+[`Git-hook을 통한 Gitlab과 jenkins 연동`]
 
 
 
@@ -22,6 +22,7 @@ header-img: img/devops/jenkins/install/jenkins.jpg
 
 ![그림1](https://zunoxi.github.io/assets/img/devops/jenkins/install/jenkins.jpg)
 
+이번 포스팅에서는 Gitlab과 jenkins와의 연동에 대해 확인한다.
 
 ---
 
