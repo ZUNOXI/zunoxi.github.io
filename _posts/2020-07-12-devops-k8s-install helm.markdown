@@ -79,14 +79,40 @@ docker hub에 내가 만든 이미지가 올라가있다면, 이를 이용해서
 
 (2). helm 실행 파일에 권한부여
 
-> chmod 700 get_helm.sh
+> `$` hmod 700 get_helm.sh
 
 > `$` ./get_helm.sh
 
 ![그림3](https://zunoxi.github.io/assets/img/devops/k8s/helm/2.png)
 
+(3). helm 주입
+
+> `$` helm init
+
 ![그림4](https://zunoxi.github.io/assets/img/devops/k8s/helm/3.png)
 
+(4). kubernetes 상태 확인
+
+> `$` kubectl get service,deployment,pod -n kube-system
+
+![그림5](https://zunoxi.github.io/assets/img/devops/k8s/helm/4.png)
+
+
+(5). helm 버전 확인
+
+> `$` helm version
+
+![그림6](https://zunoxi.github.io/assets/img/devops/k8s/helm/6.png)
 
 
 
+이제 helm을 이용해서 gitlab과 jenkins를 쿠버네티스상에서 배포해보자.
+
+[`다음 포스팅에서`]
+
+
+### 참고 
+
+---
+
+[`https://tech.osci.kr/2019/11/23/86027123/`](https://tech.osci.kr/2019/11/23/86027123/)
