@@ -11,14 +11,14 @@ header-img: img/devops/jenkins/install/jenkins.jpg
 
 ## 개요
 ---
-> CentOS7에 Jenkins를 설치하고 외부에서 접근 할 수 있게 한다.
+> Git push 부터 쿠버네티스 파드 배포 까지의 파이프라인 구축
 
 
 
 
 
 
-### tomcat 로그 종류
+### 구조
 
 ---
 
