@@ -18,11 +18,9 @@ header-img: img/devops/jenkins/install/jenkins.jpg
 
 
 
-
-
 ### 구조
 
-![그림1](https://zunoxi.github.io/assets/img/devops/jenkins/memory/free.png)
+![그림1](https://zunoxi.github.io/assets/img/devops/jenkins/install/jenkins.jpg)
 
 
 ---
