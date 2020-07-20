@@ -15,8 +15,7 @@ header-img: img/devops/k8s/helm/logo.jpeg
 
 [`Helm 설치로 필요한 프로그램 패키지 파드 배포`]
 
-
-
+<br><br>
 
 ### 구조
 
@@ -27,6 +26,67 @@ header-img: img/devops/k8s/helm/logo.jpeg
 이번 포스팅에서는 필요한 프로그램 패키지를 쿠버네티스상의 파드로 배포하기 위해
 
 Helm을 설치하는 과정에 대해 설명한다.
+
+<br><br>
+
+### Helm ??
+
+---
+
+헬름은 쿠버네티스 차트를 관리하기 위한 도구이다. 
+
+차트는 사전 구성된 쿠버네티스 리소스의 패키지라고 할 수 있다.
+
+즉, 쿠버네티스 패키지 관리 도구이다.
+
+(리눅스의 yum, nodejs의 yarn이나 npm 같은)
+
+<br><br>
+
+### Why Helm ??
+
+---
+
+일반적으로 쿠버네티스에서 특정 파드를 만들려면 파드에대한 yaml 파일이 필요하고,
+
+또 이를 배포시켜줄 서비스와, 파드의 생성주기를 관리해줄 레플리카셋에 대한 설정이 필요하다.
+
+이를 일일히 설정해주는것은 귀찮을 뿐더러 설정과정에서 오류가 많이 일어난다.
+
+
+여기서 Helm을 사용하면 특정 프로그램을 배포하고 싶은 경우, 
+
+이미 누군가가 여러개의 파드, 서비스, 레플리카셋을 세트화 시켜 놓고 helm hub상 공유한 것을
+
+chart로 다운받아 간단히 원하는 부분만 수정하고 실행시켜서 배포 할 수 있다.
+
+docker hub에 내가 만든 이미지가 올라가있다면, 이를 이용해서 helm chart를 수정하는것도 가능하다.
+
+즉, 배포가 간편하다는 뜻이다.
+
+<br><br>
+
+### How to install ??
+
+
+---
+
+(1). helm 실행 환경을 다운로드
+
+> `$` curl https://raw.githubusercontent.com/helm/helm/master/scripts/get > get_helm.sh
+
+![그림2](https://zunoxi.github.io/assets/img/devops/k8s/helm/1.png)
+
+(2). helm 실행 파일에 권한부여
+
+> chmod 700 get_helm.sh
+
+> `$` ./get_helm.sh
+
+![그림3](https://zunoxi.github.io/assets/img/devops/k8s/helm/2.png)
+
+![그림4](https://zunoxi.github.io/assets/img/devops/k8s/helm/3.png)
+
 
 
 
