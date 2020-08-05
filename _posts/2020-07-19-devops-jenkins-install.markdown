@@ -31,6 +31,24 @@ header-img: img/devops/jenkins/install/jenkins.jpg
 
 ---
 
-먼저 쿠버네티스가 설치되어 있고, helm 역시 구성되어 있는 상태에서 
+먼저 쿠버네티스가 설치되어 있고, helm 역시 설치되어 있는 상태에서 
 
 gitlab 저장소를 쿠버네티스에 배포 할 수 있게 구성한다.
+
+
+[`초기화면 : 쿠버네티스 대시보드`]
+
+![그림2](https://zunoxi.github.io/assets/img/devops/k8s/gitlab/dashboard.png)
+
+
+
+### gitlab helm 배포
+
+---
+
+
+
+
+
+
+
