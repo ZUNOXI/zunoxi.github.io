@@ -12,6 +12,7 @@ header-img: img/devops/docker/logo.png
 이번 포스팅은 도커 환경을 설치 하기 전, 먼저 **AWS서버 환경에 접속**하는 방법에 대해 알아보고자 한다.
 
 ![그림1](https://zunoxi.github.io/assets/img/cloud/1.jpg)
+
 <br><br>
 
 **아마존 웹 서비스(Amazon Web Services : AWS)** 는 아마존에서 런칭한 클라우드 서비스로 최근 ICT인프라 시스템의 운영방식이 온프레미스방식 뿐만아니라 클라우드 시스템 사용이 대두됨으로 핫핫핫하게 쓰이고 있는 시스템이다.
