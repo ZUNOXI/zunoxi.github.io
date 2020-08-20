@@ -2,8 +2,8 @@
 layout: post
 title: Language#2.JAVA 개념정리 (클래스, 객체지향이란)
 subtitle: JAVA 개념정리 두번째 (클래스, 객체지향이란)
-categories: dev
-tags: dev language
+categories: Programming
+tags: programming language
 comments: true
 published: true
 header-img: img/dev/language/java/java.png
