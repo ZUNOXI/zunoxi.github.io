@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Docker#1.Docker란? 도커와 쿠버네티스
-subtitle:도커에 대한 이해, 쿠버네티스와의 차이
+subtitle: 도커에 대한 이해, 쿠버네티스와의 차이
 categories: devops
 tags: devops docker
 comments: true
