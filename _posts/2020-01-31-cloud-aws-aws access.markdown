@@ -1,6 +1,6 @@
 ---
 layout: post
-title: cloud#1.AWS 서버 접속 + 배치파일 만들기
+title: Cloud#1.AWS 서버 접속 + 배치파일 만들기
 subtitle: AWS 서버 접속 + 배치파일 만들기
 categories: cloud
 tags: cloud cloud
