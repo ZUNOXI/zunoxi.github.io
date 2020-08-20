@@ -15,8 +15,6 @@ header-img: img/dev/language/java/java.png
 
 우선 전공자이지만, 누가 물어봤을때 명확히 대답하기 어려운 부분이 상당히 많았기에 그런 부분 위주로 정리했다.
 
-[##_Image|kage@bpFE2X/btqAauNopm5/xIcVjjWBjKJB9Z0lMkzih1/img.jpg|alignCenter|data-filename="Java사진.jpg" data-origin-width="640" data-origin-height="452" data-ke-mobilestyle="widthContent"|||_##]
-
 ---
 
 **1\. 프레임워크, 라이브러리, 아키텍처**
@@ -25,17 +23,7 @@ header-img: img/dev/language/java/java.png
 
 참고 링크 : [https://blog.gaerae.com/2016/11/what-is-library-and-framework-and-architecture-and-platform.html](https://blog.gaerae.com/2016/11/what-is-library-and-framework-and-architecture-and-platform.html)
 
-[
 
-\[개발용어\] 라이브러리, 프레임워크, 아키텍처, 플래폼이란?
-
-개발 입문자나 혹은 현업 개발자이지만 정의를 내리기 곤란한 라이브러리, 프레임워크, 아키텍처, 플랫폼에 대한 개인적인 생각을 정리했습니다.
-
-blog.gaerae.com
-
-
-
-](https://blog.gaerae.com/2016/11/what-is-library-and-framework-and-architecture-and-platform.html)
 
 개인적으로는 위 링크의 블로그를 보고 이해에 큰 도움이 됐다.
 
@@ -54,7 +42,7 @@ blog.gaerae.com
 -   아키텍처(Architecture) : **프로그램의 전체적인 설계도.** 아키텍처 같은 경우는 말 그대로 구조를 명시하는 부분이기 때문에 프레임워크와 라이브러리에 비해 이해하기 쉬운 것 같다. 건물이나 자동차의 청사진에 비유하면 알맞으며, 실무에서는 초보 개발자가 아키텍처를 만지는 일이 거의 없는것으로 알고 있다. 보다 간단히 설명하면, 시스템의 동작원리부터 구성환경설계를 거쳐 최적화까지 사전 구조를 설정하는 것이다.
 -   플랫폼 : 추가적으로 플랫폼까지 정리해보려 한다. 플랫폼은 **프로그램이 구동되는 환경이라고 생각한다**. 똑같은 종류의 장비를 만들어도 해당 장비가 어디에 쓰이냐에 따라 용도가 달라지듯, 최초 프로그램을 설계할 때 윈도우 혹은 mac OS나 안드로이드와 같이 구동되는 환경이 다른 경우로 설명할 수 있을것 같다.
 
-[##_Image|kage@biJ4Xn/btqA2O5QOtI/aS4BkPR2DxvvmJU0KNUxxk/img.png|alignCenter|data-filename="ventajas-e-inconvenientes-de-java.png" data-origin-width="741" data-origin-height="486" data-ke-mobilestyle="widthContent"|||_##]
+
 
 **2\. 자바(JAVA)의 탄생 : "Why Java?"**
 
