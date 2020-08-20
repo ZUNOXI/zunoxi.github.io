@@ -13,7 +13,6 @@ header-img: img/dev/language/java/java.png
 
 이번 포스팅에서는 자바의 클래스 위주로 정리해보려한다.
 
-[##_Image|kage@bl2DZP/btqAhWC0OQp/xwCdiiieYMTDVizYGVoFBk/img.jpg|alignCenter|data-filename="Java사진.jpg" data-origin-width="640" data-origin-height="452" data-ke-mobilestyle="widthContent"|||_##]
 
 ---
 
@@ -61,17 +60,6 @@ header-img: img/dev/language/java/java.png
 
 참고 : [https://marobiana.tistory.com/58](https://marobiana.tistory.com/58)
 
-[
-
-추상화클래스와 인터페이스의 용도, 차이점, 공통점
-
-abstract class와 interface는 비슷하지만 다르다. 공통점, 차이점, 용도에 대해 알아보자~ 1. 공통점 abstract class(추상 클래스)와 interface 는 선언만 있고 구현 내용이 없는 클래스이다. 그래서 자기 자신�
-
-marobiana.tistory.com
-
-
-
-](https://marobiana.tistory.com/58)
 
 **(2) 캡슐화(Encapsulation)와 은닉화(Hidden)**
 
