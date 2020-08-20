@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Docker#2.윈도우/리눅스에 도커(Docker) 설치
-subtitle: 도커 윈도우/리눅스 설치
+title: cloud#1.AWS 서버 접속 + 배치파일 만들기
+subtitle: AWS 서버 접속 + 배치파일 만들기
 categories: cloud
 tags: cloud cloud
 comments: true
