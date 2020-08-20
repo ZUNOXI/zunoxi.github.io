@@ -31,7 +31,7 @@ AWS 접속과 관련된 배치파일 생성하는것은 아래 포스팅을 참�
 자, 먼저 본인의 윈도우가 가상환경을 지원하는지 부터 확인해 봐야한다. 윈도우 10버전은 아래와 같이 작업관리자의 가상화 지원여부에서 확인 가능하다.
 
 ![그림1](https://zunoxi.github.io/assets/img/devops/docker/install/1.png)
-<br></br>
+<br><br>
 
 **2\. Docker 다운로드**
 
@@ -43,7 +43,7 @@ AWS 접속과 관련된 배치파일 생성하는것은 아래 포스팅을 참�
 그 이상의 버전(윈도우 10 엔터프라이즈, 프로 등)은 아래 링크에서 다운로드.
 
 [https://docs.docker.com/docker-for-windows/install/#download-docker-for-windows](https://docs.docker.com/docker-for-windows/install/#download-docker-for-windows)
-<br></br>
+<br><br>
 
 **3\. Docker 설치**
 
@@ -72,14 +72,14 @@ AWS 접속과 관련된 배치파일 생성하는것은 아래 포스팅을 참�
 자 이제 윈도우에 docker가 설치가 완료 되었다. 다음은 리눅스에 docker를 설치하는 과정이다.
 
 ---
-<br></br>
+<br><br>
 
 **(2) LINUX(ubuntu)에 Docker 설치**
 
 필자가 본 포스팅에서 사용하는 서버OS는 ubuntu 18.04.3 LTS이며 AWS EC2를 이용중 이다. 온프레미스 환경에서 서버를 운영한다면 RHEL이나 CentOS를 운영하는 환경이 많을테지만, 현재는 작은 프로그램 개발 테스트 중이라 AWS의 힘을 빌리고 있다.
 
 AWS를 사용하여 docker를 설치 시 CLI 화면에서 작업할것이므로 명령어 위주로 기술 하려한다.
-<br></br>
+<br><br>
 
 **1\. 환경 세팅**
 
@@ -125,7 +125,7 @@ sudo usermod -aG docker $USER # 현재 접속중인 사용자에게 권한주기
 sudo usermod -aG docker 사용자 이름 # 사용자에게 권한주기
 
 ```
-<br></br>
+<br><br>
 
 **2\. Docker 설치**
 
