@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Language#2.JAVA 개념정리 (클래스, 객체지향이란)
-subtitle: JAVA 개념정리 두번째 (클래스, 객체지향이란)
+title: Language#3.JAVA 개념정리 (접근제한자)
+subtitle: JAVA 개념정리 세번째 접근제한자란
 categories: programming
 tags: programming language
 comments: true
@@ -116,18 +116,18 @@ ZunoXI2
 
 ```java
 
-public interface testjava {
+public interface testjavaimpl {
  
     public String test(String a);
 }
 
 ```
 
-'testjava'라는 인터페이스에 아래 testjavaImpl과 같은 메소드를 선언해 놨다면,
+'testjavaimpl'라는 인터페이스에 아래 test와 같은 메소드를 선언해 놨다면,
 
 ```java
 
-public class testjavaImpl1 implements testjava{
+public class testjava implements testjavaimpl{
  
     @Override
     public String test(String a) {
@@ -137,7 +137,7 @@ public class testjavaImpl1 implements testjava{
     
 }
 
-public class testjavaImpl2 implements testjava{
+public class testjava2 implements testjavaimpl{
  
     @Override
     public String test(String a) {
@@ -149,7 +149,7 @@ public class testjavaImpl2 implements testjava{
 
 ```
 
-위와 같이 'testjavaImpl1', 'testjavaImpl2'라는 'testjava' 을 상속받는 클래스에 test라는 메소드를 다른 구성으로 구현할 수 있게 해주는 기능을 하는 것이 오버라이딩이라고 이해할 수 있다.
+위와 같이 'testjava', 'testjava2'라는 'testjavaimpl' 을 상속받는 클래스에 test라는 메소드를 다른 구성으로 구현할 수 있게 해주는 기능을 하는 것이 오버라이딩이라고 이해할 수 있다.
 
 ~(상속받는 클래스 이름 뒤에 impl을 붙여야하는데 이런 허접함이..)~
 
