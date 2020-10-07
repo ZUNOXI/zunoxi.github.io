@@ -10,7 +10,7 @@ header-img: img/devops/k8s/gitlab/logo.png
 ---
 
 ## 개요
-> `Git push` 부터 쿠버네티스 파드 배포 까지 파이프라인 구축 두번째 단계
+> `Git push` 부터 `쿠버네티스` 파드 배포 까지 파이프라인 구축 &#10103;단계
   
 - 목차
 	- [`Gitlab on k8s`](#h2-idgitlab-on-k8s-342gitlab-on-k8sh2)
