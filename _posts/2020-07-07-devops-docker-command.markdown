@@ -10,12 +10,17 @@ header-img: img/devops/docker/logo.png
 ---
 
 ## 개요
----
-> docker와 그 container를 다룰때 편리한 command들을 정리
+> docker와 그 container를 다룰때 편리한 `command`들을 정리
+  
+- 목차
+	- [`컨테이너 생성 및 시작`](#1-컨테이너-생성-및-시작)
+	- [`컨테이너 가동 확인?`](#2-컨테이너-가동-확인)
+	- [`컨테이너 정지 및 재시작`](#3-컨테이너-정지-및-재시작)
+	- [`컨테이너 삭제`](#4-컨테이너-삭제)
+	- [`컨테이너 설정확인`](#5-컨테이너-설정확인)
+	- [`컨테이너 조회`](#6-컨테이너-조회)
 
-<br><br>
-
-### Dokcer Command
+## Dokcer Command
 
 ---
 
@@ -37,15 +42,17 @@ header-img: img/devops/docker/logo.png
 아래 명령어는 기존에 만들어져있던 컨테이너를 구동시킨다.
 
 > docker container start [옵션] [컨테이너 식별자]
-<br><br>
+
+<br>
 
 ### 2. 컨테이너 가동 확인
 
 > docker container stats [컨테이너 식별자]
-<br><br>
+
 
 ### 3. 컨테이너 정지 및 재시작
 
+<br>
 
 #### (1). 컨테이너 정지
 
@@ -54,7 +61,8 @@ header-img: img/devops/docker/logo.png
 #### (2). 컨테이너 재시작
 
 > docker container restart [옵션] [컨테이너 식별자]
-<br><br>
+
+<br>
 
 ### 4. 컨테이너 삭제
 
@@ -72,18 +80,19 @@ header-img: img/devops/docker/logo.png
 
 > docker container prune 
 
-<br><br>
+<br>
 
 ### 5. 컨테이너 설정확인
 
 > docker container inspect [컨테이너 식별자]
 
-
-<br><br>
+<br>
 
 ### 6. 컨테이너 조회
 
 > docker container ls -a
+
+<br>
 
 ### 참조
 
