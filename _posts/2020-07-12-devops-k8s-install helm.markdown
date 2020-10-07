@@ -14,34 +14,14 @@ published: true
 - 목차
 	- [`DevOps구조`](#devops구조)
 	- [`Helm?`](#helm)
+	- [`Why Helm`](#why-helm-)
+	- [`How to install`](#how-to-install-)
   
 ## Helm??
 ---
 헬름은 쿠버네티스 차트를 관리하기 위한 도구이다. 차트는 사전 구성된 쿠버네티스 리소스의 패키지라고 할 수 있다. 즉, 쿠버네티스 패키지 관리 도구이다.
 
-## 개요
-> `Git push` 부터 쿠버네티스 파드 배포 까지
 
-- 목차
-	- [`DevOps구조`](#devops구조)
-	- [`Helm?`](#helm)
-
-## Helm??
----
-헬름은 쿠버네티스 차트를 관리하기 위한 도구이다. 차트는 사전 구성된 쿠버네티스 리소스의 패키지라고 할 수 있다. 즉, 쿠버네티스 패키지 관리 도구이다.
-
-
-
-
-<br>
-
-- 목차
-	- [`DevOps구조`](#devops구조)
-	- [`Helm?`](#helm)
-	- [`Why Helm`](#why-helm-)
-	- [`How to install`](#how-to-install-)
-
-<br>
 
 `Helm 설치로 필요한 프로그램 패키지 파드 배포`
 
