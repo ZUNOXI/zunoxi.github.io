@@ -24,7 +24,7 @@ header-img: img/devops/k8s/gitlab/logo.png
 
 <br>
 
-사실 쿠버네티스로 gitlab을 배포하는것은 gitlab 서버를 중단없이 이용할 수 있고, 로드밸런싱으로 부하분산할 수 있다는 것에 의미가 있지만, 개인 혹은 소수의 집단이 사용하기에 일반 서버로컬에 설치하는것과 비교하면 큰 메리트가 있어보이지는 않는다. 그럼에도 이상적인 MSA 구현을 위해서는 gitlab자체도 쿠버네티스에서 클러스터링되어야 좋을것 같아 **`쿠버네티스 상에서 서비스 단위 배포를 해보려 한다.`**
+사실 쿠버네티스로 gitlab을 배포하는것은 gitlab 서버를 중단없이 이용할 수 있고, 로드밸런싱으로 부하분산할 수 있다는 것에 의미가 있지만, 개인 혹은 소수의 집단이 사용하기에 일반 서버로컬에 설치하는것과 비교하면 큰 메리트가 있어보이지는 않는다.	&#128528; 그럼에도 이상적인 MSA 구현을 위해서는 gitlab자체도 쿠버네티스에서 클러스터링되어야 좋을것 같아 **`쿠버네티스 상에서 서비스 단위 배포를 해보려 한다.`**
 
 <br>
 
@@ -167,7 +167,7 @@ $ helm upgrade --install gitlab stable/gitlab-ce   --set global.edition=ce   --s
 
 위 명령어를 입력했을 때 다음과 같은 에러가 발생할 수 있다.
 
-[##_Image|kage@2VsDr/btqJijXo9bD/oDhKMVBXTEZK2O8Nh1vRAK/img.png|alignCenter|data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"|||_##]
+![그림3](https://zunoxi.github.io/assets/img/devops/k8s/gitlab/3.png)
 
 잘 안보이니깐 에러 부분만 풀어서 적자면 이러하다.
 
@@ -176,7 +176,7 @@ Error: configmaps is forbidden: User "system:serviceaccount:kube-system:default"
 Error: UPGRADE FAILED: configmaps is forbidden: User "system:serviceaccount:kube-system:default" cannot list resource "configmaps" in API group "" in the namespace "kube-system"
 ```
 
-이는 **쿠버네티스의 권한 관리(RBCA) 문제 때문에** 발생한다. helm의 tiller가 쿠버네티스 클러스터의 api에 접근하여 영향력을 행세하기 위해서는 유효한 사용자인지 확인이 필요하다. 실제로 필자가 테스트 에러를 해결할 때는 꽤 고생했지만 역시나 스택갓버플로우(!)는 절대로 우리를 실망시키지 않는다 :) 해결방법은 다음 명령어들을 차례대로 입력해주면 된다.
+이는 **쿠버네티스의 권한 관리(RBCA) 문제 때문에** 발생한다. helm의 tiller가 쿠버네티스 클러스터의 api에 접근하여 영향력을 행세하기 위해서는 `유효한 사용자`인지 확인이 필요하다. 실제로 필자가 테스트 에러를 해결할 때는 꽤 고생했지만 역시나 `스택갓버플로우`	&#128519;는 절대로 우리를 실망시키지 않는다 	해결방법은 다음 명령어들을 차례대로 입력해주면 된다.
 
 ```
 $ kubectl create serviceaccount --namespace kube-system tiller
@@ -187,21 +187,10 @@ $ helm init --service-account tiller --upgrade
 
 출처 : [https://stackoverflow.com/questions/46672523/helm-list-cannot-list-configmaps-in-the-namespace-kube-system](https://stackoverflow.com/questions/46672523/helm-list-cannot-list-configmaps-in-the-namespace-kube-system)
 
-[
-
-helm list : cannot list configmaps in the namespace "kube-system"
-
-I have installed helm 2.6.2 on the kubernetes 8 cluster. helm init worked fine. but when I run helm list it giving this error. helm list Error: configmaps is forbidden: User "system:serviceaccoun...
-
-stackoverflow.com
-
-
-
-](https://stackoverflow.com/questions/46672523/helm-list-cannot-list-configmaps-in-the-namespace-kube-system)
 
 위 작업을 마무리하고 다시 helm 명령어를 입력하면 아래의 모습을 볼 수 있다.
 
-[##_Image|kage@d80ORc/btqGiqLgtYA/qPVsFBxQKv0oRbtE8YrRI0/img.png|alignCenter|data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"|||_##]
+![그림4](https://zunoxi.github.io/assets/img/devops/k8s/gitlab/4.png)
 
 **2-2 ) 외부 접근 주소 설정**
 
