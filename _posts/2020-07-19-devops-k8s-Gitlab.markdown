@@ -13,10 +13,10 @@ header-img: img/devops/k8s/gitlab/logo.png
 > `Git push` 부터 쿠버네티스 파드 배포 까지 파이프라인 구축 두번째 단계
   
 - 목차
+	- [`Gitlab on k8s`](#h2-idgitlab-on-k8s-342gitlab-on-k8sh2)
 	- [`pv 선언`](#1-persistent-volume퍼시스턴트-볼륨-선언)
-	- [`gitlab 설치?`](#2-gitlab-설치)
-	- [`Why Helm`](#why-helm-)
-	- [`How to install`](#how-to-install-)
+	- [`gitlab 설치`](#2-gitlab-설치)
+	- [`설치확인`](#3-정상-설치-확인)
   
 ## Gitlab on k8s
 ---
@@ -192,6 +192,8 @@ $ helm init --service-account tiller --upgrade
 
 ![그림4](https://zunoxi.github.io/assets/img/devops/k8s/gitlab/4.png)
 
+<br>
+
 **2-2 ) 외부 접근 주소 설정**
 
 ```
@@ -199,45 +201,51 @@ $ helm upgrade gitlab stable/gitlab-ce       --set externalUrl=내 IP 주소(접
 
 ```
 
-[##_Image|kage@bHG78v/btqGebPxcrJ/YfQUyy8ZjZKs5vHGuSFZyK/img.png|alignCenter|data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"|||_##]
+![그림5](https://zunoxi.github.io/assets/img/devops/k8s/gitlab/5.png)
 
 ---
 
-**3\. 정상 설치 확인**
+### **3\. 정상 설치 확인**
 
 **3-1 ) pv 클레임의 정상 바운드 여부 확인**
 
 퍼시스턴트 볼륨으로 요청한 클레임들이 모두 할당된 것을 알 수 있다.
 
-[##_Image|kage@biCGES/btqGiqkcQz2/mEafzPyeDda64NIJiFWNOk/img.png|alignCenter|data-origin-width="1108" data-origin-height="279" data-ke-mobilestyle="widthContent"|||_##]
+![그림6](https://zunoxi.github.io/assets/img/devops/k8s/gitlab/6.png)
 
-[##_Image|kage@dNGXpT/btqGebINUYV/p03pgTvMom4sDpcKC7ZUBk/img.png|alignCenter|data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"|||_##]
+<br>
+
+![그림7](https://zunoxi.github.io/assets/img/devops/k8s/gitlab/7.png)
+
+<br>
 
 **3-2 ) 서비스 배포 확인**
 
 원인은 알 수 없지만, gitlab-gitlab-ce는 계속 pending 상태인 것처럼 보인다.
 
-[##_Image|kage@cAYjhs/btqJsjIehm3/NZn016uk1lsE936RdLcW4k/img.png|alignCenter|data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"|||_##]
+![그림8](https://zunoxi.github.io/assets/img/devops/k8s/gitlab/8.png)
 
 막상 서비스 내로 들어가 보면 파드는 정상적으로 배포 중인 것을 알 수 있다.
 
-[##_Image|kage@skZFt/btqJphc5myz/rJnconML7VIQ5YRddvATEk/img.png|alignCenter|data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"|||_##]
+![그림9](https://zunoxi.github.io/assets/img/devops/k8s/gitlab/9.png)
 
 그리고 해당 파드의 이벤트를 살펴보면 다음과 같다.
 
-[##_Image|kage@bxw9Xz/btqJltZDr4a/HXo6SmJ5L8IOSYzb7gCrU1/img.png|alignCenter|data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"|||_##]
+![그림10](https://zunoxi.github.io/assets/img/devops/k8s/gitlab/10.png)
 
-최초에는 "'Readiness probe failed: Get[http://172.16.36.71:80/](http://172.17.0.6:3003/): dial tcp [172.16.36.71:80](http://172.17.0.6:3003/): getsockopt: connection refused'." 라는 이벤트를 발생시키고, 파드의 상태 메시지도 이와 같이 출력되었다. 한 5~6번을 파드의 재생성이 반복되더니 갑자기 잘되었다... 원인을 알 수가 없다. 쿠버네티스 고수분들이 이 글을 본다면 원인을 알려줬으면 좋겠다..!
+<br>
 
-**3-3 ) Gitlab 서버 브라우저 접근 **
+최초에는 "'Readiness probe failed: Get[http://172.16.36.71:80/](http://172.17.0.6:3003/): dial tcp [172.16.36.71:80](http://172.17.0.6:3003/): getsockopt: connection refused'." 라는 이벤트를 발생시키고, 파드의 상태 메시지도 이와 같이 출력되었다. 한 `5~6번을 파드의 재생성`이 반복되더니 갑자기 잘되었다... 원인을 알 수가 없다. 쿠버네티스 고수분들이 이 글을 본다면 원인을 알려줬으면 좋겠다..!
+
+**3-3 ) Gitlab 서버 브라우저 접근**
 
 위 사진의 서비스의 내부 엔드포인트에서 볼 수 있듯이 HTTP 프로토콜의 80번 통신은 nodeport의 30776번으로 들어오게끔 맵핑되어있다.
 
-[##_Image|kage@JiiKY/btqJls7v7VZ/BnGg5Y0kWtqhzz40YrjVu1/img.png|alignCenter|data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"|||_##]
+![그림11](https://zunoxi.github.io/assets/img/devops/k8s/gitlab/11.png)
 
 이제 브라우저에서 해당 서버 ip:30776으로 들어가 보자.
 
-[##_Image|kage@bfJsGQ/btqJnCIYTB4/Jhv9qMPOZpXvhmdK9sw6JK/img.png|alignCenter|data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"|||_##]
+![그림12](https://zunoxi.github.io/assets/img/devops/k8s/gitlab/12.png)
 
 **설치형 Gitlab 서버를 쿠버네티스 서비스로 배포 중인 것을** 확인할 수 있다.
 
