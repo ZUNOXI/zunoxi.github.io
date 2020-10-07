@@ -3,7 +3,7 @@ layout: post
 title: devops(1) helm 설치하기
 subtitle: devops 파이프라인 구축하기
 categories: devops
-tags: devops k8s
+tags: devops kubernetes
 comments: true
 published: true
 header-img: img/devops/k8s/helm/logo.jpeg

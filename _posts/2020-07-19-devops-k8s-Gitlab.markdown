@@ -3,7 +3,7 @@ layout: post
 title: devops(2) Kubernetes에 Gitlab서버 설치
 subtitle: jenkins를 활용한 파이프라인 구축
 categories: devops
-tags: devops Kubernetes
+tags: devops kubernetes
 comments: true
 published: true
 header-img: img/devops/k8s/gitlab/logo.png
