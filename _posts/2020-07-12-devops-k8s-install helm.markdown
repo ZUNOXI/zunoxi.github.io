@@ -11,9 +11,9 @@ header-img: img/devops/k8s/helm/logo.jpeg
 
 ## 개요
 ---
-> Git push 부터 쿠버네티스 파드 배포 까지의 파이프라인 구축 첫단계
+> Git push 부터 쿠버네티스 파드 배포 까지
 
-[`Helm 설치로 필요한 프로그램 패키지 파드 배포`]
+`Helm 설치로 필요한 프로그램 패키지 파드 배포`
 
 <br><br>
 
@@ -71,39 +71,42 @@ docker hub에 내가 만든 이미지가 올라가있다면, 이를 이용해서
 
 ---
 
-(1). helm 실행 환경을 다운로드
+**(1). helm 실행 환경을 다운로드**
 
 > `$` curl https://raw.githubusercontent.com/helm/helm/master/scripts/get > get_helm.sh
 
 ![그림2](https://zunoxi.github.io/assets/img/devops/k8s/helm/1.png)
+<br><br>
 
-(2). helm 실행 파일에 권한부여
+**(2). helm 실행 파일에 권한부여**
 
 > `$` hmod 700 get_helm.sh
 
 > `$` ./get_helm.sh
 
 ![그림3](https://zunoxi.github.io/assets/img/devops/k8s/helm/2.png)
+<br><br>
 
-(3). helm 주입
+**(3). helm 주입**
 
 > `$` helm init
 
 ![그림4](https://zunoxi.github.io/assets/img/devops/k8s/helm/3.png)
+<br><br>
 
-(4). kubernetes 상태 확인
+**(4). kubernetes 상태 확인**
 
 > `$` kubectl get service,deployment,pod -n kube-system
 
 ![그림5](https://zunoxi.github.io/assets/img/devops/k8s/helm/4.png)
+<br><br>
 
-
-(5). helm 버전 확인
+**(5). helm 버전 확인**
 
 > `$` helm version
 
 ![그림6](https://zunoxi.github.io/assets/img/devops/k8s/helm/5.png)
-
+<br><br>
 
 
 이제 helm을 이용해서 gitlab과 jenkins를 쿠버네티스상에서 배포해보자.
