@@ -13,10 +13,9 @@ header-img: img/dev/language/html/html.jpg
 > `html, css, javascript` 에 대한 이해
   
 - 목차
-	- [`DevOps구조`](#devops구조)
-	- [`Helm?`](#helm)
-	- [`Why Helm`](#why-helm-)
-	- [`How to install`](#how-to-install-)
+	- [`HTML`](#HTML)
+	- [`CSS`](#CSS)
+	- [`JS`](#JS)
   
 ## 글의 목적
 ---
