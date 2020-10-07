@@ -10,10 +10,20 @@ header-img: img/infra/secure/tlsssl/tlsssl.jpg
 ---
 
 ## 개요
+> `TLS`와 `SSL`에 대한 정의와 그차이
+  
+- 목차
+	- [`SSL이란?`](#h3-idssl-55sslh3)
+	- [`TLS이란?`](#h3-idtls-60tlsh3)
+	- [`인증서와 프로토콜`](#h3-id인증서와-프로토콜-65인증서와-프로토콜h3)
+	- [`SSL과 TLS`](#ssl과-tls)
+	- [`TLS 1.0, TLS 1.1 버전의 지원중단`](#tls-10-tls-11-버전의-지원중단)
+
+## 개요
 ---
 > TLS와 SSL에 대한 정의와 그차이
 
-[`해당 포스팅`](https://smartits.tistory.com/209)을 읽고 정리함.
+
 
 
 ### SSL
@@ -84,3 +94,7 @@ SSL2와 SSL3는 상호운용되지 않으며, SSL3과 TLS1도 서로호환되지
 - SSL 버전 중 현재 사용가능한것은 없고 TLS 를 사용해야한다.
 - 또한 TLS 역시 1.0과 1.1 버전은 곧 지원이 중단될 예정이다.
 - 우리가 일반적으로 표현하는 SSL 인증서는 잘못된 표현이고 사실상 `TLS를 사용하는 서버에 적용될 인증서` 라고 표현하는것이 맞다.
+
+<br>
+
+`본 링크의 포스팅`(https://smartits.tistory.com/209)을 읽고 정리함.
