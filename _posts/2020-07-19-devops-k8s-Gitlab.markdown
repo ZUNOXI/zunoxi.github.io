@@ -44,9 +44,11 @@ header-img: img/devops/k8s/gitlab/logo.png
 
 2\. helm 2.x v 설치
 
----
+<br><br>
+
 
 ### **1. persistent volume(퍼시스턴트 볼륨) 선언**
+---
 
 일반적으로 helm chart를 이용하여 gitlab의 커뮤니티 에디션(무료)인 gitlab-ce 서버를 설치한다면, gitlab설정 데이터뿐만 아니라 postegres, redis에 대한 퍼시스턴트 볼륨 설정을 해줘야 한다.
 
@@ -152,9 +154,10 @@ $ kubectl apply -f pvetcgit.yaml
 
 ![그림2](https://zunoxi.github.io/assets/img/devops/k8s/gitlab/2.png)
 
----
+<br><br>
 
 ### **2\. gitlab 설치**
+---
 
 <br>
 
@@ -204,9 +207,10 @@ $ helm upgrade gitlab stable/gitlab-ce       --set externalUrl=내 IP 주소(접
 
 ![그림5](https://zunoxi.github.io/assets/img/devops/k8s/gitlab/5.png)
 
----
+<br><br>
 
 ### **3\. 정상 설치 확인**
+---
 
 **3-1 ) pv 클레임의 정상 바운드 여부 확인**
 
@@ -243,6 +247,8 @@ $ helm upgrade gitlab stable/gitlab-ce       --set externalUrl=내 IP 주소(접
 서비스의 내부 엔드포인트에서 볼 수 있듯이 HTTP 프로토콜의 `80`번 통신은 nodeport의 `30776`번으로 들어오게끔 맵핑되어있다.
 
 ![그림11](https://zunoxi.github.io/assets/img/devops/k8s/gitlab/11.png)
+
+<br>
 
 이제 브라우저에서 해당 `서버 ip:30776`으로 들어가 보자.
 
