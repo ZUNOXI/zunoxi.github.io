@@ -22,7 +22,7 @@ zunoxi:
   # Comment/uncommet to show/hide
   # Icons appear in order, can be rearranged:
   social:
-    facebook:        https://www.facebook.com/profile.php?id=100004964490537
+    # facebook:        https://www.facebook.com/profile.php?id=100004964490537
     # twitter:         <username>
     # google:          <number>
     # vk:              <username>
@@ -53,7 +53,7 @@ zunoxi:
     # trello:          <firstnamelastname>
     # linkedin:        <firstname-lastname-string>
     # xing:            <firstname_lastname_counter>
-    # blogger:         <number>
+    blogger:         https://zunoxi.tistory.com/
     # delicious:       <username>
     # stumbleupon:     <username>
     # paypal:          <username>
