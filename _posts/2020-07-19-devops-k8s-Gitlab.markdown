@@ -13,8 +13,8 @@ header-img: img/devops/k8s/gitlab/logo.png
 > `Git push` 부터 쿠버네티스 파드 배포 까지 파이프라인 구축 두번째 단계
   
 - 목차
-	- [`DevOps구조`](#devops구조)
-	- [`Helm?`](#helm)
+	- [`pv 선언`](#1-persistent-volume퍼시스턴트-볼륨-선언)
+	- [`gitlab 설치?`](#2-gitlab-설치)
 	- [`Why Helm`](#why-helm-)
 	- [`How to install`](#how-to-install-)
   
@@ -154,7 +154,9 @@ $ kubectl apply -f pvetcgit.yaml
 
 ---
 
-**2\. gitlab 설치**
+### **2\. gitlab 설치**
+
+<br>
 
 **2-1 ) helm chart 주입**
 
