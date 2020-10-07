@@ -165,7 +165,6 @@ $ kubectl apply -f pvetcgit.yaml
 
 ```
 $ helm upgrade --install gitlab stable/gitlab-ce   --set global.edition=ce   --set certmanager-issuer.email=내 이메일주소   --set global.hosts.domain=내 ip주소
-
 ```
 
 위 명령어를 입력했을 때 다음과 같은 에러가 발생할 수 있다.
@@ -202,7 +201,6 @@ $ helm init --service-account tiller --upgrade
 
 ```
 $ helm upgrade gitlab stable/gitlab-ce       --set externalUrl=내 IP 주소(접근할 IP)
-
 ```
 
 ![그림5](https://zunoxi.github.io/assets/img/devops/k8s/gitlab/5.png)
