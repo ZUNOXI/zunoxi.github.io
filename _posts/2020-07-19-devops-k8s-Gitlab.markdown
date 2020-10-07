@@ -239,11 +239,11 @@ $ helm upgrade gitlab stable/gitlab-ce       --set externalUrl=내 IP 주소(접
 
 **3-3 ) Gitlab 서버 브라우저 접근**
 
-위 사진의 서비스의 내부 엔드포인트에서 볼 수 있듯이 HTTP 프로토콜의 80번 통신은 nodeport의 30776번으로 들어오게끔 맵핑되어있다.
+서비스의 내부 엔드포인트에서 볼 수 있듯이 HTTP 프로토콜의 `80`번 통신은 nodeport의 `30776`번으로 들어오게끔 맵핑되어있다.
 
 ![그림11](https://zunoxi.github.io/assets/img/devops/k8s/gitlab/11.png)
 
-이제 브라우저에서 해당 서버 ip:30776으로 들어가 보자.
+이제 브라우저에서 해당 `서버 ip:30776`으로 들어가 보자.
 
 ![그림12](https://zunoxi.github.io/assets/img/devops/k8s/gitlab/12.png)
 
