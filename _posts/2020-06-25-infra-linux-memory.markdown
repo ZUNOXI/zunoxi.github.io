@@ -17,7 +17,7 @@ header-img: img/infra/linux/memory/memory.jpg
 	- [`buffer? cache?`](#buffer-cache)
 	- [`Top활용 프로세스별 메모리 확인`](#top활용-프로세스별-메모리-확인)
   
-### 리눅스 메모리 사용량 확인
+## 리눅스 메모리 사용량
 ---
 리눅스를 관리하는 업무를 주로담당하다보면 서버의 자원들에 대해 민첩하게 반응해야할때가 많은데, 보통은 CPU와 Memory자원들을 확인하게된다. 본 포스팅에서는 이 리눅스에 대한 Memory 사용량 확인에 대해 다뤄보려한다.
 
