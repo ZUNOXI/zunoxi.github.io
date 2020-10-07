@@ -9,7 +9,6 @@ published: true
 ---
 
 ## 개요
----
 > `Git push` 부터 쿠버네티스 파드 배포 까지
 
 ### Helm??
