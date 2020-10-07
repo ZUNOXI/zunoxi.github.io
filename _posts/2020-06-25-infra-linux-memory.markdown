@@ -19,7 +19,7 @@ header-img: img/infra/linux/memory/memory.jpg
 [`WhatTap`](https://www.whatap.io/ko/blog/37/)
 [`https://brunch.co.kr/@alden/25`](https://brunch.co.kr/@alden/25)
 [`https://ironmask.net/355`](https://ironmask.net/355)
-
+<br><br>
 
 
 
@@ -33,6 +33,7 @@ header-img: img/infra/linux/memory/memory.jpg
 > `#free`
 
 ![그림1](https://zunoxi.github.io/assets/img/infra/linux/memory/free.png)
+<br><br>
 
 
 - 용어 설명
@@ -48,6 +49,7 @@ header-img: img/infra/linux/memory/memory.jpg
     - buff/cache : 버퍼/캐시 메모리로 사용되고 있는 메모리 크기
 
     - available : 실질적으로 사용가능한 메모리 크기(`swapping` 없이 할당 가능한 크기)
+<br><br>
 
 
 > [`Swapping?`]
@@ -71,6 +73,7 @@ header-img: img/infra/linux/memory/memory.jpg
 	- t : 합계를 계산 한것 까지 출력한다.
 
 
+<br><br>
 
 
 ### buffer? cache?
@@ -84,6 +87,7 @@ header-img: img/infra/linux/memory/memory.jpg
 
 
 
+<br>
 
 ### page cache?
 
@@ -96,7 +100,7 @@ header-img: img/infra/linux/memory/memory.jpg
 페이지 캐시는 파일의 내용을 저장하는 캐시이다.
 
 
-
+<br>
 
 
 ### buffer cache?
@@ -113,7 +117,7 @@ header-img: img/infra/linux/memory/memory.jpg
 
 
 
-
+<br><br>
 
 ### Top활용 프로세스별 메모리 확인
 
