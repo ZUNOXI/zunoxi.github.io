@@ -19,9 +19,7 @@ header-img: img/infra/server/hourly/tomcat.png
 	- [`How to install`](#how-to-install-)
   
 ### Log Handling
-
 ---
-
 앞선 로그의 종류를 보면 일반적으로 catalina.out에 중요 로그파일이 모두 적재되는것을 알 수 있다. 이 catalina.out이 너무 커지면 몇만, 몇십만 이상의 문장이 적재되어 로그분석이 힘들고, 경우에 따라 100기가가 넘어가면 톰캣이 중지된다는 사례도 있다. 
 
 따라서 보기 좋게, 혹은 안정성을 위해 날짜별로 쪼개고 그 날짜가 오래된것은 지우는 과정이 필요하다.
