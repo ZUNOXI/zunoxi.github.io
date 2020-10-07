@@ -6,5 +6,5 @@ menu: true
 submenu: true
 order: 2
 description: >
-  CI/CD 파이프라인구성으로 DevOps 환경을 구축해보기
+  CI/CD 파이프라인구성으로 이상적인 DevOps 환경하기
 ---

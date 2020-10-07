@@ -20,11 +20,11 @@ header-img: img/devops/k8s/gitlab/logo.png
   
 ## Gitlab on k8s
 ---
-필자는 프로젝트 소스의 형상관리 툴로서 git, 그중에서도 설치형으로 프라이빗하게 쓰기 위해 `gitlab`을 이용하는편인데, 실제 기업환경에서도 github보다는 gitlab을 많이 사용하는 것 같다. 왜인지는 모르겠지만 아무래도 _**설치형 서버라**_ 는 점과 _**프라이빗한 사용 환경**_ 에서도 비용이 청구되지 않는 등 여러 부분에서 메리트가 있지 않았을까 싶다. 이번 포스팅은 이런 특징이 있는 **`gitlab서버를 쿠버네티스상에 설치`** 하고 서비스로 배포해보려 한다.
+필자는 프로젝트 소스의 형상관리 툴로서 git, 그중에서도 설치형으로 프라이빗하게 쓰기 위해 `gitlab`을 이용하는편인데, 실제 기업환경에서도 github보다는 gitlab을 많이 사용하는 것 같다. 아무래도 _**설치형 서버라**_ 는 점과 _**프라이빗한 사용 환경**_ 에서도 비용이 청구되지 않는 등 여러 부분에서 메리트가 있지 않았을까 싶다. 이번 포스팅은 이런 이점을 갖고 있는 **`gitlab서버를 쿠버네티스상에 설치`** 하는 방법을 다룬다.
 
 <br>
 
-쿠버네티스로 gitlab을 배포하는것은 gitlab 서버를 중단없이 이용할 수 있고, 로드밸런싱으로 부하분산할 수 있다는 것에 의미가 있지만, 사실 개인 혹은 소수의 집단이 사용하기에 일반 서버로컬에 설치하는것과 비교하면 큰 메리트가 있어보이지는 않는다. 그래도 궁극의 MSA 구현을 위해서는 gitlab자체도 쿠버네티스에서 클러스터링되어야 좋을것 같아 **`쿠버네티스 상에서 서비스 단위 배포를 해보려 한다.`**
+사실 쿠버네티스로 gitlab을 배포하는것은 gitlab 서버를 중단없이 이용할 수 있고, 로드밸런싱으로 부하분산할 수 있다는 것에 의미가 있지만, 개인 혹은 소수의 집단이 사용하기에 일반 서버로컬에 설치하는것과 비교하면 큰 메리트가 있어보이지는 않는다. 그럼에도 이상적인 MSA 구현을 위해서는 gitlab자체도 쿠버네티스에서 클러스터링되어야 좋을것 같아 **`쿠버네티스 상에서 서비스 단위 배포를 해보려 한다.`**
 
 <br>
 
@@ -46,11 +46,9 @@ header-img: img/devops/k8s/gitlab/logo.png
 
 ---
 
-**1\. persistent volume(퍼시스턴트 볼륨) 선언**
+### **1. persistent volume(퍼시스턴트 볼륨) 선언**
 
-일반적으로 helm chart를 이용하여 gitlab의 커뮤니티 에디션(무료)인 gitlab-ce 서버를 설치한다면,
-
-gitlab설정 데이터뿐만 아니라 postegres, redis에 대한 퍼시스턴트 볼륨 설정을 해줘야 한다.
+일반적으로 helm chart를 이용하여 gitlab의 커뮤니티 에디션(무료)인 gitlab-ce 서버를 설치한다면, gitlab설정 데이터뿐만 아니라 postegres, redis에 대한 퍼시스턴트 볼륨 설정을 해줘야 한다.
 
 ```
 $ vi pvgitlab.yaml
@@ -144,12 +142,15 @@ spec:
 $ kubectl apply -f pvetcgit.yaml
 ```
 
-※ 쿠버네티스 클러스터 환경의 node1(hostname : k8s-node1)에 /data/data-volume 폴더는 미리 생성했다.  
+`※ 쿠버네티스 클러스터 환경의 node1(hostname : k8s-node1)에 /data/data-volume 폴더는 미리 생성했다.  `
+
 이 경우, 이름은 gitlab, redis 등 별도로 yaml 파일을 만들었지만 퍼시스턴트 볼륨 클레임에서 프로비저닝이 될 경우, 시스템별로 매칭 되지 않고 무작위로 바운딩될 것이다. 
+
+<br>
 
 아래 대시보드에서도 퍼시스턴트 볼륨이 생성된 것을 확인할 수 있다.
 
-[##_Image|kage@yi5cE/btqGkQCynry/XRLi8b5C7AM8hwonzuo8Ak/img.png|alignCenter|data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"|||_##]
+![그림2](https://zunoxi.github.io/assets/img/devops/k8s/gitlab/2.png)
 
 ---
 
