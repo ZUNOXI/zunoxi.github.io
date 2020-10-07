@@ -6,7 +6,7 @@ categories: devops
 tags: devops jenkins
 comments: true
 published: true
-header-img: img/devops/jenkins/install/jenkins.jpg
+header-img: img/devops/k8s/gitlab/logo.png
 ---
 
 ## 개요
@@ -18,7 +18,7 @@ header-img: img/devops/jenkins/install/jenkins.jpg
 	- [`Why Helm`](#why-helm-)
 	- [`How to install`](#how-to-install-)
   
-## Gitlab on K8S
+## Gitlab on k8s
 ---
 필자는 프로젝트 소스의 형상관리 툴로서 git, 그중에서도 설치형으로 프라이빗하게 쓰기 위해 `gitlab`을 이용하는편인데, 실제 기업환경에서도 github보다는 gitlab을 많이 사용하는 것 같다. 왜인지는 모르겠지만 아무래도 _**설치형 서버라**_ 는 점과 _**프라이빗한 사용 환경**_ 에서도 비용이 청구되지 않는 등 여러 부분에서 메리트가 있지 않았을까 싶다. 이번 포스팅은 이런 특징이 있는 **`gitlab서버를 쿠버네티스상에 설치`** 하고 서비스로 배포해보려 한다.
 
@@ -31,24 +31,14 @@ header-img: img/devops/jenkins/install/jenkins.jpg
 위 설명은 아래 그림과 링크를 참고하면 왜 이렇게 구성을 하지?에 대한 의문을 해소할 수 있다.
 
 ![그림1](https://zunoxi.github.io/assets/img/devops/k8s/gitlab/1.png)
-
-[이미지 출처 :&nbsp;https://developer.ibm.com/kr/journey/run-gitlab-kubernetes/||_##]
+이미지 출처 : (https://developer.ibm.com/kr/journey/run-gitlab-kubernetes/)
 
 참고링크 : [https://developer.ibm.com/kr/journey/run-gitlab-kubernetes/](https://developer.ibm.com/kr/journey/run-gitlab-kubernetes/)
 
-[
 
-쿠버네티스에서 GitLab 실행하기 - IBM Developer
+<br><br>
 
-컨테이너를 활용한 클라우드 네이티브 패키징 기술을 통해 기존의 애플리케이션을 클라우드 환경으로 이전하는 데 있어 개발자에게 요구되는 전체 로드맵을 제공합니다. 또한, 일반적인 멀티 �
-
-developer.ibm.com
-
-
-
-](https://developer.ibm.com/kr/journey/run-gitlab-kubernetes/)
-
-**(실습 전제조건)**
+**`(실습 전제조건)`**
 
 1\. 쿠버네티스 설치 및 클러스터링 설정
 
