@@ -12,8 +12,8 @@ published: true
 > `Git push` 부터 쿠버네티스 파드 배포 까지
   
 - 목차
-	- [`RestAPI란 무엇인가`]
-	- [`Restful API?`]
+	- [`DevOps구조`](#devops구조)
+	- [`Helm?`](#helm)
   
 ## Helm??
 ---
