@@ -1,14 +1,14 @@
 # The primary author of this blog.
 # Must be the same as `author` in `_config.yml`.
 # Change `qwtel` to your shortname (used in the front matter to set a page's author, e.g. `author: qwtel`).
-theorydb:
+zunoxi:
   name:              zunoxi
   email:             dlwnsgh930821@gmail.com
 
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:             |
-    Data science enthusiast and addict :)
+    Less talk, Do more
 
   # This photo will be used in the about section
   picture:
@@ -22,7 +22,7 @@ theorydb:
   # Comment/uncommet to show/hide
   # Icons appear in order, can be rearranged:
   social:
-    facebook:        https://www.facebook.com/profile.php?id=100004964490537
+    # facebook:        https://www.facebook.com/profile.php?id=100004964490537
     # twitter:         <username>
     # google:          <number>
     # vk:              <username>
@@ -32,7 +32,6 @@ theorydb:
     # spotify:         <user>/<number>
     # soundcloud:      <username>
     # lastfm:          <username>
-    instagram:       https://www.instagram.com/zuno_xi/?hl=ko
     # flickr:          <string@string>
     # 500px:           <username>
     # dribbble:        <username>
@@ -53,11 +52,12 @@ theorydb:
     # trello:          <firstnamelastname>
     # linkedin:        <firstname-lastname-string>
     # xing:            <firstname_lastname_counter>
-    # blogger:         <number>
+    blogger:         https://zunoxi.tistory.com/
     # delicious:       <username>
     # stumbleupon:     <username>
     # paypal:          <username>
     email:           mailto:dlwnsgh930821@gmail.com
+    instagram:       https://www.instagram.com/zuno_xi/?hl=ko
 
 # Another author
 mdo:

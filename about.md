@@ -3,12 +3,29 @@ layout: about
 title: About
 menu: true
 order: 10
+published: true
 ---
 
-## 소개
+## All About ZUNOXI
 
-Github pages 블로그를 운영하는 중입니다. 회사라는 틀에 박혀 찍어내기식 프로그래밍에 지친 나머지 블로그에서만큼은 제가 하고 싶은 프로젝트를 진행하고 싶어 만들게 되었습니다. 
-* AI, Data Science 중독자입니다. 
-* 책을 읽고, 리뷰를 쓰고, 베타리딩 및 베타테스트에 참가하길 좋아합니다.
-* 소소하지만 살면서 얻은 깨달음이나, 개발자로서 경험하고 배웠던 것들을 공유할 예정이니 가끔 들려주시면 감사하겠습니다. :)
+### '끈질김, 그리고 꾸준함' 
 
+저는 다른 사람들보다 비상한 두뇌나 뛰어난 스킬을 가진사람이 아닙니다. 
+
+그렇기에 집념으로 업무에 몰두하고, 꾸준한 자세로 자기계발하며 한분야의 전문가가 되기위해 노력하는 사람입니다. 
+
+이 블로그는 업무 혹은 프로젝트에서 배우고 익혔던 기술들을 정리한 `Tech Blog` 입니다 :)
+
+
+- `Tech Experience`
+    - POSCO AI/Bigdata Academy 6th ( 2019 )
+	- Samsung Software Academy For Youth(SSAFY) 2nd ( 2019 )
+    - Hyundai Autoever / System Engineer ( 2020 ~ )
+    
+`Info Link`
+- [`tistory tech blog`](https://zunoxi.tistory.com/)
+- [`naver football blog`](https://blog.naver.com/cross9308)
+- [`resume`](http://zunoxi.ddns.net/main.html)
+
+>There is a difference between knowing the path and walking the path. 
+< Matrix >

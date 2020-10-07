@@ -18,7 +18,7 @@ tagline:             "Less talk, Do more"
 # A short description of the page, used in the sidebar and as fallback for the meta description tag.
 # Markdown enabled, but don't use more than one paragraph (enforced by `>`)
 description:         >
-  Server Infra Engineer's Blog
+  System Engineer's Blog
 
 # This should be the same author as first entry in `_data/authors.yml`
 author:
@@ -26,7 +26,7 @@ author:
   email:             dlwnsgh930821@gmail.com
 
 # Fallback image and color
-image:               /assets/img/mainimage.jpg
+image:               /assets/img/main_left3.jpg
 color:               '#4f86aa'
 
 # The font used for headings. Expects a string that is a valid CSS font-family value.
@@ -44,14 +44,14 @@ google_fonts:        Lato
 
 # Set your Google Analytics id to receive `pageview` events.
 # To remove Google Anaylics from your page, remove the line below.
-google_analytics:    UA-137374202-1
+google_analytics:    UA-170635663-1
 
 # Setting a disqus shortname will enable the comment section on pages with `comments: true` in the front matter
 disqus: True
-disqus_shortname:    zunoxi
+disqus_shortname:    zunoxigitblog
 
 # This text will appear in the footer of every page. Markdown enabled.
-copyright:           '&copy; 2019.04. by theorydb'
+copyright:           '&copy; 2019.04. by zunoxi'
 
 # Format of the permalinks
 permalink:           pretty
