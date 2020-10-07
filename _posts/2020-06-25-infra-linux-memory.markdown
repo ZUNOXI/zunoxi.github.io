@@ -127,7 +127,7 @@ header-img: img/infra/linux/memory/memory.jpg
 
 위 사진 처럼 프로세스별 메모리 확인을 할 수 있다.
 
-- 각 칼럼의 항목별 요약
+- **각 칼럼의 항목별 요약**
 	
 	- PID : 프로세스 ID
 	- USER : 프로세스를 실행시킨 사용자 ID
@@ -141,7 +141,7 @@ header-img: img/infra/linux/memory/memory.jpg
 	- % MEM : 프로세스가 사용하는 메모리의 사용률
 	- COMMAND : 실행된 명령어
 
-- top 실행후 옵션
+- **top 실행후 옵션**
 
 	- shift + p : CPU 사용률이 높은 프로세스 순서대로 표시
 	- shift + m : 메모리 사용률이 높은 프로세스 순서대로 표시
