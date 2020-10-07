@@ -10,36 +10,11 @@ header-img: img/infra/linux/memory/memory.jpg
 ---
 
 ## 개요
-> `RestAPI` 가 무엇이고 어떻게 사용해야하는가?
+> `Linux 메모리` 사용량 확인 및 관리
   
 - 목차
-	- [`RestAPI란 무엇인가`]
-	- [`Restful API?`]
-  
-## RestAPI란 무엇인가?
----
-RestAPI는 Representational State Transfer의 약자이며 클라이언트(웹브라우저, 모바일)가 필요한 자원이 있을때, 서버에게 요청하는 방식을 정의한 API 디자인이다.
-기본적으로 웹의 기존 기술과 HTTP 프로토콜을 그대로 활용하기 때문에 웹의 장점을 최대한 활용할 수 있는 아키텍처 스타일이다.
-
-- HTTP Method인 `POST, GET, PUT, DELETE`를 통해 해당 자원에 대한 CRUD 매커니즘이 적용가능한 개념이라고 할 수 있다.
-- CRUD(Create:생성(POST), Read:조회(GET), Update:수정(PUT), Delete:삭제(DELETE))
-
-
-## 개요
-
----
-> Linux 메모리 사용량 확인 및 관리
-
-
-아래의 블로그들이 내용정리에 큰 도움이 되었다.
-
-
-[`WhatTap`](https://www.whatap.io/ko/blog/37/),
-[`https://brunch.co.kr/@alden/25`](https://brunch.co.kr/@alden/25),
-[`https://ironmask.net/355`](https://ironmask.net/355)
-<br><br>
-
-
+	- [`리눅스 메모리 사용량 확인`]
+	- [`buffer? cache?`]
 
 
 ### 리눅스 메모리 사용량 확인
@@ -172,3 +147,14 @@ RestAPI는 Representational State Transfer의 약자이며 클라이언트(웹�
 
 
 > 추가로 `ps -eo user,pid,ppid,rss,vsz,size,pmem,pcpu,time,comm` 명령어를 활용했을때도 프로세스별 사용량 확인 가능 
+
+
+<br><br>
+아래의 블로그들이 내용정리에 큰 도움이 되었다.
+
+
+[`WhatTap`](https://www.whatap.io/ko/blog/37/)
+
+[`https://brunch.co.kr/@alden/25`](https://brunch.co.kr/@alden/25)
+
+[`https://ironmask.net/355`](https://ironmask.net/355)
