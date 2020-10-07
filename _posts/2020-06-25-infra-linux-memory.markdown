@@ -18,9 +18,7 @@ header-img: img/infra/linux/memory/memory.jpg
 
 
 ### 리눅스 메모리 사용량 확인
-
 ---
-
 리눅스 쉘에 아래와 같은 명령어를 입력한다.
 
 > `#free`
