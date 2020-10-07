@@ -32,7 +32,6 @@ zunoxi:
     # spotify:         <user>/<number>
     # soundcloud:      <username>
     # lastfm:          <username>
-    instagram:       https://www.instagram.com/zuno_xi/?hl=ko
     # flickr:          <string@string>
     # 500px:           <username>
     # dribbble:        <username>
@@ -58,6 +57,7 @@ zunoxi:
     # stumbleupon:     <username>
     # paypal:          <username>
     email:           mailto:dlwnsgh930821@gmail.com
+    instagram:       https://www.instagram.com/zuno_xi/?hl=ko
 
 # Another author
 mdo:
