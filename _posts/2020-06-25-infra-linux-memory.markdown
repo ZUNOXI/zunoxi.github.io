@@ -41,7 +41,7 @@ header-img: img/infra/linux/memory/memory.jpg
 <br><br>
 
 
-> [`Swapping?`]
+> `Swapping?`
 
 운영체제단에서 메모리 공간에서 용량의 한계 이상으로 프로세스 요청이 들어왔을 시 가장 이벤트가 발생된지 오래된 프로세스를 하드디스크나 SSD같은 Secondary Storage에 저장(`Swap out`)하고 새로 요청된 프로세스를 실행시키는 동작 (램의 보조역할)
 
