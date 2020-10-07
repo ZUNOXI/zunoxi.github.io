@@ -17,7 +17,6 @@ header-img: img/infra/secure/tlsssl/tlsssl.jpg
 	- [`TLS이란?`](#TLS)
 	- [`SSL과 TLS`](#ssl과-tls)
 	- [`인증서와 프로토콜`](#인증서와-프로토콜)
-	- [`TLS 1.0, TLS 1.1 버전의 지원중단`](#tls-10-tls-11-버전의-지원중단)
 
 
 ### SSL
