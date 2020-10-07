@@ -9,7 +9,7 @@ published: true
 ---
 
 ## 개요
-> `RestAPI` 가 무엇이고 어떻게 사용해야하는가?
+> `Git push` 부터 쿠버네티스 파드 배포 까지
   
 - 목차
 	- [`RestAPI란 무엇인가`]
