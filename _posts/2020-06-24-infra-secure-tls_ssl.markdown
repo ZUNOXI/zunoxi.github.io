@@ -18,7 +18,7 @@ header-img: img/infra/secure/tlsssl/tlsssl.jpg
 	- [`SSL과 TLS`](#ssl과-tls)
 	- [`인증서와 프로토콜`](#인증서와-프로토콜)
 
-### SSL
+## SSL
 ---
 먼저 `SSL(Secure Socket Layers)`은 Netscape에 의해 개발되었으며 네트워크를 통해 작동하는 서버, 시스템 및 응용프로그램간에 인증 및 데이터 암호화를 제공하는 인터넷 암호화 프로토콜이다.
 
