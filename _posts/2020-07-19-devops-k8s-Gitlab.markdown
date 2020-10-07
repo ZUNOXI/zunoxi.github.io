@@ -175,8 +175,9 @@ $ helm upgrade --install gitlab stable/gitlab-ce   --set global.edition=ce   --s
 Error: configmaps is forbidden: User "system:serviceaccount:kube-system:default" cannot list resource "configmaps" in API group "" in the namespace "kube-system"
 Error: UPGRADE FAILED: configmaps is forbidden: User "system:serviceaccount:kube-system:default" cannot list resource "configmaps" in API group "" in the namespace "kube-system"
 ```
-
-이는 **쿠버네티스의 권한 관리(RBCA) 문제 때문에** 발생한다. helm의 tiller가 쿠버네티스 클러스터의 api에 접근하여 영향력을 행세하기 위해서는 `유효한 사용자`인지 확인이 필요하다. 실제로 필자가 테스트 에러를 해결할 때는 꽤 고생했지만 역시나 `스택갓버플로우`	&#128519;는 절대로 우리를 실망시키지 않는다 	해결방법은 다음 명령어들을 차례대로 입력해주면 된다.
+<br>
+이는 **쿠버네티스의 권한 관리(RBCA) 문제 때문에** 발생한다. helm의 tiller가 쿠버네티스 클러스터의 api에 접근하여 영향력을 행세하기 위해서는 `유효한 사용자`인지 확인이 필요하다. 실제로 필자가 테스트 에러를 해결할 때는 꽤 고생했지만 역시나 **`스택갓버플로우`	** &#128519;는 절대로 우리를 실망시키지 않는다 	해결방법은 다음 명령어들을 차례대로 입력해주면 된다.
+<br><br>
 
 ```
 $ kubectl create serviceaccount --namespace kube-system tiller
