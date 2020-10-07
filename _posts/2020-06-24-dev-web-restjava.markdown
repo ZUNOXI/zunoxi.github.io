@@ -20,6 +20,7 @@ published: true
 ---
 [`이전 포스팅`](https://zunoxi.github.io/programming/2020/06/15/dev-web-restapi/)에서는 `RestAPI 방식`을 활용해 Vue 컴포넌트에서 자바스크립트로 코드를 작성하고 서버까지 프론트단에서 받은 데이터가 정상으로 전달 되는지 확인했었다.
 
+<br>
 
 다음으로 확인해 볼 부분은 내가 설계한 백엔드단 로직에서 RestAPI 방식으로  
 
