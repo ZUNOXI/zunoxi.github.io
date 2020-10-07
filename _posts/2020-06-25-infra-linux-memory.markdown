@@ -13,20 +13,17 @@ header-img: img/infra/linux/memory/memory.jpg
 > `Linux 메모리` 사용량 확인 및 관리
   
 - 목차
-	- [`리눅스 메모리 사용량 확인`]
-	- [`buffer? cache?`]
-	- [`Top활용 프로세스별 메모리 확인`]
-
-<br>
-
+	- [`리눅스 메모리 사용량 확인`](#h3-id리눅스메모리사용량확인-2리눅스메모리사용량확인h3)
+	- [`buffer? cache?`](#buffer-cache)
+	- [`Top활용 프로세스별 메모리 확인`](#top활용-프로세스별-메모리-확인)
+  
 ### 리눅스 메모리 사용량 확인
 ---
 리눅스 쉘에 아래와 같은 명령어를 입력한다.
 
-
-
 > `#free`
 
+<br>
 
 ![그림1](https://zunoxi.github.io/assets/img/infra/linux/memory/free.png)
 <br><br>
