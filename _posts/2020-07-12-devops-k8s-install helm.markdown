@@ -6,7 +6,6 @@ categories: devops
 tags: devops k8s
 comments: true
 published: true
-header-img: img/devops/k8s/helm/logo.jpeg
 ---
 
 ## 개요
