@@ -26,6 +26,8 @@ header-img: img/infra/linux/memory/memory.jpg
 
 
 > `#free`
+
+
 ![그림1](https://zunoxi.github.io/assets/img/infra/linux/memory/free.png)
 <br><br>
 
@@ -50,15 +52,15 @@ header-img: img/infra/linux/memory/memory.jpg
 
 운영체제단에서 메모리 공간에서 용량의 한계 이상으로 프로세스 요청이 들어왔을 시 가장 이벤트가 발생된지 오래된 프로세스를 하드디스크나 SSD같은 Secondary Storage에 저장(`Swap out`)하고 새로 요청된 프로세스를 실행시키는 동작 (램의 보조역할)
 
-다시 기존에 Swap out 시켰던 프로세스를 호출시켰을때 메모리로 불러들이는 것을 `Swap in` 이라고 한다.
+또한, 다시 기존에 Swap out 시켰던 프로세스를 호출시켰을때 메모리로 불러들이는 것을 `Swap in` 이라고 한다.
 
-> 리눅스 파티션 할당시 swap 파티션을 만들어 이 역할을 하게 할 수 있다. 단, 하드디스크는 메모리 만큼의
+> 리눅스 파티션 할당시 swap 파티션을 만들어 이 역할을 하게 할 수 있다.단, 하드디스크는 메모리 만큼의
 속도를 낼 수 없기때문에 궁극적인 램의 대응책이 될 수 없음을 유의한다.
 
 
 - 자주쓰는 옵션
 	- h : 가독성 높게 출력
-	- [-b | -k | -m | -g ] : 바이트, 키비바이트, 메비바이트, 기비바이트 단위로 출력한다.
+	- -b | -k | -m | -g  : 바이트, 키비바이트, 메비바이트, 기비바이트 단위로 출력한다.
 	- w : cache와 buffers를 따로 출력할 수 있게한다.
 	- t : 합계를 계산 한것 까지 출력한다.
 
