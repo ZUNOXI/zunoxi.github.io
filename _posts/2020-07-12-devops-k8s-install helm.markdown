@@ -13,11 +13,19 @@ header-img: img/devops/k8s/helm/logo.jpeg
 ---
 > Git push 부터 쿠버네티스 파드 배포 까지
 
+- 목차
+	- [`DevOps구조`](#devops구조)
+	- [`Helm?`](#helm)
+	- [`Why Helm`](#why-helm-)
+	- [`How to install`](#how-to-install-)
+
+
+
 `Helm 설치로 필요한 프로그램 패키지 파드 배포`
 
 <br><br>
 
-### 구조
+### DevOps구조
 
 ---
 
@@ -29,7 +37,7 @@ Helm을 설치하는 과정에 대해 설명하려한다.
 
 <br><br>
 
-### Helm ??
+### Helm??
 
 ---
 
