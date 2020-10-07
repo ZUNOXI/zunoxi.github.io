@@ -9,29 +9,9 @@ published: true
 ---
 
 ## 개요
-> `TLS`와 `SSL`에 대한 정의와 그차이
+> Java프로젝트에서 `RestAPI` 활용하여 데이터를 `Json` 형식으로 `POST`
   
 - 목차
-	- [`SSL이란?`](#SSL)
-	- [`TLS이란?`](#TLS)
-	- [`SSL과 TLS`](#ssl과-tls)
-	- [`인증서와 프로토콜`](#인증서와-프로토콜)
-	- [`TLS 1.0, TLS 1.1 버전의 지원중단`](#tls-10-tls-11-버전의-지원중단)
-
-
-### SSL
----
-먼저 `SSL(Secure Socket Layers)`은 Netscape에 의해 개발되었으며
-네트워크를 통해 작동하는 서버, 시스템 및 응용프로그램간에 인증 및 데이터 암호화를 제공하는 인터넷 암호화 프로토콜이다.
-
-현재 SSL 2.0및 3.0 모두 IETF에 의해 사용이 중지되었다. 이러한 이유로 서버 구성시 SSL 2.0 및 3.0을 비활성해야하며 TLS 프로토콜만 사용하도록 설정해야한다.
-
-
-## 개요
----
-> Java프로젝트에서 RestAPI 활용하여 Json 형식으로 POST
-
--   목차
     - [`Java 프로젝트에서의 RESTapi`](#Java-프로젝트에서의-RESTapi)
     - [`구조`](#구조)
     - [`Sample 예제`](#Sample-예제)
