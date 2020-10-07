@@ -10,7 +10,7 @@ header-img: img/devops/k8s/helm/logo.jpeg
 ---
 
 ## 개요
-> `Git push` 부터 쿠버네티스 파드 배포 까지 파이프라인 구축 &#10102;단계
+> `Git push` 부터 `쿠버네티스` 파드 배포 까지 파이프라인 구축 &#10102;단계
   
 - 목차
 	- [`DevOps구조`](#devops구조)
