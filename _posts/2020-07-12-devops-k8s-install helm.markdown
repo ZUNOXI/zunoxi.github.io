@@ -9,6 +9,19 @@ published: true
 ---
 
 ## 개요
+> `RestAPI` 가 무엇이고 어떻게 사용해야하는가?
+  
+- 목차
+	- [`RestAPI란 무엇인가`]
+	- [`Restful API?`]
+  
+## RestAPI란 무엇인가?
+---
+RestAPI는 Representational State Transfer의 약자이며 클라이언트(웹브라우저, 모바일)가 필요한 자원이 있을때, 서버에게 요청하는 방식을 정의한 API 디자인이다.
+기본적으로 웹의 기존 기술과 HTTP 프로토콜을 그대로 활용하기 때문에 웹의 장점을 최대한 활용할 수 있는 아키텍처 스타일이다.
+
+
+## 개요
 > `Git push` 부터 쿠버네티스 파드 배포 까지
 
 - 목차
