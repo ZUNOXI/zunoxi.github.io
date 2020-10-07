@@ -55,37 +55,37 @@ docker hub에 내가 만든 이미지가 올라가있다면, 이를 이용해서
 
 **(1). helm 실행 환경을 다운로드**
 
-> `$` curl https://raw.githubusercontent.com/helm/helm/master/scripts/get > get_helm.sh
+> `$ curl https://raw.githubusercontent.com/helm/helm/master/scripts/get > get_helm.sh `
 
 ![그림2](https://zunoxi.github.io/assets/img/devops/k8s/helm/1.png)
 <br>
 
 **(2). helm 실행 파일에 권한부여**
 
-> `$` chmod 700 get_helm.sh
+> `$ chmod 700 get_helm.sh`
 
-> `$` ./get_helm.sh
+> `$ ./get_helm.sh`
 
 ![그림3](https://zunoxi.github.io/assets/img/devops/k8s/helm/2.png)
 <br>
 
 **(3). helm 주입**
 
-> `$` helm init
+> `$ helm init`
 
 ![그림4](https://zunoxi.github.io/assets/img/devops/k8s/helm/3.png)
 <br>
 
 **(4). kubernetes 상태 확인**
 
-> `$` kubectl get service,deployment,pod -n kube-system
+> `$ kubectl get service,deployment,pod -n kube-system`
 
 ![그림5](https://zunoxi.github.io/assets/img/devops/k8s/helm/4.png)
 <br>
 
 **(5). helm 버전 확인**
 
-> `$` helm version
+> `$ helm version`
 
 ![그림6](https://zunoxi.github.io/assets/img/devops/k8s/helm/5.png)
 <br>
