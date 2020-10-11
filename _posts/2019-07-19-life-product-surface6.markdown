@@ -40,7 +40,7 @@ _**서피스프로**_ 는 마이크로소프트의  하드웨어 제품의 주�
 
 아래 주소는 `서피스프로6의 스펙`이다.
 
-(https://www.microsoft.com/ko-kr/surface/devices/surface-pro-6?activetab=surfacepro6_pivot:primaryr4)
+https://www.microsoft.com/ko-kr/surface/devices/surface-pro-6?activetab=surfacepro6_pivot:primaryr4
 
 태블릿 치고는 매우 훌륭하고, 요즘 **글로벌기업의 플래그십 노트북 정도 되는 사양** 이다. 
 
