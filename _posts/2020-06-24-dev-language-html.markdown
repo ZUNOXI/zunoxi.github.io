@@ -11,17 +11,17 @@ header-img: img/dev/language/html/html.jpg
 
 ## 개요
 > `html, css, javascript` 에 대한 이해
-
--   목차
-    - [`html`](#Connection과-Connection-pool/)
-    - [`css`](#Datasource/)
-    - [`javascript`](#JDBC란?/)
-
-
+  
+- 목차
+	- [`HTML`](#HTML)
+	- [`CSS`](#CSS)
+	- [`JS`](#JS)
+  
+## 글의 목적
 ---
+`html, css, javascript`에 대해 배우고 실제 여러 프로젝트에 적용해보며 느꼈던 것들을 정리한다.
 
->  `html, css, javascript`에 대해 배우고 실제 여러 프로젝트에 적용해보며 느꼈던 것들을 정리한다. 
-
+<br>
 
 (문법정리나 예제소스코드정리 포스팅이 아니며 링크의 [`포스팅`](https://developer.mozilla.org/ko/docs/Learn/JavaScript/First_steps/What_is_JavaScript)이 정리에 많은 도움이 되었다.)
 

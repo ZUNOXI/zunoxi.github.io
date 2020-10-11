@@ -13,14 +13,17 @@ header-img: img/infra/linux/memory/memory.jpg
 > `Linux 메모리` 사용량 확인 및 관리
   
 - 목차
-	- [`리눅스 메모리 사용량 확인`](#h3-id리눅스메모리사용량확인-2리눅스메모리사용량확인h3)
+	- [`리눅스 메모리 사용량 확인`](#리눅스-메모리-사용량)
 	- [`buffer? cache?`](#buffer-cache)
 	- [`Top활용 프로세스별 메모리 확인`](#top활용-프로세스별-메모리-확인)
   
-### 리눅스 메모리 사용량 확인
+## 리눅스 메모리 사용량
 ---
-리눅스 쉘에 아래와 같은 명령어를 입력한다.
+리눅스를 관리하는 업무를 주로담당하다보면 서버의 자원들에 대해 민첩하게 반응해야할때가 많은데, 보통은 CPU와 Memory자원들을 확인하게된다. 본 포스팅에서는 이 리눅스에 대한 Memory 사용량 확인에 대해 다뤄보려한다.
 
+<br>
+
+먼저 리눅스 쉘에 아래와 같은 명령어를 입력해보자.
 > `#free`
 
 <br>
@@ -28,6 +31,7 @@ header-img: img/infra/linux/memory/memory.jpg
 ![그림1](https://zunoxi.github.io/assets/img/infra/linux/memory/free.png)
 <br><br>
 
+위 사진과 같은 모습이 콘솔창에 출력이된다.
 
 - 용어 설명
 
@@ -42,7 +46,8 @@ header-img: img/infra/linux/memory/memory.jpg
     - buff/cache : 버퍼/캐시 메모리로 사용되고 있는 메모리 크기
 
     - available : 실질적으로 사용가능한 메모리 크기(`swapping` 없이 할당 가능한 크기)
-<br><br>
+
+<br>
 
 
 > `Swapping?`
@@ -54,6 +59,7 @@ header-img: img/infra/linux/memory/memory.jpg
 > 리눅스 파티션 할당시 swap 파티션을 만들어 이 역할을 하게 할 수 있다.단, 하드디스크는 메모리 만큼의
 속도를 낼 수 없기때문에 궁극적인 램의 대응책이 될 수 없음을 유의한다.
 
+<br>
 
 - 자주쓰는 옵션
 	- h : 가독성 높게 출력
@@ -121,7 +127,7 @@ header-img: img/infra/linux/memory/memory.jpg
 
 위 사진 처럼 프로세스별 메모리 확인을 할 수 있다.
 
-- 각 칼럼의 항목별 요약
+- **각 칼럼의 항목별 요약**
 	
 	- PID : 프로세스 ID
 	- USER : 프로세스를 실행시킨 사용자 ID
@@ -135,7 +141,7 @@ header-img: img/infra/linux/memory/memory.jpg
 	- % MEM : 프로세스가 사용하는 메모리의 사용률
 	- COMMAND : 실행된 명령어
 
-- top 실행후 옵션
+- **top 실행후 옵션**
 
 	- shift + p : CPU 사용률이 높은 프로세스 순서대로 표시
 	- shift + m : 메모리 사용률이 높은 프로세스 순서대로 표시

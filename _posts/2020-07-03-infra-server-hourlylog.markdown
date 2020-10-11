@@ -13,20 +13,16 @@ header-img: img/infra/server/hourly/tomcat.png
 > `Tomcat`의 catalina.out 로그를 `시간별로 분리`하여 효율적인 로그관리를 해보기
   
 - 목차
-	- [`DevOps구조`](#devops구조)
-	- [`Helm?`](#helm)
-	- [`Why Helm`](#why-helm-)
-	- [`How to install`](#how-to-install-)
+	- [`Log Handling`](#Log-Handling)
+	- [`tomcat 로그 종류`](#tomcat-로그-종류)
   
 ### Log Handling
 ---
-앞선 로그의 종류를 보면 일반적으로 catalina.out에 중요 로그파일이 모두 적재되는것을 알 수 있다. 이 catalina.out이 너무 커지면 몇만, 몇십만 이상의 문장이 적재되어 로그분석이 힘들고, 경우에 따라 100기가가 넘어가면 톰캣이 중지된다는 사례도 있다. 
+톰캣 로그의 종류 중 보통 `catalina.out`에 중요 로그파일이 모두 적재되는것을 알 수 있다. 이 catalina.out이 너무 커지면 몇만, 몇십만 이상의 문장이 적재되어 로그분석이 힘들 수 있고, 경우에 따라 100기가가 넘어가면 톰캣이 중지된다는 사례도 있다. 
 
 따라서 보기 좋게, 혹은 안정성을 위해 날짜별로 쪼개고 그 날짜가 오래된것은 지우는 과정이 필요하다.
 
-
-
-
+<br>
 
 ### tomcat 로그 종류
 
@@ -52,13 +48,11 @@ Standard output(표준 스트림), Standard error(표준에러)의 로깅은 제
 
 (5). `localhost.log` : host(특정 가상호스트 대상)한정 로그
 
-
-
-
+<br><br>
 
 > 여기서 부터 설명할 필자가 알고있고, 또는 적용해본 로그 처리 방법은 2가지이다
 
-
+<br>
 
 #### (1) crontab을 사용하는 경우
 
@@ -66,6 +60,7 @@ Standard output(표준 스트림), Standard error(표준에러)의 로깅은 제
 
 지난날짜 파일을 날짜라벨링을해주고 분리 후, catalina.out 파일의 내용을 비워준다. 
 
+<br>
 
 #### 1. 실행파일 생성
 
@@ -90,12 +85,15 @@ Standard output(표준 스트림), Standard error(표준에러)의 로깅은 제
 
 위와 같은 방법으로 localhost, host-manager, manager도 일정기간이 지나면 삭제되게 설정
 
+<br>
+
 #### 2. 실행파일 권한 부여
 
 > $ chmod 755 cronLog.sh
 
 => 읽기, 쓰기, 실행 권한을 부여함으로써 크론탭에서 실행 할 수 있게 설정
 
+<br>
 
 #### 3. 크론탭 등록
 
@@ -105,9 +103,7 @@ Standard output(표준 스트림), Standard error(표준에러)의 로깅은 제
 
 => crontab에 위내용을 추가, 매일 23시 59분에 해당 실행파일을 동작시키겠다는 뜻
 
-
-
-
+<br>
 
 #### (2) rotatelogs를 사용하는 경우
 
@@ -124,9 +120,39 @@ Tomcat 폴더/bin/catalina.sh 파일상에서 조금의 수정을 해줬다.
 
 > vi /Tomcat 홈 경로/bin/catalina.sh
 
-> /touch
+> /touch  &nbsp;&nbsp;&nbsp; # touch가 포함된 문자열 검색
 
-<div class="colorscripter-code" style="color:#010101;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#fafafa;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px;border-right:2px solid #e5e5e5"><div style="margin:0;padding:0;word-break:normal;text-align:right;color:#666;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="line-height:130%">1</div><div style="line-height:130%">2</div><div style="line-height:130%">3</div><div style="line-height:130%">4</div><div style="line-height:130%">5</div><div style="line-height:130%">6</div><div style="line-height:130%">7</div><div style="line-height:130%">8</div><div style="line-height:130%">9</div><div style="line-height:130%">10</div><div style="line-height:130%">11</div><div style="line-height:130%">12</div><div style="line-height:130%">13</div><div style="line-height:130%">14</div><div style="line-height:130%">15</div><div style="line-height:130%">16</div><div style="line-height:130%">17</div><div style="line-height:130%">18</div><div style="line-height:130%">19</div><div style="line-height:130%">20</div><div style="line-height:130%">21</div><div style="line-height:130%">22</div><div style="line-height:130%">23</div><div style="line-height:130%">24</div><div style="line-height:130%">25</div><div style="line-height:130%">26</div><div style="line-height:130%">27</div><div style="line-height:130%">28</div></div></td><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#010101;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#999999">#touch&nbsp;"$CATALINA_OUT"</span></div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;<span style="color:#a71d5d">if</span>&nbsp;[&nbsp;<span style="color:#63a35c">"$1"</span>&nbsp;<span style="color:#0086b3"></span><span style="color:#a71d5d">=</span>&nbsp;<span style="color:#63a35c">"-security"</span>&nbsp;]&nbsp;;&nbsp;<span style="color:#a71d5d">then</span></div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#a71d5d">if</span>&nbsp;[&nbsp;$have_tty&nbsp;<span style="color:#0086b3"></span><span style="color:#a71d5d">-</span>eq&nbsp;<span style="color:#0099cc">1</span>&nbsp;];&nbsp;<span style="color:#a71d5d">then</span></div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#066de2">echo</span>&nbsp;<span style="color:#63a35c">"Using&nbsp;Security&nbsp;Manager"</span></div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#a71d5d">fi</span></div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;shift</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;eval&nbsp;$_NOHUP&nbsp;<span style="color:#63a35c">"\"$_RUNJAVA\""</span>&nbsp;<span style="color:#63a35c">"\"$LOGGING_CONFIG\""</span>&nbsp;$LOGGING_MANAGER&nbsp;$JAVA_OPTS&nbsp;$CATALINA_OPTS&nbsp;\</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#0086b3"></span><span style="color:#a71d5d">-</span>D$ENDORSED_PROP<span style="color:#0086b3"></span><span style="color:#a71d5d">=</span><span style="color:#63a35c">"\"$JAVA_ENDORSED_DIRS\""</span>&nbsp;\</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#0086b3"></span><span style="color:#a71d5d">-</span>classpath&nbsp;<span style="color:#63a35c">"\"$CLASSPATH\""</span>&nbsp;\</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#0086b3"></span><span style="color:#a71d5d">-</span>Djava.security.manager&nbsp;\</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#0086b3"></span><span style="color:#a71d5d">-</span>Djava.security.policy<span style="color:#0086b3"></span><span style="color:#a71d5d">=</span><span style="color:#0086b3"></span><span style="color:#a71d5d">=</span><span style="color:#63a35c">"\"$CATALINA_BASE/conf/catalina.policy\""</span>&nbsp;\</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#0086b3"></span><span style="color:#a71d5d">-</span>Dcatalina.base<span style="color:#0086b3"></span><span style="color:#a71d5d">=</span><span style="color:#63a35c">"\"$CATALINA_BASE\""</span>&nbsp;\</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#0086b3"></span><span style="color:#a71d5d">-</span>Dcatalina.home<span style="color:#0086b3"></span><span style="color:#a71d5d">=</span><span style="color:#63a35c">"\"$CATALINA_HOME\""</span>&nbsp;\</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#0086b3"></span><span style="color:#a71d5d">-</span>Djava.io.tmpdir<span style="color:#0086b3"></span><span style="color:#a71d5d">=</span><span style="color:#63a35c">"\"$CATALINA_TMPDIR\""</span>&nbsp;\</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;org.apache.catalina.startup.Bootstrap&nbsp;<span style="color:#63a35c">"$@"</span>&nbsp;start&nbsp;<span style="color:#0099cc">2</span><span style="color:#a71d5d">&gt;</span><span style="color:#0086b3"></span><span style="color:#a71d5d">&amp;</span><span style="color:#0099cc">1</span>&nbsp;\</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#0086b3"></span><span style="color:#a71d5d">|</span><span style="color:#0086b3"></span><span style="color:#a71d5d">/</span>usr<span style="color:#0086b3"></span><span style="color:#a71d5d">/</span>sbin<span style="color:#0086b3"></span><span style="color:#a71d5d">/</span>rotatelogs&nbsp;<span style="color:#63a35c">"$CATALINA_BASE"</span><span style="color:#0086b3"></span><span style="color:#a71d5d">/</span>logs<span style="color:#0086b3"></span><span style="color:#a71d5d">/</span>catalina.out.%Y.%m.%d.%H.log&nbsp;<span style="color:#0099cc">3600</span>&nbsp;<span style="color:#0099cc">540</span>&nbsp;<span style="color:#0086b3"></span><span style="color:#a71d5d">&amp;</span></div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;<span style="color:#a71d5d">else</span></div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;eval&nbsp;$_NOHUP&nbsp;<span style="color:#63a35c">"\"$_RUNJAVA\""</span>&nbsp;<span style="color:#63a35c">"\"$LOGGING_CONFIG\""</span>&nbsp;$LOGGING_MANAGER&nbsp;$JAVA_OPTS&nbsp;$CATALINA_OPTS&nbsp;\</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#0086b3"></span><span style="color:#a71d5d">-</span>D$ENDORSED_PROP<span style="color:#0086b3"></span><span style="color:#a71d5d">=</span><span style="color:#63a35c">"\"$JAVA_ENDORSED_DIRS\""</span>&nbsp;\</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#0086b3"></span><span style="color:#a71d5d">-</span>classpath&nbsp;<span style="color:#63a35c">"\"$CLASSPATH\""</span>&nbsp;\</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#0086b3"></span><span style="color:#a71d5d">-</span>Dcatalina.base<span style="color:#0086b3"></span><span style="color:#a71d5d">=</span><span style="color:#63a35c">"\"$CATALINA_BASE\""</span>&nbsp;\</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#0086b3"></span><span style="color:#a71d5d">-</span>Dcatalina.home<span style="color:#0086b3"></span><span style="color:#a71d5d">=</span><span style="color:#63a35c">"\"$CATALINA_HOME\""</span>&nbsp;\</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#0086b3"></span><span style="color:#a71d5d">-</span>Djava.io.tmpdir<span style="color:#0086b3"></span><span style="color:#a71d5d">=</span><span style="color:#63a35c">"\"$CATALINA_TMPDIR\""</span>&nbsp;\</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;org.apache.catalina.startup.Bootstrap&nbsp;<span style="color:#63a35c">"$@"</span>&nbsp;start&nbsp;<span style="color:#0099cc">2</span><span style="color:#a71d5d">&gt;</span><span style="color:#0086b3"></span><span style="color:#a71d5d">&amp;</span><span style="color:#0099cc">1</span>&nbsp;\</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#0086b3"></span><span style="color:#a71d5d">|</span><span style="color:#0086b3"></span><span style="color:#a71d5d">/</span>usr<span style="color:#0086b3"></span><span style="color:#a71d5d">/</span>sbin<span style="color:#0086b3"></span><span style="color:#a71d5d">/</span>rotatelogs&nbsp;<span style="color:#63a35c">"$CATALINA_BASE"</span><span style="color:#0086b3"></span><span style="color:#a71d5d">/</span>logs<span style="color:#0086b3"></span><span style="color:#a71d5d">/</span>catalina.out.%Y.%m.%d.%H.log&nbsp;<span style="color:#0099cc">3600</span>&nbsp;<span style="color:#0099cc">540</span>&nbsp;<span style="color:#0086b3"></span><span style="color:#a71d5d">&amp;</span></div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;</div></div><div style="text-align:right;margin-top:-13px;margin-right:5px;font-size:9px;font-style:italic"><a href="http://colorscripter.com/info#e" target="_blank" style="color:#e5e5e5text-decoration:none">Colored by Color Scripter</a></div></td><td style="vertical-align:bottom;padding:0 2px 4px 0"><a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration:none;color:white"><span style="font-size:9px;word-break:normal;background-color:#e5e5e5;color:white;border-radius:10px;padding:1px">cs</span></a></td></tr></table></div>
+```
+#touch "$CATALINA_OUT"
+  if [ "$1" = "-security" ] ; then
+    if [ $have_tty -eq 1 ]; then
+      echo "Using Security Manager"
+    fi
+    shift
+    eval $_NOHUP "\"$_RUNJAVA\"" "\"$LOGGING_CONFIG\"" $LOGGING_MANAGER $JAVA_OPTS $CATALINA_OPTS \
+      -D$ENDORSED_PROP="\"$JAVA_ENDORSED_DIRS\"" \
+      -classpath "\"$CLASSPATH\"" \
+      -Djava.security.manager \
+      -Djava.security.policy=="\"$CATALINA_BASE/conf/catalina.policy\"" \
+      -Dcatalina.base="\"$CATALINA_BASE\"" \
+      -Dcatalina.home="\"$CATALINA_HOME\"" \
+      -Djava.io.tmpdir="\"$CATALINA_TMPDIR\"" \
+      org.apache.catalina.startup.Bootstrap "$@" start 2>&1 \
+      |/usr/sbin/rotatelogs "$CATALINA_BASE"/logs/catalina.out.%Y.%m.%d.%H.log 3600 540 &
+ 
+ 
+  else
+    eval $_NOHUP "\"$_RUNJAVA\"" "\"$LOGGING_CONFIG\"" $LOGGING_MANAGER $JAVA_OPTS $CATALINA_OPTS \
+      -D$ENDORSED_PROP="\"$JAVA_ENDORSED_DIRS\"" \
+      -classpath "\"$CLASSPATH\"" \
+      -Dcatalina.base="\"$CATALINA_BASE\"" \
+      -Dcatalina.home="\"$CATALINA_HOME\"" \
+      -Djava.io.tmpdir="\"$CATALINA_TMPDIR\"" \
+      org.apache.catalina.startup.Bootstrap "$@" start 2>&1 \
+      |/usr/sbin/rotatelogs "$CATALINA_BASE"/logs/catalina.out.%Y.%m.%d.%H.log 3600 540 &
+
+```
+
 
 => 위 코드처럼 수정한다.
 
@@ -143,23 +169,18 @@ Tomcat 폴더/bin/catalina.sh 파일상에서 조금의 수정을 해줬다.
 
 해당날짜의 24시간형식으로 시간별 로그가 남게된다.
 
-
+<br>
 
 ---
 ### 마무리
 
 이외에도 로그를 날짜별, 시간별로 수정할 수 있는방법은 많다.
 
-사실 시간별 분리 이외에도 용량별로 나누는방법도 분명히 사용할 일이 있을텐데, 
+사실 시간별 분리 이외에도 `용량별로 나누는방법`도 분명히 사용할 일이 있을텐데, 아직까지는 실력이 부족해서인지 적용해보지 못했다.
 
-아직까지는 실력이 부족해서인지 적용해보지 못했다.
+lograte를 사용하면 된다고하는데 내가 원하는데로 100메가 이상되면 알아서 분리되는게 잘 안된다. 이부분은 여러가지로 다시 테스트 해봐야할 것같다.
 
-lograte를 사용하면 된다고하는데 내가 원하는데로 100메가 이상되면 알아서 분리되는게
-
-잘 안된다. 이부분은 여러가지로 다시 테스트 해봐야할 것같다.
-
-
-
+<br>
 
 ### 참조글
 
