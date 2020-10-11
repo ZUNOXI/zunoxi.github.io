@@ -3,14 +3,14 @@ layout: post
 title: 마이크로소프트 서피스프로6 리뷰(Microsoft Surface pro6)
 subtitle: 언박싱 / 서피스프로7를 사야할까?
 categories: life
-tags: life book
+tags: life product
 comments: true
 published: true
 header-img: img/life/product/surface/header.png
 ---
 
 ## 개요
-> `Git push` 부터 `쿠버네티스` 파드 배포 까지 파이프라인 구축 &#10103;단계
+> Surface pro6를 1년간 사용하며 느낀 제품리뷰 (제품개봉부터 사용후기까지)
   
 - 목차
 	- [`Gitlab on k8s`](#h2-idgitlab-on-k8s-342gitlab-on-k8sh2)
@@ -19,52 +19,28 @@ header-img: img/life/product/surface/header.png
 	- [`설치확인`](#3-정상-설치-확인)
 
 
-안녕하세요 :)
-
-오늘은 **Microsoft Surface Pro6**를 가져왔습니다.
-
-5월 말경에 구입해서 약 4개월째 쓰는 중인데 여러 장단점이 있는 모델인 것 같아요.
-
-이번 포스팅에서는 언박싱 부터 사용후기까지 다뤄보겠습니다.
+오늘 리뷰할 제품은 **Microsoft Surface Pro6**이다. 2019년 5월 말경에 구입해서 약 1년 반정도 사용했는데 나름 얼리어답터로서 여러 매력을 느끼게했던 제품인 것 같아서 리뷰해보려한다.
 
 (본 게시글은 pc환경에 최적화 되어 있습니다.)
 
 ![그림1](https://zunoxi.github.io/assets/img/life/product/surface/1.png)
 
+
+### 서피스
 ---
 
+_**서피스프로**_ 는 마이크로소프트의  하드웨어 제품의 주력 라인 중 하나로 서피스고, 서피스랩탑, 서피스북과 함께 윈도우 테블릿 및 노트북 계열의 제품이다.
 
-서피스프로는 마이크로소프트의  하드웨어 주력 라인 중 하나로 
+위에 언급된 제품모두 윈도우10을 기반으로하는 제품이며 간략하게 비교하자면 아래와 같다.
 
-서피스고, 서피스랩탑, 서피스북과 함께 랩탑&태블릿라인의 제품입니다.
+- **성능**: 서피스북>서피스랩탑>=서피스프로>서피스고
+- 가격 역시 성능과 비례
 
-위에 언급된 제품모두 윈도우10을 기반인 제품이며 간략하게 비교하면
+물론 각자 포지션이 다른 제품이라 직접적인 비교는 어렵지만, 각자 포지션에서는 모두 훌륭한 제품이라고 생각한다. 특히, 이중 서피스프로는 **윈도우 태블릿 포지션에서 최고의 성능**을 자랑하는것 같다.
 
-**성능**: 서피스북>서피스랩탑>=서피스프로>서피스고 이며
+아래 주소는 서피스프로6의 스펙이다.
 
-가격 역시 성능과 비례합니다.
-
-물론 각자 포지션이 다른 제품이라 직접적인 비교는 어렵습니다만,
-
-각 포지션에서는 모두 훌륭한 제품이라고 생각합니다.
-
-특히, 이중 서피스프로는 **윈도우 태블릿 포지션에서 최고의 성능**을 자랑합니다.
-
-아래 주소는 서피스프로라인의 가장 최신 제품인 서피스프로6의 기술사양입니다.
-
-[https://www.microsoft.com/ko-kr/surface/devices/surface-pro-6?activetab=surfacepro6\_pivot:primaryr4](https://www.microsoft.com/ko-kr/surface/devices/surface-pro-6?activetab=surfacepro6_pivot:primaryr4)
-
-[
-
-Surface Pro 6 살펴보기 - 초경량의 다재다능함 - Microsoft Surface
-
-최신 8세대 인텔® 코어™ 프로세서가 탑재된 Surface Pro 6를 살펴보세요. 사무실에서 집으로 이동하는 중이든, 공항에서 일반 도로로 이동하는 중이든 Surface Pro 6에서 일상생활의 역량을 높여 보세요.
-
-www.microsoft.com
-
-
-
-](https://www.microsoft.com/ko-kr/surface/devices/surface-pro-6)
+(https://www.microsoft.com/ko-kr/surface/devices/surface-pro-6?activetab=surfacepro6_pivot:primaryr4)
 
 태블릿 치고는 매우 훌륭하고, 요즘 **대기업의 플래그십 노트북의 평균 정도 되는 사양 정도** 되겠습니다.
 
