@@ -29,9 +29,10 @@ header-img: img/life/product/surface/header.png
 
 (본 게시글은 pc환경에 최적화 되어 있습니다.)
 
+![그림1](https://zunoxi.github.io/assets/img/life/product/surface/1.png)
+
 ---
 
-[##_Image|kage@emkKmb/btqyo2eULCb/ah3lMtm4YxcUzSFPlyjwmK/img.png|alignCenter|data-origin-width="931" data-origin-height="520" data-ke-mobilestyle="widthContent"|||_##]
 
 서피스프로는 마이크로소프트의  하드웨어 주력 라인 중 하나로 
 
