@@ -1,8 +1,8 @@
 ---
 layout: tag-blog
-title: Book
-slug: book
+title: Product
+slug: product
 category: life
 menu: false
-order: 2
+order: 1
 ---
