@@ -13,10 +13,10 @@ header-img: img/life/job/ssafy/1.png
 > 삼성의 청년대상 사회공헌 교육, 삼성 청년 SW 아카데미 수료후기
   
 - 목차
-	- [`What is SSAFY??`](#1._What_is_SSAFY?)
-	- [`SSAFY에 입과 하기까지.`](#2._SSAFY에_입과_하기까지.)
-	- [`Why SSAFY?? SSAFY하면 좋은점!`](#3._Why_SSAFY??_SSAFY하면_좋은점!)
-	- [`AFTER The Course`](#AFTER-The-Course)
+	- [`What is SSAFY??`](#1.-What-is-SSAFY?)
+	- [`SSAFY에 입과 하기까지.`](#2.-SSAFY에-입과-하기까지.)
+	- [`Why SSAFY?? SSAFY하면 좋은점!`](#3.-Why-SSAFY??-SSAFY하면-좋은점!)
+	- [`AFTER The Course`](#4.-AFTER-The-Course)
   
 ## 교육을 수료하며
 ---
@@ -142,7 +142,7 @@ SSAFY는 뭘 하는 곳이길래 사람들이 이렇게 까지 관심을 가질�
 <br>
 
 ---
-> ### **4\. AFTER The Course**
+> ### 4. AFTER The Course
 
 <br>
 
