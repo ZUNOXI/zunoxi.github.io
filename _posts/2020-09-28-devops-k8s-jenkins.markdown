@@ -13,10 +13,10 @@ header-img: img/devops/jenkins/install/jenkins.jpg
 > `Git push` 부터 `쿠버네티스` 파드 배포 까지 파이프라인 구축 &#10104;단계
   
 - 목차
-	- [`Gitlab on k8s`](#h2-idgitlab-on-k8s-342gitlab-on-k8sh2)
-	- [`pv 선언`](#1-persistent-volume퍼시스턴트-볼륨-선언)
-	- [`gitlab 설치`](#2-gitlab-설치)
-	- [`설치확인`](#3-정상-설치-확인)
+	- [`퍼시스턴트 볼륨(PV) 생성`](#1-퍼시스턴트-볼륨pv-생성)
+	- [`jenkins Helm install`](#2-jenkins-helm-install)
+	- [`NodePort 설정`](#3-nodeport-설정)
+	- [`jenkins install`](#4-jenkins-install)
   
 ## Jenkins on k8s
 ---
