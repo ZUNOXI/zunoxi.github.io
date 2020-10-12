@@ -26,7 +26,7 @@ header-img: img/life/job/posco/1.jpg
 
 
 
-![그림9](https://zunoxi.github.io/assets/img/life/product/surface/9.png)
+![그림1](https://zunoxi.github.io/assets/img/life/job/posco/2.png)
 
 본 메일이 받은 것 엊그제 같은데
 
