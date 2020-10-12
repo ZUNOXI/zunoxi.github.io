@@ -10,13 +10,12 @@ header-img: img/life/job/posco/1.jpg
 ---
 
 ## 개요
-> 포스코의 청년대상 AI/Bigdata분야 사회공헌 교육인 POSCO 청년 AI/Bigdata 아카데미 후기
+> 포스코의 청년대상 사회공헌 교육, POSCO 청년 AI/Bigdata 아카데미 수료후기
   
 - 목차
-	- [`퍼시스턴트 볼륨(PV) 생성`](#1-퍼시스턴트-볼륨pv-생성)
-	- [`jenkins Helm install`](#2-jenkins-helm-install)
-	- [`NodePort 설정`](#3-nodeport-설정)
-	- [`jenkins install`](#4-jenkins-install)
+	- [`AI/Bigdata와 무관한 전공일떼`](#1.-AI/Bigdata와-무관한-전공인데-지원해도-될까?)
+	- [`포스코 청년 AI/BigData 아카데미교육의 장점`](#2.-포스코-청년-AI/BigData-아카데미교육의-장점)
+	- [`AFTER The Course`](#AFTER-The-Course)
   
 ## 교육을 수료하며
 ---
@@ -65,6 +64,7 @@ _**즉, 문과 출신 이런것과 관련없이 의지가 있다면 충분히 �
 <br><br>
 
 > ### 2. 포스코 청년 AI/BigData 아카데미교육의 장점
+
 ---
 <br>
 
