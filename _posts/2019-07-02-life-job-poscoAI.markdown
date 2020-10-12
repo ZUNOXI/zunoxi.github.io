@@ -13,7 +13,7 @@ header-img: img/life/job/posco/1.jpg
 > 포스코의 청년대상 사회공헌 교육, POSCO 청년 AI/Bigdata 아카데미 수료후기
   
 - 목차
-	- [`AI/Bigdata와 무관한 전공일떼`](#1.-AI/Bigdata와-무관한-전공인데-지원해도-될까?)
+	- [`AI/Bigdata와 무관한 전공인경우`](#1.-AI/Bigdata와-무관한-전공인데-지원해도-될까?)
 	- [`포스코 청년 AI/BigData 아카데미교육의 장점`](#2.-포스코-청년-AI/BigData-아카데미교육의-장점)
 	- [`AFTER The Course`](#AFTER-The-Course)
   
