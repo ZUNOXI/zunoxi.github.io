@@ -6,5 +6,8 @@ Gitpage로 호스팅하여 운영하는 블로그입니다. 기술스택의 공�
 
 --- 
 
+[![HitCount](http://hits.dwyl.com/zunoxi/zunoxi.github.io/blob/master/_posts/2020-09-28-devops-k8s-jenkins.markdown.svg)](http://hits.dwyl.com/zunoxi/zunoxi.github.io/blob/master/_posts/2020-09-28-devops-k8s-jenkins.markdown/)
+
+
 아래는 함께 운영중인 티스토리 블로그입니다.
 `tistroy blog` :  [`링크`](https://zunoxi.tistory.com/)
