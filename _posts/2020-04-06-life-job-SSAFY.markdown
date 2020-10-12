@@ -13,8 +13,9 @@ header-img: img/life/job/ssafy/1.png
 > 삼성의 청년대상 사회공헌 교육, 삼성 청년 SW 아카데미 수료후기
   
 - 목차
-	- [`What is SSAFY??`](#1.-AI/Bigdata와-무관한-전공인데-지원해도-될까?)
-	- [`포스코 청년 AI/BigData 아카데미교육의 장점`](#2.-포스코-청년-AI/BigData-아카데미교육의-장점)
+	- [`What is SSAFY??`](#1._What_is_SSAFY?)
+	- [`SSAFY에 입과 하기까지.`](#2._SSAFY에_입과_하기까지.)
+	- [`Why SSAFY?? SSAFY하면 좋은점!`](#3._Why_SSAFY??_SSAFY하면_좋은점!)
 	- [`AFTER The Course`](#AFTER-The-Course)
   
 ## 교육을 수료하며
@@ -34,7 +35,7 @@ header-img: img/life/job/ssafy/1.png
 
 ---
 
-> ### **1\. What is SSAFY??**
+> ### 1. What is SSAFY?
 
 최근 입사한 회사의 최종면접에서 같은 조에 개발직군이 아님에도 `SSAFY 출신` 지원자를 만났었습니다. 그만큼 요즘 IT쪽 취준생들에게는 SSAFY가 꽤 핫한 프로그램이라고 보여지는데요.
 
@@ -64,7 +65,7 @@ SSAFY는 뭘 하는 곳이길래 사람들이 이렇게 까지 관심을 가질�
 <be>
 
 ---
-> ### **2\. SSAFY에 입과 하기까지.**
+> ### 2. SSAFY에 입과 하기까지.
 
 <br>
 
@@ -88,7 +89,7 @@ SSAFY는 뭘 하는 곳이길래 사람들이 이렇게 까지 관심을 가질�
 
 <br>
 
-> ### **3\. Why SSAFY?? SSAFY하면 좋은점!!**
+> ### 3. Why SSAFY?? SSAFY하면 좋은점!
 
 <br>
 
