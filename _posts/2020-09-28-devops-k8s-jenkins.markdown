@@ -8,6 +8,7 @@ comments: true
 published: true
 header-img: img/devops/jenkins/install/jenkins.jpg
 ---
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fzunoxi.github.io%2Fdevops%2F2020%2F09%2F28%2Fdevops-k8s-jenkins%2F&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 
 ## 개요
 > `Git push` 부터 `쿠버네티스` 파드 배포 까지 파이프라인 구축 &#10104;단계
