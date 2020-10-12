@@ -16,6 +16,13 @@
 
     {% include message.html text=post.description %}
   </header>
+  <div style="text-align: center;">
+    <a href="http://hits.dwyl.com/{{ site.url | remove_first: 'https://' | remove_first: 'http://' }}{{ page.url }}"
+      target="_blank">
+      <img
+        src="http://hits.dwyl.com/{{ site.url | remove_first: 'https://' | remove_first: 'http://' }}{{ page.url }}.svg" />
+    </a>
+  </div>
   {% for tag_slug in post.tags %}
     {% unless tag.header-img %}
       {% assign tag = site.featured_tags | where: "slug", tag_slug | first %}
