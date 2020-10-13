@@ -13,10 +13,10 @@ header-img: img/devops/k8s/install/logo.png
 > `Centos7`에 `Kubernetes` 클러스터 설치하기
   
 - 목차
-	- [`DevOps구조`](#devops구조)
-	- [`Helm?`](#helm)
-	- [`Why Helm`](#why-helm-)
-	- [`How to install`](#how-to-install-)
+	- [`1.서버 가상화`](#1-서버-가상화)
+	- [`2 VM Centos 설치`](#2-vm-centos를-설치)
+	- [`3.VM 세팅`](#3-vm-세팅)
+	- [`4.Docker와 Kubernetes 설치`](#4-docker와-kubernetes-설치)
   
 ## Kubernetes install on Centos7
 ---
