@@ -18,49 +18,31 @@ header-img: img/devops/k8s/install/logo.png
 	- [`Why Helm`](#why-helm-)
 	- [`How to install`](#how-to-install-)
   
-## Kubernetes 설치
+## Kubernetes 설치에 대한 이해
 ---
-리눅스에 대한 기초가 부족해서 거의 1주일이 넘게 쿠버네티스 설치에 고구마 1000개 정도 먹은것 같았는데, 마침내... 쿠버네티스 대시보드에 진입하게되어 세상기쁘다.😌 필자처럼 고생하는 분들이 없길 바라며 설치했던 과정을 포스팅해보려한다.
+리눅스에 대한 기초가 부족해서 거의 1주일이 넘게 쿠버네티스 설치에 고구마 1000개 정도 먹은것 같았는데, 마침내... 쿠버네티스 대시보드에 진입하게되어 세상기쁘다.😎 필자처럼 고생하는 분들이 없길 바라며 설치했던 과정을 포스팅해보려한다.
 
 <br><br>
 
 
 
-[##_Image|kage@mMx0O/btqDL4DiRjE/ABnzClBL6aJCcGBBEnbQFk/img.png|alignCenter|data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"|똿..!||_##]
+![그림1](https://zunoxi.github.io/assets/img/devops/k8s/install/1.png)
 
-이번 포스팅은 현재 쿠버네티스 강의로 듣고있는 **김태민님의 인프런강의**를 참고하며 포스팅을 작성했다. 쿠버네티스관련 국내 강의가 별로 없는데 쿠린이 입장에서는 환경구축에 큰 도움이 되었다. 쿠버네티스를 **온프레미스** 환경에 구축하려고 하는사람들에게 추천하고 싶은 강의이다. 단, 자세하고 친절한 설명으로 구성된 강의이나 필자의 OS 버전이 다르고 pc 환경이 다르니 별도로 손봐야할것들이 좀 있었다.
+(찬란한 대시보드..😇)
 
-참고했던 김태민님의 블로그와 CUBRID 블로그
+---
+
+본 포스팅은 현재 `쿠버네티스 강의`로 듣고있는 **김태민님의 인프런강의**를 참고하며 포스팅을 작성했다. 쿠버네티스관련 국내 강의가 별로 없는데 쿠린이 입장에서는 환경구축에 큰 도움이 되었다. 쿠버네티스를 **온프레미스** 환경에 구축하려고 하는사람들에게 추천하고 싶은 강의이다. 단, 자세하고 친절한 설명으로 구성된 강의이나 필자의 서버 OS 버전이 다르고 각자의 pc환경이 다르다보니 별도로 수정해야 할 것들도 일부발생했다.
+
+<br>
+
+> 참고했던 김태민님의 블로그와 CUBRID 블로그
 
 [https://kubetm.github.io/practice/appendix/installation\_case1/](https://kubetm.github.io/practice/appendix/installation_case1/)
 
-[
-
-KubeTM Blog with Kubernetes
-
-Kubernetes Blog for Inflearn Pratice
-
-kubetm.github.io
-
-
-
-](https://kubetm.github.io/practice/appendix/installation_case1/)
-
 [https://www.cubrid.com/blog/3820603](https://www.cubrid.com/blog/3820603)
 
-[
 
-CUBRID | 블로그 - Docker, Kubernetes 환경에서 CUBRID 컨테이너 서비스 해보기
-
-Docker, Kubernetes 환경에서 CUBRID 컨테이너 서비스 해보기 최근에 여러 기업에서 Docker, Kubernetes를 사용하여 컨테이너로 서비스 하는 사레들을 많이 보았습니다. CUBRID도 컨테이너로 만들어서 Docker, Ku
-
-www.cubrid.com
-
-
-
-](https://www.cubrid.com/blog/3820603)
-
----
 
 **해당 포스팅의 실습에서는 **개인용** 노트북(or 데스크탑) + VM 조합이 아닌 vSphere를 이용한 서버 클러스터에 VM을 몇개 만들어서 진행해 봤다.**
 
