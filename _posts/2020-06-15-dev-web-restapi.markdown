@@ -34,21 +34,21 @@ server 구성은 spring-boot와 mybatis(pom.xml에 의존성 주입필요)를 �
 (구조는 MVC 형태로 설계)
 
 1. controller 생성
-![그림1](https://zunoxi.github.io/assets/img/dev/web/restapi/spring1.jpg)
+![그림1](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/dev/web/restapi/spring1.jpg)
 
 2. service 생성
-![그림2](https://zunoxi.github.io/assets/img/dev/web/restapi/service.jpg)
+![그림2](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/dev/web/restapi/service.jpg)
 
 3. repository 생성
-![그림3](https://zunoxi.github.io/assets/img/dev/web/restapi/repo.jpg)
+![그림3](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/dev/web/restapi/repo.jpg)
 
 4. dto 생성
-![그림4](https://zunoxi.github.io/assets/img/dev/web/restapi/dto.jpg)
+![그림4](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/dev/web/restapi/dto.jpg)
 
 5. mybatis와 mysql 연동
-![그림5](https://zunoxi.github.io/assets/img/dev/web/restapi/mybatis.jpg)
+![그림5](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/dev/web/restapi/mybatis.jpg)
 
-![그림6](https://zunoxi.github.io/assets/img/dev/web/restapi/sql.jpg)
+![그림6](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/dev/web/restapi/sql.jpg)
 
 ## RestAPI 구조 확인
 ---
@@ -56,13 +56,13 @@ server 구성은 spring-boot와 mybatis(pom.xml에 의존성 주입필요)를 �
 1. Front-end 개발단에서의 Restapi 직접 활용해보기
 > `vue`를 이용해서 입력한 데이터를 바인딩해서 서버단으로 전송하게 구성
 > 
-![그림7](https://zunoxi.github.io/assets/img/dev/web/restapi/vscode.png)
+![그림7](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/dev/web/restapi/vscode.png)
 
 만들어진 프론트엔드 웹브라우저상에서 데이터를 입력
-![그림8](https://zunoxi.github.io/assets/img/dev/web/restapi/vue.jpg)
+![그림8](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/dev/web/restapi/vue.jpg)
 
 서버의 콘솔로그에 데이터가 정상적으로 들어온것을 확인
-![그림9](https://zunoxi.github.io/assets/img/dev/web/restapi/console.jpg)
+![그림9](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/dev/web/restapi/console.jpg)
 
 2. Swagger를 활용한 Api-Document 확인
 
@@ -72,12 +72,12 @@ server 구성은 spring-boot와 mybatis(pom.xml에 의존성 주입필요)를 �
 > swagger-ui를 통해 api spec 확인
 (pom.xml에 swagger 의존성 주입 필요)
 
-![그림10](https://zunoxi.github.io/assets/img/dev/web/restapi/swagger.jpg)
+![그림10](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/dev/web/restapi/swagger.jpg)
 
 POST 요청으로 테스트해볼 데이터내용을 입력후 execute 
-![그림11](https://zunoxi.github.io/assets/img/dev/web/restapi/swagger2.jpg)
+![그림11](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/dev/web/restapi/swagger2.jpg)
 
 서버 콘솔에 데이터가 들어오는것을 확인
-![그림12](https://zunoxi.github.io/assets/img/dev/web/restapi/console2.jpg)
+![그림12](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/dev/web/restapi/console2.jpg)
 
 restapi에 대한 정리.

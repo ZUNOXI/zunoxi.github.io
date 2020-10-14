@@ -27,7 +27,7 @@ header-img: img/devops/docker/logo.png
 **"이미지 파일만 잘 만들어 놓으면 로컬개발환경과 동일하게 실제 배포환경에서도 프로젝트를 구동할 수 있다."**
 
 
-![그림1](https://zunoxi.github.io/assets/img/devops/docker/docker1.png)
+![그림1](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/docker/docker1.png)
 
 
 최근 프로젝트를 진행하며 AWS를 통해 웹솔루션을 배포하면서 docker에 관심을 갖게 되었는데, 사실 Docker 없이도 기존 배포하는방식을 사용할때의 불편함을 딱히(?) 못느꼈기에 써볼 생각을 안했다....만 주변 동료들이 'Docker가 그렇게 좋다고, **개발자라면 쓸줄 알아야 한다(?)**' 라길래 공부도 할겸 책을 잡으며 공부했다. (물론 지금은 개발자가 아니다..)
@@ -53,7 +53,7 @@ header-img: img/devops/docker/logo.png
 
 이제 쿠버네티스에 대해 설명하기 전에 먼저 인프라 시스템이 무엇인지 그리고 그 이용형태의 종류가 어떻게 분류되는지 부터 알아보려한다. 시스템 인프라는 일반적으로 응용프로그램을 가동시키기 위한 **하드웨어, OS, 네트워크, 미들웨어** 등을 의미하며, 일반적으로 '기능 요구사항'과 '비기능 요구사항'으로 나뉘게 된다.
 
-![그림2](https://zunoxi.github.io/assets/img/devops/docker/docker2.png)
+![그림2](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/docker/docker2.png)
 
 이러한 시스템을 우리는 '온프레미스'와 '클라우드' 라는 것으로 분류하여 사용하고 있는데, 먼저 **"온프레미스"** 체계는 일반적으로 기업과 같은 곳에서 자사 내에 거대한 서버를 두고 시스템 구축부터 운용까지 모든것을 자체적으로 사용하는 시스템 이용체계를 의미한다.
 

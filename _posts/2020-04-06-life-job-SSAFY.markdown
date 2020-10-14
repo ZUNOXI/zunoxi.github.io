@@ -50,7 +50,7 @@ SSAFY는 뭘 하는 곳이길래 사람들이 이렇게 까지 관심을 가질�
 
 <br>
 
-![그림1](https://zunoxi.github.io/assets/img/life/job/ssafy/1.png)
+![그림1](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/life/job/ssafy/1.png)
 
 <br>
 
@@ -69,7 +69,7 @@ SSAFY는 뭘 하는 곳이길래 사람들이 이렇게 까지 관심을 가질�
 
 <br>
 
-![그림2](https://zunoxi.github.io/assets/img/life/job/ssafy/2.png)
+![그림2](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/life/job/ssafy/2.png)
 
 <br>
 
@@ -85,7 +85,7 @@ SSAFY는 뭘 하는 곳이길래 사람들이 이렇게 까지 관심을 가질�
 
 <br>
 
-![그림3](https://zunoxi.github.io/assets/img/life/job/ssafy/3.jpg)
+![그림3](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/life/job/ssafy/3.jpg)
 
 <br>
 

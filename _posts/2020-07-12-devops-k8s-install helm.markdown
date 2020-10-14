@@ -28,7 +28,7 @@ header-img: img/devops/k8s/helm/logo.jpeg
 
 ---
 
-![그림1](https://zunoxi.github.io/assets/img/devops/jenkins/install/structure.png)
+![그림1](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/jenkins/install/structure.png)
 
 이번 포스팅에서는 필요한 프로그램 패키지를 쿠버네티스상의 `파드`로 배포하기 위해 Helm을 설치하는 과정에 대해 설명하려한다.
 
@@ -58,7 +58,7 @@ docker hub에 내가 만든 이미지가 올라가있다면, 이를 이용해서
 
 > `$ curl https://raw.githubusercontent.com/helm/helm/master/scripts/get > get_helm.sh `
 
-![그림2](https://zunoxi.github.io/assets/img/devops/k8s/helm/1.png)
+![그림2](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/helm/1.png)
 
 <br>
 
@@ -68,7 +68,7 @@ docker hub에 내가 만든 이미지가 올라가있다면, 이를 이용해서
 
 > `$ ./get_helm.sh`
 
-![그림3](https://zunoxi.github.io/assets/img/devops/k8s/helm/2.png)
+![그림3](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/helm/2.png)
 
 <br>
 
@@ -76,7 +76,7 @@ docker hub에 내가 만든 이미지가 올라가있다면, 이를 이용해서
 
 > `$ helm init`
 
-![그림4](https://zunoxi.github.io/assets/img/devops/k8s/helm/3.png)
+![그림4](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/helm/3.png)
 
 <br>
 
@@ -84,7 +84,7 @@ docker hub에 내가 만든 이미지가 올라가있다면, 이를 이용해서
 
 > `$ kubectl get service,deployment,pod -n kube-system`
 
-![그림5](https://zunoxi.github.io/assets/img/devops/k8s/helm/4.png)
+![그림5](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/helm/4.png)
 
 <br>
 
@@ -92,7 +92,7 @@ docker hub에 내가 만든 이미지가 올라가있다면, 이를 이용해서
 
 > `$ helm version`
 
-![그림6](https://zunoxi.github.io/assets/img/devops/k8s/helm/5.png)
+![그림6](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/helm/5.png)
 
 <br>
 

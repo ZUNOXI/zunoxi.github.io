@@ -30,7 +30,7 @@ AWS 접속과 관련된 배치파일 생성하는것은 아래 포스팅을 참�
 
 자, 먼저 본인의 윈도우가 가상환경을 지원하는지 부터 확인해 봐야한다. 윈도우 10버전은 아래와 같이 작업관리자의 가상화 지원여부에서 확인 가능하다.
 
-![그림1](https://zunoxi.github.io/assets/img/devops/docker/install/1.png)
+![그림1](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/docker/install/1.png)
 <br><br>
 
 **2\. Docker 다운로드**
@@ -55,19 +55,19 @@ AWS 접속과 관련된 배치파일 생성하는것은 아래 포스팅을 참�
 
 본격적인 docker 설치 전, 프로그램 및 기능에서 **Hyper-V**를 설치한다.
 
-![그림2](https://zunoxi.github.io/assets/img/devops/docker/install/2.png)
+![그림2](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/docker/install/2.png)
 
-![그림3](https://zunoxi.github.io/assets/img/devops/docker/install/3.png)
+![그림3](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/docker/install/3.png)
 
 
 설치 후 재부팅 해주면, 로그인 하라고 상태창이 오픈된다. 로그인을 해주고...
 
-![그림4](https://zunoxi.github.io/assets/img/devops/docker/install/4.png)
+![그림4](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/docker/install/4.png)
 
 
 작업 표시줄에 고래모양 아이콘이 생긴다. 잘 설치가 된것이다 :) cmd 창에 - **docker version** 을 입력함으로서 확실히 확인해본다. 환경변수로 도커가 등록이 되어 있는지 확인하는 과정이다.
 
-![그림5](https://zunoxi.github.io/assets/img/devops/docker/install/5.png)
+![그림5](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/docker/install/5.png)
 
 자 이제 윈도우에 docker가 설치가 완료 되었다. 다음은 리눅스에 docker를 설치하는 과정이다.
 
@@ -141,7 +141,7 @@ $ sudo apt-get update && sudo apt-get install docker-ce
 $ sudo usermod -aG docker $USER
 ```
 
-![그림6](https://zunoxi.github.io/assets/img/devops/docker/install/6.png)
+![그림6](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/docker/install/6.png)
 
 서버상에도 정상적으로 Docker 가 설치된것을 알 수 있다.
 
