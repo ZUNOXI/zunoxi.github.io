@@ -21,7 +21,7 @@ published: true
 - Hyundai Autoever / System Engineer ( 2020 ~ )
 
 <br>
-
+    
 `Info Link`
 - [`tistory tech blog`](https://zunoxi.tistory.com/)
 - [`naver football blog`](https://blog.naver.com/cross9308)
