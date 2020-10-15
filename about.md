@@ -15,15 +15,19 @@ published: true
 본 블로그는 업무 혹은 프로젝트에서 배우고 익혔던 기술들을 정리한 `Tech Blog` 입니다. 이 블로그에 방문해주신분들이 작은 지식이라도 얻어가셨으면 좋겠습니다 😌
 
 
-> `Tech Experience`
+`Tech Experience`
 - POSCO AI/Bigdata Academy 6th ( 2019 )
 - Samsung Software Academy For Youth(SSAFY) 2nd ( 2019 )
 - Hyundai Autoever / System Engineer ( 2020 ~ )
-    
-> `Info Link`
+
+<br>
+
+`Info Link`
 - [`tistory tech blog`](https://zunoxi.tistory.com/)
 - [`naver football blog`](https://blog.naver.com/cross9308)
 - [`resume`](http://zunoxi.ddns.net/main.html)
+
+<br>
 
 >There is a difference between knowing the path and walking the path. 
 < Matrix >
