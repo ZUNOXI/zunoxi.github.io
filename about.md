@@ -16,14 +16,14 @@ published: true
 
 
 > `Tech Experience`
-    - POSCO AI/Bigdata Academy 6th ( 2019 )
-	- Samsung Software Academy For Youth(SSAFY) 2nd ( 2019 )
-    - Hyundai Autoever / System Engineer ( 2020 ~ )
+- POSCO AI/Bigdata Academy 6th ( 2019 )
+- Samsung Software Academy For Youth(SSAFY) 2nd ( 2019 )
+- Hyundai Autoever / System Engineer ( 2020 ~ )
     
 > `Info Link`
-    - [`tistory tech blog`](https://zunoxi.tistory.com/)
-    - [`naver football blog`](https://blog.naver.com/cross9308)
-    - [`resume`](http://zunoxi.ddns.net/main.html)
+- [`tistory tech blog`](https://zunoxi.tistory.com/)
+- [`naver football blog`](https://blog.naver.com/cross9308)
+- [`resume`](http://zunoxi.ddns.net/main.html)
 
 >There is a difference between knowing the path and walking the path. 
 < Matrix >
