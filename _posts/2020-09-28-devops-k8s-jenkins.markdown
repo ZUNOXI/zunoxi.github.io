@@ -24,7 +24,7 @@ header-img: img/devops/jenkins/install/jenkins.jpg
 
 <br>
 
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fzunoxi.github.io%2Fdevops%2F2020%2F09%2F28%2Fdevops-k8s-jenkins%2F&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+
 
 아래그림은 Helm 설치를 위한 포스팅에서 직접 그렸던 그림인데, 현재 가장 먼저 쿠버네티스에 helm과 Gitlab을 설치하고 현재는 **Jenkins 설치 단계**중에 있다고 이해하면될 것 같다. 여기에 추가적으로 아래 그림에는 없는 소나큐브(Sonarqube) / 품질 테스트 도구도 도입해볼 예정이다.
 
