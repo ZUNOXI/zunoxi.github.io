@@ -10,7 +10,7 @@ header-img: img/devops/jenkins/install/jenkins.jpg
 ---
 
 ## 개요
-> `Git push` 부터 `쿠버네티스` 파드 배포 까지 파이프라인 구축 &#10104;단계
+> IT종사자 관점의 `아이패드6미니` 3개월 실사용 후기
   
 - 목차
 	- [`퍼시스턴트 볼륨(PV) 생성`](#1-퍼시스턴트-볼륨pv-생성)
