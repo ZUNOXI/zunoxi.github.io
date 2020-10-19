@@ -13,9 +13,10 @@ header-img: img/dev/web/spring-jar/1.png
 > `스프링부트(spring-boot)`프로젝트를 `jar`로 내보내기
   
 - 목차
-	- [`리눅스 메모리 사용량 확인`](#리눅스-메모리-사용량)
-	- [`buffer? cache?`](#buffer-cache)
-	- [`Top활용 프로세스별 메모리 확인`](#top활용-프로세스별-메모리-확인)
+	- [`Spring boot`](#1-spring-boot)
+	- [`jar format`](#2-jar-format)
+	- [`pom.xml 설정`](#3-pomxml-설정)
+	- [`jar build`](#4-jar-build)
   
 ## Spring-boot to jar
 ---
@@ -41,7 +42,7 @@ header-img: img/dev/web/spring-jar/1.png
 
 ---
 
-**3\. pom.xml 설정**
+### **3\. pom.xml 설정**
 
 <br>
 
