@@ -86,7 +86,11 @@ $ yum install -y gitlab-ce
 
 아래 사진과 같이 설치가 진행되면 정상이다.
 
-![그림2](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/infra/linux/gitlab/1.png)
+<br>
+
+![그림1](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/infra/linux/gitlab/2.png)
+
+<br>
 
 이제 포트변경을 통해 gitlab 서버에 접근하기 용이하게 변경할 수 있다.
 
@@ -94,25 +98,14 @@ $ yum install -y gitlab-ce
 $ vi /etc/gitlab/gitlab.rb
 ```
 
-[##_Image|kage@cOfJhE/btqGqXCZO0m/khZgBPfLkfkK2UhO48YDKK/img.png|alignCenter|data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"|||_##]
+![그림2](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/infra/linux/gitlab/3.png)
 
-붉은상자표시로 마킹한 곳에 접속할 도메인주소나 ip:port 형식으로 접근 경로를 기입한다.
 
-또한, 실제 레포지터리가 위치할 디렉터리도 바꿔줄수 있다. 이는 아래 링크를 참고하면 좋을것같다.
+붉은상자표시로 마킹한 곳에 접속할 도메인주소나 `'ip:port'` 형식으로 접근 경로를 기입한다.
+
+또한, 실제 레포지터리가 위치할 디렉터리도 바꿔줄수 있다. 해당방법은 아래 링크를 참고하면 좋을것같다.
 
 [https://uxgjs.tistory.com/191](https://uxgjs.tistory.com/191)
-
-[
-
-gitlab DATA 저장폴더(git-data)를 다른 위치로 변경하는 방법
-
-Gitlab 서버를 설치하고 바로 DATA저장소 위치를 적절한 곳으로 설정한다면 아주 간단한 문제입니다. 그냥 gitlab.rb 에서 git\_data\_dirs({"default" => { "path" => "/var/opt/gitlab/git-data" }}) 의 위치만 변..
-
-ux.stories.pe.kr
-
-
-
-](https://uxgjs.tistory.com/191)
 
 설정을 완료한 이후 설정을 재적용해준다.
 
