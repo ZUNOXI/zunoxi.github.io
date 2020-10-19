@@ -4,5 +4,5 @@ title: Etc
 slug: etc
 category: life
 menu: false
-order: 4
+order: 3
 ---
