@@ -18,7 +18,7 @@ header-img: img/devops/docker/logo.png
   
 ## Spring-boot to Docker
 ---
-앞선 포스팅에서 우리는 스프링부트 프로젝트를 jar로 만들었다. [https://zunoxi.tistory.com/68](https://zunoxi.tistory.com/68) 포스트에 이어서 해당 jar파일을 이용해 도커 이미지를 만들어보자. 
+앞선 포스팅에서 우리는 스프링부트 프로젝트를 jar로 만들었다. [https://zunoxi.github.io/programming/2020/08/11/dev-web-spring_jar/](https://zunoxi.github.io/programming/2020/08/11/dev-web-spring_jar/) 포스트에 이어서 해당 jar파일을 이용해 도커 이미지를 만들어보자. 
 
 <br>
 
