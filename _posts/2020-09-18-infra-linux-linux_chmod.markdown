@@ -2,27 +2,27 @@
 layout: post
 title: Linux(4) 리눅스 접근권한관리(chmod,chown)
 subtitle: Linux 4. 리눅스 접근권한 관리 / chmod, chown
-categories: devops
-tags: devops kubernetes
+categories: infra
+tags: infra linux/aix
 comments: true
 published: true
-header-img: img/devops/jenkins/install/jenkins.jpg
+header-img: img/infra/linux/chown/logo.png
 ---
 
 ## 개요
 > `리눅스(centos7)` 에서 `chmod,chown` 를 통해 접근권한을 관리
   
 - 목차
-	- [`퍼시스턴트 볼륨(PV) 생성`](#1-퍼시스턴트-볼륨pv-생성)
-	- [`jenkins Helm install`](#2-jenkins-helm-install)
-	- [`NodePort 설정`](#3-nodeport-설정)
-	- [`jenkins install`](#4-jenkins-install)
+	- [`리눅스 접근권한`](#**1\.-리눅스-접근권한**)
+	- [`접근권한 부여`](#**2\.-접근권한-부여**)
+	- [`접근 유저, 그룹 변경`](#**3\.-접근-유저,-그룹-변경**)
+	- [`umask`](#**4\.-umask**)
   
 ## 리눅스 접근권한 관리의 필요성
 ---
 인프라를 관리하며 리눅스를 일반적으로 서버로 많이 사용하다 보니 불특정다수에대한 접근권한을 관리할일이 많다. 이번 포스팅에서는 파일, 디렉토리에 대한 리눅스의 접근권한 관리 방법에 대해 다뤄보고 정리해보려 한다.😌
 
-<br><br>
+<br>
 
 
 
@@ -49,7 +49,7 @@ header-img: img/devops/jenkins/install/jenkins.jpg
 
 <br>
 
-접근권한은 보통 r : 4, w : 2, x : 1 이진법으로 표현하고 각 권한을 더해서 계산한다. 예를 들어 "root가 만든 특정 파일의 접근권한이 **754이다."라는** 것은 root는 읽기, 쓰기, 실행 권한을 모두 갖는 7(4+2+1)을 의미하고, root가 속한 그룹은 읽기와 실행 권한을 갖는 5(4+1), 그리고 그 외의 사용자는 읽기만 가능한 4를 의미한다. 사실 이 부분만 잘 이해한다면 그렇게 어렵지 않은 부분인 것 같다.
+접근권한은 보통 r : 4, w : 2, x : 1 이진법으로 표현하고 각 권한을 더해서 계산한다. 예를 들어 "root가 만든 특정 파일의 접근권한이 **754이다."라는** 것은 root는 읽기, 쓰기, 실행 권한을 모두 갖는 `7(4+2+1)을 의미`하고, root가 속한 그룹은 읽기와 실행 권한을 갖는 5(4+1), 그리고 그 외의 사용자는 읽기만 가능한 4를 의미한다. 사실 이 부분만 잘 이해한다면 그렇게 어렵지 않은 부분인 것 같다.
 
 <br>
 
@@ -59,7 +59,7 @@ header-img: img/devops/jenkins/install/jenkins.jpg
 
 <br>
 
-그럼 기존에 접근권한이 부여된 파일이나 폴더의 권한은 어떻게 수정할 수 있을까? 이는 **chmod**를 이용해서 수정할 수 있고 다음과 같이 사용하면 된다.
+그럼 `기존에 접근권한이 부여된 파일이나 폴더`의 권한은 어떻게 수정할 수 있을까? 이는 **chmod**를 이용해서 수정할 수 있고 다음과 같이 사용하면 된다.
 
 ```
 $ chmod 755 /u01/infra/test.sh
@@ -75,7 +75,7 @@ $ chmod 755 /u01/infra/test.sh
 
 <br>
 
-더 나아가서 권한뿐만 아니라 유저와 그룹에 대한 설정도 변경해줄 수 있다. 먼저 해당 폴더의 사용자, 그룹별 권한을 확인해보려면 위와 마찬가지로 리눅스 쉘에 '**ls -l(or ll)'** 을 입력한다. 아래 사진처럼 root, root라고 확인된 부분이 그것인데 이는 **유저 권한(왼쪽) : root, 그룹 권한(오른쪽) : root**는 사실상 해당 파일에 대해 일반 유저는 Others 권한에 해당되는 것만 접근이 가능하다.
+더 나아가서 권한뿐만 아니라 `유저와 그룹에 대한 설정`도 변경해줄 수 있다. 먼저 해당 폴더의 사용자, 그룹별 권한을 확인해보려면 위와 마찬가지로 리눅스 쉘에 '**ls -l(or ll)'** 을 입력한다. 아래 사진처럼 root, root라고 확인된 부분이 그것인데 이는 **유저 권한(왼쪽) : root, 그룹 권한(오른쪽) : root**는 사실상 해당 파일에 대해 일반 유저는 Others 권한에 해당되는 것만 접근이 가능하다.
 
 <br>
 
