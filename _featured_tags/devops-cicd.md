@@ -1,8 +1,8 @@
 ---
 layout: tag-blog
-title: Kubernetes
-slug: kubernetes
+title: CI/CD
+slug: CICD
 category: devops
 menu: false
-order: 2
+order: 3
 ---

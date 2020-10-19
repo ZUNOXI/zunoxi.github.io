@@ -1,9 +1,9 @@
 ---
 layout: post
-title: DevOps 2. Kubernetes에 Gitlab서버 설치
+title: CICD 2. Kubernetes에 Gitlab서버 설치
 subtitle: jenkins를 활용한 파이프라인 구축
 categories: devops
-tags: devops kubernetes
+tags: devops CICD
 comments: true
 published: true
 header-img: img/devops/k8s/gitlab/logo.png
