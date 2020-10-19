@@ -88,6 +88,8 @@ volume 기능은 실제 운영을 위해서는 꽤나 중요하다고 생각하�
 
 <br>
 
+---
+
 ### **2\. Docker image build**
 
 
@@ -113,28 +115,39 @@ $ docker build -f Dockerfile -t zunoxi .
 
 ![그림1](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/docker/spring/1.png)
 
-\+ 공식문서에서는 다음 명령어를 사용하라고 되어있으니 참고하면 좋을 것 같다. (프로젝트의 루트에서 실행)
+`공식문서`에서는 다음 명령어를 사용하라고 되어있으니 참고하면 좋을 것 같다. (프로젝트의 루트에서 실행)
 
 ```
 $ docker build -t springio/gs-spring-boot-docker .
 ```
+<br>
 
-2) docker image run > docker container 구동
+---
+(2) docker image run > docker container 구동
 
 ```
 $ docker run -p 9090:9090 --name spring [image id]
 ```
 
-\-p : 외부 포트:내부 포트 매핑 (외부에서 8080번으로 요청된 트래픽은 해당 컨테이너의 8080에 매핑시키겠다는 뜻)
+- \-p : 외부 포트:내부 포트 매핑 (외부에서 8080번으로 요청된 트래픽은 해당 컨테이너의 8080에 매핑시키겠다는 뜻)
 
-\--name : 생성할 도커 컨테이너의 식별자 이름을 지정
+- \--name : 생성할 도커 컨테이너의 식별자 이름을 지정
 
-[##_Image|kage@bIwY3m/btqGri1SmsP/Xl4EpcE2LpBtBFfuFvEazk/img.png|alignCenter|data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"|이미지가 정상적으로 구동되는것을 확인 할 수 있다.||_##]
+<br>
 
-3) 컨테이너 정상 구동 여부 확인
+![그림2](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/docker/spring/2.png)
 
-[##_Image|kage@vGMdr/btqGxwRlhaL/HdfG8kIK5ZYrYl3MuQtiKK/img.png|alignCenter|data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"|||_##]
+(이미지가 정상적으로 구동되는것을 확인 할 수 있다.)
 
-이렇게 스프링부트 프로젝트를 docker image로 만들었다. 말이 스프링부트이지 그냥 jar 파일을 docker 컨테이너안에서 실행시킬 수 있게끔 구현한 것이다. 다만 스프링 레거시가 아닌 부트(boot)이기 때문에 WAS가 별도로 필요 없는 정도? 해당 포스팅을 읽는것에 참고가 되길 바란다.
+---
 
-> 이제 다음 포스팅에서는 깃랩과 젠킨스를 이용하여 쿠버네티스상에 해당 프로젝트를 자동으로 배포해볼 예정이다.
+(3) 컨테이너 정상 구동 여부 확인
+
+![그림3](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/docker/spring/3.png)
+
+
+이렇게 `스프링부트 프로젝트`를 `docker image`로 만들었다. 말이 스프링부트이지 그냥 jar 파일을 docker 컨테이너안에서 실행시킬 수 있게끔 구현한 것이다. 다만 스프링 레거시가 아닌 부트(boot)이기 때문에 WAS가 별도로 필요 없는 정도? 해당 포스팅이 관련 문제로 고민하는 독자에게 참고가 되길 바라며😌
+
+<br>
+
+> 다음 포스팅에서는 깃랩과 젠킨스를 이용하여 쿠버네티스상에 해당 프로젝트를 자동으로 배포해볼 예정이다.
