@@ -1,7 +1,7 @@
 ---
 layout: tag-blog
-title: Etc
-slug: etc
+title: Job
+slug: job
 category: life
 menu: false
 order: 3
