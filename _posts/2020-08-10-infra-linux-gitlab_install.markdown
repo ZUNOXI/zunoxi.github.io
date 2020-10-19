@@ -13,10 +13,8 @@ header-img: img/infra/linux/gitlab/1.png
 > `Centos7` linux 서버에 `Gitlab 서버`설치하기
   
 - 목차
-	- [`Spring boot`](#1-spring-boot)
-	- [`jar format`](#2-jar-format)
-	- [`pom.xml 설정`](#3-pomxml-설정)
-	- [`jar build`](#4-jar-build)
+	- [`사전 환경 세팅`](#1-사전-환경-세팅)
+	- [`Gitlab-ce 설치`](#2-gitlab-ce-설치)
   
 ## Gitlab-ce on Centos7
 ---
