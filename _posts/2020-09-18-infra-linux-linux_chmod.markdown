@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linux(4) 리눅스 접근권한관리(chmod,chown)
+title: Linux 4. 리눅스 접근권한관리(chmod,chown)
 subtitle: Linux 4. 리눅스 접근권한 관리 / chmod, chown
 categories: infra
 tags: infra linux/aix
