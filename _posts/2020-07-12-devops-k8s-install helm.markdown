@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CICD 1. helm 설치하기
+title: CI/CD 1. helm 설치하기
 subtitle: devops 파이프라인 구축하기
 categories: devops
 tags: devops CICD
