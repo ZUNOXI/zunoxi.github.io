@@ -13,11 +13,10 @@ header-img: img/devops/docker/logo.png
 > `스프링부트(spring-boot)`프로젝트를 `Docker`로 구동해보기
   
 - 목차
-	- [`리눅스 메모리 사용량 확인`](#리눅스-메모리-사용량)
-	- [`buffer? cache?`](#buffer-cache)
-	- [`Top활용 프로세스별 메모리 확인`](#top활용-프로세스별-메모리-확인)
+	- [`dockerfile 만들기`](#1-dockerfile-만들기)
+	- [`Docker image build`](#2-docker-image-build)
   
-## Spring-boot to Docker?
+## Spring-boot to Docker
 ---
 앞선 포스팅에서 우리는 스프링부트 프로젝트를 jar로 만들었다. [https://zunoxi.tistory.com/68](https://zunoxi.tistory.com/68) 포스트에 이어서 해당 jar파일을 이용해 도커 이미지를 만들어보자. 
 
