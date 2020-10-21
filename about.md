@@ -17,7 +17,7 @@ published: true
 
 
 `Tech Experience`
-- ROKMC SPIDER System & ICT Support Officer (2016 ~ 2018)  
+- ROKMC SPIDER System & ICT Infra Support Officer (2016 ~ 2018)  
 - POSCO AI/Bigdata Academy 6th ( 2019 )
 - Samsung Software Academy For Youth(SSAFY) 2nd ( 2019 )
 - Hyundai Autoever / System Engineer ( 2020 ~ )
