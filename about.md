@@ -25,7 +25,6 @@ published: true
     
 `Info Link`
 - [`tistory tech blog`](https://zunoxi.tistory.com/)
-- [`resume`](http://zunoxi.ddns.net/main.html)
 
 <br>
 
