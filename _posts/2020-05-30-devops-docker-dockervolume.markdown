@@ -10,7 +10,7 @@ header-img: img/devops/docker/logo.png
 ---
 
 ## 개요
-> `Docker commit` 을 활용하여 `컨테이너`를 이미지화 시키기 
+> `Docker volume` 을 활용하여 `Was log`를 호스트에 저장하기 
   
 - 목차
 	- [`저장할 폴더 생성`](#1-tomcat의-로그를-저장할-폴더-생성)
