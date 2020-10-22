@@ -13,10 +13,9 @@ header-img: img/devops/docker/logo.png
 > `Docker` 데이터 경로 변경 설정 
   
 - 목차
-	- [`저장할 폴더 생성`](#1-tomcat의-로그를-저장할-폴더-생성)
-	- [`Volume 경로 설정`](#2-volume-경로-설정)
-	- [`log 파일 적재 확인`](#3-log-파일-적재-확인)
-	- [`로그파일 유지확인`](#4-컨테이너-삭제-시-로그-파일-유지되는-것을-확인)
+	- [`docker 디렉토리`](#1-docker-디렉토리-생성-혹은-복제)
+	- [`daemon.json 수정`](#2-daemonjson-수정)
+	- [` Docker 재시작`](#3-docker-재시작-및-적용-확인)
   
 ## Docker path
 ---
@@ -70,7 +69,7 @@ $ /etc/docker/daemon.json
 
 ---
 
-**3\. Docker 재시작 및 적용 확인**
+### **3\. Docker 재시작 및 적용 확인**
 
 아래 명령어를 차례로 입력해 준다.
 
