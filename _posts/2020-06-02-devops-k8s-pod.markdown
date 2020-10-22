@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Kubernetes #5. Kubernetes의 Pod와 Service'
+title: Kubernetes 5. Kubernetes의 Pod와 Service
 subtitle: kubernetes의 기본개념
 categories: devops
 tags: devops kubernetes

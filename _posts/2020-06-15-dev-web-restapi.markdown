@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Rest API에 대한 이해
+title: Web 6. Rest API에 대한 이해
 subtitle: rest api와 restful api
 categories: programming
 tags: programming web

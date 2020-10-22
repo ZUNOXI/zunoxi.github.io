@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Docker#5. CentOS7 Docker 데이터 경로 변경하기
+title: Docker 5. CentOS7 Docker 데이터 경로 변경하기
 subtitle: CentOS7 Docker 데이터 경로 변경하기
 categories: devops
 tags: devops docker

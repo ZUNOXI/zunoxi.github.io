@@ -1,6 +1,6 @@
 ---
 layout: post
-title: TLS와 SSL에 대한 이해
+title: Secure 1. TLS와 SSL에 대한 이해
 subtitle: TLS와 SSL에 대한 정리
 categories: infra
 tags: infra secure

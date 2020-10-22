@@ -1,6 +1,6 @@
 ---
 layout: post
-title: (review) The Having
+title: Book 1. The Having
 subtitle: 부와 행운을 끌어당기는 힘, The Having
 categories: life
 tags: life book

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Jar와 War"
+title:  Web 5. Jar와 War
 subtitle:   "웹프로그래밍의 배포"
 categories: programming
 tags: programming web

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Java에서 Json 타입으로 RestAPI 활용
+title: Web 7. Java에서 Json 타입으로 RestAPI 활용
 subtitle: Java프로젝트에서 RestAPI 활용하여 POST 전송하기
 categories: programming
 tags: programming web

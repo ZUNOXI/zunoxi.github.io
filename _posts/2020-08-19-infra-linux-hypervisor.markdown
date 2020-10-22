@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Linux 3. 하이퍼바이저(Hypervisor)에 대한 이해 
-subtitle: Linux 3. 하이퍼바이저(Hypervisor)에 대한 이해
+title: Linux 4. 하이퍼바이저(Hypervisor)에 대한 이해 
+subtitle: Linux 4. 하이퍼바이저(Hypervisor)에 대한 이해
 categories: infra
 tags: infra linux/aix
 comments: true

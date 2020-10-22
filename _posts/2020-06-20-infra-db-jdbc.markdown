@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DB#2.JDBC에 대한 이해
+title: DB 2. JDBC에 대한 이해
 subtitle: jdbc, jndi, dbcp, datasource, connection pool
 categories: infra
 tags: infra db

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: html, css, javascript의 관계와 정의
+title: Web 8. html, css, javascript의 관계와 정의
 subtitle: html, css, javascript에 대한 이해
 categories: programming
-tags: programming language
+tags: programming web
 comments: true
 published: true
 header-img: img/dev/language/html/html.jpg

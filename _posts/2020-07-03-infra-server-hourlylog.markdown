@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tomcat log에 대한 이해와 분리 방법
+title: Server 4. Tomcat log에 대한 이해와 분리 방법
 subtitle: rotatelogs를 활용한 Tomcat log 시간단위 분리
 categories: infra
 tags: infra server
