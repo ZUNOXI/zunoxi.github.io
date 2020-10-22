@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Docker 8. Volume 활용 Tomcat log 저장
+title: Docker 7. Volume 활용 Tomcat log 저장
 subtitle: Docker Volume 활용해서 Tomcat log 호스트에 저장하기
 categories: devops
 tags: devops docker
