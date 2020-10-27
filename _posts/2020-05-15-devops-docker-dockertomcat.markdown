@@ -10,15 +10,15 @@ header-img: img/devops/docker/logo.png
 ---
 
 ## 개요
-> `Docker volume` 을 활용하여 `Was log`를 호스트에 저장하기 
+> `Docker` 를 활용하여 `Tomcat` 운영하기 
   
 - 목차
-	- [`저장할 폴더 생성`](#1-tomcat의-로그를-저장할-폴더-생성)
-	- [`Volume 경로 설정`](#2-volume-경로-설정)
-	- [`log 파일 적재 확인`](#3-log-파일-적재-확인)
-	- [`로그파일 유지확인`](#4-컨테이너-삭제-시-로그-파일-유지되는-것을-확인)
+	- [`Tomcat Dokcer image 다운`](#1-tomcat-dokcer-image-다운받기)
+	- [`Tomcat 이미지 실행`](#2-tomcat-이미지-실행)
+	- [`호스트에서 컨테이너로`](#3-호스트에서-컨테이너로-파일복사)
+	- [`브라우저에서 확인`](#4-브라우저에서-확인)
   
-## Docker Volume
+## Tomcat on Docker Engine
 ---
 쿠버네티스와 도커를 함께 배우다 보니 문뜩 `Tomcat`도 오케스트레이션 범주에 포함시켜서 예상치 못하게 WAS가 죽어버렸을 경우, `자동으로 재기동`되게끔 할 수 없을까 하는 생각이 들었다.해당이유로 이런 시스템 구축을 위해 Docker를 활용한 tomcat운영을 먼저 해보기로 했다.
 
@@ -99,28 +99,21 @@ docker cp /u01/Devops/test/dist/index.html tomcat_test:/usr/local/tomcat/webapps
 
 ---
 
-**4\. 브라우저에서 확인**
+### **4\. 브라우저에서 확인**
 
-원래 톰캣은 8080번 포트로 접속하여 들어가지만 우리는 사전에
+보통 톰캣의 listening 포트는 `8080`번 포트이지만 우리는 사전에 도커컨테이너의 내부포트를 외부의 `80`포트(http기본포트)와 연결을 시켜놓았다.
 
-도커컨테이너의 내부포트를 외부의 80포트(http기본포트)와 연결을 시켜놓았다.
-
-그러므로 브라우저에 포트번호 없이 ip만을 이용하여 접속해도 설정한 페이지가 나타난다.
-
-(톰캣의 테스트만을 위해서라면 컨테이너를 만들때 8080:8080으로 맵핑한다.)
+그러므로 브라우저에 포트번호 없이 ip만을 이용하여 접속해도 설정한 페이지가 나타난다. (톰캣의 테스트만을 위해서라면 컨테이너를 만들때 8080:8080으로 맵핑하고, ip:8080을 주소창에 입력한다.)
 
 아래페이지는 내부망으로 연결된 다른 서버의 IP만 입력해서 들어갔을때의 모습이다.
 
-보안상 IP는 편집했다.
+> 보안상 IP는 편집했다.
 
-[##_Image|kage@bAgFmm/btqEbvgQ1ot/QS9XHApOwMz4kbFsxFfUKK/img.png|alignCenter|data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"|||_##]
+![그림4](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/docker/tomcat/4.png)
+
 
 이렇게 docker를 활용하여 Tomcat을 운영해봤다.
 
-이번 포스팅은 정말 기본환경만 만든것이고 실제로 서버에서 사용하려면 로컬에 로그를 기록할 **Volume기능**이나,
+이번 포스팅은 정말 기본환경만 만든것이고 실제로 서버에서 사용하려면 로컬에 로그를 기록할 **Volume기능**이나, AP단과 톰캣을 하나의 이미지로 묶어 다른서버에서도 사용할 수 있게끔 **Commit 기능**을 사용 할 수 있어야한다.
 
-입맛에 맞게 변경한 톰캣 컨테이너를 다시 이미지화 시켜서 다른서버에서도 사용할 수 있게끔
-
-**Commit 기능**을 사용 할 수 있어야한다.
-
-추후 포스팅에서 다뤄볼 예정 :)
+이는 추후 포스팅에서 다뤄볼 예정 😌
