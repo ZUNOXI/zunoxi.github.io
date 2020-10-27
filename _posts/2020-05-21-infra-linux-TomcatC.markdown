@@ -73,37 +73,32 @@ yum install -y httpd
 httpd -version  # 정상 설치 여부 확인
 ```
 
+<br>
+
 ![그림1](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/infra/server/tomcatC/2.png)
 
-**2\. Tomcat 설치**
+<br>
+
+#### **2\. Tomcat 설치**
 
 필자가 설치한 최초 아파치버전은 2.4.6과 톰캣 9.0.35 버전이랑은 계속 ajp 통신오류가 났다.(원인미상..)
 
-그래서 아래 포스팅을 참고하되 9버전대를 설치한다면 9.0.8 버전으로 설치를 추천한다.
+그래서 아래 포스팅을 참고하되 9버전대를 설치한다면 `9.0.8 버전`으로 설치를 추천한다.
 
 [https://zunoxi.tistory.com/41](https://zunoxi.tistory.com/41)
 
-[
+<br>
 
-Server #7. centos7에 apache tomcat 설치
+#### **3\. tomcat-connector(mod\_jk) 설치**
 
-윈도우에 톰캣설치하는것은 매우 간단한데 리눅스는 ubuntu만 다뤄봐서 그런지 centos는 약간의 다름이 느껴진다. 이번 포스팅에는 centos7.5환경에 apache tomcat 9.x 버전의 설치를 다뤄본다. 1. tomcat 사�
-
-zunoxi.tistory.com
-
-
-
-](https://zunoxi.tistory.com/41)
-
-**3\. tomcat-connector(mod\_jk) 설치**
-
-web-server와 tomcat을 연동시키기 위해 tomcat-connector를 설치해준다.
+web-server와 tomcat을 연동시키기 위해 `tomcat-connector를 설치`해준다.
 
 **(1) 의존성 주입**
 
 ```
 wget -c http://mirror.navercorp.com/apache/tomcat/tomcat-connectors/jk/tomcat-connectors-1.2.46-src.tar.gz
 ```
+<br>
 
 **(2) 압축 풀기 및 폴더 이동**
 
@@ -114,6 +109,7 @@ mv tomcat-connectors-1.2.46-src/ /usr/local/src
 
 cd /usr/local/src/tomcat-connectors-1.2.46-src/native/
 ```
+<br>
 
 **(3) 빌드**
 
@@ -123,7 +119,9 @@ cd /usr/local/src/tomcat-connectors-1.2.46-src/native/
 yum -y install gcc gcc-c++ httpd-devel
 ```
 
-[##_Image|kage@kQZlG/btqEiMJOVku/GLQWhbo84dCf9kGW9XMb0K/img.png|alignCenter|data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"|필자의 환경은 이미 설치되어있다..!||_##]
+![그림2](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/infra/server/tomcatC/3.png)
+
+<br>
 
 이제 빌드를 해본다. (위치는 cd /usr/local/src/tomcat-connectors-1.2.46-src/native/)
 
@@ -131,13 +129,13 @@ yum -y install gcc gcc-c++ httpd-devel
 ./buildconf.sh
 ```
 
-[##_Image|kage@b14BI6/btqEjQrd92g/vQvpem0OcgFoSNXrKarjgk/img.png|alignCenter|data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"|||_##]
+![그림3](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/infra/server/tomcatC/4.png)
 
 ```
 ./configure --with-apxs=/usr/bin/apxs
 ```
 
-[##_Image|kage@VE8Kr/btqEiMpyDKE/1TjkEiR5I55uuoJXaRSzgk/img.png|alignCenter|data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"|||_##]
+![그림4](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/infra/server/tomcatC/5.png)
 
 ```
 make
@@ -145,7 +143,9 @@ make
 make install
 ```
 
-[##_Image|kage@zzoe0/btqEimxTj8Q/ZCqGaRoWkC0oCmQRCSaOLK/img.png|alignCenter|data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"|||_##][##_Image|kage@HmwIo/btqEjDeCzBu/lEeVWJG4L1cnU5bn3Eviq0/img.png|alignCenter|data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"|||_##]
+![그림5](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/infra/server/tomcatC/6.png)
+
+<br>
 
 **(4) mod\_jk 파일 확인**
 
@@ -153,9 +153,11 @@ make install
 ls /etc/httpd/modules/ | grep mod_jk
 ```
 
-[##_Image|kage@2xK4Y/btqEjQreH8M/5N4TzJJPrc5EJIOaYt3kyk/img.png|alignCenter|data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"|이렇게 mod_jk.so 가 확인되면 설치 완료||_##]
+![그림6](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/infra/server/tomcatC/7.png)
 
-**4\. 기타 설정 파일 수정**
+<br>
+
+#### **4\. 기타 설정 파일 수정**
 
 **(1) httpd.conf 파일 수정**
 
@@ -163,7 +165,7 @@ ls /etc/httpd/modules/ | grep mod_jk
 vi /etc/httpd/conf/httpd.conf
 ```
 
-httpd.conf 파일 안에 다음 내용을 추가 (가상호스트 추가)
+`httpd.conf` 파일 안에 다음 내용을 추가 (가상호스트 추가)
 
 ```
 <VirtualHost *:80>
@@ -175,9 +177,7 @@ httpd.conf 파일 안에 다음 내용을 추가 (가상호스트 추가)
 </VirtualHost>
 ```
 
-이때 ServerName 같은 경우는 하나의 서버에서 여러개의 톰캣을 구동시킬 시,
-
-포트번호가아닌 도메인 네임으로 각 톰캣에 접근 할 수 있게하는 기능을 한다. 
+이때 `가상호스트(VirtualHost)` 설정 및 `ServerName`을 별도 설정하면 경우는 하나의 서버에서 여러개의 톰캣을 구동시킬 시, 포트번호가아닌 도메인 네임으로 각 톰캣에 접근 할 수 있게하는 기능을 한다. 
 
 해당 파일에 아래의 내용도 추가 (주석처리 되어있다면 주석해제)
 
@@ -185,19 +185,21 @@ httpd.conf 파일 안에 다음 내용을 추가 (가상호스트 추가)
 LoadModule jk_module modules/mod_jk.so
 ```
 
+<br>
+
 **(2) workers.properties 파일 수정**
 
 ```
 vi /etc/httpd/conf/workers.properties
 ```
 
-[##_Image|kage@VMRhh/btqEimxTMj4/RZk4u66oflRDKzKgMjnkLk/img.png|alignCenter|data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"|||_##]
+![그림7](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/infra/server/tomcatC/8.png)
 
-위 httpd.conf 파일의 가상호스트 설정에 JkMount /\* tomcat 부분에서 tomcat이라는 이름으로 마운트 설정을 했기에
+위 httpd.conf 파일의 가상호스트 설정에 `JkMount` /\* tomcat 부분에서 tomcat이라는 이름으로 마운트 설정을 했기에 workers.properties에는 위 처럼 설정해주면 된다.
 
-workers.properties에는 위 처럼 설정해줬다.
+`8009 포트설정`은 웹서버에서 `Ajp 통신포트`로 8009로 연결되어 요청을 톰캣으로 보내주는 역할을 한다. 
 
-8009 포트설정은 웹서버에서 Ajp 통신포트로 8009로 연결되어 톰캣으로 연동 시켜주는 역할을 한다. 
+<br>
 
 **(3)  mod\_jk.conf 파일 수정**
 
@@ -220,8 +222,11 @@ vi /etc/httpd/conf.modules.d/mod_jk.conf
 
 ※ 해당과정에서 처음에는 아래와 같은 에러가 났다.
 
-[##_Image|kage@by4omm/btqEkaC2Fqi/3bqewhw6QcF9XBZokkyEH0/img.png|alignCenter|data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"|||_##]
+![그림8](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/infra/server/tomcatC/9.png)
 
+<br>
+
+```
 \[Tue May 19 16:09:13.388 2020\] \[20094:140649420454016\] \[error\] extension\_fix::jk\_uri\_worker\_map.c (580): Could not find worker with name 'tomcat' in uri map post processing.
 
 \[Tue May 19 16:09:13.416 2020\] \[20094:140649420454016\] \[info\] init\_jk::mod\_jk.c (3591): mod\_jk/1.2.46 initialized
@@ -231,10 +236,12 @@ vi /etc/httpd/conf.modules.d/mod_jk.conf
 \[Tue May 19 16:09:27.945 2020\] \[20098:140649420454016\] \[info\] jk\_handler::mod\_jk.c (2999): Could not find a worker for worker name=tomcat
 
 \[Tue May 19 16:09:28.282 2020\] \[20096:140649420454016\] \[info\] jk\_handler::mod\_jk.c (2999): Could not find a worker for worker name=tomcat
+```
+
 
 이는 mod\_jk.conf에 최초 설정시
 
-**<IfModule mod\_jk.c>**
+_**<IfModule mod\_jk.c>**_
 
 JkWorkersFile conf/workers.properties
 
@@ -246,11 +253,15 @@ JkLogLevel info
 
 JkLogStampFormat "\[%y %m %d %H:%M:%S\] "
 
-**</IfModule>**
+_**</IfModule>**_
 
-<IfMoudule mod\_jk.c> 라고 설정했기 때문이다....<IfModule jk\_module> 라고 설정하는 것이 맞다.
+<IfMoudule mod\_jk.c> 
 
-5\. httpd 재기동 및 정상 접속 확인
+라고 설정했기 때문이다....<IfModule jk\_module> 라고 설정하는 것이 맞다.
+
+<br>
+
+#### **5\. httpd 재기동 및 정상 접속 확인**
 
 ```
 systemctl stop httpd.service
@@ -258,15 +269,13 @@ systemctl stop httpd.service
 systemctl start httpd.service
 ```
 
-여기서 정상적으로 연결되고 이런식으로 ip(포트번호 없이) 혹은 domain으로 접속했을때
+여기서 정상적으로 연결되고 이런식으로 ip(포트번호 없이) 혹은 domain으로 접속했을때, 톰캣의 웹페이지로 바로 접속이 된다면 성공이다.
 
-톰캣의 웹페이지로 바로 접속이 된다면 성공이다.
+필자는 호스트에 도메인을 지정해놔서 도메인으로 들어가는것으로 확인했다.
 
-나는 호스트에 도메인을 지정해놔서 도메인으로 들어가는것으로 확인했다.
+> 참고 : C:\\Windows\\System32\\drivers\\etc 에 hosts 파일에 특정 ip의 도메인을 등록하고 테스트해 볼 수있다.
 
-(C:\\Windows\\System32\\drivers\\etc 에 hosts 파일에 특정 ip의 도메인을 등록할수 있다.)
-
-[##_Image|kage@sn27F/btqEjQEPwMD/v8Suy7LB8iGL9SXtOTYUpK/img.png|alignCenter|data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"|완료되는것 확인!||_##]
+![그림9](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/infra/server/tomcatC/10.png)
 
 위 사진 처럼 웹서버와 WAS가 정상적으로 연동되어 있는것을 알수 있다.
 
