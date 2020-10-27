@@ -13,9 +13,8 @@ header-img: img/infra/server/hourly/tomcat.png
 > `Centos7` Apache(Webserver)와 Tomcat(WAS) 연동하기
   
 - 목차
-	- [`Spring의 몇 가지 용어`](#spring과-spring-boot의-차이)
-	- [`Spring의 주요특징`](#spring의-몇-가지-용어)
-	- [`Spring Boot와의 차이`](#spring의-주요특징)
+	- [`웹 서버와 WAS 차이`](#웹-서버와-wasweb-application-server)
+	- [`웹 서버와 WAS 연동`](#웹-서버와-was-연동)
   
 ## Webserver with WAS
 ---
