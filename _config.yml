@@ -8,6 +8,11 @@ title:               ZUNOXI
 # Set to `https://<username>.github.io` when hosting on GitHub Pages
 url:                 https://zunoxi.github.io/
 
+
+#deployment
+host: 172.30.1.18
+port: 8091
+
 # Set to '' when hosting a blog on GitHub Pages, ie on `//<username>.github.io`
 # Set to '/<reponame>' when using the `gh-pages` branch of a repository
 baseurl:             ""
