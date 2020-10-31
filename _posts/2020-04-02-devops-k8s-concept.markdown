@@ -70,7 +70,7 @@ header-img: img/devops/k8s/install/logo.png
 
 ---
 
-### 2. **VM vs Container**
+### **2. VM vs Container**
 
 여기서 이 둘의 차이는 무엇일까? 위에 이미 설명을 했지만 이 두개만 놓고 비교를 하자면 다음과 같다.
 
@@ -98,7 +98,7 @@ header-img: img/devops/k8s/install/logo.png
 <br>
 ---
 
-### **3.Container대해**
+### **3. Container대해**
 
 컨테이너 이미지가 정상적으로 만들어져 있다면 어떤 환경에서도 도커엔진이 설치된 환경에서는 동일하게 동작한다. 참고로 _**윈도우컨테이너라는것**_ 도 존재한다.
 
