@@ -13,10 +13,11 @@ header-img: img/devops/k8s/install/logo.png
 > `Kubernetes` 란, 쿠버네티스에 대한 개념이해
   
 - 목차
-	- [`1.서버 가상화`](#1-서버-가상화)
-	- [`2 VM Centos 설치`](#2-vm-centos를-설치)
-	- [`3.VM 세팅`](#3-vm-세팅)
-	- [`4.Docker와 Kubernetes 설치`](#4-docker와-kubernetes-설치)
+	- [`가상화기술`](#1-가상화기술)
+	- [`vm vs container`](#2-vm-vs-container)
+	- [`container란`](#3-container대해)
+	- [`쿠버네티스의 강점`](#4-쿠버네티스의-강점)
+	- [`쿠버네티스 구조`](#5-kubernetes-구조)
   
 ## What is Kubernetes?
 ---
