@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CentOS7에 쿠버네티스 설치하기
+title: Kubernetes 2. CentOS7에 쿠버네티스 설치하기
 subtitle: CentOS7에 kubernetes 설치
 categories: devops
 tags: devops kubernetes
