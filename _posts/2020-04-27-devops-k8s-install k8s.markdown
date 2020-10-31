@@ -364,7 +364,7 @@ kubectl get nodes
 
 ++ 이부분에서도 상당한 삽질이 있었다. 처음 다른 버전의 쿠버네티스를 설치하고 다시 깔아서 그런지 "**Unable to connect to the server: x509....**" 에러가 발생했다. 이는 직접작성한 포스팅을 링크한다.
 
-[https://zunoxi.tistory.com/43](https://zunoxi.tistory.com/43)
+[https://zunoxi.github.io/devops/2020/04/28/devops-k8s-x509error/](https://zunoxi.github.io/devops/2020/04/28/devops-k8s-x509error/)
 
 
 **아래 명령어를 입력해보자.**
