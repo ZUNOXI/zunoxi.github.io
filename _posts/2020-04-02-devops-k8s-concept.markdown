@@ -70,7 +70,7 @@ header-img: img/devops/k8s/install/logo.png
 
 ---
 
-### 2.**VM vs Container**
+### 2. **VM vs Container**
 
 여기서 이 둘의 차이는 무엇일까? 위에 이미 설명을 했지만 이 두개만 놓고 비교를 하자면 다음과 같다.
 
@@ -109,7 +109,7 @@ header-img: img/devops/k8s/install/logo.png
 <br>
 ___
 
-### **4.쿠버네티스의 강점**
+### **4. 쿠버네티스의 강점**
 
 쿠버네티스는 일반적으로 `Auto Scailing`(트래픽양에 따라 알아서 서비스의 자원량을 변경), `Auto Healing`(장애가난 서버위에 올라와 있는 서비스들을 자동으로 다른 서버에 옮겨주는 기능)의 장점을 제공한다. AWS자체적으로 제공하는 서비스와 유사한데 서버의 필요대수가 줄어들기 때문에유지보수 비용이 다운된다.
 
