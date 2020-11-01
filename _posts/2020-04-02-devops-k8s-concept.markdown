@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Kubernetes 1. 쿠버네티스(Kubernetes)란 / 쿠버네티스를 쓰는 이유
+title: Kubernetes 1. 쿠버네티스(Kubernetes)란 / 쿠버네티스의 기능
 subtitle: 쿠버네티스(Kubernetes)란 / 쿠버네티스를 쓰는 이유
 categories: devops
 tags: devops kubernetes
