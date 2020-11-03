@@ -13,8 +13,8 @@ published: true
 > 쿠버네티스에서의 `Pod`와 `Service`에 대한이해
   
 - 목차
-    - [`Pod(파드)란`](#Java-프로젝트에서의-RESTapi)
-    - [`Service(서비스)란`](#구조)
+    - [`Pod(파드)란`](#pod파드란)
+    - [`Service(서비스)란`](#service서비스란)
   
 ## Pod, Service in k8s
 ---
