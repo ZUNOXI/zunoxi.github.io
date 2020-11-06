@@ -45,7 +45,9 @@ Volume의 대표적인 적용방식에 대해 기술한다.
 
 `emptyDir`은 컨테이너들끼리 데이터를 공유하기 위해 볼륨을 사용하는것이다. 따라서, 처음에는 `볼륨이 비어있기때문`에 emptyDir이라고 명명한다. 볼륨은 파드안에 생성이 되고 pod생성시 만들어지며 pod 삭제시에 없어진다는 특징이있다.
 
-> 일시적 사용목적이 있는 데이터를 보관하는것이 좋다.
+> 일시적 사용목적이 있는 데이터를 다른 방법으로 보관하는것이 좋다.
+
+<br>
 
 ![그림1](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/volume/1.png)
 
@@ -55,6 +57,9 @@ Volume의 대표적인 적용방식에 대해 기술한다.
 
 ### **2. hostPath**
 
+`hostPath`는 노드안에 볼륨을 만들고 각 파드들이 path로 만운트를 해서 사용하기 떄문에 파드가 사라져도 데이터가 날아가지 않는다는 특징이있다.
+
+단, 특정 파드가 죽어서 재생성될때 해당 노드에서 재생성된다는 보장이 없기 때문에 자신이 원래 
 ![그림2](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/volume/2.png)
 
 ---
