@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Kubernetes 6. Kubernetes의 Pod와 Service
+title: Kubernetes 6. Kubernetes의 Volume
 subtitle: kubernetes의 기본개념
 categories: devops
 tags: devops kubernetes
@@ -10,15 +10,15 @@ published: true
 ---
 
 ## 개요
-> 쿠버네티스에서의 `Pod`와 `Service`에 대한이해
+> 쿠버네티스의 `volume`에 대한이해
   
 - 목차
     - [`Pod(파드)란`](#pod파드란)
     - [`Service(서비스)란`](#service서비스란)
   
-## Pod, Service in k8s
+## Volume in k8s
 ---
-최근 쿠버네티스 실습을 통해 여러개의 서버에 클러스터를 구축하고 있는데, Pod부터 시작해서 개념을 한번 정리하고 가면 좋을것 같아 정리글을 작성한다.
+컨테이너를 활용하는 쿠버네티스 환경에서 일반적으로 사용하는 도커이미지는 읽기 전용이기때문에 컨테이너내에 만들어지는 파일은 임시적이며, 컨테이너환경에서 실행되는 파일들은 언제든지 높은가능성으로 문제가 발생할 수 있다.
 
 <br>
 
