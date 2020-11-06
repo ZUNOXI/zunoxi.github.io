@@ -41,13 +41,27 @@ published: true
 
 Volume의 대표적인 적용방식에 대해 기술한다.
 
-### 1. emptyDir
+### **1. emptyDir**
 
 `emptyDir`은 컨테이너들끼리 데이터를 공유하기 위해 볼륨을 사용하는것이다. 따라서, 처음에는 `볼륨이 비어있기때문`에 emptyDir이라고 명명한다. 볼륨은 파드안에 생성이 되고 pod생성시 만들어지며 pod 삭제시에 없어진다는 특징이있다.
 
 > 일시적 사용목적이 있는 데이터를 보관하는것이 좋다.
 
+![그림1](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/volume/1.png)
 
+허접한 그림솜씨...
+
+---
+
+### **2. hostPath**
+
+![그림2](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/volume/2.png)
+
+---
+
+### **3. PVC/PV**
+
+![그림3](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/volume/3.png)
 
 
 
