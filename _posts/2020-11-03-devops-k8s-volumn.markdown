@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Kubernetes 6. Kubernetes의 Pod와 Service
+title: Kubernetes 6. Kubernetes의 Volume
 subtitle: kubernetes의 기본개념
 categories: devops
 tags: devops kubernetes
@@ -10,22 +10,22 @@ published: true
 ---
 
 ## 개요
-> 쿠버네티스에서의 `Pod`와 `Service`에 대한이해
+> 쿠버네티스에서의 `volume`에 대한이해
   
 - 목차
     - [`Pod(파드)란`](#pod파드란)
     - [`Service(서비스)란`](#service서비스란)
   
-## Pod, Service in k8s
+## Volume in k8s
 ---
-최근 쿠버네티스 실습을 통해 여러개의 서버에 클러스터를 구축하고 있는데, Pod부터 시작해서 개념을 한번 정리하고 가면 좋을것 같아 정리글을 작성한다.
+쿠버네티스 개념 중 volume에 대한 개념을 정리해본다.
 
 <br>
 
-### Pod(파드)란?
+### Volume(볼륨)?
 
 ---
-파드는 쿠버네티스 애플리케이션의 `기본 실행단위`이자 `가장 작고 간단한 배포의 단위`이다.
+
 
 * **클러스터** : 노드(컨테이너화된 애플리케이션을 실행)라고 하는 워커머신의 집합
 
