@@ -6,7 +6,7 @@ categories: life
 tags: life etc
 comments: true
 published: true
-header-img: img/life/etc/blog/맥북2.jpeg
+header-img: img/life/etc/blog/맥북4.jpeg
 ---
 
 ## 개요
@@ -96,7 +96,7 @@ header-img: img/life/etc/blog/맥북2.jpeg
 
 
 
-**(2) 티스토리 블로그**
+> **(2) 티스토리 블로그**
 
 
 ![그림4](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/life/etc/blog/4.jpg)
