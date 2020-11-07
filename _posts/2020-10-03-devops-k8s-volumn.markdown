@@ -53,6 +53,8 @@ Volume의 대표적인 적용방식에 대해 기술한다.
 
 허접한 그림솜씨...
 
+<br>
+
 ---
 
 ### **2. hostPath**
@@ -61,11 +63,30 @@ Volume의 대표적인 적용방식에 대해 기술한다.
 
 단, 특정 파드가 죽어서 재생성될때 해당 노드에서 재생성된다는 보장이 없기 때문에 자신이 원래 매칭되어있던 노드의 볼륨을 참고하지 못하는 경우가 발생한다.
 
+이를 해결하기 위해 노드를 새로 만들때마다 기존 노드 볼륨에 마운트를 해주는 방법이 있다. (해당방법은 관리자 직접해줘야하는 기능이다.)
+
+<br>
+
 ![그림2](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/volume/2.png)
+
+<br>
+
+> 이는 실수가 발생할 여지를 주기때문에 바람직한 방법은 아니다.
+
+각각의 노드에는 기본적으로 각 노드 자신을 위해 시스템 파일들이 있는데 파드 자신이 할당되어있는 호스트의 데이터를 읽거나 쓸때는 이 hostPath를 사용하면 된다.
+
+여기서 volume path를 생성할 때는 노드에 `path로 잡을 경로`가 미리 만들어져 있어야한다.
+
+<br>
 
 ---
 
 ### **3. PVC/PV**
+
+- PVC(Persistent Volume Claim)
+- PV(Pesistent Volume)
+
+
 
 ![그림3](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/volume/3.png)
 
