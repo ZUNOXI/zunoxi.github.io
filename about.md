@@ -24,7 +24,7 @@ published: true
 
     
 `Info Link`
-- [`tistory tech blog`](https://zunoxi.tistory.com/)
+- [`Naver Football Blog`](https://blog.naver.com/cross9308)
 
 <br>
 
