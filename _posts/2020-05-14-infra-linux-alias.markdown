@@ -10,74 +10,70 @@ header-img: img/infra/linux/memory/memory.jpg
 ---
 
 ## 개요
-> `Kubernetes` 클러스터에 `Dashboard`설치
+> `Linux`에 `Alias`설정하기
   
 - 목차
 	- [`calico설치`](#1-calico-설치--dashboard-설치)
 	- [`프록시서버 띄우기`](#2-proxy-서버-띄우기)
 	- [`접속url이동`](#3-접속-url-입력브라우저의-주소창에)
   
-## Dashboard for Kubernetes
+## Alias for Linux
+
 ---
-kubernetes를 일반적인 유저가 커맨드라인이 아닌 가독성이 갖춰진 화면에서 작업을 하기위해선 쿠버네티스 Dashboard를 사용할 수 있다.
+
+리눅스(Centos7.ver) 에서 다중 톰캣의 환경을 설정하다보니 안그래도 이름긴 톰캣의 경로를 매번 입력해서 들어가는것이 너무 귀찮았다. 그래서 이런 귀차니즘을 해결해 줄 수 있는 alias 를 활용해보기로했다.🤨 
 
 <br>
 
 
-해당 포스팅은 아래의 글로부터 이어진다 :)
-
-[https://zunoxi.github.io/devops/2020/04/27/devops-k8s-install-k8s/](https://zunoxi.github.io/devops/2020/04/27/devops-k8s-install-k8s/)
-
-
-
 ---
 
-### **1\. Calico 설치 & Dashboard 설치**
+" **alias**는 특정 명령어를 애칭 혹은 별칭으로 저장하여 이를 간편하게 사용하게 하는 리눅스의 기능중 하나이다."
 
-쿠버네티스의 클러스터 네트워킹 Plug-in 중 하나인 `Calico` 설치
+현재 톰캣을 한번 실행시키려면 **/u01/test/second/apache-tomcat-9.0.35/bin** 위치까지 들어가서 실행시켜야한다.
 
-```
-curl -O https://docs.projectcalico.org/v3.9/manifests/calico.yaml
+(사실 자동실행을 사용하면 간편하긴하지만 기동 뿐만아니라 별도의 설정할때마다 위치로 찾아가는것은 귀찮다...)
 
-sed s/192.168.0.0\\/16/172.16.0.0\\/16/g -i calico.yaml
+alias를 사용하여 해당 위치로 바로 가게끔 해보겠다.
 
-kubectl apply -f calico.yaml
-```
+**1\. alias 설정확인**
 
-Calico의 관련 pod의 status가 running중인지 확인 (시간이 꽤 소요된다. 여러번 계속 입력해서 확인)
+일단, 현재 리눅스에 설정 되어있는 alias를 확인해 보자.
 
-```
-kubectl get pods --all-namespaces
-```
+[##_Image|kage@dcn6xZ/btqD8hKtEWx/MActekx4FWKr8DBkbKZoa0/img.png|alignCenter|data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"|||_##]
 
-Dashboard 설치
+사실 나는 포스팅 이전 tomcat에 대한 alias 설정을 해놨었다.
+
+**2\. alias 설정추가**
 
 ```
-kubectl apply -f https://raw.githubusercontent.com/kubetm/kubetm.github.io/master/sample/practice/appendix/gcp-kubernetes-dashboard.yaml
-
+vi ~/.bashrc
 ```
 
----
-### **2\. Proxy 서버 띄우기**
+명령창에 위의 스크립트를 입력한다.
+
+[##_Image|kage@cGSn4O/btqEbb9FO4A/6MzAJVzq5GZ7Nr81BrZgK1/img.png|alignCenter|data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"|\\||_##]
+
+현재 설정되어 있는 alias 목록이 나온다.
+
+나는 톰캣을 위해 " **alias tomcat1='cd /u01/test/first/apache-tomcat-9.0.35'** "와 같이 설정했다.
+
+이는 tomcat1을 쉘에 입력했을때 /u01/test/first/apache-tomcat-9.0.35의 경로로 이동하게하겠다는 뜻이다.
+
+입력후에 저장을 한다.
+
+저장은 아래와 같이!
 
 ```
-nohup kubectl proxy --port=8001 --address="본인 ip" --accept-hosts='^*$' >/dev/null 2>&1 &
+source ~/.bashrc
 ```
 
-\- nohup을 사용하는 이유는 **`백그라운드로 구동`** 시키기 위함이다.
+**3\. alias 사용 및 확인**
 
----
+[##_Image|kage@bDzpwC/btqD7HCXPzO/kf7OHh6vbztPQMNLcmukD1/img.png|alignCenter|data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"|||_##]
 
-### **3\. 접속 url 입력(브라우저의 주소창에)**
+tomcat1만 쉘에 입력했는데 해당 경로로 바로 이동된다.
 
-> http://"본인 ip":8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/.
+alias를 사용하면 이러한 이동뿐만아니라 다양한 사용자 명령어를 만들 수 있다는 장점이있다.
 
-![그림4](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/dashboard/1.png)
-
-※ 추가 ++ 서버가 재기동되거나 프록시서버가 꺼져서 다시 dashboard를 띄워야 할때는
-
-```
-nohup kubectl proxy --port=8001 --address="본인 ip" --accept-hosts='^*$' >/dev/null 2>&1 &
-```
-
-요 작업만 다시 해주면 된다 😁
+(물론 시스템명령어를 중복되게 입력하면 안된다..!)
