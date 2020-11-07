@@ -13,9 +13,7 @@ header-img: img/infra/linux/memory/memory.jpg
 > `Linux`에 `Alias`설정하기
   
 - 목차
-	- [`calico설치`](#1-calico-설치--dashboard-설치)
-	- [`프록시서버 띄우기`](#2-proxy-서버-띄우기)
-	- [`접속url이동`](#3-접속-url-입력브라우저의-주소창에)
+	- [`Alias`](#alias란)
   
 ## Alias for Linux
 
@@ -28,21 +26,24 @@ header-img: img/infra/linux/memory/memory.jpg
 
 ---
 
-" **alias**는 특정 명령어를 애칭 혹은 별칭으로 저장하여 이를 간편하게 사용하게 하는 리눅스의 기능중 하나이다."
+### Alias란?
 
-현재 톰캣을 한번 실행시키려면 **/u01/test/second/apache-tomcat-9.0.35/bin** 위치까지 들어가서 실행시켜야한다.
 
-(사실 자동실행을 사용하면 간편하긴하지만 기동 뿐만아니라 별도의 설정할때마다 위치로 찾아가는것은 귀찮다...)
+**`alias`** 는 특정 명령어를 애칭 혹은 별칭으로 저장하여 이를 간편하게 사용하게 하는 리눅스의 기능중 하나이다. 현재 필자가 운영중인 서버환경의 톰캣을 한번 실행시키려면 **/u01/test/second/apache-tomcat-9.0.35/bin** 위치까지 들어가서 실행시켜야한다.
 
-alias를 사용하여 해당 위치로 바로 가게끔 해보겠다.
+자동실행을 사용하는 방법도 있긴하지만 기동 뿐만아니라 별도의 설정할때마다 위치로 찾아가는것은 귀찮다...그래서 alias를 사용하여 해당 위치로 바로 가게끔 해보려한다.
+
+<br>
 
 **1\. alias 설정확인**
 
 일단, 현재 리눅스에 설정 되어있는 alias를 확인해 보자.
 
-[##_Image|kage@dcn6xZ/btqD8hKtEWx/MActekx4FWKr8DBkbKZoa0/img.png|alignCenter|data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"|||_##]
+![그림1](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/infra/linux/alias/1.png)
 
-사실 나는 포스팅 이전 tomcat에 대한 alias 설정을 해놨었다.
+사실 필자는 포스팅 이전 tomcat에 대한 alias 설정을 해놨었다.
+
+<br>
 
 **2\. alias 설정추가**
 
@@ -52,28 +53,22 @@ vi ~/.bashrc
 
 명령창에 위의 스크립트를 입력한다.
 
-[##_Image|kage@cGSn4O/btqEbb9FO4A/6MzAJVzq5GZ7Nr81BrZgK1/img.png|alignCenter|data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"|\\||_##]
+![그림2](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/infra/linux/alias/2.png)
 
-현재 설정되어 있는 alias 목록이 나온다.
+현재 설정되어 있는 alias 목록이 나온다. 나는 톰캣을 위해 **alias tomcat1='cd /u01/test/first/apache-tomcat-9.0.35'** 와 같이 설정했다.
 
-나는 톰캣을 위해 " **alias tomcat1='cd /u01/test/first/apache-tomcat-9.0.35'** "와 같이 설정했다.
-
-이는 tomcat1을 쉘에 입력했을때 /u01/test/first/apache-tomcat-9.0.35의 경로로 이동하게하겠다는 뜻이다.
-
-입력후에 저장을 한다.
-
-저장은 아래와 같이!
+이는 tomcat1을 쉘에 입력했을때 /u01/test/first/apache-tomcat-9.0.35의 `경로로 이동`하게하겠다는 뜻이다. 입력후에 저장을 한다. 이를 저장하지않으면 서버 재부팅시 초기화된다. 저장은 아래와 같이!
 
 ```
 source ~/.bashrc
 ```
 
+<br>
+
 **3\. alias 사용 및 확인**
 
-[##_Image|kage@bDzpwC/btqD7HCXPzO/kf7OHh6vbztPQMNLcmukD1/img.png|alignCenter|data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"|||_##]
+![그림3](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/infra/linux/alias/3.png)
 
 tomcat1만 쉘에 입력했는데 해당 경로로 바로 이동된다.
 
-alias를 사용하면 이러한 이동뿐만아니라 다양한 사용자 명령어를 만들 수 있다는 장점이있다.
-
-(물론 시스템명령어를 중복되게 입력하면 안된다..!)
+alias를 사용하면 이러한 이동뿐만아니라 다양한 `사용자 명령어`를 만들 수 있다는 장점이있다.(물론 시스템명령어를 중복되게 입력하면 안된다..!)
