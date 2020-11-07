@@ -83,16 +83,27 @@ Volume의 대표적인 적용방식에 대해 기술한다.
 
 ### **3. PVC/PV**
 
-- PVC(Persistent Volume Claim)
-- PV(Pesistent Volume)
+- PVC(Persistent Volume Claim, 이하 PVC)
+- PV(Pesistent Volume, 이하 PV)
 
-
+PVC/PV로 볼륨을 운영하는 방법은 User(사용자)와 Admin(관리자)의 역할을 구분해서 운영하기 위한 방법이다.
 
 ![그림3](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/volume/3.png)
 
+User가 파드를 생성하고 필요한 볼륨크기에대해 PV 생성을 `Admin에게 요청`하면(PVC행위)를 하면 Admin이 PV를 할당해주는 개념이다. 
+
+이 방식을 사용하면 user와 admin의 역할구분이되는것 뿐만아니라 위에서 언급했듯이 `파드가 재생성될때` 기존에 사용하던 노드가 아닌 다른 노드에 생성될 경우도 있는데, 이때 PV설정이 되어있다면 _**자동으로 데이터가 있는 볼륨이 컨테이너가 구동되는 노드로 옮겨 붙는 방식**_ 으로 사용 가능하다.
+
+PV를 사용하기전에 먼저 PV를 만들어주어야하는데 이를 프로비저닝이라고 부른다.
+
+> 그 PV를 생성하는 위치는 Local Disk일수도있고 AWS, GCP등의 클라우들 플랫폼을 이용하는 가상공간일 수 도있다.
+
+`퍼시스턴트 볼륨`관련된 설명은 다음 링크의 블로그 포스팅을 참고하면 도움이 더욱 될 것같다.
+[`링크`](https://arisu1000.tistory.com/27849)
 
 
 
+<br>
 
 ---
 > 참고
