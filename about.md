@@ -24,7 +24,7 @@ published: true
 
     
 `Info Link`
-- [`Naver Football Blog`](https://blog.naver.com/cross9308)
+- [`Naver Blog`](https://blog.naver.com/cross9308)
 
 <br>
 
