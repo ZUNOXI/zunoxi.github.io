@@ -16,7 +16,6 @@ published: true
 	- [`EmpryDir`](#1-emptydir)
 	- [`Hostpath`](#2-hostpath)
 	- [`PVC/PV`](#3-pvcpv)
-	- [`jenkins install`](#4-jenkins-install)
   
 ## Volume on k8s
 ---

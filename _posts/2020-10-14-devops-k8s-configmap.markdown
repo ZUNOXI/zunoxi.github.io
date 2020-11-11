@@ -13,10 +13,8 @@ published: true
 > 쿠버네티스의 `ConfigMap, Secret`에 대한이해
   
 - 목차
-    - [`볼륨기능`](#why-volume볼륨)
-    - [`EmptyDir`](#1-emptydir)
-    - [`hostPath`](#2-hostpath)
-    - [`Persistent Volume`](#3-pvcpv)
+	- [`ConfigMap`](#configmap)
+	- [`Secret`](#secret)
 
 ## ConfigMap and Secret
 ---
@@ -38,6 +36,7 @@ published: true
 <br>
 
 ### Secret
+
 ---
 
 ***Secret***도 `키(key)와 상수(Value)`로 구성되어있다. Secret은 보안과 관련된 값을 저장하는 기능을한다. 패스워드, OAuth 토큰, ssh키와 같은 민감한 정보를 저장하고 관리할때 사용할 수 있으며, 데이터 삽입시 `Base64 인코딩`을 해서 넣어야하는 것이 ConfigMap과의 차이이다. 
