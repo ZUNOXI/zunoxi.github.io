@@ -13,8 +13,8 @@ published: true
 > 쿠버네티스의 `ConfigMap, Secret`에 대한이해
   
 - 목차
-	- [`ConfigMap`](#configmap)
-	- [`Secret`](#secret)
+  - [`ConfigMap`](#configmap)
+  - [`Secret`](#secret)
 
 ## ConfigMap and Secret
 ---
