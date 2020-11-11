@@ -13,9 +13,9 @@ published: true
 > 쿠버네티스의 `ConfigMap, Secret`에 대한이해
   
 - 목차
-  - [`ConfigMap`](#configmap)
-  - [`Secret`](#secret)
-
+	- [`ConfigMap`](#configmap)
+	- [`Hostpath`](#secret)
+  
 ## ConfigMap and Secret
 ---
 `사소한 설정값` 몇개 때문에, 큰 용량의 이미지를 별도로 관리한다는것은 매우 비효율적인일이다. 따라서 이런 간단한 정보는 컨테이너 `내부에서 외부 정보를 참조`할 수 있게 해주는 기능이있다. 그것이 바로 ***ConfigMap과 Secret***이다.
