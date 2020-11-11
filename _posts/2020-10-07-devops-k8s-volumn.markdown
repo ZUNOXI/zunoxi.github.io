@@ -13,10 +13,9 @@ published: true
 > 쿠버네티스의 `volume`에 대한이해
   
 - 목차
-    - [`볼륨기능`](#why-volume볼륨)
-    - [`EmptyDir`](#1-emptydir)
-    - [`hostPath`](#2-hostpath)
-    - [`Persistent Volume`](#3-pvcpv)
+	- [`EmpryDir`](#1-emptydir)
+	- [`Hostpath`](#2-hostpath)
+	- [`PVC/PV`](#3-pvcpv)
 
 ## Volume in k8s
 ---
