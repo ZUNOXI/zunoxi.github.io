@@ -27,9 +27,15 @@ published: true
 ---
 우리는 종종 개발환경과 상용환경이 달라서 생기는 몇가지 문제들을 직면한다. 예를들어, `SSH설정, key값등에 대한 차이`로 개발계에서 테스트하는 이미지와 운영계에서 운영할 이미지를 별도로 만들어야될 수 있겠다.
 
+![그림1](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/configmap/1.jpeg)
+
+
 이때 ***ConfigMap***을 사용하면 이미지가 구동되는 컨테이너 전체의 설정을 바꾸는 것이 아니라, ConfigMap의 설정만 바꾸고 컨테이너에서는 해당 설정값들을 ConfigMap에 있는 값들을 참조하게 설정할 수 있다. 즉, `같은 이미지파일로` 개발계와 운영계의 컨테이너를 구동시킬 수 있다. 
 
 > 위 내용처럼 `Secret`도 동일한 원리로 사용된다.
+
+![그림2](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/configmap/2.jpeg)
+
 
 ***ConfigMap***은 `키(key)와 상수(Value)`로 구성되어있다. 일반적으로 컨테이너내의 환경변수에 세팅을 할 수 있으며 기밀이 아닌 데이터를 저장하는데 사용하는 API오브젝트이다. 파드는 볼륨에서 **환경변수, 커멘드-라인 인수 또는 구성파일**의 정보를 ConfigMap을 통해 참조할 수 있다.
 

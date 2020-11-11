@@ -49,6 +49,9 @@ published: true
 
 이때 한 Namespace에 있는 파드가 이 클러스터의 남은 자원을 모두 사용해버리면 다른 파드입장에서는 쓸 자원이 없어서 자원이 필요할 때 문제가 발생할 수 있다. 이때 사용되는것이 `Resource Quota`이다.
 
+![그림1](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/namespace/1.jpeg)
+
+
 Resource Quota를 사용하면 Namespace마다 최대한계를 설정해서 ***파드자원이 한계를 넘을수 없도록*** 만들 수 있다. Resource Quota를 설정한 경우에, 해당 Namespace에 들어오는 pod들은 반드시 스펙이 명시되어 있어야한다. `리미트를 초과하는 내용`이 들어오면 오류를 발생시킨다.
 
 > 쿠버네티스의 버전이 업그레이드 되면서 제한할 수 있는 오브젝트의 범주가 늘어나고있다.
