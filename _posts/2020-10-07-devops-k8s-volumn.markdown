@@ -16,8 +16,9 @@ published: true
 	- [`EmpryDir`](#1-emptydir)
 	- [`Hostpath`](#2-hostpath)
 	- [`PVC/PV`](#3-pvcpv)
-
-## Volume in k8s
+	- [`jenkins install`](#4-jenkins-install)
+  
+## Volume on k8s
 ---
 컨테이너를 활용하는 쿠버네티스 환경에서 일반적으로 사용하는 도커이미지는 읽기 전용이기때문에 컨테이너내에 만들어지는 파일은 `임시적`이며, 컨테이너환경에서 실행되는 파일들은 언제든지 `높은가능성으로 문제가 발생`할 수 있다. 우리는 Volume기능을 통해 이러한 현상을 예방할 수 있다.
 
