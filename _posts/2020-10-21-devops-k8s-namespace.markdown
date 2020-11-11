@@ -64,6 +64,8 @@ Resource Quota를 사용하면 Namespace마다 최대한계를 설정해서 ***�
 
 네임스페이스에 들어올 `한 파드에 대한 리미트를 설정`할 수 있다. 즉, 네임스페이스에 들어올 수 있는 파드의 크기를 설정하고 파드가 들어올때마다 일일히 체크해주는 기능을한다.
 
+![그림2](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/namespace/2.jpeg)
+
 `Resource Quota`가 ***전체 네임스페이스를 제한***하는 기능이라면, `Limit Range`는 ***파드각각을 검사***한다고 이해할 수 있다.
 
 >Resource Quota와 Limit Range모두 네임스페이스 뿐만아니라 클러스터에도 설정할 수 있다.
