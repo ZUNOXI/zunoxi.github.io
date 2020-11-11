@@ -13,9 +13,9 @@ published: true
 > 쿠버네티스의 `Namespace`에 대한이해
   
 - 목차
-	- [`EmpryDir`](#1-emptydir)
-	- [`Hostpath`](#2-hostpath)
-	- [`PVC/PV`](#3-pvcpv)
+	- [`Namespace`](#namespace)
+	- [`Resource Quota`](#resource-quota)
+	- [`Limit Range`](#limit-range)
   
 ## Namespace on k8s
 ---
