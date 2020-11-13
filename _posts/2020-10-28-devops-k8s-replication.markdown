@@ -31,11 +31,27 @@ published: true
 컨트롤러는 아래와 같은 4가지의 기능을 제공한다.
 
 - `Auto Healing` : pod가 다운되거나 혹은 pod가 있는 노드가 다운되는 경우 장애가 발생할때, 컨트롤러는 이를 즉각적으로 인지하고 다른 노드에 pod를 재생성해준다.
+  
+	![그림1](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/controller/1.jpeg)
+	<br>
+
 - `Auto Scaling` : 파드의 리소스가 리미트 상태에 이르렀을때, 파드를 하나 혹은 그 필요정도를 계산하여 추가적으로 만들어주는 기능. (파드의 리밋고려 자원 추가 생성)
+
+	![그림2](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/controller/3.jpeg)
+	<br>
+
 - `Software Update` : 여러파드에 대해 업그레이드해야할 경우 한번에 업그레이드할 수 있도록 지원한다.
+
+	![그림3](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/controller/2.jpeg)
+	<br>
+
 - `Job` : 일시적으로 특정 작업을 해야하는 경우, 필요한 순간에 임시적으로 파드를 만들어서 해당작업을 이행하고 삭제한다.
+  
+	![그림4](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/controller/4.jpeg)
+	<br>
  
 쿠버네티스의 컨트롤러의 종류는 ***Replication Controller, ReplicaSet, DaemonSet, Job, Deployment***등이 있다. 이번 포스팅에서는 이중 `Replication Controller`에 대해 알아본다.
+
 
 <br>
 
