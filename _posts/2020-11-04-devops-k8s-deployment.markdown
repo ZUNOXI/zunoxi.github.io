@@ -48,6 +48,8 @@ ReCreate 디플로이먼트 방식은 기존 App의 **v1버전 파드를 삭제*
 
 <br>
 
+![그림1](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/namespace/1.jpeg)
+
 ---
 
 #### **`Rolling Update`**
