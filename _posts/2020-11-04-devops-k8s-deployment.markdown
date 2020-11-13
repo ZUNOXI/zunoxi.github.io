@@ -48,7 +48,9 @@ ReCreate 디플로이먼트 방식은 기존 App의 **v1버전 파드를 삭제*
 
 <br>
 
-![그림1](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/namespace/1.jpeg)
+![그림1](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/deployment/1.jpeg)
+
+<br>
 
 ---
 
@@ -59,6 +61,14 @@ Rolling Update 디플로이먼트 방식은 업데이트할 **v2버전의 파드
 이때 v2파드가 하나 생성될때 이상이 없으면 v1파드 하나가 삭제된다. 이런 방식으로 기존 파드가 운영되었던 개수만큼 **v2파드가 생성과 v1파드의 삭제가 반복**된다.
 
 Rolling Update 방식은 다운타임이 생기지는 않지만(zero downtime) v2서비스를 미리 만들면서 _`자원의 할당량이 늘어난다`_ 는 특징이 있다.
+
+<br>
+
+![그림2](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/deployment/2.jpeg)
+
+<br>
+
+![그림3](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/deployment/3.jpeg)
 
 <br>
 
@@ -77,6 +87,10 @@ Blue/Green 방식은 디플로이먼트가 자체적으로 제공하는 기능�
 
 <br>
 
+![그림4](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/deployment/4.jpeg)
+
+<br>
+
 ---
 
 #### **`Canary`**
@@ -91,6 +105,10 @@ Blue/Green 방식은 디플로이먼트가 자체적으로 제공하는 기능�
   > 이방법은 v1과 v2에 대한 접근이 모두 가능하게 만들어서 테스트하는 방법이다.
 - `특정경로 테스트` : v1용도의 서비스와 별도로 v2테스트용으로 서비스를 만들고 Ingress Controller를 연결하여 url에 대한 접근 주소로 서비스별 연결을 다르게 할 수 있게 설정한다. 
   > 테스트기간동안에 이상이 없다면 기존에 사용하던 pod v1과 관련된 자원들을 삭제하고 v2를 사용할 수 있다.
+
+<br>
+
+![그림5](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/deployment/5.jpeg)
 
 <br>
 
