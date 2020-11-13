@@ -68,7 +68,10 @@ published: true
 <br>
 
 리플리케이션 컨트롤러는 다음 기능들을 제공한다.
-- `Replicas` : replicas의 설정 개수만큼 파드의 개수가 관리되고, 파드가 삭제되면 설정된 개수만큼 파드가 재생성되어 전체적인 설정개수를 만족시킨다. 
+- `Replicas` : replicas의 설정 개수만큼 파드의 개수가 관리되고, 파드가 삭제되면 설정된 개수만큼 파드가 재생성되어 전체적인 설정개수를 만족시킨다.
+	
+	![그림4](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/controller/4.jpeg)
+	
 - `Template` : 컨트롤러와 파드는 서비스와 셀렉터로 연결이 된다. 템플릿으로 파드의 내용을 넣고, 이후 파드 다운시에 파드가 재생성되며 템플릿에 명시되어있는 `파드의 내용대로` 만들어진다. 이러한 특성을 사용해서 ***앱에 대한 업그레이드가 가능***하다. 즉, 기존에 연결되었던 파드를 다운시키면 연결된 템플릿이 이를 감지하고 수동으로 업그레이드 시킬 수 있다는 뜻이다.
   > replication을 만들때 replicas의 수치를 설정하되 pod를 별도로 연결하지 않는다면, 템플릿의 설정된 파드를 이용해서 그 설정 개수만큼 자동으로 파드를 생성한다.
 - `Selector` : 이는 ReplicaSet에만 있는 기능으로 일반적으로 Replication Controller는 라벨과 셀렉터가 일차하는 오브젝트들을 매칭하게 되어있지만, ReplicaSet같은 경우는 **`matchLabels와 matchExpression`** 으로 나누어 추가 기능을 제공한다.
