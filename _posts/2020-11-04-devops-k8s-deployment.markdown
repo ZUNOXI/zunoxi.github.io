@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Kubernetes 10. Kubernetes의 Deployment
+title: Kubernetes 10. Kubernetes의 Deployment 1
 subtitle: kubernetes의 기본개념
 categories: devops
 tags: devops kubernetes
