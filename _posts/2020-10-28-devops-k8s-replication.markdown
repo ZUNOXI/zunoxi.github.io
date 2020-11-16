@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Kubernetes 9. Kubernetes의 Replication Controller
+title: Kubernetes 9. Kubernetes의 Controller 1 - Replication
 subtitle: kubernetes의 기본개념
 categories: devops
 tags: devops kubernetes

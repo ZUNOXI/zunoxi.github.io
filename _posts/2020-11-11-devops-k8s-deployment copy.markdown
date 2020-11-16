@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Kubernetes 10. Kubernetes의 Contorller 2 - deployment
-subtitle: kubernetes의 deployment ReCreate, Rolling Update, Blue/Green, Canary 
+title: Kubernetes 11. Kubernetes의 Controller 3 - DaemonSet, Job, CronJob
+subtitle: kubernetes의 기본개념
 categories: devops
 tags: devops kubernetes
 comments: true
@@ -20,15 +20,15 @@ published: true
   
 ## Deployment on k8s
 ---
-쿠버네티스의 `컨트롤러(Controller)`중 한 서비스가 운영중일때, 해당 서비스를 업데이트 해야할 경우 Deployment 컨트롤러를 사용하여 좀더 손쉽게 업데이트 할 수 있다.
+앞선 포스팅에서 쿠버네티스의 `컨트롤러(Controller)`중 Deployment에 대해 알아봤다. 이번시간에는 나머지 DaemonSet, Job, CronJob에 대해서 알아보려한다.
 
 <br>
 
-### Deployment
+### DameonSet
 
 ---
 
-디플로이먼트는 쿠버네티스 컨트롤러의 한 종류로서 `특정서비스를 업데이트하며 배포`할때 유용하게 사용하는 컨트롤러이다. 이 컨트롤러라는 개념은 [링크](https://zunoxi.github.io/devops/2020/10/28/devops-k8s-replication/)를 참조하여 이해를 먼저 하면 좋을것 같다. 쉽게 말해서 디플로이먼트는 파드(Pod)와 리플리카셋(ReplicaSet)에 대해 명시적으로 선언하는 컨트롤러이다. 
+데몬셋(DaemonSet)은 
 
 <br>
 
