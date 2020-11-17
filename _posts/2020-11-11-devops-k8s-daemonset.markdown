@@ -18,7 +18,7 @@ published: true
 	- [`Blue/Green`](#bluegreen)
 	- [`Canary`](#canary)
   
-## Deployment on k8s
+## Deployment on k8s 
 ---
 앞선 포스팅에서 쿠버네티스의 `컨트롤러(Controller)`중 Deployment에 대해 알아봤다. 이번시간에는 컨트롤러의 나머지 종류인 DaemonSet, Job, CronJob에 대해서 알아보려한다.
 
