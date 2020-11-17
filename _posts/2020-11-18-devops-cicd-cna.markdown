@@ -12,10 +12,10 @@ published: true
 > 클라우드 환경에서 최적화된 MSA를 구현하기 위한 CNA에 대한 이해
   
 - 목차
-	- [`퍼시스턴트 볼륨(PV) 생성`](#1-퍼시스턴트-볼륨pv-생성)
-	- [`jenkins Helm install`](#2-jenkins-helm-install)
-	- [`NodePort 설정`](#3-nodeport-설정)
-	- [`jenkins install`](#4-jenkins-install)
+	- [`MSA 구조`](#msa의-구조-및-구성효과)
+	- [`Kafka의 역할`](#kafka)
+	- [`Docker의 사용`](#docker)
+	- [`Kubernets 도입`](#kubernetes)
   
 ## Cloud Native Architecture
 ---
