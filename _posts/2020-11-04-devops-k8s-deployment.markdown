@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Kubernetes 10. Kubernetes의 Contorller 2 - deployment
+title: Kubernetes 10. Kubernetes의 Contorller 2 - Deployment
 subtitle: kubernetes의 deployment ReCreate, Rolling Update, Blue/Green, Canary 
 categories: devops
 tags: devops kubernetes
