@@ -67,8 +67,11 @@ ___
 
 #### **`MSA의 구조 및 구성효과`**
 
-![그림1](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/daemonset/2.jpg)
+<br>
 
+![그림1](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/cicd/cna/1.jpg)
+
+<br>
 
 ___
 
@@ -79,6 +82,12 @@ ___
 `MSA의 진입점`을 통일시키는 역할을 한다. 쿠버네티스 클러스터내에서 서비스를 각각의 컨테이너로 구동시키고 Gateway 서비스에만 외부에서도 통신이 가능하게끔 `LoadBalancer` 혹은 `NodePort` 기능을 부여한다.
 
 위 설정을 통해 일반 서비스 사용자는 오픈되어있는 Gateway로 접근 후 ***`URI Path-based`*** 로 Routing되어있는 MSA각각의 서비스( ex) 상품, 주문 배송)에 접근 할 수 있다.
+
+<br>
+
+![그림2](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/cicd/cna/2.jpg)
+
+<br>
 
 > API Gateway의 주요기능 
 
@@ -98,6 +107,8 @@ ___
 - https://velog.io/@tedigom/MSA-%EC%A0%9C%EB%8C%80%EB%A1%9C-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-3API-Gateway-nvk2kf0zbj, / 
 - https://medium.com/@umanking/%EC%B9%B4%ED%94%84%EC%B9%B4%EC%97%90-%EB%8C%80%ED%95%B4%EC%84%9C-%EC%9D%B4%EC%95%BC%EA%B8%B0-%ED%95%98%EA%B8%B0%EC%A0%84%EC%97%90-%EB%A8%BC%EC%A0%80-data%EC%97%90-%EB%8C%80%ED%95%B4%EC%84%9C-%EC%9D%B4%EC%95%BC%EA%B8%B0%ED%95%B4%EB%B3%B4%EC%9E%90-d2e3ca2f3c2
 
+<br>
+
 ---
 #### **`Kafka`**
 
@@ -113,6 +124,12 @@ ___
 
 ***`Kafka`*** 는 아파치재단의 **pub/sub 구조**에 특화된 메시지 큐이며, 많이 사용되는 이벤트 처리 방식인 분산형 데이터 스트리밍 플랫폼으로써 이벤트 스트림 게시, 구독, 저장 및 처리를 실시간으로 처리가 가능하다.
 
+<br>
+
+![그림3](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/cicd/cna/3.jpg)
+
+<br>
+
 - `pub/sub` : 클라우드 기반의 대용량 메시지 큐, 이벤트 스트림 구독 기반의 메시징 인프라이며, 이모델을 사용하면 이벤트 발생 후 또는 게시 후에 알림을 받아야 하는 구독자에게 이벤트가 전송되는 방식이다.
 
 	MSA구조의 이벤트 파이프라인의 역할을 하는 중추적인 기능으로 Kafka가 다운되면 치명적인 장애로 이어질 수 있다.
@@ -120,7 +137,7 @@ ___
 <br>
 
 또한, kafka는 대용량의 실시간 로그 처리에 특화된 메시징 시스템으로써 기존 범용 메시징 서비스대비 `TPS(Transaction Per Seconds)이 우수`(RabbitMQ나 ActiveMQ에 비해 높은 처리량, 및 성능을 갖고 있음)
-추가 ) 프로듀서와 컨슈머를 분리해서 사용할 수 있고, 무중단으로 Scale Out(필요시 Kafka 어플리케이션 확장)이 가능
+추가 ) 프로듀서와 컨슈머를 분리해서 사용할 수 있고, 무중단으로 Scale Out(필요시 Kafka 어플리케이션 확장)이 가능하다.
 
 > 참고 자료
 - youtube : 데브원영님 강의 [Apache kafka 기본개념 및 생태계 ](https://youtu.be/catN_YhV6To)
