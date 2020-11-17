@@ -13,10 +13,9 @@ published: true
 > 쿠버네티스의 `DaemonSet, Job, CronJob`에 대한이해
   
 - 목차
-	- [`ReCreate`](#recreate)
-	- [`Rolling Update`](#rolling-update)
-	- [`Blue/Green`](#bluegreen)
-	- [`Canary`](#canary)
+	- [`DaemonSet`](#dameonset)
+	- [`job`](#job--cronjob)
+	- [`cronjob`](#cronjob)
   
 ## Deployment on k8s 
 ---
