@@ -1,9 +1,9 @@
 ---
 layout: post
-title: CI/CD 4. CNA(Cloud Native Architecture)에 대한 이해
+title: Cloud 2. CNA(Cloud Native Architecture)에 대한 이해
 subtitle: 클라우드 네이티브 아키텍처에 대한 이해
-categories: devops
-tags: devops CICD
+categories: cloud
+tags: cloud cloud
 comments: true
 published: true
 ---
@@ -69,7 +69,7 @@ ___
 
 <br>
 
-![그림1](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/cicd/cna/1.jpg)
+![그림1](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/cicd/cna/1.jpeg)
 
 <br>
 
@@ -85,7 +85,7 @@ ___
 
 <br>
 
-![그림2](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/cicd/cna/2.jpg)
+![그림2](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/cicd/cna/2.jpeg)
 
 <br>
 
@@ -126,7 +126,7 @@ ___
 
 <br>
 
-![그림3](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/cicd/cna/3.jpg)
+![그림3](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/cicd/cna/3.jpeg)
 
 <br>
 
@@ -173,6 +173,10 @@ Docker는 컨테이너를 활용한 오픈소스 가상화 플랫폼이다. 컨�
 
 <br>
 
+![그림4](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/docker/docker1.png)
+
+<br>
+
 > `Docker Image`
 
 Docker의 이미지는 읽기 전용으로 컨테이너를 구동시킬 수 있는 `베이스 파일`의 역할을 한다. Docker 컨테이너의 default OS는 devian을 바탕으로 생성되나, 실제 커널은 **`호스트서버의 커널을 공유`** 한다. 
@@ -182,7 +186,11 @@ Docker의 이미지는 읽기 전용으로 컨테이너를 구동시킬 수 있�
 이미지는 앞서 언급한것처럼 읽기전용이기때문에 컨테이너가 구동중인상태에서 어플리케이션의 변화(로그데이터, 운영데이터 등) 변경은 컨테이너내에 쌓인다.
 **즉, 컨테이너가 삭제되면 어플리케이션을 운영하며 생긴 데이터들이 유실**되므로 도커가 제공하는 Volume기능을 이용하여 `호스트 공간에 마운트할 필요`가 있다.
 
-Docker image는 `Dockerfile`이라는 파일을 인식하고 해당 파일의 내용을 인식하여 단계별로 빌드한다.
+	Docker image는 `Dockerfile`이라는 파일을 인식하고 해당 파일의 내용을 인식하여 단계별로 빌드한다.
+
+<br>
+
+![그림5](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/docker/logo.png)
 
 <br>
 
@@ -208,6 +216,10 @@ Docker image를 빌드 이후 서버에서 기동시키위해서는 `docker repo
 특히, 도커 Volume 같은 기능자체도 최근에 생긴 기능이기때문에 도커 `컨테이너들의 생명주기를 관리해주고 전체적인 통신도 관장`해줘야하는 오케스트레이터가 필요하다.
 
 이런 이유로 탄생한것이 쿠버네티스이며 **`k8s`** 라고 줄여서 지칭한다.
+
+<br>
+
+![그림5](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/concept/1.png)
 
 <br>
 
