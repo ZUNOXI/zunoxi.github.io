@@ -140,6 +140,7 @@ ___
 추가 ) 프로듀서와 컨슈머를 분리해서 사용할 수 있고, 무중단으로 Scale Out(필요시 Kafka 어플리케이션 확장)이 가능하다.
 
 > 참고 자료
+
 - youtube : 데브원영님 강의 [Apache kafka 기본개념 및 생태계 ](https://youtu.be/catN_YhV6To)
 - https://velog.io/@tedigom/MSA-%EC%A0%9C%EB%8C%80%EB%A1%9C-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-5Backing-Service-lqk3b7560w
 
