@@ -67,7 +67,7 @@ ___
 
 #### **`MSA의 구조 및 구성효과`**
 
-
+![그림1](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/daemonset/2.jpg)
 
 
 ___
