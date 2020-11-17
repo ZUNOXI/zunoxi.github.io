@@ -93,5 +93,5 @@ CronJob의 Schedule 옵션은 Linux의 크론탭같은 기능을 제공한다.
 
 ---
 > 참고
-> - [`쿠버네티스 공식문서`](https://kubernetes.io/ko/docs/concepts/workloads/controllers/deployment/)
+> - [`쿠버네티스 공식문서`](https://kubernetes.io/ko/docs/concepts/workloads/controllers/daemonset/)
 > - [`김태민님의 쿠버네티스 강의`](https://www.inflearn.com/course/%EC%BF%A0%EB%B2%84%EB%84%A4%ED%8B%B0%EC%8A%A4-%EA%B8%B0%EC%B4%88#)
