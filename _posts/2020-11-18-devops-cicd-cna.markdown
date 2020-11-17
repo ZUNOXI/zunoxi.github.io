@@ -57,9 +57,10 @@ ___
 이를 해결하는것에 도움을 주는것이 Event Driven 방식이다. 이벤트 드리븐방식을통해 각 서비스에서 이벤트의 내용을 `pub/sub형식으로 전달`하고 kafka(클라우드 환경에서의 Message Channel 역할)를 통해 각 서비스에 메시지가 전달되고 처리되게 도와준다. (관련 내용은 정리의 하단부에 추가로 설명)
 
 > 참고 블로그 포스팅 
-- https://velog.io/@sa833591/%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EC%8B%9C%EC%8A%A4%ED%85%9C1
-- https://medium.com/dtevangelist/event-driven-microservice-%EB%9E%80-54b4eaf7cc4a
-- https://jaehun2841.github.io/2019/06/23/2019-06-23-event-driven-architecture/#event-stream-processing
+
+- [https://velog.io/@sa833591/이벤트-시스템1](https://velog.io/@sa833591/%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EC%8B%9C%EC%8A%A4%ED%85%9C1) 
+- [https://medium.com/dtevangelist/event-driven-microservice-란-54b4eaf7cc4a](https://medium.com/dtevangelist/event-driven-microservice-%EB%9E%80-54b4eaf7cc4a)
+- [https://jaehun2841.github.io/2019/06/23/2019-06-23-event-driven-architecture/#event-stream-processing](https://jaehun2841.github.io/2019/06/23/2019-06-23-event-driven-architecture/#event-stream-processing)
 
 <br>
 
@@ -104,8 +105,8 @@ ___
 
 > 참고 포스팅
 
-- https://velog.io/@tedigom/MSA-%EC%A0%9C%EB%8C%80%EB%A1%9C-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-3API-Gateway-nvk2kf0zbj, / 
-- https://medium.com/@umanking/%EC%B9%B4%ED%94%84%EC%B9%B4%EC%97%90-%EB%8C%80%ED%95%B4%EC%84%9C-%EC%9D%B4%EC%95%BC%EA%B8%B0-%ED%95%98%EA%B8%B0%EC%A0%84%EC%97%90-%EB%A8%BC%EC%A0%80-data%EC%97%90-%EB%8C%80%ED%95%B4%EC%84%9C-%EC%9D%B4%EC%95%BC%EA%B8%B0%ED%95%B4%EB%B3%B4%EC%9E%90-d2e3ca2f3c2
+- [https://velog.io/@tedigom/MSA-제대로-이해하기-3API-Gateway-nvk2kf0zbj](https://velog.io/@tedigom/MSA-%EC%A0%9C%EB%8C%80%EB%A1%9C-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-3API-Gateway-nvk2kf0zbj), / 
+- [https://medium.com/@umanking/카프카에-대해서-이야기-하기전에-먼저-data에-대해서-이야기해보자-d2e3ca2f3c2](https://medium.com/@umanking/%EC%B9%B4%ED%94%84%EC%B9%B4%EC%97%90-%EB%8C%80%ED%95%B4%EC%84%9C-%EC%9D%B4%EC%95%BC%EA%B8%B0-%ED%95%98%EA%B8%B0%EC%A0%84%EC%97%90-%EB%A8%BC%EC%A0%80-data%EC%97%90-%EB%8C%80%ED%95%B4%EC%84%9C-%EC%9D%B4%EC%95%BC%EA%B8%B0%ED%95%B4%EB%B3%B4%EC%9E%90-d2e3ca2f3c2)
 
 <br>
 
@@ -142,7 +143,7 @@ ___
 > 참고 자료
 
 - youtube : 데브원영님 강의 [Apache kafka 기본개념 및 생태계 ](https://youtu.be/catN_YhV6To)
-- https://velog.io/@tedigom/MSA-%EC%A0%9C%EB%8C%80%EB%A1%9C-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-5Backing-Service-lqk3b7560w
+- [https://velog.io/@tedigom/MSA-제대로-이해하기-5Backing-Service-lqk3b7560w](https://velog.io/@tedigom/MSA-%EC%A0%9C%EB%8C%80%EB%A1%9C-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-5Backing-Service-lqk3b7560w)
 
 ---
 
