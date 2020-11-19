@@ -10,13 +10,11 @@ header-img: img/devops/docker/logo.png
 ---
 
 ## 개요
-> 클라우드 환경에서 최적화된 MSA를 구현하기 위한 CNA에 대한 이해
+> Docker Desktop을 Window 환경에 설치관련 트러블 슈팅
   
 - 목차
-	- [`MSA 구조`](#msa의-구조)
-	- [`Kafka의 역할`](#kafka)
-	- [`Docker의 사용`](#docker)
-	- [`Kubernets 도입`](#kubernetes)
+	- [`장애내용`](#-장애내용)
+	- [`해결방법`](#해결방법)
   
 ## Docker for Window
 ---
