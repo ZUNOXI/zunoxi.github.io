@@ -13,9 +13,9 @@ published: true
 > 쿠버네티스 `Pod의 라이프사이클`에 대한이해
   
 - 목차
-	- [`DaemonSet`](#dameonset)
-	- [`job`](#job--cronjob)
-	- [`cronjob`](#cronjob)
+	- [`Pod lifecycle`](#pod-lifecycle)
+	- [`Pending`](#pending)
+	- [`Running`](#running)
   
 ## Lifecycle of Pod 
 ---
