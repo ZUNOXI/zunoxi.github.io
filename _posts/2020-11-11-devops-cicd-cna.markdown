@@ -15,7 +15,7 @@ published: true
 	- [`MSA 구조`](#msa의-구조)
 	- [`Kafka의 역할`](#kafka)
 	- [`Docker의 사용`](#docker)
-	- [`Kubernets 도입`](#kubernetes)
+	- [`Kubernetes 도입`](#kubernetes)
   
 ## Cloud Native Architecture
 ---
