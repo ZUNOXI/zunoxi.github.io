@@ -13,9 +13,8 @@ published: true
 > 쿠버네티스의 `QoS classes`에 대한이해
   
 - 목차
-	- [`DaemonSet`](#dameonset)
-	- [`job`](#job--cronjob)
-	- [`cronjob`](#cronjob)
+	- [`QoS 분류`](#qos-분류)
+	- [`우선순위`](#우선순위-매커니즘)
   
 ## QoS on Kubernetes
 ---
@@ -69,6 +68,13 @@ BestEffort는 pod의 어떤 container내에도 Request와 Limit가 미설정 되
 
 #### **`Burstable`**
 
+Burstable은 설정은 되어있는데 어딘가 조금 부족한(?)상태로 설정되어있는 경우이다. 이는 다음과 같은 여러가지의 경우가 있다.
+
+- 컨테이너의 Request와 Limit의 자원값이 일치하지 않는경우
+- 컨테이너의 Request 혹은 Limit 값중 하나만 설정이 되어있는 경우
+- 파드한개내의 다수의 컨테이너가 있을경우, Request와 Limit가 설정되지 않는 컨테이너가 있는경우
+
+> 우선순위가 밀려 삭제되는경우에는 메모리가 Request에 비해 사용중인 App으로 **`OOM score`**(Out of Memory)를 계산하여 사용량이 높은 Pod가 먼저 삭제된다.
 
 <br>
 
@@ -76,8 +82,6 @@ BestEffort는 pod의 어떤 container내에도 Request와 Limit가 미설정 되
 
 모든 Container에 Request와 Limit가 설정되어있고, Request와 Limit에는 Memory와 CPU가 모두 설정되어있다. 각 Container내에 Memory와 CPU의 Request와 Limit값이 같아야한다.
 
-
-**`수정중`**
 
 
 ---
