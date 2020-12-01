@@ -29,17 +29,28 @@ published: true
 
 파드의 status 필드는 phase 필드를 포함하는 PodStatus 오브젝트로 정의된다. 파드(Pod)는 아래 그림처럼 파드만의 라이프사이클이 있다.
 
+<br>
+
+![그림1](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/podlife/2.jpeg)
+
+<br>
 
 파드는 `Pending` 단계에서 시작해서, 기본 컨테너 중 적어도 하나 이상이 OK로 시작하면 `Running` 단계를 통과하고, 그런 다음 파드의 컨테이너가 실패로 종료되었는지 여부에 따라 `Succeeded` 또는 `Faild` 단계로 이동한다.
 
 
-
+<br>
 
 ---
 
 #### **`Pending`**
 
-파드의 최초상태는 펜딩(pending)이다.
+<br>
+
+![그림1](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/podlife/1.jpeg)
+
+<br>
+
+파드의 최초상태는 **펜딩(pending)** 이다.
 
 펜딩단계에서는 다음과 같은 몇가지 옵션을 설정할 수 있다.
 

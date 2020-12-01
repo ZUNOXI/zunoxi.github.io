@@ -13,8 +13,9 @@ published: true
 > 쿠버네티스의 `Node Scheduling`에 대한이해
   
 - 목차
-	- [`QoS 분류`](#qos-분류)
-	- [`우선순위`](#우선순위-매커니즘)
+	- [`Scheduling`](#scheduling)
+	- [`Pod간 집중/분산`](#pod간-집중분산)
+	- [`Node 할당제한`](#node-할당제한)
   
 ## Node Scheduling on Kubernetes
 ---
