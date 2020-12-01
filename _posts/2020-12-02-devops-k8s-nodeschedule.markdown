@@ -36,14 +36,22 @@ Pod는 기본적으로 스케쥴러에의해 할당되지만, 앞서 설명한�
 
 - `Node Affinity` : 파드에 Key만 설정해도 해당 키에 해당하는 노드중에 가장 자원이 여유로운곳에 배치되게되고, 만약 해당 조건에 맞지않는 키를 갖고 있더라도 스케쥴러가 판단하여 자원이 남는 노드에 배치하도록 옵션을 줄 수 있다.
 
+<br>
 
-✓ Node Affinity은 matchExpressions, required, preferred weight의 추가 옵션을 갖고있다.
+✓ Node Affinity은 `matchExpressions, required, preferred weight`의 추가 옵션을 갖고있다.
+
+- matchExpressions : 여러조합으로 파드들을 선택할 수 있다. 레플리케이션 컨트롤러의 
+  그것과 같이 pod에 해당 옵션을 설정하고 node들을 골라서 배치할 수 있다.
+
+- required vs preferred : required는 파드에 설정한 키값이 반드시 해당 노드의 키값과 일치해야하는 경우 배치되고, preferred는 해당 키값을 선호하되 반드시 필요한 것이 아니다.
+
+- preferred weight : 한개의 pod에 키가 다른 라벨이 2개가 있는 경우, weight값과 노드들의 자원을 고려하고 그 값을 계산해서 더 점수가 높게 나온 노드에 배치한다.
 
 <br>
 
 ---
 
-#### **`Pod간 집중/분산`**
+### **`Pod간 집중/분산`**
 
 <br>
 
