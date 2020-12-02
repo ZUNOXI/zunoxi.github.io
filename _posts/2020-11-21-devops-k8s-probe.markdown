@@ -21,11 +21,18 @@ published: true
 ---
 쿠버네티스 클러스터에서 프로브(probe)는 Pod의 상태를 체크하며 쿠버네티스 운영의 안정성을 더해주는 기능을한다. kubelet은 실행중인 컨테이너들에 대해서 `Readiness Probe, Liveness Probe, startupProbe`를 수행할 수 있으며, 이번 포스팅은 해당 프로브에 대해 정리하려한다.
 
+<br><br><br>
+
+
+**참고문서**
+> - [`쿠버네티스 공식문서`](https://kubernetes.io/ko/docs/concepts/workloads/pods/pod-lifecycle/#%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88-%ED%94%84%EB%A1%9C%EB%B8%8C-probe)
+> - [`김태민님의 쿠버네티스 강의`](https://www.inflearn.com/course/%EC%BF%A0%EB%B2%84%EB%84%A4%ED%8B%B0%EC%8A%A4-%EA%B8%B0%EC%B4%88#)
+
 <br>
 
-### **`What is Probe`**
-
 ---
+
+### **`What is Probe`**
 
 쿠버네티스 공식문서에서는 프로브(Probe)에 대해 다음과 같이 설명한다. 
 
@@ -93,7 +100,3 @@ published: true
 
 이때 앱에대한 장애상황을 감지해주는게 `Liveness Probe`이다. 파드를 만들때 Liveness Probe를 달아주게되면 해당앱에 문제가 생긴 후 파드를 재실행하게 만들어서 잠깐의 트래픽에러는 발생하겠지만, 지속적으로 에러가 발생하여 장애상황이 생기는것을 방지해준다.
 
----
-참고
-> - [`쿠버네티스 공식문서`](https://kubernetes.io/ko/docs/concepts/workloads/pods/pod-lifecycle/#%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88-%ED%94%84%EB%A1%9C%EB%B8%8C-probe)
-> - [`김태민님의 쿠버네티스 강의`](https://www.inflearn.com/course/%EC%BF%A0%EB%B2%84%EB%84%A4%ED%8B%B0%EC%8A%A4-%EA%B8%B0%EC%B4%88#)

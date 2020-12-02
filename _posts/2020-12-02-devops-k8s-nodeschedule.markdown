@@ -21,8 +21,8 @@ published: true
 ---
 쿠버네티스에서 파드를 생성할경우, 생성할 파드가 어떤 노드에 할당되어야할지 유저가 기본적인 설정을 해놓는다면 **`노드스케쥴러(Node Scheduler)`** 가 이를 실행한다. 이를 스케쥴링(Scheduling)이라고 부르며 이번 포스팅에서는 해당용어에 대해 알아보려한다.
 
-<br>
-<br>
+<br><br><br>
+
 
 **참고문서**
 > - [`쿠버네티스 공식문서`](https://kubernetes.io/ko/docs/concepts/scheduling-eviction/kube-scheduler/)
