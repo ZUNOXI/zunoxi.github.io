@@ -13,9 +13,9 @@ published: true
 > 쿠버네티스의 Container `Probe`에 대한이해
   
 - 목차
-	- [`DaemonSet`](#dameonset)
-	- [`job`](#job--cronjob)
-	- [`cronjob`](#cronjob)
+	- [`What is Probe`](#what-is-probe)
+	- [`Readiness Probe`](#readiness-probe)
+	- [`Liveness Probe`](#liveness-probe)
   
 ## Container Probe
 ---
