@@ -46,7 +46,7 @@ published: true
 
 <br>
 
-![그림1](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/podlife/1.jpeg)
+![그림2](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/podlife/3.jpeg)
 
 <br>
 
@@ -73,6 +73,12 @@ published: true
 
 #### **`Running`**
 
+<br>
+
+![그림3](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/podlife/4.jpeg)
+
+<br>
+
 Pod가 Pending이후 실행될 때, 하나또는 모든 컨테이너의 기동중에 문제가 발생하면 컨테이너의 상태는 `Waiting`이되고, `CrashLoopBackOff`라는 Reason상태값이 반환되게된다.
 
 이때 파드는 컨테이너의 이러한 상태들에 대해서 Pending이 아닌 Running으로 간주하고 대신 내부 컨디션에 ContainerReady와 Ready는 False의 값을 갖게된다.
@@ -83,13 +89,23 @@ Pod가 Pending이후 실행될 때, 하나또는 모든 컨테이너의 기동�
 
 <br>
 
-`Job`이나 `CronJob`으로 생성된 파드의 경우, 자신의 일을 수행했을때는 Running중이지만, 일을 마치게되면 파드는 더이상 일을 하지 않는 상태가 되는데 이때 파드의 상태는 `Faild` 혹은 `Succeeded`상태로 나뉘게 된다.
+`Job`이나 `CronJob`으로 생성된 파드의 경우, 자신의 일을 수행했을때는 Running중이지만, 일을 마치게되면 파드는 더이상 일을 하지 않는 상태가 되는데 이때 파드의 상태는 **`Failed`** 혹은 **`Succeeded`** 상태로 나뉘게 된다.
 
 작업을 하는도중 컨테이너 중 하나라도 문제가 생겨서 에러가 발생하면 파드의 상태는 Faild가 되고, 모든 컨테이너들이 완료되면 Succeeded가 되는 차이이다. 이는 파드의 컨디션값이 변경된게된다.
 
 <br>
 
-`Pending중`에 바로 Faild로 빠지는 경우도 있고, Pending이나 Running중에 통신장애가 발생하면 파드가 **Unknown**상태로 변경되는데, 장애가 빨리 해결되면 다시 기존의 상태로 변경이 되지만 계속 장애가 지속되면 Faild상태로 바뀌기도 한다.
+![그림4](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/podlife/5.jpeg)
+
+<br>
+
+![그림5](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/podlife/6.jpeg)
+
+<br>
+
+<br>
+
+`Pending중`에 바로 Faild로 빠지는 경우도 있고, Pending이나 Running중에 통신장애가 발생하면 파드가 **Unknown**상태로 변경되는데, 장애가 빨리 해결되면 다시 기존의 상태로 변경이 되지만 계속 장애가 지속되면 Failed상태로 바뀌기도 한다.
 
 ---
 > 참고
