@@ -69,6 +69,10 @@ pod들을 노드에 배치할때 노드 스케쥴러를 사용하면 파드들�
 
 <br>
 
+![그림1](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/scheduling/1.jpeg)
+
+<br>
+
 ✓ **`Pod-Affinity`** 
 
 해당 설정을 하면 type:web이라는 라벨을 가진 web pod(master pod)가 스케쥴러에 의해서 노드1에 할당이되면, server pod(slave nod)는 노드의 라벨을 확인하는것이 아닌 web pod의 라벨을 바라보고 배치되려한다.
