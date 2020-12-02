@@ -45,6 +45,10 @@ Pod는 기본적으로 스케쥴러에의해 할당되지만, 앞서 설명한�
 
 <br>
 
+![그림1](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/scheduling/1.jpeg)
+
+<br>
+
 ✓ **Node Affinity**은 `matchExpressions, required, preferred weight`의 추가 옵션을 갖고있다.
 
 - `matchExpressions` : 여러조합으로 파드들을 선택할 수 있다. 레플리케이션 컨트롤러의 
@@ -55,6 +59,7 @@ Pod는 기본적으로 스케쥴러에의해 할당되지만, 앞서 설명한�
 - `preferred weight` : 한개의 pod에 키가 다른 라벨이 2개가 있는 경우, 각 라벨에 부여된 weight값과 노드들의 자원을 고려하고 그 값을 계산해서 더 점수가 높게 나온 노드에 배치한다.
 
 <br>
+
 
 ---
 
@@ -69,7 +74,7 @@ pod들을 노드에 배치할때 노드 스케쥴러를 사용하면 파드들�
 
 <br>
 
-![그림1](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/scheduling/1.jpeg)
+![그림2](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/scheduling/2.jpeg)
 
 <br>
 
@@ -90,6 +95,10 @@ pod들을 노드에 배치할때 노드 스케쥴러를 사용하면 파드들�
 노드 스케쥴러는 **`Toleration, Taint`** 기능을 사용하여 일반적인 경우에는 pod삽입이 되지않게, 조금은 특별하게 node 할당을 컨트롤할 수 있다. 이는 pod가 해당 노드를 직접 지정해도 할당이 되지않으며, toleration옵션이 달려있어야 할당이 된다. 이 옵션은 **GPU**와 같은 특별한 하드웨어 옵션을 가진 노드들을 이용해야하는 특정 파드를 배치할경우 유용하게 사용할 수 있다.
 
 기본적으로 taint가 달린 노드에는 아무 pod나 들어갈 수 없고 toleration이 부합하는 pod만 들어갈 수 있지만, **toleration이 달려있어도 해당 node에 배치가 되는것은 별도의 설정이 필요하다.**
+
+<br>
+
+![그림3](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/scheduling/3.jpeg)
 
 <br>
 
