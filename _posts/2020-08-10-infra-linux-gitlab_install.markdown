@@ -99,7 +99,7 @@ $ vi /etc/gitlab/gitlab.rb
 ![그림2](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/infra/linux/gitlab/3.png)
 
 
-붉은상자표시로 마킹한 곳에 접속할 도메인주소나 `'ip:port'` 형식으로 접근 경로를 기입한다.
+붉은상자표시로 마킹한 곳에 접속할 도메인주소나 `'http://ip:port'` 형식으로 접근 경로를 기입한다.
 
 또한, 실제 레포지터리가 위치할 디렉터리도 바꿔줄수 있다. 해당방법은 아래 링크를 참고하면 좋을것같다.
 
