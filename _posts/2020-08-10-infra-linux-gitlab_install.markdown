@@ -109,6 +109,8 @@ $ vi /etc/gitlab/gitlab.rb
 
 ```
 $ sudo gitlab-ctl reconfigure
+$ sudo gitlab-ctl start
+
 ```
 
 이후 주소창에 설정한 ip:port나 도메인을 입력한다. 물론 해당 포트에 대한 방화벽 오픈은 필수이다.
