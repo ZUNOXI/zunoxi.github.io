@@ -377,10 +377,13 @@ kubectl get pods --all-namespaces
 
 <br>
 
-**일단은 여기까지 왔다면 클러스터링은 **정상적으로** 구축된것이다.** 이를 통신이 가능하게끔하고 가시화 시키기 위해서는 Calico와 Dashboard가 필요한데, 포스팅 서두에 기술했던것 처럼 쿠버네티스와 버전이 맞지 않으면 설치하기 꽤나 까다롭다.
+일단은 여기까지 왔다면 클러스터링은 **정상적으로 구축된것이다.** 이를 통신이 가능하게끔하고 가시화 시키기 위해서는 Calico와 Dashboard가 필요한데, 포스팅 서두에 기술했던것 처럼 쿠버네티스와 버전이 맞지 않으면 설치하기 꽤나 까다롭다.
 
 ---
 
 Dashboard 띄워보겠다고 삽질했던 과정은 다음 포스팅에서 다뤄볼 예정. XD 
 
 ![그림2](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/install/logo.png)
+
+
+> 다음포스팅 : [Kubernetes 4. 쿠버네티스 네트워크/Dashboard 설정하기](#https://zunoxi.github.io/devops/2020/05/08/devops-k8s-dashboard/)
