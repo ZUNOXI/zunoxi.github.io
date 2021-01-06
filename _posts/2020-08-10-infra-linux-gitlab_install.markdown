@@ -19,11 +19,9 @@ header-img: img/infra/linux/gitlab/1.png
   
 ## Gitlab-ce on Centos7
 ---
-앞선 포스팅에서는 쿠버네티스에서 gitlab 서버를 설치하고 디플로이하는 글을 작성했었다. 다만, 왜...인지는 모르겠지만😢 특정 클러스터내에서는 설치가 잘 되었는데..필자가 별도로 구축한 kubernetes에서는 통신문제로 설치가 안되었었다.
+앞선 포스팅에서는 쿠버네티스에서 gitlab 서버를 설치하고 디플로이하는 글을 작성했었다. 이번에는 CI/CD 파이프라인을 사용하지만, 컨테이너환경이 아닌서버에서 환경을 구축하는 경우의 Gitlab을 서버에 설치해보려한다.
 
 <br>
-
-redis와 gitlab간의 통신오류로 에러가 출려되는데 어떤 부분을 어떻게 핸들링해야하는것인지 알 수가 없었다. 거의 2~3일간 구글링을하다가 해결을 못하고, 결국 개인 테스트 플젝에는 로컬서버 깃랩을 설치 및 이용하기로 했다.
 
 이번 포스팅에서는 테스트용으로 운영중인 **리눅스의 로컬환경(Centos7)에서 Gitlab-ce 서버를 설치**해보려한다.
 
@@ -31,6 +29,7 @@ redis와 gitlab간의 통신오류로 에러가 출려되는데 어떤 부분을
 
 -   [https://uxgjs.tistory.com/161](https://uxgjs.tistory.com/161)
 -   [https://wikidocs.net/16279](https://wikidocs.net/16279)
+-   [https://hreeman.tistory.com/m/78?category=597879](https://hreeman.tistory.com/m/78?category=597879)
 
 ---
 
