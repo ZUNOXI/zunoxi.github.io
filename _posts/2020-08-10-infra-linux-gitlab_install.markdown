@@ -150,7 +150,7 @@ $sudo chmod -cR 755 /var/log/gitlab
 
 > username : root / password : 5iveL!fe
 
-초기 접속화면에서 비밀번호를 변경했다면, admin계정의 비밀번호를 변경한것이니 위 password는 변경한 비밀번호로 입력하면 될것이다.
+초기 접속화면에서 비밀번호를 변경했다면, admin계정의 비밀번호를 변경한것이니 위 password는 변경한 비밀번호로 입력하면 된다.
 
 <br><br>
 
