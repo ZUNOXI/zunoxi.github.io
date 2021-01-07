@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CI/CD 3. github과 gitlab, 그리고 Bitbucket
+title: CI/CD 4. github과 gitlab, 그리고 Bitbucket
 subtitle: git을 사용하는 플랫폼들간의 비교
 categories: devops
 tags: devops CICD
@@ -61,3 +61,5 @@ git호스팅 서비스로 많이사용하는 3개 서비스는 **`Github, Gitlab
 ![그림2](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/cicd/git/4.png)
 
 <br>
+
+원래 github은 
