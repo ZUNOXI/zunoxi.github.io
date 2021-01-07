@@ -54,4 +54,10 @@ git호스팅 서비스로 많이사용하는 3개 서비스는 **`Github, Gitlab
 
 <br>
 
-먼저 Github(이하 깃허브)는 git호스팅중의 선두주자이자 가장 각광받는 서비스이다. 깃허브는 
+먼저 Github(이하 깃허브)는 git호스팅중의 선두주자이자 가장 각광받는 서비스이다. 깃허브는 다음과 같은가격정책을 갖고 있다.
+
+<br>
+
+![그림2](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/cicd/git/4.png)
+
+<br>
