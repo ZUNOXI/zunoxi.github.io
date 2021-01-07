@@ -86,7 +86,7 @@ systemctl restart firewalld
 
 <br>
 
-사실 CICD or Devops에 더가까운 포스팅이지만, 컨테이너환경에서의 설치가 아니라 infra분류로 포스팅해봤다. 이제 gitlab과 jenkins를 이용해서 CICD 테스트에 대한 포스팅을 해볼예정이다.
+사실 `CICD or Devops`에 더가까운 포스팅이지만, 컨테이너환경에서의 설치가 아니라 infra분류로 포스팅해봤다. 이제 gitlab과 jenkins를 이용해서 CICD 테스트에 대한 포스팅을 해볼예정이다.
 
 
 
