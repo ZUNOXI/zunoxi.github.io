@@ -6,14 +6,16 @@ categories: infra
 tags: infra linux/aix
 comments: true
 published: true
-header-img: img/infra/linux/jenkins/jenkins.png
+header-img: img/infra/linux/jenkins/jenkins.jpg
 ---
 
 ## 개요
 > `Centos7` linux 서버에 `Jenkins`설치하기
   
 - 목차
-	- [`1. Jenkins 설치`](#1-사전-환경-세팅)
+	- [`1. Jenkins 설치`](#1-jenkins-설치)
+	- [`2. Jenkins 구성수정`](#2-jenkins-구성수정)
+	- [`3. Jenkins 시작 및 접속`](#3-jenkins-시작-및-접속)
   
 ## Jenkins on Centos7
 ---
