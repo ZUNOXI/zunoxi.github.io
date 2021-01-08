@@ -31,6 +31,7 @@ Git은 개인 그리고 조직의 소스코드의 `버전관리(형상관리), �
 **참고했던 블로그 포스트**
 
 -   [https://m.blog.naver.com/dlwhdgur20/221006619001](https://m.blog.naver.com/dlwhdgur20/221006619001)
+-   [https://bitlog.tistory.com/158](https://bitlog.tistory.com/158)
 
 
 <br><br>
