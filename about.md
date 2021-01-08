@@ -26,8 +26,6 @@ published: true
     
 `Info Link`
 - EMAIL : dlwnsgh930821@gmail.com
-- Naver Blog(Link) : [https://blog.naver.com/cross9308](https://blog.naver.com/cross9308)
-
 
 <br>
 
