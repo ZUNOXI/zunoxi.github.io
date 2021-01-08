@@ -95,4 +95,6 @@ git호스팅 서비스로 많이사용하는 3개 서비스는 **`Github, Gitlab
 
 <br>
 
-![그림2](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/cicd/git/2.png)
+![그림3](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/cicd/git/2.png)
+
+<br>
