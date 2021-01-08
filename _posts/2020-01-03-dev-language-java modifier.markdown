@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Language#3.JAVA 개념정리 (접근제한자)
+title: Language#3.(수정중) JAVA 개념정리 (접근제한자)
 subtitle: JAVA 개념정리 세번째 접근제한자란
 categories: programming
 tags: programming language

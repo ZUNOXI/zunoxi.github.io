@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Language#1.JAVA 개념정리 (자바의 탄생)
+title: Language#1.(수정중) JAVA 개념정리 (자바의 탄생)
 subtitle: JAVA 개념정리 첫번째 자바의 탄생과정
 categories: programming
 tags: programming language
