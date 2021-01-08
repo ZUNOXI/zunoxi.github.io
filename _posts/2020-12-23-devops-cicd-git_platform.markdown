@@ -13,10 +13,10 @@ header-img: img/devops/cicd/git/git.png
 > 형상관리, 협업을 위한 `git`, 그리고 이를 이용한 플랫폼간의 비교
   
 - 목차
-	- [`Gitlab on k8s`](#h2-idgitlab-on-k8s-342gitlab-on-k8sh2)
-	- [`pv 선언`](#1-persistent-volume퍼시스턴트-볼륨-선언)
-	- [`gitlab 설치`](#2-gitlab-설치)
-	- [`설치확인`](#3-정상-설치-확인)
+	- [`Github`](#-2-github)
+	- [`Gitlab`](#-3-gitlab)
+	- [`Bitbucket`](#-4-bitbucket비트버킷)
+	- [`비교정리`](#-5-정리)
   
 ## Git 저장소
 ---
