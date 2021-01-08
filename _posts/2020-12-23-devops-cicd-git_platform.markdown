@@ -98,7 +98,7 @@ Git은 개인 그리고 조직의 소스코드의 `버전관리(형상관리), �
 
 <br>
 
-![그림3](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/cicd/git/2.png)
+![그림3](/assets/img/devops/cicd/git/2.png)
 
 <br>
 
@@ -107,3 +107,27 @@ gitlab은 github의 후발주자로 그 기능은 github과 유사하므로 장�
 기존에는 비공개 저장소를 무료로 이용할 수 있다는 장점도 있었지만, 현재 github도 이기능을 지원하고 있기에 이부분은 큰메리트로 다가오지 않는것 같다.
 
 단점으로는 원격저장소까지 `전송속도(push, pull 등)가 github보다 느리고 서버가 불안정`([참고](https://about.gitlab.com/blog/2017/02/01/gitlab-dot-com-database-incident/))할때가 있다.
+
+<br>
+
+개인적으로 gitlab같은경우에는 `사내에 특정 서버에 설치형으로 gitlab을 이용`하여 내부망에서 형상관리서비스를 이용할때 가장 경쟁력있다고 생각한다. github이 비공개저장소가 무료라해도 결국은 외부망이 오픈되어있어야 접근할 수 있기때문에 `인트라넷을 사용하는 사내`에서는 설치형 gitlab을 사용하는것이 좋은경우가 있다.
+
+
+<br><br>
+
+
+### **3. Bitbucket(비트버킷)**
+---
+
+<br>
+
+![그림4](/assets/img/devops/cicd/git/3.png)
+
+<br>
+
+비트버켓같은경우 필자가 사용해본적이 없어서 자세히는 모르지만, 개발사가 지라(Jira)와 소스트리(Sourcetree)를 개발한 아틀라시안(Atlassian)이다. 
+
+상당히 깔끔한 GUI를 제공하는것으로 유명한 개발사이므로 GUI가 직관적이고 아틀라시안이 개발한 툴들과 연동이 편하다는 장점이 있다.
+
+또한, 비트버킷은 AWS와의 통합기능을 제공한다. AWS 코드 디플로이(CodeDeploy)를 활용하여 EC2에서 코드를 실행할 수 있다고 한다.
+
