@@ -17,8 +17,11 @@ header-img: img/dev/language/java/java.png
 ---
 
 
-> **\# Modifier **
+**Modifier **
 ​
+<br>
+
+
 \* 클래스 정의시에 접근, 사용에 대한 제한 주기 위해 제한자(Modifier)를 사용할 수 있다. 
 ​
 **\* static**
