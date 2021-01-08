@@ -72,7 +72,7 @@ nohup kubectl proxy --port=8001 --address="본인 ip" --accept-hosts='^*$' >/dev
 
 > http://"본인 ip":8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/.
 
-![그림4](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/dashboard/1.png)
+![그림4](/assets/img/devops/k8s/dashboard/1.png)
 
 ※ 추가 ++ 서버가 재기동되거나 프록시서버가 꺼져서 다시 dashboard를 띄워야 할때는
 

@@ -54,7 +54,7 @@ header-img: img/infra/linux/hyper/1.png
 
 ---
 
-![그림1](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/infra/linux/hyper/2.png)
+![그림1](/assets/img/infra/linux/hyper/2.png)
 
 (사진 출처 : 위키백과 (https://ko.wikipedia.org/wiki/%ED%95%98%EC%9D%B4%ED%8D%BC%EB%B0%94%EC%9D%B4%EC%A0%80))
 

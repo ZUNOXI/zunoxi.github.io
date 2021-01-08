@@ -31,7 +31,7 @@ published: true
 
 <br>
 
-![그림1](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/podlife/2.jpeg)
+![그림1](/assets/img/devops/k8s/podlife/2.jpeg)
 
 <br>
 
@@ -46,7 +46,7 @@ published: true
 
 <br>
 
-![그림2](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/podlife/3.jpeg)
+![그림2](/assets/img/devops/k8s/podlife/3.jpeg)
 
 <br>
 
@@ -75,7 +75,7 @@ published: true
 
 <br>
 
-![그림3](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/podlife/4.jpeg)
+![그림3](/assets/img/devops/k8s/podlife/4.jpeg)
 
 <br>
 
@@ -95,11 +95,11 @@ Pod가 Pending이후 실행될 때, 하나또는 모든 컨테이너의 기동�
 
 <br>
 
-![그림4](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/podlife/5.jpeg)
+![그림4](/assets/img/devops/k8s/podlife/5.jpeg)
 
 <br>
 
-![그림5](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/podlife/6.jpeg)
+![그림5](/assets/img/devops/k8s/podlife/6.jpeg)
 
 <br>
 

@@ -48,7 +48,7 @@ ReCreate 디플로이먼트 방식은 기존에 운영중이던 App의 **v1버�
 
 <br>
 
-![그림1](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/deployment/1.jpeg)
+![그림1](/assets/img/devops/k8s/deployment/1.jpeg)
 
 <br>
 
@@ -64,11 +64,11 @@ Rolling Update 방식은 다운타임이 생기지는 않지만(zero downtime) v
 
 <br>
 
-![그림2](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/deployment/2.jpeg)
+![그림2](/assets/img/devops/k8s/deployment/2.jpeg)
 
 <br>
 
-![그림3](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/deployment/3.jpeg)
+![그림3](/assets/img/devops/k8s/deployment/3.jpeg)
 
 <br>
 
@@ -87,7 +87,7 @@ Blue/Green 방식은 디플로이먼트가 자체적으로 제공하는 기능�
 
 <br>
 
-![그림4](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/deployment/4.jpeg)
+![그림4](/assets/img/devops/k8s/deployment/4.jpeg)
 
 <br>
 
@@ -108,7 +108,7 @@ Blue/Green 방식은 디플로이먼트가 자체적으로 제공하는 기능�
 
 <br>
 
-![그림5](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/deployment/5.jpeg)
+![그림5](/assets/img/devops/k8s/deployment/5.jpeg)
 
 <br>
 

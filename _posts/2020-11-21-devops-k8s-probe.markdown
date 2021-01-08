@@ -60,7 +60,7 @@ published: true
 
 <br>
 
-![그림1](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/probe/1.jpeg)
+![그림1](/assets/img/devops/k8s/probe/1.jpeg)
 
 <br>
 
@@ -70,7 +70,7 @@ published: true
 
 <br>
 
-![그림2](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/probe/2.jpeg)
+![그림2](/assets/img/devops/k8s/probe/2.jpeg)
 
 <br>
 
@@ -78,11 +78,11 @@ published: true
 
 <br>
 
-![그림3](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/probe/3.jpeg)
+![그림3](/assets/img/devops/k8s/probe/3.jpeg)
 
 <br>
 
-![그림4](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/probe/4.jpeg)
+![그림4](/assets/img/devops/k8s/probe/4.jpeg)
 
 <br>
 
@@ -94,7 +94,7 @@ published: true
 
 <br>
 
-![그림5](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/probe/5.jpeg)
+![그림5](/assets/img/devops/k8s/probe/5.jpeg)
 
 <br>
 

@@ -54,7 +54,7 @@ cd "C:\Program Files\Docker\Docker"
 
 <br>
 
-![그림1](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/docker/window/1.png)
+![그림1](/assets/img/devops/docker/window/1.png)
 
 
 

@@ -112,7 +112,7 @@ $ docker build -f Dockerfile -t zunoxi .
 
 - " . " : 마지막에 . (온점)을 꼭 붙여줘야 한다. 해당 빌드 위치기반으로 이미지를 빌드하겠다는 뜻이 된다.
 
-![그림1](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/docker/spring/1.png)
+![그림1](/assets/img/devops/docker/spring/1.png)
 
 `공식문서`에서는 다음 명령어를 사용하라고 되어있으니 참고하면 좋을 것 같다. (프로젝트의 루트에서 실행)
 
@@ -134,7 +134,7 @@ $ docker run -p 9090:9090 --name spring [image id]
 
 <br>
 
-![그림2](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/docker/spring/2.png)
+![그림2](/assets/img/devops/docker/spring/2.png)
 
 (이미지가 정상적으로 구동되는것을 확인 할 수 있다.)
 
@@ -142,7 +142,7 @@ $ docker run -p 9090:9090 --name spring [image id]
 
 (3) 컨테이너 정상 구동 여부 확인
 
-![그림3](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/docker/spring/3.png)
+![그림3](/assets/img/devops/docker/spring/3.png)
 
 
 이렇게 `스프링부트 프로젝트`를 `docker image`로 만들었다. 말이 스프링부트이지 그냥 jar 파일을 docker 컨테이너안에서 실행시킬 수 있게끔 구현한 것이다. 다만 스프링 레거시가 아닌 부트(boot)이기 때문에 WAS가 별도로 필요 없는 정도? 해당 포스팅이 관련 문제로 고민하는 독자에게 참고가 되길 바라며😌

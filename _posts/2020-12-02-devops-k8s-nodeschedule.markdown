@@ -45,7 +45,7 @@ Pod는 기본적으로 스케쥴러에의해 할당되지만, 앞서 설명한�
 
 <br>
 
-![그림1](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/scheduling/1.jpeg)
+![그림1](/assets/img/devops/k8s/scheduling/1.jpeg)
 
 <br>
 
@@ -74,7 +74,7 @@ pod들을 노드에 배치할때 노드 스케쥴러를 사용하면 파드들�
 
 <br>
 
-![그림2](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/scheduling/2.jpeg)
+![그림2](/assets/img/devops/k8s/scheduling/2.jpeg)
 
 <br>
 
@@ -98,7 +98,7 @@ pod들을 노드에 배치할때 노드 스케쥴러를 사용하면 파드들�
 
 <br>
 
-![그림3](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/scheduling/3.jpeg)
+![그림3](/assets/img/devops/k8s/scheduling/3.jpeg)
 
 <br>
 

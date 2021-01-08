@@ -72,7 +72,7 @@ ___
 
 <br>
 
-![그림1](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/cicd/cna/1.jpeg)
+![그림1](/assets/img/devops/cicd/cna/1.jpeg)
 
 기존 모놀리틱했던 시스템과 MSA시스템의 구조적 차이는 위 그림과 같다.
 
@@ -90,7 +90,7 @@ ___
 
 <br>
 
-![그림2](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/cicd/cna/2.jpeg)
+![그림2](/assets/img/devops/cicd/cna/2.jpeg)
 
 <br>
 
@@ -138,7 +138,7 @@ ___
 
 <br>
 
-![그림3](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/cicd/cna/3.jpeg)
+![그림3](/assets/img/devops/cicd/cna/3.jpeg)
 
 <br>
 
@@ -179,7 +179,7 @@ Docker는 컨테이너를 활용한 오픈소스 가상화 플랫폼이다. 컨�
 
 <br>
 
-![그림4](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/docker/docker1.png)
+![그림4](/assets/img/devops/docker/docker1.png)
 
 <br>
 
@@ -196,7 +196,7 @@ Docker의 이미지는 읽기 전용으로 컨테이너를 구동시킬 수 있�
 
 <br>
 
-![그림5](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/docker/logo.png)
+![그림5](/assets/img/devops/docker/logo.png)
 
 <br>
 
@@ -225,7 +225,7 @@ Docker image를 빌드 이후 서버에서 기동시키위해서는 `docker repo
 
 <br>
 
-![그림5](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/concept/1.png)
+![그림5](/assets/img/devops/k8s/concept/1.png)
 
 <br>
 

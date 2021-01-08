@@ -51,7 +51,7 @@ published: true
 
 <br>
 
-![그림1](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/namespace/1.jpeg)
+![그림1](/assets/img/devops/k8s/namespace/1.jpeg)
 
 
 Resource Quota를 사용하면 Namespace마다 최대한계를 설정해서 ***파드자원이 한계를 넘을수 없도록*** 만들 수 있다. 위 그림은 각각의 네임스페이스가 사용할 수 있는 `메모리를 미리 설정하고 제한`한 예시이다.
@@ -69,7 +69,7 @@ Resource Quota를 설정한 경우에, 해당 Namespace에 들어오는 pod들�
 
 네임스페이스에 들어올 `한 파드에 대한 리미트를 설정`할 수 있다. 즉, 네임스페이스에 들어올 수 있는 파드의 크기를 설정하고 파드가 들어올때마다 일일히 체크해주는 기능을한다.
 
-![그림2](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/namespace/2.jpeg)
+![그림2](/assets/img/devops/k8s/namespace/2.jpeg)
 
 위그림은 특정 Namespace의 `Limit Lange 메모리`를 대략 50정도로 잡았을때, 100을요구하는 pod가 배치되려할때 오류를 발생시키는것을 예시로 보여주는 그림이다.
 

@@ -63,11 +63,11 @@ published: true
 
 <br>
 
-![그림1](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/qos/1.jpeg)
+![그림1](/assets/img/devops/k8s/qos/1.jpeg)
 
 <br>
 
-![그림2](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/qos/2.jpeg)
+![그림2](/assets/img/devops/k8s/qos/2.jpeg)
 
 <br>
 

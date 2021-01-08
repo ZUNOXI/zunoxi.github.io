@@ -50,7 +50,7 @@ Volume의 대표적인 적용방식에 대해 기술한다.
 
 <br>
 
-![그림1](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/volume/1.png)
+![그림1](/assets/img/devops/k8s/volume/1.png)
 
 (허접한 그림솜씨...)
 
@@ -68,7 +68,7 @@ Volume의 대표적인 적용방식에 대해 기술한다.
 
 <br>
 
-![그림2](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/volume/2.png)
+![그림2](/assets/img/devops/k8s/volume/2.png)
 
 <br>
 
@@ -89,7 +89,7 @@ Volume의 대표적인 적용방식에 대해 기술한다.
 
 PVC/PV로 볼륨을 운영하는 방법은 User(사용자)와 Admin(관리자)의 역할을 구분해서 운영하기 위한 방법이다.
 
-![그림3](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/volume/3.png)
+![그림3](/assets/img/devops/k8s/volume/3.png)
 
 User가 파드를 생성하고 필요한 볼륨크기에대한 PV생성을 `Admin에게 요청`하면(PVC행위)를 하면 Admin이 PV를 할당해주는 개념이다. 
 

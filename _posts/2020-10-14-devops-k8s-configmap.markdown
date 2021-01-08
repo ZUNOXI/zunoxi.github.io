@@ -29,14 +29,14 @@ published: true
 
 <br>
 
-![그림1](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/configmap/1.jpeg)
+![그림1](/assets/img/devops/k8s/configmap/1.jpeg)
 
 
 여기서 ***ConfigMap***을 사용하면 이미지가 구동되는 컨테이너 전체의 설정을 바꾸는 것이 아니라, ConfigMap의 설정만 바꾸고 컨테이너에서는 해당 설정값들을 ConfigMap에 있는 값들을 참조하게 설정할 수 있다. 즉, `같은 이미지파일로` 개발계와 운영계의 컨테이너를 구동시킬 수 있다. 
 
 <br>
 
-![그림2](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/configmap/2.jpeg)
+![그림2](/assets/img/devops/k8s/configmap/2.jpeg)
 
 
 > 위 내용처럼 `Secret`도 동일한 원리로 사용된다.

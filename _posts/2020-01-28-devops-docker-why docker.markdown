@@ -22,7 +22,7 @@ header-img: img/devops/docker/logo.png
 
 <br>
 
-![그림2](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/docker/docker2.png)
+![그림2](/assets/img/devops/docker/docker2.png)
 
 <br>
 
@@ -64,7 +64,7 @@ header-img: img/devops/docker/logo.png
 
 <br>
 
-![그림1](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/docker/docker1.png)
+![그림1](/assets/img/devops/docker/docker1.png)
 
 <br>
 

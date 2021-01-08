@@ -26,7 +26,7 @@ header-img: img/life/product/surface/header.png
 
 (본 게시글은 pc환경에 최적화 되어 있습니다.)
 
-![그림1](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/life/product/surface/1.png)
+![그림1](/assets/img/life/product/surface/1.png)
 
 
 ### 서피스(Surface)
@@ -58,7 +58,7 @@ https://www.microsoft.com/ko-kr/surface/devices/surface-pro-6?activetab=surfacep
 
 > 언박싱했던 2월의 어느날.
 
-![그림2](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/life/product/surface/2.png)
+![그림2](/assets/img/life/product/surface/2.png)
 
 필자는 11번가에서 당시 최저가로 구매했으며 키보드와 펜+SD카드까지 포함해서 `약 190만원` 정도 지불했었다.
 
@@ -66,13 +66,13 @@ https://www.microsoft.com/ko-kr/surface/devices/surface-pro-6?activetab=surfacep
 
 <br>
 
-![그림3](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/life/product/surface/3.png)
+![그림3](/assets/img/life/product/surface/3.png)
 
 자, 박스를 해체하고 안에 있는 내용물을 꺼내면
 
 <br>
 
-![그림4](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/life/product/surface/4.png)
+![그림4](/assets/img/life/product/surface/4.png)
 
 구매했던 패키지는 힐링 실드 필름을 제외하고 `본체, 알칸타라 키보드, 서피스마우스, 서피스펜`으로 구성되어 있다.브라운 계열을 좋아해서 깔맞춤 했는데 아주 마음에 들었다 😌
 
@@ -80,7 +80,7 @@ https://www.microsoft.com/ko-kr/surface/devices/surface-pro-6?activetab=surfacep
 
 > EVO Micro SD card
 
-![그림5](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/life/product/surface/5.png)
+![그림5](/assets/img/life/product/surface/5.png)
 
 SSD가 256GB이지만, 이것도 분명히 부족할 것 같기에...나름 빠르다던 삼성의 **256GB EVO plus microSD 카드도** 추가 구매했었다.
 (+ 내 6만 원...😩)
@@ -89,7 +89,7 @@ SSD가 256GB이지만, 이것도 분명히 부족할 것 같기에...나름 빠�
 
 >아름다운 본체 박스
 
-![그림6](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/life/product/surface/6.png)
+![그림6](/assets/img/life/product/surface/6.png)
 
 
 `애플의 그것`과 견줄만한 박스에서부터 오는 아우라가 느껴진다... 아직 삼성이 애플의 감성만큼을 따라오지는 못한것 같은데, 서피스가 이를 비슷하게 보여주려 노력하는 것 같다.
@@ -99,7 +99,7 @@ SSD가 256GB이지만, 이것도 분명히 부족할 것 같기에...나름 빠�
 
 > 태블릿 PC인 만큼 패널이 바로 보인다.
 
-![그림7](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/life/product/surface/7.png)
+![그림7](/assets/img/life/product/surface/7.png)
 
 
 
@@ -107,7 +107,7 @@ SSD가 256GB이지만, 이것도 분명히 부족할 것 같기에...나름 빠�
 
 > 본체 뒷모습
 
-![그림8](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/life/product/surface/8.png)
+![그림8](/assets/img/life/product/surface/8.png)
 
 <br>
 
@@ -117,7 +117,7 @@ _**`MICROSOFT`**_
 
 <br>
 
-![그림9](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/life/product/surface/9.png)
+![그림9](/assets/img/life/product/surface/9.png)
 
 <br>
 
@@ -125,7 +125,7 @@ _**`MICROSOFT`**_
 
 <br>
 
-![그림10](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/life/product/surface/10.png)
+![그림10](/assets/img/life/product/surface/10.png)
 
 <br>
 
@@ -135,7 +135,7 @@ _**`MICROSOFT`**_
 
 > 구세대 맥북과 비슷하게 **자성을 이용하여 붙일 수 있는 충전기**
 
-![그림11](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/life/product/surface/11.png)
+![그림11](/assets/img/life/product/surface/11.png)
 
 <br>
 
@@ -157,7 +157,7 @@ _**`MICROSOFT`**_
 
 <br>
 
-![그림12](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/life/product/surface/12.jpg)
+![그림12](/assets/img/life/product/surface/12.jpg)
 
 <br>
 
@@ -171,7 +171,7 @@ _**`MICROSOFT`**_
 
 <br>
 
-![그림13](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/life/product/surface/13.jpg)
+![그림13](/assets/img/life/product/surface/13.jpg)
 
 <br>
 
@@ -206,7 +206,7 @@ _**`MICROSOFT`**_
 
 > **2\. 운영체제의 안정성**
 
-![그림14](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/life/product/surface/14.jpg)
+![그림14](/assets/img/life/product/surface/14.jpg)
 
 윈도우자체가 본래 불안정한 운영체제이지만, 윈도우10이 나오면서 상당히 안정 적여졌다는 평을 받고 있다. 그럼에도 불구하고, 아직 터치를 지원하는 제품에서의 안정성은 떨어지는 것 같다.
 
@@ -225,7 +225,7 @@ _**`MICROSOFT`**_
 
 <br>
 
-![그림15](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/life/product/surface/15.jpg)
+![그림15](/assets/img/life/product/surface/15.jpg)
 
 자, 이렇게 간단한 언박싱과 후기를 포스팅해봤다.사실 시간 내서 그림 그리는 것을 좋아하는 저로서는 서피스프로가 매우 만족스러울 수밖에 없는데, 곧 `서피스프로7`이 출시되겠지만 지금까지 유출된 정보들로 미루어볼 때 풀체인지가 예상된다.
 

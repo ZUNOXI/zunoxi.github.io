@@ -25,7 +25,7 @@ header-img: img/life/job/posco/1.jpg
 
 
 
-![그림1](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/life/job/posco/2.png)
+![그림1](/assets/img/life/job/posco/2.png)
 
 본 메일이 받은 것 엊그제 같은데 아직도 수료했다는 것이 믿기지 않습니다. 해당 교육과정이 점점 관심을 받으면서 검색을 하시는 분들이 많이 생겨나고 있는 것 같습니다.
 
@@ -61,7 +61,7 @@ _**즉, 문과 출신 이런것과 관련없이 의지가 있다면 충분히 �
 
 몇 가지 정리해서 이야기해보겠습니다.
 
-![그림2](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/life/job/posco/1.jpg)
+![그림2](/assets/img/life/job/posco/1.jpg)
 
 <br><br>
 
@@ -120,7 +120,7 @@ _**즉, 문과 출신 이런것과 관련없이 의지가 있다면 충분히 �
 
 <br>
 
-![그림3](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/life/job/posco/3.jpg)
+![그림3](/assets/img/life/job/posco/3.jpg)
 
 <br>
 
@@ -132,6 +132,6 @@ _**즉, 문과 출신 이런것과 관련없이 의지가 있다면 충분히 �
 
 --- 
 
-![그림4](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/life/job/posco/4.jpg)
+![그림4](/assets/img/life/job/posco/4.jpg)
 
 우리 4조의 인공지능 프로젝트였던 딥러닝을 이용한 자율주행 Connected RC car!! 시간이 없어 자율주행만 구현했다고 한다...

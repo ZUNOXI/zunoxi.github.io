@@ -32,7 +32,7 @@ published: true
 
 <br>
 
-![그림1](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/daemonset/2.jpg)
+![그림1](/assets/img/devops/k8s/daemonset/2.jpg)
 
 <br>
 
@@ -61,7 +61,7 @@ Job은 특정 노드에 장애가 발생하여 해당 노드에 있던 파드들
 
 <br>
 
-![그림2](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/daemonset/1.jpg)
+![그림2](/assets/img/devops/k8s/daemonset/1.jpg)
 
 <br>
 

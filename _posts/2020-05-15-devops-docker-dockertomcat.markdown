@@ -37,7 +37,7 @@ header-img: img/devops/docker/logo.png
 docker pull tomcat
 ```
 
-![그림1](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/docker/tomcat/1.png)
+![그림1](/assets/img/devops/docker/tomcat/1.png)
 
 tomcat의 이미지 파일이 다운받아진걸 확인할 수 있다.
 
@@ -65,7 +65,7 @@ docker run -d --name tomcat_test -p 80:8080 tomcat
 
 \- 마지막 "**tomcat**" 부분은 톰캣이미지 파일에 태깅된 이미지이름이다. 이미지 ID를 입력해도 동일하게 처리된다.
 
-![그림2](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/docker/tomcat/2.png)
+![그림2](/assets/img/devops/docker/tomcat/2.png)
 
 잘 구동되는것을 확인할 수 있다. 이제 컨테이너 내부로 들어가서 웹프로그램과 연동해 주자
 
@@ -91,7 +91,7 @@ docker cp /u01/Devops/test/dist/index.html tomcat_test:/usr/local/tomcat/webapps
 
 **"docker cp \[복사할 호스트의 경로\] \[컨테이너 이름\] \[복사될 컨테이너 경로\]"**
 
-![그림3](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/docker/tomcat/3.png)
+![그림3](/assets/img/devops/docker/tomcat/3.png)
 
 해당 컨테이너 내부 경로에 복사할 파일들이 잘 복사 되었다.
 
@@ -109,7 +109,7 @@ docker cp /u01/Devops/test/dist/index.html tomcat_test:/usr/local/tomcat/webapps
 
 > 보안상 IP는 편집했다.
 
-![그림4](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/docker/tomcat/4.png)
+![그림4](/assets/img/devops/docker/tomcat/4.png)
 
 
 이렇게 docker를 활용하여 Tomcat을 운영해봤다.

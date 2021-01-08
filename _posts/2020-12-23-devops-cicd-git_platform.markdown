@@ -51,7 +51,7 @@ Git은 개인 그리고 조직의 소스코드의 `버전관리(형상관리), �
 
 <br>
 
-![그림1](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/cicd/git/1.png)
+![그림1](/assets/img/devops/cicd/git/1.png)
 
 <br>
 
@@ -74,7 +74,7 @@ Git은 개인 그리고 조직의 소스코드의 `버전관리(형상관리), �
 
 <br>
 
-![그림2](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/cicd/git/4.png)
+![그림2](/assets/img/devops/cicd/git/4.png)
 
 [링크 : https://github.com/pricing](https://github.com/pricing)
 

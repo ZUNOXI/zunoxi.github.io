@@ -28,7 +28,7 @@ header-img: img/infra/linux/memory/memory.jpg
 
 <br>
 
-![그림1](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/infra/linux/memory/free.png)
+![그림1](/assets/img/infra/linux/memory/free.png)
 <br><br>
 
 위 사진과 같은 모습이 콘솔창에 출력이된다.
@@ -122,7 +122,7 @@ header-img: img/infra/linux/memory/memory.jpg
 
 > `#top`
 
-![그림2](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/infra/linux/memory/top.png)
+![그림2](/assets/img/infra/linux/memory/top.png)
 
 
 위 사진 처럼 프로세스별 메모리 확인을 할 수 있다.

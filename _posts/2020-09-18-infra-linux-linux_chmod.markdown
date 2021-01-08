@@ -37,7 +37,7 @@ header-img: img/infra/linux/chown/logo.png
 
 <br>
 
-![그림1](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/infra/linux/chown/1.png)
+![그림1](/assets/img/infra/linux/chown/1.png)
 
 왼쪽 빨간 박스로 표시가 된 것이 접근권한이다. 가장 위에 있는 'bin' 폴더의 접근 권한에 대해 알아보자. '**dr-xr-xr-x**' : 여기서 d는 디렉토리를 의미하며 r,w,x에 대해서 설명하면 **r : 읽기 권한, w : 쓰기 권한, x : 실행 권한이라고** 이해할 수 있다.
 
@@ -79,7 +79,7 @@ $ chmod 755 /u01/infra/test.sh
 
 <br>
 
-![그림2](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/infra/linux/chown/2.png)
+![그림2](/assets/img/infra/linux/chown/2.png)
 
 여기서 권한을 변경할 때는 chown을 사용한다.
 
@@ -99,15 +99,15 @@ $ chown ituser:itteam /u01/infra/test.sh
 
 여기서 또 `Umask`라는 게 있는데, Umask는 현재 리눅스에 접속한 계정이 기본적으로 파일을 생성할 때의 갖는 기본 권한이라고 할 수 있다. 예를 들어 리눅스 쉘에 umask라는 명령어를 입력했을 때 
 
-![그림3](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/infra/linux/chown/3.png)
+![그림3](/assets/img/infra/linux/chown/3.png)
 
 **0022**라고 나오는 것이 일반적인 폴더, 파일 생성 권한이며 폴더는 **777 - umask값**(뒤에서 세 자리), 파일은 **666에서 -umask값**(뒤에서 세 자리)으로 계산한다. 즉, `0022` 같은 경우, 폴더는 777-022 = 755 권한, 파일은 666-022 = 644 권한으로 생성된다. 아래 사진에서 이를 확인할 수 있다. 
 
-![그림4](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/infra/linux/chown/4.png)
+![그림4](/assets/img/infra/linux/chown/4.png)
 
 <br>
 
-![그림5](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/infra/linux/chown/5.png)
+![그림5](/assets/img/infra/linux/chown/5.png)
 
 이렇게 리눅스의 기본적인 접근권한과 접근권한 부여 및 변경에 대해 알아봤다.
 

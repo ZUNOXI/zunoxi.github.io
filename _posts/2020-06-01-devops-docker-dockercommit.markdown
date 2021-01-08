@@ -50,7 +50,7 @@ Docker 사용 시 가끔 컨테이너 내부에서 `프로그램의 환경을 �
 컨테이너 실행 상태 확인
 
 
-![그림1](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/docker/commit/1.png)
+![그림1](/assets/img/devops/docker/commit/1.png)
 
 <br>
 
@@ -60,19 +60,19 @@ Docker 사용 시 가끔 컨테이너 내부에서 `프로그램의 환경을 �
 
 현재 톰캣컨테이너로 접속했을 때 아래와 같다.
 
-![그림2](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/docker/commit/2.png)
+![그림2](/assets/img/devops/docker/commit/2.png)
 
 톰캣에 태워서 보여 줄 간단한 웹페이지 파일을 복사
 
 (복사는 다음 포스팅 참고 : [https://zunoxi.tistory.com/48?category=871486](https://zunoxi.tistory.com/48?category=871486))
 
-![그림3](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/docker/commit/3.png)
+![그림3](/assets/img/devops/docker/commit/3.png)
 
 이런식으로 복사를 해준다.
 
 이후, 다시 톰캣 컨테이너로 접속을 하면 아래와 같이 바뀐것을 알 수 있다.
 
-![그림4](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/docker/commit/4.png)
+![그림4](/assets/img/devops/docker/commit/4.png)
 
 웹페이지 파일들이 정상 적용되었으니 해당 컨테이너를 이미지화 시켜서, 새롭게 컨테이너를 만들었을때도 위와 같이 적용되게 해볼 것이다.
 
@@ -86,23 +86,23 @@ docker commit tomcat_test tomcat:tomcat0529
 
 > docker commit \[컨테이너 이름\] \[이미지명 혹은 id\]:\[태그버전 지정\]
 
-![그림5](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/docker/commit/5.png)
+![그림5](/assets/img/devops/docker/commit/5.png)
 
 'tomcat0529' 태그가 적용된 톰캣 이미지가 생긴것을 알 수 있다.백업을 위해 + 버전관리를 위해 docker hub에 이를 push 하려 한다.
 
 <br>
 
-![그림6](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/docker/commit/6.png)
+![그림6](/assets/img/devops/docker/commit/6.png)
 (도커 태깅이 먼저!)
 
 <br>
 
-![그림7](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/docker/commit/7.png)
+![그림7](/assets/img/devops/docker/commit/7.png)
 (사전에 비슷한 파일을 올려놔서 금방 올라갔다)
 
 <br>
 
-![그림8](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/docker/commit/8.png)
+![그림8](/assets/img/devops/docker/commit/8.png)
 
 Docker hub에도 해당 이미지가 전송된것을 확인 할 수 있다.
 
@@ -110,7 +110,7 @@ Docker hub에도 해당 이미지가 전송된것을 확인 할 수 있다.
 
 ### **4\. 해당 이미지로 새로운 컨테이너 생성**
 
-![그림9](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/docker/commit/9.png)
+![그림9](/assets/img/devops/docker/commit/9.png)
 
 <br>
 
@@ -118,12 +118,12 @@ Docker hub에도 해당 이미지가 전송된것을 확인 할 수 있다.
 
 ### **5\. 새 톰캣컨테이너에 파일이 그대로 복사 되어 있는지 확인**
 
-![그림10](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/docker/commit/10.png)
+![그림10](/assets/img/devops/docker/commit/10.png)
 
 새롭게 만들어진 컨테이너 내부에도 이전에 이미지화 시켰던 컨테이너의 웹페이지가 그대로 들어있다.
 
 해당 컨테이너 톰캣을 브라우저에서 접속했을때,
 
-![그림11](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/docker/commit/11.png)
+![그림11](/assets/img/devops/docker/commit/11.png)
 
 위와 같이 동일하게 나오는 것을 확인 할 수 있다!!

@@ -30,7 +30,7 @@ header-img: img/devops/k8s/gitlab/logo.png
 
 위 설명은 아래 그림과 링크를 참고하면 왜 이렇게 구성을 하지?에 대한 의문을 해소할 수 있다.
 
-![그림1](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/gitlab/1.png)
+![그림1](/assets/img/devops/k8s/gitlab/1.png)
 이미지 출처 : (https://developer.ibm.com/kr/journey/run-gitlab-kubernetes/)
 
 참고링크 : [https://developer.ibm.com/kr/journey/run-gitlab-kubernetes/](https://developer.ibm.com/kr/journey/run-gitlab-kubernetes/)
@@ -152,7 +152,7 @@ $ kubectl apply -f pvetcgit.yaml
 
 아래 대시보드에서도 퍼시스턴트 볼륨이 생성된 것을 확인할 수 있다.
 
-![그림2](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/gitlab/2.png)
+![그림2](/assets/img/devops/k8s/gitlab/2.png)
 
 <br><br>
 
@@ -169,7 +169,7 @@ $ helm upgrade --install gitlab stable/gitlab-ce   --set global.edition=ce   --s
 
 위 명령어를 입력했을 때 다음과 같은 에러가 발생할 수 있다.
 
-![그림3](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/gitlab/3.png)
+![그림3](/assets/img/devops/k8s/gitlab/3.png)
 
 잘 안보이니깐 에러 부분만 풀어서 적자면 이러하다.
 
@@ -193,7 +193,7 @@ $ helm init --service-account tiller --upgrade
 
 위 작업을 마무리하고 다시 helm 명령어를 입력하면 아래의 모습을 볼 수 있다.
 
-![그림4](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/gitlab/4.png)
+![그림4](/assets/img/devops/k8s/gitlab/4.png)
 
 <br>
 
@@ -203,7 +203,7 @@ $ helm init --service-account tiller --upgrade
 $ helm upgrade gitlab stable/gitlab-ce       --set externalUrl=내 IP 주소(접근할 IP)
 ```
 
-![그림5](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/gitlab/5.png)
+![그림5](/assets/img/devops/k8s/gitlab/5.png)
 
 <br><br>
 
@@ -214,11 +214,11 @@ $ helm upgrade gitlab stable/gitlab-ce       --set externalUrl=내 IP 주소(접
 
 퍼시스턴트 볼륨으로 요청한 클레임들이 모두 할당된 것을 알 수 있다.
 
-![그림6](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/gitlab/6.png)
+![그림6](/assets/img/devops/k8s/gitlab/6.png)
 
 <br>
 
-![그림7](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/gitlab/7.png)
+![그림7](/assets/img/devops/k8s/gitlab/7.png)
 
 <br>
 
@@ -226,15 +226,15 @@ $ helm upgrade gitlab stable/gitlab-ce       --set externalUrl=내 IP 주소(접
 
 원인은 알 수 없지만, gitlab-gitlab-ce는 계속 pending 상태인 것처럼 보인다.
 
-![그림8](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/gitlab/8.png)
+![그림8](/assets/img/devops/k8s/gitlab/8.png)
 
 막상 서비스 내로 들어가 보면 파드는 정상적으로 배포 중인 것을 알 수 있다.
 
-![그림9](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/gitlab/9.png)
+![그림9](/assets/img/devops/k8s/gitlab/9.png)
 
 그리고 해당 파드의 이벤트를 살펴보면 다음과 같다.
 
-![그림10](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/gitlab/10.png)
+![그림10](/assets/img/devops/k8s/gitlab/10.png)
 
 <br>
 
@@ -244,13 +244,13 @@ $ helm upgrade gitlab stable/gitlab-ce       --set externalUrl=내 IP 주소(접
 
 서비스의 내부 엔드포인트에서 볼 수 있듯이 HTTP 프로토콜의 `80`번 통신은 nodeport의 `30776`번으로 들어오게끔 맵핑되어있다.
 
-![그림11](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/gitlab/11.png)
+![그림11](/assets/img/devops/k8s/gitlab/11.png)
 
 <br>
 
 이제 브라우저에서 해당 `서버 ip:30776`으로 들어가 보자.
 
-![그림12](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/gitlab/12.png)
+![그림12](/assets/img/devops/k8s/gitlab/12.png)
 
 **설치형 Gitlab 서버를 쿠버네티스 서비스로 배포 중인 것을** 확인할 수 있다.
 

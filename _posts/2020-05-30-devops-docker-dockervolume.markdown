@@ -27,13 +27,13 @@ header-img: img/devops/docker/logo.png
 
 ### **1\. Tomcat의 로그를 저장할 폴더 생성**
 
-![그림1](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/docker/log/1.png)
+![그림1](/assets/img/devops/docker/log/1.png)
 
 현재 WAS를 두 개 운영 중인 관계로 "tomcat\_test"라는 폴더를 별도로 만들었다. 해당 폴더 내에 log라는 폴더도 생성했다ㄴ. 현재 돌리고 있는 'tomcat\_test'라는 톰캣 컨테이너는 아래처럼 로그가 쌓이고 있다.
 
 <br>
 
-![그림2](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/docker/log/2.png)
+![그림2](/assets/img/devops/docker/log/2.png)
 
 이는 해당 컨테이너가 삭제될 경우 로그도 함께 삭제될 수 있는 위험이 있기 때문에 호스트에 경로를 지정해 줄 것이다.
 
@@ -47,7 +47,7 @@ Docker에서 `Volume을 설정`해 줄 수 있는 방법은 여러 가지이다.
 
 이번 포스팅에서는 마지막 방법인 Docker 이미지 최초 실행 시에 호스트 경로를 지정할 것이다. 기존에 실행 중이던 톰캣 컨테이너를 먼저 삭제하고 진행했다.
 
-![그림3](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/docker/log/3.png)
+![그림3](/assets/img/devops/docker/log/3.png)
 
 다음, 아래 명령어를 쉘에 입력한다.
 
@@ -69,7 +69,7 @@ docker run -d --name tomcat_test -p 8080:8080 -v /u01/tomcat_test/log:/usr/local
 
 브라우저를 통해 해당 서버의 8080 포트로 접속했을 때 서버 호스트에 지정된 위치에 로그파일이 생기는 것을 확인할 수 있다.
 
-![그림4](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/docker/log/4.png)
+![그림4](/assets/img/devops/docker/log/4.png)
 
 <br>
 
@@ -77,7 +77,7 @@ docker run -d --name tomcat_test -p 8080:8080 -v /u01/tomcat_test/log:/usr/local
 
 ### **4\. 컨테이너 삭제 시 로그 파일 유지되는 것을 확인**
 
-![그림5](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/docker/log/5.png)
+![그림5](/assets/img/devops/docker/log/5.png)
 
 `tomcat\_test` 컨테이너를 삭제해도 로그가 지정된 폴더에 그대로 남아있는 것을 확인할 수 있다.
 

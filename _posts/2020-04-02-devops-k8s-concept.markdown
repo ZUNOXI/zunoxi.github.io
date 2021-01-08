@@ -117,7 +117,7 @@ ___
 - 이는 운영에 규모가 커질수록 쿠버네티스의 중요도가 상승한다는 특징이 있다.  
 (작은 환경에서도 일일히 계산할 필요가 없기때문에 유리하다.)
 
-![그림1](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/concept/1.png)
+![그림1](/assets/img/devops/k8s/concept/1.png)
 
 ---
 

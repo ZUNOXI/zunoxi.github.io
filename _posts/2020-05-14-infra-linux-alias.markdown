@@ -39,7 +39,7 @@ header-img: img/infra/linux/memory/memory.jpg
 
 일단, 현재 리눅스에 설정 되어있는 alias를 확인해 보자.
 
-![그림1](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/infra/linux/alias/1.png)
+![그림1](/assets/img/infra/linux/alias/1.png)
 
 사실 필자는 포스팅 이전 tomcat에 대한 alias 설정을 해놨었다.
 
@@ -53,7 +53,7 @@ vi ~/.bashrc
 
 명령창에 위의 스크립트를 입력한다.
 
-![그림2](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/infra/linux/alias/2.png)
+![그림2](/assets/img/infra/linux/alias/2.png)
 
 현재 설정되어 있는 alias 목록이 나온다. 나는 톰캣을 위해 **alias tomcat1='cd /u01/test/first/apache-tomcat-9.0.35'** 와 같이 설정했다.
 
@@ -67,7 +67,7 @@ source ~/.bashrc
 
 **3\. alias 사용 및 확인**
 
-![그림3](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/infra/linux/alias/3.png)
+![그림3](/assets/img/infra/linux/alias/3.png)
 
 tomcat1만 쉘에 입력했는데 해당 경로로 바로 이동된다.
 

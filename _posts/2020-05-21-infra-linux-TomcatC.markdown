@@ -74,7 +74,7 @@ httpd -version  # 정상 설치 여부 확인
 
 <br>
 
-![그림1](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/infra/server/tomcatC/2.png)
+![그림1](/assets/img/infra/server/tomcatC/2.png)
 
 <br>
 
@@ -118,7 +118,7 @@ cd /usr/local/src/tomcat-connectors-1.2.46-src/native/
 yum -y install gcc gcc-c++ httpd-devel
 ```
 
-![그림2](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/infra/server/tomcatC/3.png)
+![그림2](/assets/img/infra/server/tomcatC/3.png)
 
 <br>
 
@@ -128,13 +128,13 @@ yum -y install gcc gcc-c++ httpd-devel
 ./buildconf.sh
 ```
 
-![그림3](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/infra/server/tomcatC/4.png)
+![그림3](/assets/img/infra/server/tomcatC/4.png)
 
 ```
 ./configure --with-apxs=/usr/bin/apxs
 ```
 
-![그림4](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/infra/server/tomcatC/5.png)
+![그림4](/assets/img/infra/server/tomcatC/5.png)
 
 ```
 make
@@ -142,7 +142,7 @@ make
 make install
 ```
 
-![그림5](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/infra/server/tomcatC/6.png)
+![그림5](/assets/img/infra/server/tomcatC/6.png)
 
 <br>
 
@@ -152,7 +152,7 @@ make install
 ls /etc/httpd/modules/ | grep mod_jk
 ```
 
-![그림6](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/infra/server/tomcatC/7.png)
+![그림6](/assets/img/infra/server/tomcatC/7.png)
 
 <br>
 
@@ -192,7 +192,7 @@ LoadModule jk_module modules/mod_jk.so
 vi /etc/httpd/conf/workers.properties
 ```
 
-![그림7](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/infra/server/tomcatC/8.png)
+![그림7](/assets/img/infra/server/tomcatC/8.png)
 
 위 httpd.conf 파일의 가상호스트 설정에 `JkMount` /\* tomcat 부분에서 tomcat이라는 이름으로 마운트 설정을 했기에 workers.properties에는 위 처럼 설정해주면 된다.
 
@@ -221,7 +221,7 @@ vi /etc/httpd/conf.modules.d/mod_jk.conf
 
 ※ 해당과정에서 처음에는 아래와 같은 에러가 났다.
 
-![그림8](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/infra/server/tomcatC/9.png)
+![그림8](/assets/img/infra/server/tomcatC/9.png)
 
 <br>
 
@@ -274,7 +274,7 @@ systemctl start httpd.service
 
 > 참고 : C:\\Windows\\System32\\drivers\\etc 에 hosts 파일에 특정 ip의 도메인을 등록하고 테스트해 볼 수있다.
 
-![그림9](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/infra/server/tomcatC/10.png)
+![그림9](/assets/img/infra/server/tomcatC/10.png)
 
 위 사진 처럼 웹서버와 WAS가 정상적으로 연동되어 있는것을 알수 있다.
 

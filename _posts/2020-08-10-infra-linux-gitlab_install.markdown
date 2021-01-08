@@ -86,7 +86,7 @@ $ yum install -y gitlab-ce
 
 <br>
 
-![그림1](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/infra/linux/gitlab/2.png)
+![그림1](/assets/img/infra/linux/gitlab/2.png)
 
 <br>
 
@@ -96,7 +96,7 @@ $ yum install -y gitlab-ce
 $ vi /etc/gitlab/gitlab.rb
 ```
 
-![그림2](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/infra/linux/gitlab/3.png)
+![그림2](/assets/img/infra/linux/gitlab/3.png)
 
 
 붉은상자표시로 마킹한 곳에 접속할 도메인주소나 `'http://ip:port'` 형식으로 접근 경로를 기입한다.
@@ -159,9 +159,9 @@ $sudo chmod -cR 755 /var/log/gitlab
 관련내용은 아래 그림을 참고하면 될 것 같다.
 
 
-![그림3](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/infra/linux/gitlab/4.png)
+![그림3](/assets/img/infra/linux/gitlab/4.png)
 
 <br>
 
-![그림4](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/infra/linux/gitlab/5.png)
+![그림4](/assets/img/infra/linux/gitlab/5.png)
 

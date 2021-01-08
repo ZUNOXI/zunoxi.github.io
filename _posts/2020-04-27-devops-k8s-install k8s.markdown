@@ -26,7 +26,7 @@ header-img: img/devops/k8s/install/logo.png
 
 
 
-![그림1](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/install/1.png)
+![그림1](/assets/img/devops/k8s/install/1.png)
 
 (찬란한 대시보드..😇)
 
@@ -383,7 +383,7 @@ kubectl get pods --all-namespaces
 
 Dashboard 띄워보겠다고 삽질했던 과정은 다음 포스팅에서 다뤄볼 예정. XD 
 
-![그림2](https://cdn.jsdelivr.net/gh/zunoxi/zunoxi.github.io/assets/img/devops/k8s/install/logo.png)
+![그림2](/assets/img/devops/k8s/install/logo.png)
 
 
 > 다음포스팅 : [Kubernetes 4. 쿠버네티스 네트워크/Dashboard 설정하기](#https://zunoxi.github.io/devops/2020/05/08/devops-k8s-dashboard/)
