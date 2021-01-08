@@ -13,10 +13,10 @@ header-img: img/devops/cicd/git/git.png
 > 형상관리, 협업을 위한 `git`, 그리고 이를 이용한 플랫폼간의 비교
   
 - 목차
-	- [`Github`](#-2-github)
-	- [`Gitlab`](#-3-gitlab)
-	- [`Bitbucket`](#-4-bitbucket비트버킷)
-	- [`비교정리`](#-5-정리)
+	- [`Github`](#2-github)
+	- [`Gitlab`](#3-gitlab)
+	- [`Bitbucket`](#4-bitbucket비트버킷)
+	- [`비교정리`](#5-정리)
   
 ## Git 저장소
 ---
