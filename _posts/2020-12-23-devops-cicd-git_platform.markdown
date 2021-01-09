@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CI/CD 4. github과 gitlab, 그리고 Bitbucket
+title: CI/CD 4. Github과 Gitlab, 그리고 Bitbucket
 subtitle: git을 사용하는 플랫폼들간의 비교
 categories: devops
 tags: devops CICD
@@ -10,7 +10,7 @@ header-img: img/devops/cicd/git/git.png
 ---
 
 ## 개요
-> 형상관리, 협업을 위한 `git`, 그리고 이를 이용한 플랫폼간의 비교
+> 형상관리, 협업을 위한 `Git`, 그리고 이를 이용한 플랫폼간의 비교
   
 - 목차
 	- [`Github`](#2-github)
@@ -147,7 +147,7 @@ gitlab은 github의 후발주자로 그 기능은 github과 유사하므로 장�
 
 앞서 언급한 내용들을 기반으로 정리하자면 다음과 같다.
 
-> Github
+> `Github`
 
 - 장점
   - git 저장소 호스팅사이트중 가장큰 규모의 서비스
@@ -158,7 +158,7 @@ gitlab은 github의 후발주자로 그 기능은 github과 유사하므로 장�
 - 단점
   - LFS(Large File Storage)의 트래픽제한이있다.
    
-> Gitlab
+> `Gitlab`
 
 - 장점
   - 설치형 서버로 자체 형상관리 서버운영가능
@@ -169,7 +169,7 @@ gitlab은 github의 후발주자로 그 기능은 github과 유사하므로 장�
   - push/pull의 속도가 느림
   - 가끔 불안정한 서버상태
 
-> Bitbucket
+> `Bitbucket`
 
 - 장점
   - 아틀라시안의 서비스(jira)와 연동편의성이 높다.
