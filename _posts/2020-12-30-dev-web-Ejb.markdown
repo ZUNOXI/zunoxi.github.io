@@ -6,7 +6,7 @@ categories: programming
 tags: programming web
 comments: true
 published: true
-header-img: img/dev/web/spring-jar/1.png
+header-img: img/dev/web/ejb/ejb.jpg
 ---
 
 ## 개요
@@ -39,5 +39,7 @@ header-img: img/dev/web/spring-jar/1.png
 
 EJB는 **엔터프라이즈 자비빈즈**(Enterprise JavaBeans)의 약자로 기업환경같은 거대규모 시스템 구축을위한 `컴포넌트 모델`이다. 여기서 컴포넌트 모델이라는것은 [링크](https://mommoo.tistory.com/55)를 참고하길바라며, 대략 각각의 소프트웨어를 독립적인 모듈로 제작하여 재사용성과 호환성을 높이는 개념으로 이해할 수 있다.
 
-현재 작성중...!
+일반적으로 사용되는 Java EE의 API로 클라이언트가 볼 수 있는 화면단로직은 JSP가, 비지니스로직은 EJB가 구현하는 구조로 구성되어있다.
+
+
 
