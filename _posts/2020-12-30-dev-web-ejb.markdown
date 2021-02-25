@@ -63,7 +63,7 @@ EJB와 용어가 비슷해보이고 Sun에서 만든것은 같으나 자바빈�
 Enterprise Bean은 비지니스 로직을 실행하는 서버 컴포넌드인데, 보통 2가지의 모델을 갖고있다.
 
 - `세션 빈(Session Bean)` : DB연동이 없이 구동가능하다. 주로 로직이 위치한다.
-- `엔티티 빈(Entity Bean)` : 데이터베이스의 데티러 I/O 전반을 관리하는 객체
+- `엔티티 빈(Entity Bean)` : 데이터베이스의 데이터 I/O 전반을 관리하는 객체
   - Insert, Update, Delete, Select를 관리
   - 클라이언트가 Session Bean을 호출하고 Session Bean이 Entity Bean을 호출하며 데이터 베이스에 접근하는 구조이다.
 
