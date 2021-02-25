@@ -50,3 +50,27 @@ Enterprise Bean은 비지니스 로직을 실행하는 서버 컴포넌드인데
 - `엔티티 빈(Entity Bean)` : 데이터베이스의 데티러 I/O 전반을 관리하는 객체
   - Insert, Update, Delete, Select를 관리
   - 클라이언트가 Session Bean을 호출하고 Session Bean이 Entity Bean을 호출하며 데이터 베이스에 접근하는 구조이다.
+
+
+<br>
+
+---
+
+### **(2) Container**
+
+EJB 컨테이너는 Application Server내에서 _**Enterprise Bean에 대한 런타임 환경을 제공**_ 한다. 일반적으로 `EJB서버와 EnterpriseBean 사이에 통신`을 하게 해주는 역할을 한다고 이해할 수 있다. Sevlet이 Apache Tomcat같은 Servlet Container에 올려서 서비스 되는것 처럼, EJB는 Weblogic, JBoss와 같은 EJB Container에 올려서 서비스가 된다. 
+
+보통의 경우, 사용자는 클라이언트 어플리케이션을 사용하고 이는 컨테이너를 경유해서 Enterprise Bean에 접근하는것으로 이해할 수 있다.
+
+EJB 컨테이너는 다음과 같이 엔터프라이즈 Bean에 많은 서비스를 제공한다.
+
+- 필요 시 트랜잭션 시작, commit or rollback
+- 수신 요청에 대해 엔터프라이즈 Bean 인스턴스 풀을 준비상태로 유지보수 및 비활성 풀과 활성 상태 간 인스턴스 이동, Bean내의 스레드 조건 충족 보장
+- 엔티티 Bean의 인스턴스 변수와 지속 스토리지에 저장된 해당 데이터 항목의 자동 동기화
+
+<br>
+
+---
+
+### **(3) EJB Server**
+
