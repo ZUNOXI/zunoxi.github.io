@@ -27,14 +27,13 @@ header-img: img\dev\web\jsp\1.png
 **참고했던 블로그 포스트**
 
 -   [https://m.blog.naver.com/acornedu/221128616501](https://m.blog.naver.com/acornedu/221128616501)
--   [https://ko.wikipedia.org/wiki/%EC%9E%90%EB%B0%94_%EC%84%9C%EB%B8%94%EB%A6%BF](https://ko.wikipedia.org/wiki/%EC%9E%90%EB%B0%94_%EC%84%9C%EB%B8%94%EB%A6%BF)
 
 <br>
 
 ---
 ### **Servlet이란?**
 
-자바 서블릿(Java Servlet)은 자바를 사용하여 `웹페이지를 동적으로 생성하는 서버측 프로그램을 의미`한다. 
+자바 서블릿(Java Servlet)은 자바를 사용하여 `웹페이지를 동적으로 생성하는 서버측 프로그램을 의미`한다. 정확하게는 서블릿은 Java코드 안에 HTML태그가 삽입되며 자바언어로 되어있는 .java가 그 확장자이다.  
 
 <br>
 
@@ -42,7 +41,7 @@ header-img: img\dev\web\jsp\1.png
 
 <br>
 
-정확하게는 서블릿은 Java코드 안에 HTML태그가 삽입되며 자바언어로 되어있는 .java가 그 확장자이다. 서블릿은 자바언어를 웹 어플리케이션에 조금 더 개발하기 쉽게 하기 위해 만든 API이며 이 규약에 맞는 라이브러리나 클래스들을 상속 및 구현하여 만든 클래스들을 서블릿이라고 한다. Java코드안에 HTML코드가 들어있는 하나의 클래스라고 이해할 수 있다. 
+서블릿은 자바언어를 웹 어플리케이션에 조금 더 개발하기 쉽게 하기 위해 만든 API이며 이 규약에 맞는 라이브러리나 클래스들을 상속 및 구현하여 만든 클래스들을 서블릿이라고 한다. Java코드안에 HTML코드가 들어있는 하나의 클래스라고 이해할 수 있다. 
 
 프로그래밍 구조를 설계할때 Controller(data processing)으로 사용이 용이하며, DB와의 통신과 비지니스로직 호출에 유리하다.
 
