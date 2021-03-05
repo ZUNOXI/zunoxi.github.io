@@ -42,6 +42,7 @@ header-img: img\dev\web\jsp\1.png
 <br>
 
 > MODEL1 구현과정
+
 - JSP로 작성된 프로그램은 내부적으로 WAS에서 Servlet 파일로 변환
 - JSP태그를 분해하고 추출하여 다시 순수한 HTML 웹 페이지로 변환
 - 클라이언트로 응답
@@ -49,6 +50,7 @@ header-img: img\dev\web\jsp\1.png
 <br>
 
 > 특징
+
 - 배우기쉽고 개발속도가 빠르다
 - 프레젠테이션 로직(View)과 비지니스 로직(Controller)이 혼재한다.
 - JSP코드가 복잡해져 유지보수가 어려워진다.
