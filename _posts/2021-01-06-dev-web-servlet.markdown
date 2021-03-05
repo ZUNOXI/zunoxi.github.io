@@ -13,9 +13,9 @@ header-img: img\dev\web\jsp\1.png
 > Servlet과 JSP에 대한 정리
   
 - 목차
-	- [`Java Bean이란`](#java-bean이란)
-	- [`EJB의 구조`](#ejb의-구조)
-	- [`EJB의 장단점`](#ejb의-장단점)
+	- [`Servlet이란?`](#servlet이란)
+	- [`JSP이란`](#jsp이란)
+	- [`Servlet과 JSP 역할`](#servlet과-jsp-역할)
   
 ## Servlet과 JSP
 ---
@@ -70,7 +70,7 @@ JSP(Java Server Pages)는 서블릿과 비슷한 점이 있지만, **`JSP가 HTM
 <br>
 
 ---
-### **Servlet과 JSP**
+### **Servlet과 JSP 역할**
 
 일반적으로 `JSP`는 웹 어플리케이션 구조에서 사용자에게 결과를 보여주는 `프리젠테이션층`을 담당하고 `Servlet`은 사용자의 요청을 받아 분석하고 비지니스층과 통신하여 처리한 결과를 다시 사용자에게 응받하는 `컨트롤러층`을 담당한다.
 
