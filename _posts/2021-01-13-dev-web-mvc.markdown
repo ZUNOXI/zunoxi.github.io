@@ -55,3 +55,5 @@ header-img: img\dev\web\jsp\1.png
 - 프레젠테이션 로직(View)과 비지니스 로직(Controller)이 혼재한다.
 - JSP코드가 복잡해져 유지보수가 어려워진다.
 
+
+작성중임미당...
