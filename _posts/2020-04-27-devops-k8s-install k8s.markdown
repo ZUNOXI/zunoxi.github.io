@@ -81,7 +81,7 @@ header-img: img/devops/k8s/install/logo.png
 
 ### **2. VM Centos를 설치**
 
-앞선 과정을 통해 총 3개의 가상서버내 OS 설치를 할 차례입니다. 여기서 **Centos7**을 운영체제로 선택하여 설치해 줍시다. 개인 PC에서 vm을 이용해서 실습하는 경우에는 다운 받은 centos7을 직접 VMware나 VirtualBox를 사용해 밀어넣어 설치할 수 있습니다.
+앞선 과정을 통해 총 3개의 가상서버 내 OS 설치를 할 차례입니다. 여기서 **Centos7**을 운영체제로 선택하여 설치해 줍시다. 개인 PC에서 vm을 이용해서 실습하는 경우에는 다운 받은 centos7을 직접 VMware나 VirtualBox를 사용해 밀어넣어 설치할 수 있습니다.
 
 `centos7은 아래 링크에서 다운로드` 받을 수 있다.
 
