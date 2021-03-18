@@ -6,16 +6,16 @@ categories: programming
 tags: programming web
 comments: true
 published: true
-header-img: img\dev\web\jsp\1.png
+header-img: img\dev\web\mvc\1.png
 ---
 
 ## 개요
 > Mode1패턴과 Model2패턴에 대한 정리
   
 - 목차
-	- [`Servlet이란?`](#servlet이란)
-	- [`JSP이란`](#jsp이란)
-	- [`Servlet과 JSP 역할`](#servlet과-jsp-역할)
+	- [`MVC Pattern`](#mvc-pattern)
+	- [`MODEL1 Pattern`](#model1-pattern)
+	- [`MODEL2 Pattern`](#model2-pattern)
   
 ## Model1 and Model2
 ---
