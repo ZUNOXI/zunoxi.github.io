@@ -13,9 +13,9 @@ header-img: img\dev\web\cs\main.png
 > Web프로그래밍과 CS프로그래밍의 차이
   
 - 목차
-	- [`MVC Pattern`](#mvc-pattern)
-	- [`MODEL1 Pattern`](#model1-pattern)
-	- [`MODEL2 Pattern`](#model2-pattern)
+	- [`구축방식`](#1-구축방식)
+	- [`CS프로그래밍`](#2-cs-프로그래밍)
+	- [`Web프로그래밍`](#3-web-프로그래밍)
   
 ## CS? Web?
 ---
