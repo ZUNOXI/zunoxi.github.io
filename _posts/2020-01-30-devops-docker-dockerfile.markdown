@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Docker#2.윈도우/리눅스에 도커(Docker) 설치
-subtitle: 도커 윈도우/리눅스 설치
+title: Docker#3. 도커 파일(Dockerfile) / 이미지 생성
+subtitle: 도커 파일(Dockerfile) / 이미지 생성
 categories: devops
 tags: devops docker
 comments: true
@@ -9,9 +9,10 @@ published: true
 header-img: img/devops/docker/logo.png
 ---
 
-이번 포스팅에서는 서버에 띄우기 위한 도커파일을 만들기 위해 윈도우와 리눅스에서 도커를 설치해 보려한다.
+자, 이번 포스팅에서는 서버에 띄우기 위한 도커파일을 만들기 위해 윈도우와 리눅스에서 도커를 설치해 보려한다.   
+~(왜냐면 필자가 윈도우에서 개발하니까....!!!)~
 
-리눅스가 개발환경인 경우의 설치방법은 생각보다 간편하다. 물론, 테스트 서버에서도 docker 이미지 파일이 돌아가게 해야하므로 테스트 목적의 서버 환경에도 도커를 설치해야한다.
+리눅스가 개발환경인 경우의 설치방법은 생각보다 간편하다. 경험상...? 물론, 서버에서도 docker 이미지 파일이 돌아가게 해야하므로 배포나 테스트할 서버 환경에도 도커를 설치해야한다.
 
 AWS 접속과 관련된 배치파일 생성하는것은 아래 포스팅을 참고
 
@@ -25,7 +26,7 @@ AWS 접속과 관련된 배치파일 생성하는것은 아래 포스팅을 참�
 
 먼저 윈도우 설치를 알아보려한다.
 
-1. 가상화 기능 지원 확인 
+**1\. 가상화 기능 지원 확인 **
 
 자, 먼저 본인의 윈도우가 가상환경을 지원하는지 부터 확인해 봐야한다. 윈도우 10버전은 아래와 같이 작업관리자의 가상화 지원여부에서 확인 가능하다.
 
@@ -75,14 +76,14 @@ AWS 접속과 관련된 배치파일 생성하는것은 아래 포스팅을 참�
 
 **(2) LINUX(ubuntu)에 Docker 설치**
 
-필자가 본 포스팅에서 사용하는 서버OS는 ubuntu 18.04.3 LTS이며 AWS EC2를 이용중 이다. 온프레미스 환경에서 서버를 운영한다면 물리서버에 RHEL이나 CentOS를 운영하는 환경이 많을테지만, 현재는 작은 프로그램 개발 테스트 중이라 AWS의 힘을 빌리고 있다.
+필자가 본 포스팅에서 사용하는 서버OS는 ubuntu 18.04.3 LTS이며 AWS EC2를 이용중 이다. 온프레미스 환경에서 서버를 운영한다면 RHEL이나 CentOS를 운영하는 환경이 많을테지만, 현재는 작은 프로그램 개발 테스트 중이라 AWS의 힘을 빌리고 있다.
 
 AWS를 사용하여 docker를 설치 시 CLI 화면에서 작업할것이므로 명령어 위주로 기술 하려한다.
 <br><br>
 
-> **1\. 환경 세팅**
+**1\. 환경 세팅**
 
-먼저 docker 설치에 앞서 설치에 필요한 패키지들을 설치한다.
+\* 먼저 docker 설치에 앞서 설치에 필요한 패키지들을 설치한다.
 
 ```
 $ sudo apt-get update && sudo apt-get install 
@@ -92,7 +93,7 @@ $ sudo apt-get update && sudo apt-get install
         \ software-properties-common
 ```
 
-다음 패키지 저장소를 추가한다.
+\* 다음 패키지 저장소를 추가한다.
 
 ```
 $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
@@ -110,7 +111,7 @@ sudo apt-get update && sudo apt-cache search docker-ce
 
 **docker-ce - Docker: the open-source application container engine** 라는 결과가 출력되면 설치를 진행한다.
 
-**설치가 잘안된다면 아래의 방법으로 해보길 권장**
+**\## 설치가 잘안된다면 아래의 방법으로 해보길 권장.**
 
 ```
 sudo apt-get update
@@ -126,7 +127,7 @@ sudo usermod -aG docker 사용자 이름 # 사용자에게 권한주기
 ```
 <br><br>
 
-> **2\. Docker 설치**
+**2\. Docker 설치**
 
 아래의 명령어를 이용하여 Docker CE 에디션을 설치해 보겠다.
 
