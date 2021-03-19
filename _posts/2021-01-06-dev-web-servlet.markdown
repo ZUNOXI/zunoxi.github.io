@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Web 11. Servlet과 JSP
+title: Web 8. Servlet과 JSP
 subtitle: servlet과 jsp에 대한 이해
 categories: programming
 tags: programming web

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Web 12. Mode1패턴과 Model2패턴
+title: Web 9. Mode1패턴과 Model2패턴
 subtitle: Model1과 Model2
 categories: programming
 tags: programming web

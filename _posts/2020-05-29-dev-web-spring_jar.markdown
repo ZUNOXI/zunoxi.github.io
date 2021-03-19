@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Web 4. Spring Framework와 Spring-boot 차이
+title: Web 1. Spring Framework와 Spring-boot 차이
 subtitle: Spring Framework와 Spring-boot 차이
 categories: programming
 tags: programming web

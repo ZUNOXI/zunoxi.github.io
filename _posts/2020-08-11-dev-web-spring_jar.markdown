@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Web 9. 스프링부트(Spring-boot) jar 파일 만들기
+title: Web 6. 스프링부트(Spring-boot) jar 파일 만들기
 subtitle: 스프링부트(Spring-boot) jar 파일 만들기
 categories: programming
 tags: programming web

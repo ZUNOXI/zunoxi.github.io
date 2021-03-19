@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Web 10. ejb에대한 이해
+title: Web 7. ejb에대한 이해
 subtitle: ejb에 대해 이해하기
 categories: programming
 tags: programming web
