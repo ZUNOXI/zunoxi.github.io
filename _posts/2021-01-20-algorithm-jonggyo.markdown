@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Algorithm 1. [정올] 1863번 종교 java(자바) 알고리즘 문제풀이
+title: Algorithm 1. [정올] 1863번 종교 java 알고리즘 문제풀이
 subtitle: 종교 java(자바) 알고리즘 문제풀이
 categories: algorithm
 tags: algorithm
