@@ -13,10 +13,10 @@ header-img: img\dev\web\nodejs\main.png
 > node.js에 대한 이해
   
 - 목차
-	- [`구축방식`](#1-구축방식)
-	- [`CS프로그래밍`](#2-cs-프로그래밍)
-	- [`Web프로그래밍`](#3-web-프로그래밍)
-  
+	- [`Node.js란`](#1-nodejs란)
+	- [`Node의 동작 원리`](#2-node의-동작-원리)
+	- [`Why Node.js?`](#3-why-nodejs)
+  - [`Node.js의 사용성`](#4-nodejs의-사용성)
 ## Node.js
 ---
 Node.js와 연관된 React, Vue, Angular가 핫해지면서 이에 대한 정리가 필요함을 느낀다. 이번 포스팅에서는 Node.js가 무엇인지 그리고 어떤기능을하는지에 대해 알아보려한다.
@@ -97,6 +97,8 @@ Node.js는 서버사이드 자바스크립트이다.Node.js 자체는 웹서버�
 
 - 데이터 분석, 데이터 엔지니어링 등 데이터 사이언스분야 같이 복잡한 데이터를 다뤄야 하는 곳에는 적합하지 않음 (하드코어한 처리 목적으로는 적합하지 않음)
 - 엔터프라이즈 환경, 덩치가 큰 프로젝트(사용가능한 라이브러리와 자원들을 고려, Spring 대비 안정성이 떨어짐)
+
+<br>
 
 **Node.js를 사용하는 대표적인 회사** : Walmart, ebay, paypal, Linkedin, Cloude9IDE
 
