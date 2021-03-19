@@ -15,7 +15,7 @@ header-img: img/devops/docker/logo.png
 
 AWS 접속과 관련된 배치파일 생성하는것은 아래 포스팅을 참고
 
-[https://zunoxi.tistory.com/24](https://zunoxi.tistory.com/24)
+[https://zunoxi.github.io/cloud/2020/01/31/cloud-aws-aws-access/](https://zunoxi.github.io/cloud/2020/01/31/cloud-aws-aws-access/)
 
 
 ---

@@ -9,161 +9,85 @@ published: true
 header-img: img/devops/docker/logo.png
 ---
 
-자, 이번 포스팅에서는 서버에 띄우기 위한 도커파일을 만들기 위해 윈도우와 리눅스에서 도커를 설치해 보려한다.   
-~(왜냐면 필자가 윈도우에서 개발하니까....!!!)~
-
-리눅스가 개발환경인 경우의 설치방법은 생각보다 간편하다. 경험상...? 물론, 서버에서도 docker 이미지 파일이 돌아가게 해야하므로 배포나 테스트할 서버 환경에도 도커를 설치해야한다.
-
-AWS 접속과 관련된 배치파일 생성하는것은 아래 포스팅을 참고
-
-[https://zunoxi.tistory.com/24](https://zunoxi.tistory.com/24)
+이번 포스팅에서는 Dockerfile에 대해 이해 및 제작하고 도커의 이미지파일을 생성함으로서 서버에서 구동할 수 있게끔 일련의 준비물들을 마련하는 과정에 대해 포스팅한다.
 
 
 ---
 
+**1\. Dockerfile이란?**
 
-**(1) Window에 Docker 설치**
+자, 이제 **dockerfile**이라는 것을 만들어 볼텐데, dockerfile이라는 것은 도커 이미지를 만드는 과정에서 사전에 '요거요거를 기반으로 이미지를 만들어라' 라고 방법을 지정해 주고 해당 파일을 기반으로 docker 이미지 파일을 제작할 수 있게한다. 또한, dockerfile에서는 베이스가 되는 이미지를 만들고 각종 미들웨어의 이미지들을 설치하거나 이를 기반으로 어플리케이션의 구동하게끔 한다.
 
-먼저 윈도우 설치를 알아보려한다.
+테스트는 현재 필자가 개발하고 있는 **React** 프로젝트를 이용해서 예를 들어 보려한다.
 
-**1\. 가상화 기능 지원 확인 **
+[##_Image|kage@bp5qhn/btqBDb59c8j/Gq6uPfWkS0vCq1wKxxITg0/img.png|alignCenter|data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"|Dockerfile.dev는 원래 없습니다...!!||_##]
 
-자, 먼저 본인의 윈도우가 가상환경을 지원하는지 부터 확인해 봐야한다. 윈도우 10버전은 아래와 같이 작업관리자의 가상화 지원여부에서 확인 가능하다.
+리액트 프로젝트를 작업중인 Git에서 내려받은 상태이다. 원래 react는 "node\_modules"라는 node폴더가 있지만, 해당 폴더의 용량과 파일개수가 꽤나 크기때문에 .gitignore의 설정을 통해 git server에는 올리지 않았다. 또한, 도커로 이미지 생성 시 패키지 파일을 package.json에 있는 라이브러리들을 다 내려받고 새로 설치 하기 때문에 더욱이 올릴 필요가 없다.
 
-![그림1](/assets/img/devops/docker/install/1.png)
-<br><br>
+```
+# React image 파일 예시
 
-**2\. Docker 다운로드**
+From node:10
 
-윈도우 7과 윈도우 10 홈 버전 이하는 아래의 링크를 다운로드 하시면 된다.
+WORKDIR /src/app
 
-[https://docs.docker.com/toolbox/toolbox\_install\_windows/](https://docs.docker.com/toolbox/toolbox_install_windows/)
+COPY . .
 
+RUN yarn install
 
-그 이상의 버전(윈도우 10 엔터프라이즈, 프로 등)은 아래 링크에서 다운로드.
+CMD ["yarn","run","start"]
+```
 
-[https://docs.docker.com/docker-for-windows/install/#download-docker-for-windows](https://docs.docker.com/docker-for-windows/install/#download-docker-for-windows)
-<br><br>
+React image 빌드를 위한 Dockerfile내용인데, 일반적으로 사용하는 Dockerfile의 속성들에 대해 기술한다. 
 
-**3\. Docker 설치**
+\- **FROM** : 이 부분은 docker 이미지를 생성할 때 Docker Hub에 있는 특'정 이미지를 기반으로 이미지 생성하겠다.' 라고 선언 해주는 부분이다. **반드시 선언**해야하는 부분이며 여기서 선언한 이미지를 베이스 이미지라고 한다. 필자같은 경우는 리액트 프로젝트를 도커이미지로 만들기 위해 node를 베이스 이미지로 선언했다. 
 
-필자가 쓰고있는 지금 환경은 Window 10 enterprise 이기때문에 **docker for window**로 설치를 진행했다. 그 외의 버전은 아래 링크의 방법을 참고 :)
+\- **WORKDIR** : 이는 run, cmd 명령어가 실행될 디렉토리를 설정하는 부분이다. Dockerfile에서 정의한 명령어를 실행하기 위해서 작업용 디렉토리를 미리 선언해 준다고 이해할 수 있다.
 
-[https://steemit.com/kr/@mystarlight/docker](https://steemit.com/kr/@mystarlight/docker)
+\- **COPY** : 특정 파일을 도커 이미지에 추가한다. 필자는 WORKDIR로 지정한 위치에 현재 dockerfile이 위치한곳의 모든파일(dockerfile이 있는 폴더)를 모두 복사하기 위해 위와 같은 방식으로 표기했다.
 
+\- **RUN** : 베이스로 선언했던 이미지 위에 환경을 구축하기 위한 명령을 실행하는 것이다. 필자는 'node 10.ver' 환경에 'yarn install'을 실행시킴으로써 **COPY**에서 복사했던 폴더 내의 package.json파일을 기반으로한 node.js의 라이브러리를 설치 할 것이다. 
 
+>  RUN을 사용할 때는 다음과 같은 두가지의 방법이 있다.
 
-본격적인 docker 설치 전, 프로그램 및 기능에서 **Hyper-V**를 설치한다.
+1\. 'Shell' 형식 : 리눅스 쉘에서 실행하는 것과 동일하다. 컨테이너 안에서 /bin/sh (기본쉘)를 사용한 것과 동일하게 작동한다.  별도로 기본 쉘을 바꿀 수 있는 'SHELL' 명령어도 제공한다.
 
-![그림2](/assets/img/devops/docker/install/2.png)
+2\. 'Exec" 형식 : Shell 방식과 다르게 쉘을 거치지 않고 직접 실행한다. Exec 형식에서는 실행하고 싶은 명령을 JSON으로 지정한다. 또한 환경변수를 사용할 수 없다는 특징이 있다.
 
-![그림3](/assets/img/devops/docker/install/3.png)
+\- **CMD** : 최종적으로 생성된 이미지에서 명령을 실행 시킬 때 사용한다. Dockerfile내에서는 한개의 '**CMD**' 속성만을 사용할 수 있다. CMD 명령어는 Exec, Shell, Entrypoint 총 3가지 방법으로 사용할 수 있다. 위의 예시처럼 필자는 Exec 방식을 사용하여 JSON타입으로 React 서버를 실행시켰다.
 
+\- **ENTRYPOINT** : CMD는 도커 컨테이너가 구동될 시 실행되는 속성으로, 컨테이너가 돌아갈때 별도의 설정으로 CMD 속성보다 더 우선적으로 실행 시킬 수 있는 특징이 있다. 반면 ENTRYPOINT같은 경우는 별도의 설정을 줘도 항시 먼저 선행되는 속성이므로 항시 필수로 컨테이너에서 돌아가야하는 설정은 ENTRYPOINT로 설정하는 것이 더 효율적일 수 도 있다.
 
-설치 후 재부팅 해주면, 로그인 하라고 상태창이 오픈된다. 로그인을 해주고...
-
-![그림4](/assets/img/devops/docker/install/4.png)
-
-
-작업 표시줄에 고래모양 아이콘이 생긴다. 잘 설치가 된것이다 :) cmd 창에 - **docker version** 을 입력함으로서 확실히 확인해본다. 환경변수로 도커가 등록이 되어 있는지 확인하는 과정이다.
-
-![그림5](/assets/img/devops/docker/install/5.png)
-
-자 이제 윈도우에 docker가 설치가 완료 되었다. 다음은 리눅스에 docker를 설치하는 과정이다.
+(참고로 보통 리액트는 build 이후 webserver와 함께 실행 시켜서 사용한다. 위 처럼 서버 자체로 기동은 일반적으로 개발 혹은 테스트 시에 사용한다. 그냥 dockerfile을 위한 예시라고 이해하면 될 것 같다.)
 
 ---
-<br><br>
 
-**(2) LINUX(ubuntu)에 Docker 설치**
+위 내용을 기반으로 "Dokcerfile.dev" 로 저장하면 이를 이용하여 도커이미지 파일을 생성할 수 있다. 기본적으로 Dockerfile을 생성하고 저장할때 파일명 자체를 확장자없이 'Dockerfile'이라는 이름으로 생성 할 경우, docker이미지 빌드 시 참조할 dockerfile을 적어주지 않아도 되는 편리함이 있다. (아래 예시를 보면 이게 무슨 뜻인지 이해하기 쉬울 것이다.)
 
-필자가 본 포스팅에서 사용하는 서버OS는 ubuntu 18.04.3 LTS이며 AWS EC2를 이용중 이다. 온프레미스 환경에서 서버를 운영한다면 RHEL이나 CentOS를 운영하는 환경이 많을테지만, 현재는 작은 프로그램 개발 테스트 중이라 AWS의 힘을 빌리고 있다.
+**2\. 도커 이미지 파일 생성**
 
-AWS를 사용하여 docker를 설치 시 CLI 화면에서 작업할것이므로 명령어 위주로 기술 하려한다.
-<br><br>
+[##_Image|kage@bp5qhn/btqBDb59c8j/Gq6uPfWkS0vCq1wKxxITg0/img.png|alignCenter|data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"|||_##]
 
-**1\. 환경 세팅**
-
-\* 먼저 docker 설치에 앞서 설치에 필요한 패키지들을 설치한다.
+자, 이제 이미지 파일을 만들어 보려고 한다. 우선 Dockerfile이 있는 폴더에서 터미널창을 열고, 필자의 경우package.json을 참고해야 하고 경로 또한 확인 해야 하므로 react 프로젝트가 있는 위치에서 빌드를 진행한다.
 
 ```
-$ sudo apt-get update && sudo apt-get install 
-	\ apt-transport-https 
-        \ ca-certificates 
-        \ curl 
-        \ software-properties-common
+docker build -f Dockerfile.dev -t zunoxi .
 ```
 
-\* 다음 패키지 저장소를 추가한다.
+docker 이미지 파일을 만드는데에 있어 -f는 참조할 docker 파일명, -t는 이미지파일에 붙일 태그를 생성한다. 위에서 기술했던것 처럼 도커파일이름 자체가 Dockerfile이면 넘어가도 되는 부분이다.
+
+(뒤에 꼭 "." 붙여주셔야 한다!!! 이는 도커파일이 현재 실행되고 있는 디렉토리에 있다는 뜻이다.)
+
+[##_Image|kage@cIwjgQ/btqBCUqIBs2/L6NYssJSFWQzwf8jyyKR2K/img.png|alignCenter|data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"|사전에 제가 만들어 놓은이미지와 동일 했던것이라 매우 빨리 됐습니다..!||_##]
+
+다음, docker image가 잘 만들어졌는지 터미널 창에서 확인해 보자.
 
 ```
-$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-$ sudo add-apt-repository \
-   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
-   $(lsb_release -cs) \
-   stable"
+docker images
 ```
 
-이제 아래의 명령어로 docker의 패키지가 검색이 되는지 확인.
+[##_Image|kage@x1j8H/btqBDYzqpSV/k7AY44E0rZQLL9SIJTVIpK/img.png|alignCenter|data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"|||_##]
 
-```
-sudo apt-get update && sudo apt-cache search docker-ce
-```
+이렇게 zunoxi라는 레포지토리가 생성된것을 알 수 있다. 이제 다음 4부에서 이를 push, pull 하며 Docker Hub을 이용해 서버에 바로 실행할 수 있는 환경을 만들어 보자.
 
-**docker-ce - Docker: the open-source application container engine** 라는 결과가 출력되면 설치를 진행한다.
-
-**\## 설치가 잘안된다면 아래의 방법으로 해보길 권장.**
-
-```
-sudo apt-get update
-sudo apt install curl
-
-
-curl -fsSL https://get.docker.com/ | sudo sh
-
-
-sudo usermod -aG docker $USER # 현재 접속중인 사용자에게 권한주기
-sudo usermod -aG docker 사용자 이름 # 사용자에게 권한주기
-
-```
-<br><br>
-
-**2\. Docker 설치**
-
-아래의 명령어를 이용하여 Docker CE 에디션을 설치해 보겠다.
-
-```
-$ sudo apt-get update && sudo apt-get install docker-ce
-```
-
-현재 상태로는 sudo로 명령어를 입력할 시에만 docker를 접근할 수 있습다. 일반 ubuntu사용자도 접근이 가능하게 끔 아래의 명령어를 한번 더 입력해 주겠다.
-
-```
-$ sudo usermod -aG docker $USER
-```
-
-![그림6](/assets/img/devops/docker/install/6.png)
-
-서버상에도 정상적으로 Docker 가 설치된것을 알 수 있다.
-
-**\* CentOS에서의 설치는 매우 간단하다. (아래 내용 참고, CentOS7.x 기준)**
-
-```
-# Docker & Docker Registry 설치
-yum -y install docker docker-registry
-
-#부팅시 실행하도록 등록
-systemctl enable docker.service
-
-# Docker 실행
-systemctl start docker.service
-
-# docker 스테이터스 확인
-systemctl status docker.service
-
-## 설치 후 재시작
-reboot
-```
-
-(nvdia-docker 설치는 [https://www.leafcats.com/153](https://www.leafcats.com/153) 포스팅을 참고)
-
-**자, 이렇게 Docker를 윈도우, 리눅스 환경에 모두 설치 완료 했다.** **다음 포스팅에서는 본격적으로 Dockerfile을 만들고 이미지를 생성하는것까지 진행 할 예정.**
+[##_Image|kage@c3Dv9X/btqBFvQBHkt/RI2jCDBM6k81V6CmGkpzn1/img.png|alignCenter|data-filename="다운로드 (2).png" data-origin-width="1280" data-origin-height="1141" data-ke-mobilestyle="widthContent"|||_##]
