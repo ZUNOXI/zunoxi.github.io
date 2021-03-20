@@ -34,7 +34,7 @@ header-img: img/infra/server/hourly/tomcat.png
 
 ---
 
-**1\. tomcat 설치**
+**1. tomcat 설치**
 
 (필자는 톰캣 9.x대 버전을 설치했다.)
 
@@ -44,9 +44,13 @@ header-img: img/infra/server/hourly/tomcat.png
 
 (해당 페이지에서 core에 "apache-tomcat-9.0.35.tar.gz"에 오늘쪽 마우스를 눌러 링크를 복사한다.)
 
+<br>
+
 ![그림1](/assets/img/infra/server/multi/1.png)
 
-**2\. 의존성 주입**
+<br>
+
+**2. 의존성 주입**
 
 ```
  yum install -y wget   
@@ -54,7 +58,7 @@ header-img: img/infra/server/hourly/tomcat.png
 
 \* 참고 : GNU Wget는 웹  서버로부터  콘텐츠를  가져오는  컴퓨터프로그램으로, GNU 프로젝트의  일부. 
 
-**3\. 톰캣 설치 및 압축풀기**
+**3. 톰캣 설치 및 압축풀기**
 
 톰캣을 언패키징할 폴더로 이동하여 아래 명령어를 입력한다.
 
@@ -62,11 +66,19 @@ header-img: img/infra/server/hourly/tomcat.png
 wget http://mirror.navercorp.com/apache/tomcat/tomcat-9/v9.0.35/bin/apache-tomcat-9.0.35.tar.gz
 ```
 
-[##_Image|kage@6Ofq6/btqD7Ycw0WJ/tqutZXMDGcp2224Yay9mqk/img.png|alignCenter|data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"|||_##]
+<br>
+
+![그림2](/assets/img/infra/server/multi/2.png)
+
+<br>
 
 다음, 두개의 톰캣 폴더를 만든다. first, second로 나누어 만들었다.
 
-[##_Image|kage@bNZLCt/btqD7X5MBCx/Pgb5per6cMofyoMny62bm1/img.png|alignCenter|data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"|||_##]
+<br>
+
+![그림3](/assets/img/infra/server/multi/3.png)
+
+<br>
 
 각 폴더에 압축파일을 복사 또는 이동하여 톰캣 파일 압축을 풀어준다.
 
