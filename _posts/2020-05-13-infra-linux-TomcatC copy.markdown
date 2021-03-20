@@ -159,9 +159,6 @@ vi catalina.sh
 
 <br>
 
-![그림10](/assets/img/infra/server/multi/10.png)
-
-<br>
 
 이런식으로 둘다 각자 환경변수 지정된 곳에서 잘 나오면 성공한것이다.
 
@@ -175,7 +172,7 @@ netstat -nltp
 
 <br>
 
-![그림11](/assets/img/infra/server/multi/11.png)
+![그림10](/assets/img/infra/server/multi/10.png)
 
 <br>
 
@@ -187,11 +184,11 @@ netstat -nltp
 
 <br>
 
-![그림12](/assets/img/infra/server/multi/12.png)
+![그림11](/assets/img/infra/server/multi/11.png)
 
 <br>
 
-![그림13](/assets/img/infra/server/multi/13.png)
+![그림12](/assets/img/infra/server/multi/12.png)
 
 <br>
 
