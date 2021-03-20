@@ -86,7 +86,11 @@ wget http://mirror.navercorp.com/apache/tomcat/tomcat-9/v9.0.35/bin/apache-tomca
 tar xvzf apache-tomcat-9.0.35.tar.gz
 ```
 
-[##_Image|kage@VP5si/btqD6REVT7d/BYMVjfCIPHBgem1tfXanL1/img.png|alignCenter|data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"|톰캣파일 압축풀||_##]
+<br>
+
+![그림4](/assets/img/infra/server/multi/4.png)
+
+<br>
 
 원래 톰캣 하나만 설치하는경우는 여기서 환경변수를 설정해줘야 하나
 
@@ -100,7 +104,11 @@ apache-tomcat-9.0.35/bin 폴더 이동
 vi catalina.sh
 ```
 
-[##_Image|kage@cfAUrR/btqD7XxXryA/kJL2tO3zK1uzjSrMr6hAa0/img.png|alignCenter|data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"|||_##]
+<br>
+
+![그림5](/assets/img/infra/server/multi/5.png)
+
+<br>
 
 드래그되어있는 부분을 각자 경로에 맞게 수정한다.(톰캣이 설치되어있는 root 경로라고 이해할 수 있다.
 
@@ -118,11 +126,20 @@ vi catalina.sh
 
 \*  참고 : AJP 프로토콜은 웹서버에서 받은요청을 WAS로 전달해주는 프로토콜이다.
 
-[##_Image|kage@HnZby/btqD9inQqps/Dg1bkkcI4AXzUm9N5npMr0/img.png|alignCenter|data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"|||_##]
+<br>
 
-[##_Image|kage@boxJbX/btqD8hiE7JH/PrmvL4s8upVVnpHHKfwdkK/img.png|alignCenter|data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"|||_##]
+![그림6](/assets/img/infra/server/multi/6.png)
 
-[##_Image|kage@cr8AEB/btqD6lzwXH4/QzaHbfk9QV4JkCqfyTwPMK/img.png|alignCenter|data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"|||_##]
+<br>
+
+![그림7](/assets/img/infra/server/multi/7.png)
+
+<br>
+
+![그림8](/assets/img/infra/server/multi/8.png)
+
+<br>
+
 
 **6\. Tomcat 실행**
 
@@ -136,7 +153,15 @@ vi catalina.sh
 
 두번째 톰캣이 위치한곳에서도 경로를 바꿔주고 실행시킨다.
 
-[##_Image|kage@oHvob/btqD9jAZcD9/9Za9XQXxcpoGNsKdQF8tSk/img.png|alignCenter|data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"|||_##][##_Image|kage@cb5gYx/btqD9ON6U4t/CMjHDsSlNEZfRnUTVt8c00/img.png|alignCenter|data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"|||_##]
+<br>
+
+![그림9](/assets/img/infra/server/multi/9.png)
+
+<br>
+
+![그림10](/assets/img/infra/server/multi/10.png)
+
+<br>
 
 이런식으로 둘다 각자 환경변수 지정된 곳에서 잘 나오면 성공한것이다.
 
@@ -148,7 +173,11 @@ vi catalina.sh
 netstat -nltp
 ```
 
-[##_Image|kage@bTWRNy/btqD9u986EY/yxUiIflFvxZZsZTnViYOvk/img.png|alignCenter|data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"|||_##]
+<br>
+
+![그림11](/assets/img/infra/server/multi/11.png)
+
+<br>
 
 우리가 지정했던 포트들이 잘 개방되어 있는것을 알수 있다.
 
@@ -156,9 +185,15 @@ netstat -nltp
 
 브라우저 주소창에서 확인해보자.
 
-[##_Image|kage@Y93RN/btqEanvYyGH/omQXhvV8FWhikRLBxvNHCk/img.png|alignCenter|data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"|8080 포트로의 접속||_##]
+<br>
 
-[##_Image|kage@F8AGB/btqEalZbgDA/4rAX67VIY7JxxCBkCkh1A1/img.png|alignCenter|data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"|8081 포트로의 접재||_##]
+![그림12](/assets/img/infra/server/multi/12.png)
+
+<br>
+
+![그림13](/assets/img/infra/server/multi/13.png)
+
+<br>
 
 이렇게 정상적으로 두개의 톰캣이 서로 다른 포트에서 돌아가고 있는것을 확인할 수 있다.
 
