@@ -11,10 +11,8 @@ header-img: img/infra/server/hourly/tomcat.png
 
 ## 개요
 > `centos7`에 apache tomcat 설치
-  
-- 목차
-	- [`웹 서버와 WAS 차이`](#웹-서버와-wasweb-application-server)
-	- [`웹 서버와 WAS 연동`](#웹-서버와-was-연동)
+
+<br>
   
 ## Tomcat Linux 설치
 ---
@@ -26,7 +24,9 @@ header-img: img/infra/server/hourly/tomcat.png
 
 ---
 
-**1. tomcat 사이트 접속**
+### **1. tomcat 사이트 접속**
+
+<br>
 
 톰캣 공식사이트에서 톰캣 9.0.35 버전의 링크를 복사한다.
 
@@ -40,7 +40,9 @@ header-img: img/infra/server/hourly/tomcat.png
 
 <br>
 
-**2\. 의존성 주입**
+### **2\. 의존성 주입**
+
+<br>
 
 ```
  yum install -y wget   
@@ -48,7 +50,11 @@ header-img: img/infra/server/hourly/tomcat.png
 
 \* 참고 : GNU Wget는웹서버로부터콘텐츠를가져오는컴퓨터프로그램으로, GNU프로젝트의일부. 
 
-**3\. 톰캣 설치 및 압축풀기**
+<br>
+
+### **3\. 톰캣 설치 및 압축풀기**
+
+<br>
 
 톰캣을 언패키징할 폴더로 이동하여 아래 명령어를 입력한다.
 
@@ -74,7 +80,11 @@ wget http://mirror.navercorp.com/apache/tomcat/tomcat-9/v9.0.35/bin/apache-tomca
 tar xvfz apache-tomcat-9.0.35.tar.gz
 ```
 
-**4\. 톰캣 실행**
+<br>
+
+### **4\. 톰캣 실행**
+
+<br>
 
 쉘에 아래 명령어를 입력한다.
 
@@ -100,7 +110,11 @@ tar xvfz apache-tomcat-9.0.35.tar.gz
 
 호스트의 ip : 8080 포트로 접속했을때 위와 같은 고양이 화면이 나타나면 정상적으로 실행중이라 판단할 수 있다.
 
-**5\. 자동실행등록 (서비스 등록)**
+<br>
+
+### **5\. 자동실행등록 (서비스 등록)**
+
+<br>
 
 매번 해당경로까지 이동해서 켜주기에는 번거롭기때문에
 
