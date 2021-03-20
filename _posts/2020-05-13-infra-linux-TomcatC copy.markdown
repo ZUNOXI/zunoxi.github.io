@@ -36,7 +36,7 @@ header-img: img/infra/server/hourly/tomcat.png
 
 **1\. tomcat 설치**
 
-(나는 톰캣 9.x대 버전을 설치했다.)
+(필자는 톰캣 9.x대 버전을 설치했다.)
 
 톰캣 공식사이트에서 톰캣 9.0.35 버전의 링크를 복사한다.
 
@@ -44,7 +44,7 @@ header-img: img/infra/server/hourly/tomcat.png
 
 (해당 페이지에서 core에 "apache-tomcat-9.0.35.tar.gz"에 오늘쪽 마우스를 눌러 링크를 복사한다.)
 
-![그림1](/assets/img/infra/server/tomcatC/2.png)
+![그림1](/assets/img/infra/server/multi/1.png)
 
 **2\. 의존성 주입**
 
