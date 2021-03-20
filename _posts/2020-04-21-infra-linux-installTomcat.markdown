@@ -12,7 +12,9 @@ header-img: img/infra/server/hourly/tomcat.png
 ## 개요
 > `Centos7` tomcat 다중서버 구동하
   
-<br>
+- 목차
+	- [`웹 서버와 WAS 차이`](#웹-서버와-wasweb-application-server)
+	- [`웹 서버와 WAS 연동`](#웹-서버와-was-연동)
   
 ## 다중 Was 구성
 ---
@@ -94,7 +96,7 @@ tar xvzf apache-tomcat-9.0.35.tar.gz
 
 우리는 두개 이상 설치 할 것이기 때문에 이후에 설정할 예정
 
-**4. catalina.sh 설정**
+**4\. catalina.sh 설정**
 
 apache-tomcat-9.0.35/bin 폴더 이동
 
