@@ -26,7 +26,7 @@ published: true
     
 `Info Link`
 - EMAIL : dlwnsgh930821@gmail.com
-- Hobby Blog : [https://blog.naver.com/cross9308](https://blog.naver.com/cross9308)
+- FUN Blog : [https://blog.naver.com/cross9308](https://blog.naver.com/cross9308)
 
 <br>
 
