@@ -85,9 +85,10 @@ public static void dfs(int x, int y, int cnt) {
 
 
 
-최종 제출 소스
+> 최종 제출 소스
 
-(+ sum 값이 min 값보다 높아지면 빠져나옴으로서 시간줄이기 가능!)
+
++ sum 값이 min 값보다 높아지면 빠져나옴으로서 시간줄이기 가능하다.
 
 ```
 import java.io.BufferedReader;
