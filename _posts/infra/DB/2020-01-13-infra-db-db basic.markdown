@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DB#1.DB 기초 개념정리
+title: DB 1.DB 기초 개념정리
 subtitle: DB 정보처리기사 수준 개념정리
 categories: infra
 tags: infra db
