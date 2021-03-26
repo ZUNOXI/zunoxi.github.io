@@ -10,7 +10,7 @@ header-img: img/infra/server/hourly/tomcat.png
 ---
 
 ## 개요
-> `Centos7` tomcat 다중서버 구동하
+> `Centos7` tomcat 다중서버 구동하기
   
 <br>
   
