@@ -14,11 +14,18 @@ header-img: img/dev/language/java/java.png
 
 <br>
 
----
+
 ## Modifier 
 
-* 클래스 정의시에 접근, 사용에 대한 제한 주기 위해 제한자(Modifier)를 사용할 수 있다. 
+---
 
+<br>
+
+
+클래스 정의시에 접근, 사용에 대한 제한 주기 위해 제한자(Modifier)를 사용할 수 있다. 
+
+
+<br>
 
 
 > static
@@ -36,8 +43,12 @@ header-img: img/dev/language/java/java.png
 - static block : 클래스가 메모리에 로딩된 후 자동 호출된다. 
 
 
+<br>
 
-* final
+
+> final
+
+<br>
 
 - 마지막을 의마하며 클래스 앞에 정의하여 더 이상 상속 받을 수 없음을, 메서드 앞에 정의하여 Overriding 할 수 없음을, 변수 앞에 정의하여 값 변경할 수 없음을 즉, 상수임을 의미한다.
 
@@ -49,13 +60,19 @@ header-img: img/dev/language/java/java.png
 
 - 일부 구현되지 않은 메서드를 포함할 수 있는 클래스 정의 시에 사용하며, 구현되지 않은 메서드 정의 시에 사용한다.
 ​
+
+<br>
+
+
 # Interface
 
 
+<br>
 
-* interface
+인터페이스는 상수와 구현되지 않은 메서드로만 구성된다. 상수 정의시에 특별히 상수라고 명시하지 않아도 컴파일러에 의해서 상수로 변경된다. 또한 메서드 정의시에 public 하게 정의하지 않아도 인터페이스의 모든 메서드는 컴파일러가 public 제한자를 삽입한다.
 
-- 인터페이스는 상수와 구현되지 않은 메서드로만 구성된다. 상수 정의시에 특별히 상수라고 명시하지 않아도 컴파일러에 의해서 상수로 변경된다. 또한 메서드 정의시에 public 하게 정의하지 않아도 인터페이스의 모든 메서드는 컴파일러가 public 제한자를 삽입한다.
+<br>
+
 
 - 인터페이스는 객체 생성을 할 수 없다.
 
@@ -67,9 +84,11 @@ header-img: img/dev/language/java/java.png
 
 - 상속한 sub class들의 명세서 역할로 사용
 
+<br>
 
+> Collection API
 
-* Collection API
+<br>
 
 - Collection API는 객체들을 저장, 검색, 삭제하는 기능 등을 제공하는 클래스들의 집합이다.
 
@@ -78,8 +97,11 @@ header-img: img/dev/language/java/java.png
 - Collection :  모든 클래스들의 Object를 요소(element)로 저장하는 객체의 최상위 Interface
 
 
+<br>
 
-* Set
+> Set
+
+<br>
 
 - 객체 저장 시 순서 없이 저장하고, 같은 데이터(equals(), hashCode() 비교시)는 무시된다. 
 
@@ -89,9 +111,11 @@ header-img: img/dev/language/java/java.png
 
 
 
+<br>
 
+> List
 
-* List
+<br>
 
 - 객체 저장 시에 인덱스를 가지고 순서대로 저장하며, 중복된 데이터도 새로운 인덱스를 부여하여 저장한다.
 
@@ -103,7 +127,11 @@ header-img: img/dev/language/java/java.png
 
 
 
-* Map
+<br>
+
+> Map
+
+<br>
 
 - 데이터 저장, 관리 시에 검색을 보다 쉽게 하기 위해 구현된 클래스이다.
 
@@ -115,21 +143,30 @@ header-img: img/dev/language/java/java.png
 
 
 
-* java.util - Calander
+<br>
+
+> java.util - Calander
+
+<br>
 
 - 시간을 기억하는 class이다. / System.currentTimeMillis():long - 현재 시간을 1/1000초로 long 타입으로 리턴한다.
 
 
 
-
+<br>
+<br>
 
 # Exception
 
-- Exception Overview : Java에서 오류는 객체이고, 크게 두 가지로 분리된다. 프로그램 처리 도중 기대되지 않는 상황(예외)를 Exception 이라 하고, 치명적인 오류를 Error로 클래스로 분리한다.
+Exception Overview : Java에서 오류는 객체이고, 크게 두 가지로 분리된다. 프로그램 처리 도중 기대되지 않는 상황(예외)를 Exception 이라 하고, 치명적인 오류를 Error로 클래스로 분리한다.
 
 
 
-* Exception class
+<br>
+
+> Exception class
+
+<br>
 
 - 정확한 프로그램
 
@@ -141,7 +178,11 @@ header-img: img/dev/language/java/java.png
 
 
 
-* Error class
+<br>
+
+> Error class
+
+<br>
 
 - Fatal situations(serious error)
 
@@ -155,7 +196,11 @@ header-img: img/dev/language/java/java.png
 
 
 
-* RunTimeException : 코드내의 처리가 잘못되었을때 발생한다.
+<br>
+
+> RunTimeException : 코드내의 처리가 잘못되었을때 발생한다.
+
+<br>
 
 - ArithmeticException : 0으로 나누기를 실행했을 때
 
