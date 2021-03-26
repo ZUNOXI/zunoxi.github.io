@@ -8,7 +8,7 @@ zunoxi:
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:             |
-    Less talk, Do more
+    dum spiro, spero
 
   # This photo will be used in the about section
   picture:
@@ -52,7 +52,7 @@ zunoxi:
     # trello:          <firstnamelastname>
     # linkedin:        <firstname-lastname-string>
     # xing:            <firstname_lastname_counter>
-    blogger:         https://zunoxi.tistory.com/
+    blogger:         https://blog.naver.com/cross9308
     # delicious:       <username>
     # stumbleupon:     <username>
     # paypal:          <username>
