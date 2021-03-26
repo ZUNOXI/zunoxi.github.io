@@ -30,4 +30,4 @@ published: true
 
 <br>
 
->There is a difference between knowing the path and walking the path. < Matrix >
+> dum spiro, spero < Cicero >
