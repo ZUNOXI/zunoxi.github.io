@@ -1,26 +1,24 @@
 ---
 layout: post
 title: Server 5. 메모리구조(heap, stack) 이해
-subtitle: rotatelogs를 활용한 Tomcat log 시간단위 분리
+subtitle: 메모리구조(heap, stack) 이해
 categories: infra
 tags: infra server
 comments: true
 published: true
-header-img: img/infra/server/hourly/tomcat.png
+header-img: img/infra/linux/memory/memory.jpg
 ---
 
 ## 개요
-> `Tomcat`의 catalina.out 로그를 `시간별로 분리`하여 효율적인 로그관리를 해보기
+> 프로그램이 운영체제로부터 할당받는 Heap, Stack 메모리 영역에대한 정리
   
 - 목차
 	- [`Log Handling`](#Log-Handling)
 	- [`tomcat 로그 종류`](#tomcat-로그-종류)
   
-### Log Handling
+### Heap, Stack
 ---
-톰캣 로그의 종류 중 보통 `catalina.out`에 중요 로그파일이 모두 적재되는것을 알 수 있다. 이 catalina.out이 너무 커지면 몇만, 몇십만 이상의 문장이 적재되어 로그분석이 힘들 수 있고, 경우에 따라 100기가가 넘어가면 톰캣이 중지된다는 사례도 있다. 
-
-따라서 보기 좋게, 혹은 안정성을 위해 날짜별로 쪼개고 그 날짜가 오래된것은 지우는 과정이 필요하다.
+얼마전 Memory Leak이 의심되는 WAS의 Heap Dump를 떠서 살펴볼일이 있었다. 업무를하면서 Heap Dump에 대한 이야기를 많이 들었는데, Heap dump가 뭔지도 잘 모를뿐더러, 문뜩 학부때 배웠던 메모리 Heap과 Stack 영역에 대한 기억이 잘 나지 않았다.. 이김에 본 포스팅을 작성하며 개념을 명확히 잡으려한다.
 
 <br>
 
