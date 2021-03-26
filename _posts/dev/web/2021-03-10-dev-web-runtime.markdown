@@ -1,6 +1,6 @@
 ---
 layout: post
-title: web 12. 런타임(Runtime)과 컴파일타임(Compile time)
+title: Web 12. 런타임(Runtime)과 컴파일타임(Compile time)
 subtitle: 런타임(Runtime)과 컴파일타임(Compile time)
 categories: programming
 tags: programming web
