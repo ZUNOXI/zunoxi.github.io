@@ -50,7 +50,7 @@ header-img: img\algorithm\main.png
 
 dfs라는 함수는 파이프의 오른쪽칸을 기준으로 시작한다.
 
-```
+```java
 arr = new int[N+2][N+2];
         for(int x = 1; x<N+1; x++) {
             String s = br.readLine();
@@ -79,7 +79,7 @@ arr = new int[N+2][N+2];
 
 먼저, 파이프가 가로인 경우이다.
 
-```
+```java
 if(arr[x][y-1]==5) { // 가로일때
                     if(arr[x][y+1]==2 ) { // 가로확인
                         arr[x][y-1]=2; arr[x][y+1]=5;
@@ -97,7 +97,7 @@ if(arr[x][y-1]==5) { // 가로일때
 
 세로인 경우
 
-```
+```java
 if(arr[x-1][y]==5) { // 세로일때
                     if(arr[x+1][y]==2) { // 세로확인
                         arr[x-1][y]=2; arr[x+1][y]=5;
@@ -116,7 +116,7 @@ if(arr[x-1][y]==5) { // 세로일때
 
 마지막으로 대각선으로 배치되어 있을 경우
 
-```
+```java
 if(arr[x-1][y-1]==5) {
                     if(arr[x][y+1]==2) { // 가로확인
                         arr[x-1][y-1]=2; arr[x][y+1]=5;
@@ -144,7 +144,7 @@ if(arr[x-1][y-1]==5) {
 
 아래는 전체 소스 코드이다.
 
-```
+```java
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;

@@ -51,7 +51,7 @@ header-img: img\algorithm\main.png
 
 데이터들을 입력받는다.
 
-```
+```java
 // 지역별 인구수 입력받기
         for(int i = 1; i<N+1; i++) {  
             peo[i] = Integer.parseInt(st.nextToken());
@@ -74,7 +74,7 @@ header-img: img\algorithm\main.png
 
 1. 1번 2개의 지역구로 나눌수 있는 부분집합을 구하기
 
-```
+```java
 // 0~부터 (N/2) 까지의 부분집합 구하기
         for(int i = 0; i<(N/2)+1; i++) { 
             K = i;
@@ -115,7 +115,7 @@ public static void pick(int start, int cnt) {
 
 3. 정상적인 경우 지역구 별 인구수 차이를 구한 후 최솟값 갱신하기
 
-```
+```java
 public static void confirm() {
         // 모든 지역구가 나눠지는지 확인하는 배열
         visited = new boolean[N+1];
@@ -167,7 +167,7 @@ public static void confirm() {
 
 전체 소스코드
 
-```
+```java
 
 import java.io.BufferedReader;
 import java.io.IOException;

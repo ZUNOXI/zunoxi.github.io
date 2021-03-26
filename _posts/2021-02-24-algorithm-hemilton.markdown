@@ -34,7 +34,7 @@ header-img: img\algorithm\main.png
 
 먼저, 태현이는 회사에서부터 출발하니깐 입력값을 그대로 받았다면 X=0일때만 고려해서 dfs 해주면 될것같다.
 
-```
+```java
 for(int j = 1; j<N; j++) { // 검사는 0컴마 1부터 0컴마 N-1까지 해준다!(회사에서부터 출발하니깐)
             visited = new boolean[N];
             sum = 0;
@@ -57,7 +57,7 @@ for(int j = 1; j<N; j++) { // 검사는 0컴마 1부터 0컴마 N-1까지 해준
 
 이 부분만 조금 주의하면 어렵지 않을것이다.
 
-```
+```java
 public static void dfs(int x, int y, int cnt) {
         sum = sum + arr[x][y];  // 일단 들어오면 sum 값에 더한다.
         visited[x] = true; // 방문한것으로 기억
@@ -90,7 +90,7 @@ public static void dfs(int x, int y, int cnt) {
 
 + sum 값이 min 값보다 높아지면 빠져나옴으로서 시간줄이기 가능하다.
 
-```
+```java
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
