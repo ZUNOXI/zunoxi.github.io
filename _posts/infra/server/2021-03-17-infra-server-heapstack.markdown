@@ -186,14 +186,3 @@ lograte를 사용하면 된다고하는데 내가 원하는데로 100메가 이�
 
 - [`http://www.chlux.co.kr/bbs/board.php?bo_table=board02&wr_id=11`](http://www.chlux.co.kr/bbs/board.php?bo_table=board02&wr_id=11)
 - [`https://cassandra.tistory.com/5`](https://cassandra.tistory.com/5)
-
-<br>
-
-
-<script src="https://utteranc.es/client.js"
-        repo="ZUNOXI/ZUNOXI-comments"
-        issue-term="pathname"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>
