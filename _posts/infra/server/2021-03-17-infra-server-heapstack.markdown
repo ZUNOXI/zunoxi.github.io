@@ -33,7 +33,12 @@ header-img: img/infra/linux/memory/memory.jpg
 
 ---
 
-일반적으로 프로그램이 운영체제로부터 Code, Data, Stack, Heap 의 메모리 영역을 할당 받는다.
+일반적으로 프로그램이 운영체제로부터 `Code, Data, Stack, Heap` 의 메모리 영역을 할당 받는다. 그 영역별 특징은 다음과 같다.
+
+<br>
+
+- 코드(Code) : 
+
 
 
 작성중...
