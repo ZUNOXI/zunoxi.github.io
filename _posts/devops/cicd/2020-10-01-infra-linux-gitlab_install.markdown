@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linux 3. CentOS7에 Gitlab-ce 설치하기
+title: CI/CD 4. CentOS7에 Gitlab-ce 설치하기
 subtitle: CentOS7에 Gitlab-ce 설치하기
 categories: infra
 tags: infra linux/aix

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linux 7. CentOS7에 Jenkins 설치하기
+title: CI/CD 5. CentOS7에 Jenkins 설치하기
 subtitle: CentOS7에 Jenkins 설치하기
 categories: infra
 tags: infra linux/aix
