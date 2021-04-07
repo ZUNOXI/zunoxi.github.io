@@ -2,8 +2,8 @@
 layout: post
 title: CI/CD 4. CentOS7에 Gitlab-ce 설치하기
 subtitle: CentOS7에 Gitlab-ce 설치하기
-categories: infra
-tags: infra linux/aix
+categories: devops
+tags: devops CICD
 comments: true
 published: true
 header-img: img/infra/linux/gitlab/1.png
