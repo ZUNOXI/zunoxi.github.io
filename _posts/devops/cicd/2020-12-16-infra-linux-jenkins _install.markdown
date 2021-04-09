@@ -16,6 +16,7 @@ header-img: img/infra/linux/jenkins/jenkins.jpg
 	- [`1. Jenkins 설치`](#1-jenkins-설치)
 	- [`2. Jenkins 구성수정`](#2-jenkins-구성수정)
 	- [`3. Jenkins 시작 및 접속`](#3-jenkins-시작-및-접속)
+	- [`4. Jenkins Plug-in 설치`](#4-jenkins-plug-in-설치)
   
 ## Jenkins on Centos7
 ---
@@ -86,7 +87,29 @@ systemctl restart firewalld
 
 <br>
 
-사실 `CICD or Devops`에 더가까운 포스팅이지만, 컨테이너환경에서의 설치가 아니라 infra분류로 포스팅해봤다. 이제 gitlab과 jenkins를 이용해서 CICD 테스트에 대한 포스팅을 해볼예정이다.
+초기비밀번호를 확인해야하니 화면에 나온처럼 경로의 파일을 확인 후 빈칸에 입력한다.
 
+```
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+```
+
+
+<br>
+
+---
+### **4. Jenkins Plug-in 설치**
+
+
+초기 비밀번호를 입력하면 `플러그인`을 설치할 수 있는 화면이 나온다. 이때 'Select plugins to install' 을 클릭하여 직접 플러그인을 설치한다.
+
+다음 포스팅에 몇가지 플러그인을 더 설치할 예정으로 최초 설치시에는 github, gitlab만 추가로 더 선택하여 설치 해보도록한다. 
+
+<br>
+
+기존 선택된 플러그인에서 github, gitlab만 선택 후 설치를 진행하면 아래와 같은 화면이 나온다.
+
+![그림2](/assets/img/infra/linux/jenkins/2.png)
+
+이제 gitlab과 jenkins를 이용해서 CICD 테스트로 디플로이 서버로 파일을 배포해보는 테스트를 진행해볼 예정이다.
 
 

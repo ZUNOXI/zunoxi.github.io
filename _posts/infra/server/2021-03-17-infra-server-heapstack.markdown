@@ -24,7 +24,8 @@ header-img: img/infra/linux/memory/memory.jpg
 
 **참고했던 블로그 포스트**
 
--   [https://junghyun100.github.io/%ED%9E%99-%EC%8A%A4%ED%83%9D%EC%B0%A8%EC%9D%B4%EC%A0%90/](https://junghyun100.github.io/%ED%9E%99-%EC%8A%A4%ED%83%9D%EC%B0%A8%EC%9D%B4%EC%A0%90/)
+-   [http://www.tcpschool.com/c/c_memory_structure](http://www.tcpschool.com/c/c_memory_structure)
+-   [https://jihyeong-ji99hy99.tistory.com/20](https://jihyeong-ji99hy99.tistory.com/20)
 
 <br><br>
 
@@ -37,8 +38,50 @@ header-img: img/infra/linux/memory/memory.jpg
 
 <br>
 
-- 코드(Code) : 
+> **`코드(Code)`** : 메모리의 코드영역은 실행할 프로그램의 코드가 저장되는 일종의 테스트영역. 
+
+<br>
+
+  - 일반적으로 CPU는 코드 영역에 저장된 명령어를 하나씩 가져가서 처리한다.
+  - 상수를 저장하고 프로그램의 시작부터 끝까지 메모리에 남아있다.
 
 
+<br>
+
+> **`데이터(Data)`** : 메모리의 데이터영역은 프로그램의 전역 변수와 정적변수가 저장되는 영역 
+
+<br>
+
+  - 프로그램이 시작부터 끝까지 메모리에 남아있다.(전역변수가 프로그램의 시작부터 끝까지 존재하는 이유)
+
+<br>
+
+> **`힙(Heap)`** : 사용자에 의해 메모리 공간이 동적으로 할당과 해제됨
+
+<br>
+
+  - 메모리의 낮은 주소애서 높은 주소로 할당됨
+  - LILO(Last In Last Out)방식 : 가장 늦게 저장된 데이터가 가장 늦에 인출
+  - C에서는 malloc(), Java에서는 new 연산자로 할당
+  - Java에서 가비지 컬렉터가 이를 일정수준 이상일때 해제시킨다.
+    - `가비지 컬랙터(GC)` : C언어의 경우 별도의 메모리를 해제시키는 문법이 있지만 JAVA는 없다. OS로부터 메모리를 할당받고 반납하는 전 과정에 가비지 컬렉터가 개입되며 ‘주소를 잃어버린 메모리’(가비지)를 정리해주는 역할을 한다.  JVM이 OS에 추가로 메모리를 요청할 때와 idle time에 가비지 컬렉터가 실행된다.
+
+<br>
+
+> **`스택(Stack)`** : 함수의 호출과 관계된 지역변수와 매개변수가 저장되는 영역
+
+<br>
+
+  - 메모리의 높은 주소에서 낮은 주소로 할당됨
+  - LIFO(Last In First Out)방식 : 가장 늦게 저장된 데이터가 가장 먼저 인출
+  - 프로그램이 자동으로 사용하는 임시 메모리 영역
+  - 컴파일 시 크기가 결정됨
+
+
+
+
+
+Stack Overflow : 스택이 힙 영역을 침범하는 경우
+Hip Overflow : 힙이 스택 영역을 침범하는 경우
 
 작성중...
