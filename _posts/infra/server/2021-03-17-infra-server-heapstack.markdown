@@ -82,6 +82,7 @@ header-img: img/infra/linux/memory/memory.jpg
 
 
 Stack Overflow : 스택이 힙 영역을 침범하는 경우
+
 Hip Overflow : 힙이 스택 영역을 침범하는 경우
 
 작성중...

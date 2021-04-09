@@ -110,6 +110,41 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
 ![그림2](/assets/img/infra/linux/jenkins/2.png)
 
-이제 gitlab과 jenkins를 이용해서 CICD 테스트로 디플로이 서버로 파일을 배포해보는 테스트를 진행해볼 예정이다.
+<br>
+
+---
+### **5. 계정정보 입력 및 도메인 확인**
+
+<br>
+
+해당 화면에서는 젠킨스에서 사용할 계정명과 암호를 입력한다. 여러번 설치하고 사용하며 느낀것은 계정명을 자주 까먹는(?) 경우가 있어서, 필자는 admin으로 설정했다.. 
+
+
+![그림3](/assets/img/infra/linux/jenkins/3.png)
+
+<br>
+
+다음 본인이 사용할 주소와 포트 혹은 도메인이 정상적으로 입력이 되어있는지 확인한다.
+
+<br>
+
+![그림4](/assets/img/infra/linux/jenkins/4.png)
+
+<br>
+
+최초 설치과정 완료 :)
+
+![그림5](/assets/img/infra/linux/jenkins/5.png)
+
+<br>
+
+이렇게 메인페이지까지 접속이 되었다면 설치가 완료된것이다.
+
+<br>
+
+![그림6](/assets/img/infra/linux/jenkins/6.png)
+
+
+이제 gitlab과 jenkins를 이용해서 CICD 테스트의 일환으로 `서버에 파일을 배포`해보는 테스트를 진행해볼 예정이다 :)
 
 
