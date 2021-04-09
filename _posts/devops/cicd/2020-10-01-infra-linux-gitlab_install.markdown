@@ -117,9 +117,10 @@ $ sudo gitlab-ctl reconfigure
 <br>
 
 ```
-$ sudo firewall-cmd ---permanent --add-service=http
-$ sudo firewall-cmd --zone=pulbic --add-port=내부 Nginx웹서버 포트(일반적으로 80포트)/tcp --permanent
-$ sudo systemctl reload firewalld
+$ sudo systemctl restart firewalld
+$ sudo firewall-cmd --permanent --add-service=http
+$ sudo firewall-cmd --add-port=내부 Nginx웹서버 포트(일반적으로 80포트)/tcp --permanent
+$ sudo systemctl restart firewalld
 
 ```
 
