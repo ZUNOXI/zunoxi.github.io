@@ -13,8 +13,7 @@ header-img: img/infra/linux/memory/memory.jpg
 > 프로그램이 운영체제로부터 할당받는 Heap, Stack 메모리 영역에대한 정리
   
 - 목차
-	- [`Log Handling`](#Log-Handling)
-	- [`tomcat 로그 종류`](#tomcat-로그-종류)
+	- [`메모리 구조`](#메모리-구조)
   
 ### Heap, Stack
 ---
