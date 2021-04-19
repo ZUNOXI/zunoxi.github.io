@@ -6,7 +6,7 @@ categories: devops
 tags: devops CICD
 comments: true
 published: true
-header-img: img/devops/cicd/git/git.png
+header-img: img/devops/cicd/git/0.png
 ---
 
 ## 개요
@@ -30,6 +30,7 @@ header-img: img/devops/cicd/git/git.png
 
 <br>
 
+Git은 소스코드 버전관리 도구로 형상관리 도구라고도 불린다. 일반적으로 버전 관리란 파일의 변화를 시간에 따라 기록하고 추후 특정 시점의 버전을 다시 꺼내올 수 있다는 특징이 있다. 
 
 <br>
 
@@ -41,7 +42,7 @@ header-img: img/devops/cicd/git/git.png
 작성중 ..
 
 
-
+ 
 
 
 
