@@ -1,7 +1,7 @@
 ---
 layout: post
-title: CI/CD 7. Git 명령어 정리
-subtitle: Git활용을 위한 명령어 정리
+title: CI/CD 6. Git과 Git 호스팅 서비스에 대한 정리
+subtitle: Git활용을 위한 Git 호스팅 서비스 정리
 categories: devops
 tags: devops CICD
 comments: true
@@ -10,17 +10,16 @@ header-img: img/devops/cicd/git/0.png
 ---
 
 ## 개요
-> `Git`을 활용을 위한 명령어 정리
+> `Git`을 활용을 위한 Git 호스팅 서비스 정리
   
 - 목차
 	- [`1. Git`](#1.-Git)
 	- [`2. Git 호스팅서비스`](#2.-Git-호스팅서비스)
 	- [`3. 호스팅서비스 선택`](#3.-호스팅서비스-선택)
   
-## Git
+## Git과 호스팅 서비스
 ---
-이제 Git에 대한 개념과 호스팅종류에 대해 알아봤으니 실제로 Git을 사용하는 명령어들에 대해 간단히 정리해본다.
-
+앞선 CI/CD 관련 포스팅들에서 Legacy 방식 혹은 컨테이너환경에서의 Gitlab설치를 다뤘었다. 본 포스팅에서는 Git이 무엇인지, 또 Gitlab과 같은 Git 호스팅 서비스 종류들이 어떻게되고 어떤특징이 있는지 정리하려한다.
 
 <br>
 
@@ -141,7 +140,7 @@ Github무료 버전과 큰 차이는 안나지만 본 블로그를 private repo�
 
 <br>
 
-또한, 사내에서는 `Gitlab`을 이용하여 버전관리를 하고있다. 주 고객사가 이제 막 CICD도입을 검토하고 Pilot을 진행하는 단계인데, 사내 소스코드 버전관리는 그룹망에서 접근(외부망 오픈 불필요)과 같은 보안적이유로 설치형 Gitlab 사용을 결정했다.
+또한, 사내에서는 `Gitlab`을 이용하여 버전관리를 하고있다. 주 고객사가 이제 막 CICD도입을 검토하고 Pilot을 진행하는 단계인데, 사내 소스코드 버전관리는 그룹망에서 접근(외부망 오픈 불필요)과 같은 보안적이유로 설치형 Gitlab을 사용하기로 결정했다.
 
 <br>
 
