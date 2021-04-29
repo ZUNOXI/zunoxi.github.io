@@ -18,6 +18,7 @@ header-img: img/devops/cicd/sonarqube/main.png
 	- [`3. Sonarqube 설치`](#5.-Sonarqube-설치)
   
 ## Sonarqube 설치
+
 ---
 오랜만에 삽질포스팅을 한다. 거의 2일 꼬박 밤을새우며 Sonarqube 설치에 매달렸는데, 여러가지 시도끝에 해결방법을 찾은것 같다. Sonarqube 다른 주목받는 Tool들에 비해 국내에 상대적으로 덜 알려져 있는건지, 필자가 잘 못찾는건지 해외 포럼에서 해결방법을 찾았다. sonarqube는 버전에 따라 지원하는 언어 혹은 툴이 다르기 때문에 **`공식문서 참고가 필수`** 이다. 필자와 같은 환경에 있는 사람이 있다면 이 글이 참고가 되길바라며 CentOS7 환경의 Sonarqube 설치과정을 포스팅한다.
 
