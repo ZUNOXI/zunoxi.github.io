@@ -269,8 +269,10 @@ CREATE DATABASE sonar OWNER sonar;
 sysctl -a | grep vm.max_map_count
 sysctl -w vm.max_map_count=262144
 ```
+
 <br>
 <br>
+
 ---
 
 ### **5. Sonarqube 설치**
