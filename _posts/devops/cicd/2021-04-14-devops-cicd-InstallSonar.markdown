@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CI/CD 9. CentOS7 Sonarqube(소나큐브) 설치하기
+title: CI/CD 9. CentOS7 Sonarqube(소나큐브) 설치
 subtitle: CentOS7 Sonarqube(소나큐브)7.2 설치
 categories: devops
 tags: devops CICD
@@ -91,7 +91,7 @@ wrapper  | <-- Wrapper Stopped
 
 <br>
 
-※ 필자는 root로 접근해서 작업했다. root 권한이 없는 경우 모든 명령어 앞에 sudo 를 붙이고 작업하는것을 추천한다.
+<span style="color:red">※</span> 필자는 root로 접근해서 작업했다. root 권한이 없는 경우 모든 명령어 앞에 sudo 를 붙이고 작업하는것을 추천한다.
 
 
 <br>
@@ -116,8 +116,6 @@ yum update
 
 > yum으로 설치 할 수 있는 openjdk 목록 확인
 
-<br>
-
 ```java
 yum list java*jdk-devel 
 ```
@@ -134,7 +132,6 @@ yum list java*jdk-devel
 
 1.8 버전만 설치를 원할 시 다음 명령어를 입력한다.
 
-<br>
 
 ```
 yum install java-1.8.0-openjdk-devel.x86_64 
@@ -199,7 +196,7 @@ yum -y install postgresql96 postgresql96-server postgresql96-contrib postgresql9
 ```
 <br>
 
-pg_hba.conf 파일에서 peer -> trust, ident -> md5 로 변경한다.
+pg_hba.conf 파일에서 `peer` -> `trust`, `ident` -> `md5` 로 변경한다.
 
 ```
 # TYPE  DATABASE        USER            ADDRESS                 METHOD
@@ -211,7 +208,6 @@ host    all             all             127.0.0.1/32            ident
 # IPv6 local connections:
 host    all             all             ::1/128                 ident
 ```
-<br>
 
 변경된 파일 내용
 
@@ -253,11 +249,11 @@ su - postgres
 
 creat user sonar;
 
-# postgresql 접근 및 DB 생성
+# postgresql 접근
 psql
 
+# sonar 계정 password 설정 및 DB생성
 ALTER USER sonar WITH ENCRYPTED password 'Sonar123!@#';
-
 CREATE DATABASE sonar OWNER sonar;
 
 # postgresql shell 종료
@@ -265,6 +261,125 @@ CREATE DATABASE sonar OWNER sonar;
 ```
 <br>
 
+> 시스템 vm.max_map_count 설정 값 확인
+
+프로세스가 사용할 수 있는 메모리 맵 영역의 최대 수를 지정한다. 기본값이 65530이나 sonarqube의 원할한 운영을 위해 262144로 늘리는것을 권장한다. [참고링크]
+
+```
+sysctl -a | grep vm.max_map_count
+sysctl -w vm.max_map_count=262144
+```
+<br>
+<br>
 ---
 
 ### **5. Sonarqube 설치**
+
+<br>
+
+>sonarqube 설치
+
+```
+cd /opt
+sudo wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-7.2.zip
+unzip sonarqube-7.2.zip
+mv sonarqube-7.2 sonarqube
+```
+<br>
+
+> sonarqube 유저 등록 및 폴더권한 부여
+
+```
+adduser sonar
+passwd soanr  #soanr 계정 PW 설정
+chown -R sonar /opt/sonarqube/
+```
+<br>
+
+> sonarqube와 DB연동 설정
+
+```
+# vi /opt/sonarqube/conf/sonar.properties
+
+
+# 아래 내용 추가(혹은 기존내용 주석해제 및 수정)
+sonar.jdbc.username=sonar					#postgresql sonar 계정
+sonar.jdbc.password=Sonar123!@#				#postgresql sonar 계정의 pw
+sonar.jdbc.url=jdbc:postgresql://localhost:5432/sonar?useUnicode=true&characterEncoding=utf8&useSSL=false
+```
+
+<br>
+
+sonarqube7.2 버전과 jdbc연동 시 jdbc.url 부분 유의사항([참고](https://docs.sonarqube.org/7.2/Requirements.html))
+- UTF8로 문자 인코딩 필요
+- SSL 미사용 시 에는 useSSL=false, 사용 시에는 useSSL=true 설정이 필요
+
+<br>
+
+> 방화벽 오픈
+
+sonarqube는 9000번 포트에서 동작하기때문에 방화벽에서 9000번 포트를 열어줘야한다.
+
+```
+firewall-cmd --permanent --app-port=9000/tcp
+systemctl restart firewalld
+firewall-cmd --list-all
+```
+
+<br>
+
+---
+
+### **6. Sonarqube 실행**
+
+<br>
+
+자, 이제 sonarqube를 실행해보자
+
+```
+cd /opt/sonarqube/bin/linux-x86-64
+./sonar.sh start
+./sonar.sh status
+./sonar.sh console
+```
+
+<br>
+
+다음으로 웹에서 `http://localhost:9000` (혹은 sonarqube 서버ip) 입력한다.
+
+![그림3](/assets/img/devops/cicd/sonarqube/3.png)
+
+<br>
+
+위와 같은 화면이 나오면 설치가 완료된 것이다 :)
+
+<br>
+
+> (참고)  sonarqube를 시스템으로 등록
+
+```
+# vi /usr/lib/systemd/system/sonar.service
+
+[Unit]
+Description=SonarQube service
+After=syslog.target network.target
+
+[Service]
+Type=forking
+
+ExecStart=/opt/sonarqube/bin/linux-x86-64/sonar.sh start
+ExecStop=/opt/sonarqube/bin/linux-x86-64/sonar.sh stop
+
+User=soanr
+Group=sonar
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+```
+
+<br>
+
+```
+systemctl start sonar.service
+```
