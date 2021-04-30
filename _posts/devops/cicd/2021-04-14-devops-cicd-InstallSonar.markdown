@@ -134,8 +134,22 @@ yum list java*jdk-devel
 1.8 버전만 설치를 원할 시 다음 명령어를 입력한다.
 
 
-```
-yum install java-1.8.0-openjdk-devel.x86_64 
+```java
+# yum install java-1.8.0-openjdk-devel.x86_64 -y
+
+# which java
+/usr/bin/java
+
+# readlink -f /usr/bin/java
+/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.292.b10-1.el7_9.x86_64/jre/bin/java
+
+# vi .bash_profile             #아래내용 추가
+ 
+JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.292.b10-1.el7_9.x86_64/jre/bin/java
+export JAVA_HOME
+
+#source .bash_profile
+
 ```
 
 <br>
