@@ -181,10 +181,12 @@ Sonarqube를 사용하려면 sonarqube를 운영하는데 필요한 데이터들
 
 > PostgreSQL RPM 다운로드
 
-yum package를 업데이트 한 상태이면 건너 뛰어도 되는 부분이다.
+
 
 ```
-# yum -y install postgresql96 postgresql96-server postgresql96-contrib postgresql96-libs
+# yum install https://download.postgresql.org/pub/repos/yum/9.6/redhat/rhel-7.8-x86_64/pgdg-redhat-repo-latest.noarch.rpm
+
+# yum list | grep ^postgresql
 
 # yum update -y
 ```
