@@ -471,7 +471,7 @@ sonarqube 7.9와 postgreSQL 9.6은 호환되기때문에 이미 위의 글내용
 ```
 # su - postgres
 # psql
-# drop database soanr;
+# drop database sonar;
 # CREATE DATABASE sonar OWNER sonar;
 ```
 
