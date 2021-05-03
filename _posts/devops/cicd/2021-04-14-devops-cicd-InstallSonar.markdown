@@ -261,13 +261,13 @@ postgres 23098 23090  0 11:26 ?        00:00:00 postgres: stats collector proces
 > sonarqube용 계정 및 DB 생성
 
 ```
-# User 계정 생성
+# postgresql 접근 및 User 계정 생성
 su - postgres
 
-creat user sonar;
-
-# postgresql 접근
 psql
+
+create user sonar;
+
 
 # sonar 계정 password 설정 및 DB생성
 ALTER USER sonar WITH ENCRYPTED password 'Sonar123!@#';
@@ -280,7 +280,7 @@ CREATE DATABASE sonar OWNER sonar;
 
 > 시스템 vm.max_map_count 설정 값 확인
 
-프로세스가 사용할 수 있는 메모리 맵 영역의 최대 수를 지정한다. 기본값이 65530이나 sonarqube의 원할한 운영을 위해 262144로 늘리는것을 권장한다. [참고링크]
+프로세스가 사용할 수 있는 메모리 맵 영역의 최대 수를 지정한다. 기본값이 65530이나 sonarqube의 원할한 운영을 위해 262144로 늘리는것을 권장한다.
 
 ```
 sysctl -a | grep vm.max_map_count
@@ -301,7 +301,7 @@ sysctl -w vm.max_map_count=262144
 ```
 cd /opt
 sudo wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-7.2.zip
-unzip sonarqube-7.2.zip
+unzip sonarqube-7.2.zip    #  unzip 프로그램이 없는경우 unzip 설치가 우선시 되어야한다.
 mv sonarqube-7.2 sonarqube
 ```
 <br>
@@ -340,7 +340,7 @@ sonarqube7.2 버전과 jdbc연동 시 jdbc.url 부분 유의사항([참고](http
 sonarqube는 9000번 포트에서 동작하기때문에 방화벽에서 9000번 포트를 열어줘야한다.
 
 ```
-firewall-cmd --permanent --app-port=9000/tcp
+firewall-cmd --permanent --add-port=9000/tcp
 systemctl restart firewalld
 firewall-cmd --list-all
 ```
@@ -353,6 +353,17 @@ firewall-cmd --list-all
 
 <br>
 
+
+soanrqube를 어떤 유저로 실행할건지 설정해준다.
+
+```
+# /opt/sonarqube/bin/linux-x86-64/sonar.sh
+RUN_AS_USER=sonar
+```
+
+<br>
+
+
 자, 이제 sonarqube를 실행해보자
 
 ```
@@ -360,6 +371,14 @@ cd /opt/sonarqube/bin/linux-x86-64
 ./sonar.sh start
 ./sonar.sh status
 ./sonar.sh console
+```
+
+<br>
+
+혹시 실행 시 오류가 난다면 sonar user의 접근이 막힌 temp파일이 생겨서 그럴 수 있으니 다시한번 권한 부여를 해준다.
+
+```
+chown -R sonar:sonar sonarqube
 ```
 
 <br>
@@ -400,5 +419,14 @@ WantedBy=multi-user.target
 <br>
 
 ```
+systemctl daemon-reload
 systemctl start sonar.service
 ```
+
+<br>
+
+> ++ 참고
+
+<br>
+
+혹시라도 이외의 설치 시 의 다양한 오류를 맞이 할 수 있는데. web.log 파일까지 참고 하는것을 추천한다. sonarqube 설치시의 오류는 대부분 log파일을 확인하면 원인을 찾을 수 있다.
