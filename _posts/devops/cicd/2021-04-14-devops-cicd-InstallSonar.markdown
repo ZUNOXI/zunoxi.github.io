@@ -391,9 +391,12 @@ chown -R sonar:sonar sonarqube
 
 위와 같은 화면이 나오면 설치가 완료된 것이다 :)
 
+
+
 <br>
 
-> (참고)  sonarqube를 시스템으로 등록
+
+> 참고 1. sonarqube를 시스템으로 등록
 
 ```
 # vi /usr/lib/systemd/system/sonar.service
@@ -425,8 +428,106 @@ systemctl start sonar.service
 
 <br>
 
-> ++ 참고
+---
+
+### **7. Sonarqube 7.9 설치**
+
 
 <br>
 
-혹시라도 이외의 설치 시 의 다양한 오류를 맞이 할 수 있는데. web.log 파일까지 참고 하는것을 추천한다. sonarqube 설치시의 오류는 대부분 log파일을 확인하면 원인을 찾을 수 있다.
+현재 포스팅시점인 2021년 5월 3일 기준, `Sonarqube의 LTS 버전은 7.9 버전`이다. 따라서 장기간 사용을 고려 시 Java 11버전을 별도로 설치하더라도 7.9를 사용할 이유는 있다. 필자는 7.2 버전을 설치 후 7.9로 재설치를 해봤다. 관련 내용을 추가로 기록한다. 
+
+<br>
+
+> java 11 설치
+
+<br>
+
+```java
+# yum install java-11-openjdk-devel -y
+
+# alternatives --config java                  # java 설치현황 확인
+
+2 개의 프로그램이 'java'를 제공합니다.
+
+  선택    명령
+-----------------------------------------------
+*+ 1           java-1.8.0-openjdk.x86_64 (/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.292.b10-1.el7_9.x86_64/jre/bin/java)
+   2           java-11-openjdk.x86_64 (/usr/lib/jvm/java-11-openjdk-11.0.11.0.9-1.el7_9.x86_64/bin/java)
+
+현재 선택[+]을 유지하려면 엔터키를 누르고, 아니면 선택 번호를 입력하십시오:
+```
+
+위 결과에서 java-11 버전에 대한 경로(/usr/lib/jvm/java-11-openjdk-11.0.11.0.9-1.el7_9.x86_64/bin/java)를 복사해둔다.
+
+<br>
+
+> PostgreSQL DB 스키마 삭제
+
+<br>
+
+sonarqube 7.9와 postgreSQL 9.6은 호환되기때문에 이미 위의 글내용대로 설치했다면 Postgres 삭제 혹은 추가 설치는 불필요하다. 생성했던 sonar database만 삭제하고 다시 만든다. (필자는 postgreSQL을 잘 모르지만 vacuum을 사용하는 방법도 있다고 한다..)
+
+```
+# su - postgres
+# psql
+# drop database soanr;
+# CREATE DATABASE sonar OWNER sonar;
+```
+
+<br>
+
+> sonaqube 7.9 버전 다운로드 및 설치
+
+<br>
+
+```
+wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-7.9.6.zip
+unzip sonarqube-7.9.6.zip
+mv sonarqube-7.9.6 sobarqube
+```
+
+<br>
+
+> sonarqube 설정
+
+```
+# vi /opt/sonarqube/conf/wrapper.conf
+
+wrapper.java.command=/usr/lib/jvm/java-11-openjdk-11.0.11.0.9-1.el7_9.x86_64/bin/java            # 주석해제 후 수정 or 추가
+
+
+# vi /opt/sonarqube/conf/sonar.properties
+
+
+## 아래 내용 추가(혹은 기존내용 주석해제 및 수정)
+sonar.jdbc.username=sonar					#postgresql sonar 계정
+sonar.jdbc.password=Sonar123!@#				#postgresql sonar 계정의 pw
+sonar.jdbc.url=jdbc:postgresql://localhost:5432/sonar?useUnicode=true&characterEncoding=utf8&useSSL=false
+
+# vi /opt/sonarqube/bin/linux-x86-64/sonar.sh
+RUN_AS_USER=sonar
+```
+
+<br>
+
+> sonarqube 실행
+
+<br>
+
+
+```
+#chown -R sonar:sonar sonarqube
+
+# cd /opt/sonarqube/bin/linux-x86-64
+# ./sonar.sh start
+# ./sonar.sh status
+# ./sonar.sh console
+```
+
+
+<br>
+
+- 참고
+
+ 이외의 재설치 시 의 다양한 오류를 맞이 할 수 있는데. web.log 파일까지 참고 혹은 서버 reboot(max file descripter관련 에러 의심)하는것을 추천한다. sonarqube 설치시의 오류는 대부분 log파일을 확인하면 원인을 찾을 수 있다. 또한, SELinux 설정도 확인해볼 필요가 있다.
