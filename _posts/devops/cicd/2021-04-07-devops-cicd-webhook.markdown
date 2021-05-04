@@ -47,7 +47,7 @@ Jenkins > Jenkins 관리 > 'Global Tool Configuration' 선택
 
 <br>
 
-![그림1](/assets/img/devops/cicd/webhook/3.png)
+![그림2](/assets/img/devops/cicd/webhook/3.png)
 
 <br>
 
@@ -65,7 +65,7 @@ git을 Jenkins서버에 설치한경우에는 install automatically 박스를 �
 
 <br>
 
-![그림1](/assets/img/devops/cicd/webhook/4.png)
+![그림3](/assets/img/devops/cicd/webhook/4.png)
 
 <br>
 
@@ -77,7 +77,7 @@ Add Maven 버튼 클릭후 `Maven 3.6.0` 기입, Install from Apache도 3.6.0으
 
 <br>
 
-![그림1](/assets/img/devops/cicd/webhook/5.png)
+![그림4](/assets/img/devops/cicd/webhook/5.png)
 
 <br>
 
@@ -94,11 +94,86 @@ Add Maven 버튼 클릭후 `Maven 3.6.0` 기입, Install from Apache도 3.6.0으
 
 <br>
 
-![그림1](/assets/img/devops/cicd/webhook/1.png)
+![그림5](/assets/img/devops/cicd/webhook/1.png)
 
-
+<br>
 
 ---
 
-### **2. Jenkins 플러그인 설치**
+### **2. Gitlab 연동**
 
+<br>
+
+> Gitlab Access token 발행
+
+<br>
+
+Gitlab 로그인 후 사용자탭에서 Preferences > Access Tokens 선택 후 Token Name 기입
+
+<br>
+
+![그림6](/assets/img/devops/cicd/webhook/6.png)
+
+<br>
+
+![그림7](/assets/img/devops/cicd/webhook/7.png)
+
+<br>
+
+![그림8](/assets/img/devops/cicd/webhook/8.png)
+
+<br>
+
+몇가지 설정들을 체크해주고 personal access token을 생성한다. 생성된 `토큰값`은 메모장같은곳에 `복사`해둔다.
+
+<br>
+
+![그림9](/assets/img/devops/cicd/webhook/9.png)
+
+<br>
+
+![그림10](/assets/img/devops/cicd/webhook/10.png)
+
+<br>
+
+Jenkins로 이동후 Jenkins관리 > Manage Credentials
+
+<br>
+
+![그림11](/assets/img/devops/cicd/webhook/11.png)
+
+<br>
+
+![그림12](/assets/img/devops/cicd/webhook/12.png)
+
+<br>
+
+새로운 Credentials key를 만든다. 종류는 Gitlab API token를 선택하고 복사해두었던 Token값과 만들 Credentials의 ID를 정하여 기입한다. 
+
+<br>
+
+![그림13](/assets/img/devops/cicd/webhook/13.png)
+
+<br>
+
+![그림14](/assets/img/devops/cicd/webhook/14.png)
+
+<br>
+
+Jenkins관리 > 시스템 설정 선택 > Gitlab 설정란에 Gitlab Connection 이름, Gitlab서버 주소(이경우에는 설치형서버이니 서버 IP 혹은 별도 도메인), 사용할 Credentials 선택 후 Test Connection으로 정상연결이 되는지 확인한다.
+
+<br>
+
+![그림15](/assets/img/devops/cicd/webhook/15.png)
+
+<br>
+
+![그림16](/assets/img/devops/cicd/webhook/16.png)
+
+<br>
+
+Success가 뜨면 성공~!
+
+<br>
+
+작성중...
