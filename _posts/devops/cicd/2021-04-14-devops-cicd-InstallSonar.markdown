@@ -13,9 +13,9 @@ header-img: img/devops/cicd/sonarqube/main.png
 > CentOS 7 환경에 Sonarqube 7.2 설치하기
   
 - 목차
-	- [`1. JAVA 설치`](#3.-JAVA-설치)
-	- [`2. DB(PostgreSQL)설치`](#4.-DB(PostgreSQL)설치)
-	- [`3. Sonarqube 설치`](#5.-Sonarqube-설치)
+- [`1. JAVA 설치`](#3.-JAVA-설치)
+- [`2. DB(PostgreSQL)설치`](#4.-DB(PostgreSQL)설치)
+- [`3. Sonarqube 설치`](#5.-Sonarqube-설치)
   
 ## Sonarqube 설치
 ---
