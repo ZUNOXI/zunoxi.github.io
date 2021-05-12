@@ -17,7 +17,7 @@ header-img: img/devops/cicd/git/0.png
 	- [`1. Jenkins 환경설정`](#1.-Jenkins-환경설정)
 	- [`2. Gitlab 연동`](#2.-Gitlab-연동)
   
-## Git
+## Webhook
 ---
 이번 포스팅에서는 Gitlab 설치형서버와 Jenkins서버간 Webhook을 통해 연동하고 Maven으로 빌드하는 과정에 대해 정리한다. 해당 포스팅은 설치형 gitlab과 jenkins, 그리고 Maven으로 빌드할 가벼운 Spring-boot 프로젝트가 사전에 준비되어있음을 전제로 한다.
 
