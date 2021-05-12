@@ -14,9 +14,8 @@ header-img: img/devops/cicd/git/0.png
 > Gitlab과 Jenkins의 Webhook을 통한 연동 과정 정리
   
 - 목차
-	- [`1. Git`](2020-07-12-devops-cicd-install%20helm.markdown)
-	- [`2. Git 호스팅서비스`](#2.-Git-호스팅서비스)
-	- [`3. 호스팅서비스 선택`](#3.-호스팅서비스-선택)
+	- [`1. Jenkins 환경설정`](#1.-Jenkins-환경설정)
+	- [`2. Gitlab 연동`](#2.-Gitlab-연동)
   
 ## Git
 ---
