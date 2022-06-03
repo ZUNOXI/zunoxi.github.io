@@ -9,6 +9,9 @@ published: true
 header-img: img\algorithm\main.png
 ---
 
+해당 포스팅은 [링크](https://zunoxi.tistory.com/9?category=816767) 로 이전되었습니다.
+
+<!--
 ## 개요
 > [백준] 17070번 파이프옮기기 java 알고리즘 문제풀이와 소스코드 기록
   
@@ -236,3 +239,4 @@ public class Main {
         }
     }
 ```
+-->
