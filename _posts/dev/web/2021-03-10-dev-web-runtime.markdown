@@ -8,6 +8,9 @@ comments: true
 published: true
 ---
 
+해당 포스팅은 [https://zunoxi.tistory.com/99?category=816528](https://zunoxi.tistory.com/99?category=816528)으로 이전되었습니다.
+<!--
+
 ## 개요
 > 런타임과 컴파일타임에 대한 이해
   
