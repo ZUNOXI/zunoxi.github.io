@@ -10,6 +10,7 @@ header-img: img/devops/k8s/helm/logo.jpeg
 ---
 
 해당 포스팅은 [https://zunoxi.tistory.com/82?category=950188](https://zunoxi.tistory.com/82?category=950188)로 이전되었습니다.
+
 <!--
 
 ## 개요
