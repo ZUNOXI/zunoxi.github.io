@@ -9,6 +9,10 @@ published: true
 header-img: img/devops/docker/logo.png
 ---
 
+해당 포스팅은 [https://zunoxi.tistory.com/51?category=950190](https://zunoxi.tistory.com/51?category=950190)으로 이전되었습니다.
+
+<!--
+
 ## 개요
 > `Docker commit` 을 활용하여 `컨테이너`를 이미지화 시키기 
   
