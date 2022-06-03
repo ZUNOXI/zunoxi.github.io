@@ -9,6 +9,7 @@ header-img: img/dev/web/jar/Java.jpg
 ---
 
 해당 포스팅은 [링크](https://zunoxi.tistory.com/33?category=816528)로 이전되었습니다.
+
 <!--
 ## 개요
 > WAS를 이용해서 웹 서비스를 배포하다 보니 JAR, WAR 파일들이 서로 헷갈려 짚고 넘어가 보려고 한다.
