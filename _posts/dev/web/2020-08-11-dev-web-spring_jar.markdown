@@ -225,3 +225,5 @@ $ java -jar DockerTest-0.0.1-SNAPSHOT.jar
 <br>
 
 > ※ 최초 프로젝트의 src/main/webapp에 html 파일을 넣고 구동 시에는 404가 출력되었는데, src/main에 html을 두거나 src/main/resources/static에 html을 두는 방법으로 해결했다. 혹시나 동일한 문제가 발생한 분은 해당 방법을 참고하면 될 것 같다.
+
+-->
