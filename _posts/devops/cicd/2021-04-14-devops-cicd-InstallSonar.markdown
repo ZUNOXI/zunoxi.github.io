@@ -58,7 +58,7 @@ header-img: img/devops/cicd/sonarqube/main.png
 ```java
 # ./sonar.sh console
 Running SonarQube...
-wrapper  | --> Wrapper Started as Console
+wrapper  | --> <!-- Wrapper Started as Console
 wrapper  | Launching a JVM...
 jvm 1    | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
 jvm 1    |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
