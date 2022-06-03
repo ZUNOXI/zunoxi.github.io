@@ -170,3 +170,4 @@ $sudo chmod -cR 755 /var/log/gitlab
 
 ![그림4](/assets/img/infra/linux/gitlab/5.png)
 
+-->
