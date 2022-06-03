@@ -9,6 +9,8 @@ published: true
 header-img: img\algorithm\main.png
 ---
 
+해당 포스팅은 [링크](https://zunoxi.tistory.com/12?category=816767) 로 이전되었습니다.
+<!--
 ## 개요
 > [정올] 1681번 해밀턴 순환회로 java 알고리즘 문제풀이와 소스코드 기록
   
@@ -151,3 +153,4 @@ public class 해밀턴순환회로 {
     }
 }
 ```
+-->
