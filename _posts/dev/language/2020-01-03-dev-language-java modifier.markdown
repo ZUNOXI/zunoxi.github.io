@@ -9,6 +9,9 @@ published: true
 header-img: img/dev/language/java/java.png
 ---
 
+해당 포스팅은 [링크](https://zunoxi.tistory.com/19?category=828192)로 이전되었습니다.
+
+<!--
 자바 개념정리 마지막 3번째 포스팅이며, 이번 포스팅에서는 접근제한자에 대한 글을 기술한다.
 
 
@@ -211,3 +214,5 @@ Exception Overview : Java에서 오류는 객체이고, 크게 두 가지로 분
 - ArrayIndexOutOfBoundsException : 배열의 크기를 벗어났을 때
 
 - SecurityException : 보안에 위배되는 기능을 수행할 때
+
+-->
