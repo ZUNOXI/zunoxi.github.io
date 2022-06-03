@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Language#2.(수정중)JAVA 개념정리 (클래스, 객체지향이란)
+title: Language#2.JAVA 개념정리 (클래스, 객체지향이란)
 subtitle: JAVA 개념정리 두번째 (클래스, 객체지향이란)
 categories: programming
 tags: programming language
@@ -9,6 +9,9 @@ published: true
 header-img: img/dev/language/java/java.png
 ---
 
+해당 포스팅은 [링크](https://zunoxi.tistory.com/16?category=828192)로 이전되었습니다.
+
+<!--
 지난 포스팅에 이어 두 번째 자바 포스팅이다.
 
 이번 포스팅에서는 자바의 클래스 위주로 정리해보려한다.
