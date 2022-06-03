@@ -131,3 +131,5 @@ Docker hub에도 해당 이미지가 전송된것을 확인 할 수 있다.
 ![그림11](/assets/img/devops/docker/commit/11.png)
 
 위와 같이 동일하게 나오는 것을 확인 할 수 있다!!
+
+-->
