@@ -9,6 +9,10 @@ published: true
 header-img: img/devops/docker/logo.png
 ---
 
+헤당 포스팅은 [https://zunoxi.tistory.com/48?category=950190](https://zunoxi.tistory.com/48?category=950190)으로 이전되었습니다.
+
+<!--
+
 ## 개요
 > `Docker` 를 활용하여 `Tomcat` 운영하기 
   
