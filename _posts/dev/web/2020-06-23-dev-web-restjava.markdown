@@ -8,6 +8,8 @@ comments: true
 published: true
 ---
 
+해당 포스팅은 [https://zunoxi.tistory.com/54?category=816528](https://zunoxi.tistory.com/54?category=816528) 로 이전되었습니다.
+<!--
 ## 개요
 > Java프로젝트에서 `RestAPI` 활용하여 데이터를 `Json` 형식으로 `POST`
   
