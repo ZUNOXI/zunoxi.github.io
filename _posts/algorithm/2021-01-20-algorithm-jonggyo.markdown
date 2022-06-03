@@ -9,7 +9,7 @@ published: true
 header-img: img\algorithm\main.png
 ---
 
-해당 포스팅은 https://zunoxi.tistory.com/8?category=816767 로 이전되었습니다.
+해당 포스팅은 [링크](https://zunoxi.tistory.com/8?category=816767) 로 이전되었습니다.
 
 <!--
 ## 개요
