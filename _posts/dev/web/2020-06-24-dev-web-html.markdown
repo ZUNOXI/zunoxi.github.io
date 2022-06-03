@@ -10,6 +10,7 @@ header-img: img/dev/language/html/html.jpg
 ---
 
 해당 포스팅은 [https://zunoxi.tistory.com/54?category=816528](https://zunoxi.tistory.com/54?category=816528)로 이전되었습니다.
+
 <!--
 ## 개요
 > `html, css, javascript` 에 대한 이해
