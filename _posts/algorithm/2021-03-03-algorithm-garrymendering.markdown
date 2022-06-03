@@ -9,6 +9,9 @@ published: true
 header-img: img\algorithm\main.png
 ---
 
+해당 포스팅은 [링크](https://zunoxi.tistory.com/13?category=816767) 로 이전되었습니다.
+
+<!--
 ## 개요
 > [백준] 17471번 게리맨더링 java 알고리즘 문제풀이
   
@@ -288,3 +291,4 @@ public class Main {
 }
 
 ```
+-->
