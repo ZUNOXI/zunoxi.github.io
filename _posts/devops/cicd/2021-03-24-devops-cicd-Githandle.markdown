@@ -9,6 +9,9 @@ published: true
 header-img: img/devops/cicd/git/0.png
 ---
 
+해당 포스팅은 [https://zunoxi.tistory.com/101?category=950188](https://zunoxi.tistory.com/101?category=950188) 으로 이전되었습니다.
+<!--
+
 ## 개요
 > `Git`을 활용을 위한 Git 호스팅 서비스 정리
   
