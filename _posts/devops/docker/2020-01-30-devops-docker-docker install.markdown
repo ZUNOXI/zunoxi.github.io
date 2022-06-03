@@ -10,6 +10,7 @@ header-img: img/devops/docker/logo.png
 ---
 
 해당 포스팅은 [https://zunoxi.tistory.com/25?category=950190](https://zunoxi.tistory.com/25?category=950190)으로 이전하였습니다.
+
 <!--
 
 이번 포스팅에서는 서버에 띄우기 위한 도커파일을 만들기 위해 윈도우와 리눅스에서 도커를 설치해 보려한다.
