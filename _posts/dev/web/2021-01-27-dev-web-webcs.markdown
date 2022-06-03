@@ -9,7 +9,7 @@ published: true
 header-img: img\dev\web\cs\main.png
 ---
 
-해당 포스팅은 [https://zunoxi.tistory.com/97?category=816528](https://zunoxi.tistory.com/97?category=816528)으로 이전되었습니다.
+해당 포스팅은 [https://zunoxi.tistory.com/34?category=816528](https://zunoxi.tistory.com/34?category=816528)으로 이전되었습니다.
 <!--
 
 ## 개요
