@@ -10,6 +10,7 @@ header-img: img/devops/docker/logo.png
 ---
 
 해당 포스팅은 [링크](https://zunoxi.tistory.com/24?category=950195)로 이전되었습니다.
+
 <!--
 이번 포스팅은 도커 환경을 설치 하기 전, 먼저 **AWS서버 환경에 접속**하는 방법에 대해 알아보고자 한다.
 
