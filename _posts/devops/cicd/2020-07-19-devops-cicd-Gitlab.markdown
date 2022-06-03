@@ -261,4 +261,4 @@ $ helm upgrade gitlab stable/gitlab-ce       --set externalUrl=내 IP 주소(접
 정말 엄청난 삽질을 거듭했고, 사실 지금도 이게 맞는 것인지 잘 모르고 사용하고 있지만, 우선 Gitlab을 쿠버네티스에서 돌릴 수는 있게 되었다. 추가적으로 CI/CD 파이프라인을 구축하며 업데이트해 나가려 한다.
 
 
-
+-->
