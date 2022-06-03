@@ -9,6 +9,9 @@ published: true
 header-img: img\algorithm\main.png
 ---
 
+해당 포스팅은 https://zunoxi.tistory.com/8?category=816767 로 이전되었습니다.
+
+\\<!--
 ## 개요
 > [정올] 1863번 종교 java(자바) 알고리즘 문제의 풀이와 소스코드 기록
   
@@ -117,3 +120,4 @@ public class Main {
 }
 
 ```
+-->
