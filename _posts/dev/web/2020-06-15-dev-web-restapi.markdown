@@ -9,6 +9,7 @@ published: true
 ---
 
 해당 포스팅은 [https://zunoxi.tistory.com/37?category=816528](https://zunoxi.tistory.com/37?category=816528) 로 이전되었습니다.
+
 <!--
 ## 개요
 > `RestAPI` 가 무엇이고 어떻게 사용해야하는가?
