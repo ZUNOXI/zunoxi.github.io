@@ -9,6 +9,10 @@ published: true
 header-img: img/devops/docker/logo.png
 ---
 
+
+해당 포스팅은 [https://zunoxi.tistory.com/23?category=950190](https://zunoxi.tistory.com/23?category=950190) 으로 이전되었습니다.
+<!--
+
 이번 포스팅은 이미 등장한지 5년이 넘고 컨테이너 기술의 표준으로 자리잡았지만, 아직 접해보지않은 사람에게는 생소할 수 있는 `Docker`와 `쿠버네티스`에 대해 간단히 알아보고 `인프라관련용어`들에 대해 정리해보려한다.
 
 <br>
