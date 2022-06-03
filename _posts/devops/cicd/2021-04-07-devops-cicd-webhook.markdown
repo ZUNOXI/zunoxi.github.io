@@ -9,6 +9,8 @@ published: true
 header-img: img/devops/cicd/git/0.png
 ---
 
+해당 포스팅은 [https://zunoxi.tistory.com/106?category=950188](https://zunoxi.tistory.com/106?category=950188) 으로 이전되었습니다.
+<!--
 
 ## 개요
 > Gitlab과 Jenkins의 Webhook을 통한 연동 과정 정리
