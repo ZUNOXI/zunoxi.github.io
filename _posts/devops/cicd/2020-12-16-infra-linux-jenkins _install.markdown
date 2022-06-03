@@ -152,3 +152,4 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 이제 gitlab과 jenkins를 이용해서 CICD 테스트의 일환으로 `서버에 파일을 배포`해보는 테스트를 진행해볼 예정이다 :)
 
 
+-->
