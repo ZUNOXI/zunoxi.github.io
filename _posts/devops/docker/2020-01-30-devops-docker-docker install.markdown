@@ -9,6 +9,9 @@ published: true
 header-img: img/devops/docker/logo.png
 ---
 
+해당 포스팅은 [https://zunoxi.tistory.com/25?category=950190](https://zunoxi.tistory.com/25?category=950190)으로 이전하였습니다.
+<!--
+
 이번 포스팅에서는 서버에 띄우기 위한 도커파일을 만들기 위해 윈도우와 리눅스에서 도커를 설치해 보려한다.
 
 리눅스가 개발환경인 경우의 설치방법은 생각보다 간편하다. 물론, 테스트 서버에서도 docker 이미지 파일이 돌아가게 해야하므로 테스트 목적의 서버 환경에도 도커를 설치해야한다.
