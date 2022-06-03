@@ -9,6 +9,10 @@ published: true
 header-img: img/devops/docker/logo.png
 ---
 
+해당 포스팅은 [https://zunoxi.tistory.com/50?category=950190](https://zunoxi.tistory.com/50?category=950190)으로 이전되었습니다.
+
+<!--
+
 ## 개요
 > `Docker volume` 을 활용하여 `Was log`를 호스트에 저장하기 
   
