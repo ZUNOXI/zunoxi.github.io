@@ -10,6 +10,7 @@ header-img: img/infra/linux/gitlab/1.png
 ---
 
 해당 포스팅은 [https://zunoxi.tistory.com/85?category=950188](https://zunoxi.tistory.com/85?category=950188) 으로 이전되었습니다.
+
 <!--
 
 ## 개요
