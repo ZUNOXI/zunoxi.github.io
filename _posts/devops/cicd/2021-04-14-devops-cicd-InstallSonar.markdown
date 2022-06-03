@@ -533,3 +533,5 @@ RUN_AS_USER=sonar
 - 참고
 
  이외의 재설치 시 의 다양한 오류를 맞이 할 수 있는데. web.log 파일까지 참고 혹은 서버 reboot(max file descripter관련 에러 의심)하는것을 추천한다. sonarqube 설치시의 오류는 대부분 log파일을 확인하면 원인을 찾을 수 있다. 또한, SELinux 설정도 확인해볼 필요가 있다.
+
+-->
