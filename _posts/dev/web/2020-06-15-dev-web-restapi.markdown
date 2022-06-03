@@ -84,3 +84,5 @@ POST 요청으로 테스트해볼 데이터내용을 입력후 execute
 ![그림12](/assets/img/dev/web/restapi/console2.jpg)
 
 restapi에 대한 정리.
+
+-->
