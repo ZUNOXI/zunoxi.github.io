@@ -9,6 +9,8 @@ published: true
 header-img: img/dev/web/spring-jar/1.png
 ---
 
+해당 포스팅은 [링크](https://zunoxi.tistory.com/32?category=816528)로 이전되었습니다.
+<!--
 ## 개요
 > `스프링`과 `스프링부트(spring-boot)`에 대한 이해
   
