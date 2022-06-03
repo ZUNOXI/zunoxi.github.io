@@ -9,6 +9,11 @@ published: true
 header-img: img/devops/docker/logo.png
 ---
 
+
+해당 포스팅은 [https://zunoxi.tistory.com/26?category=950190](https://zunoxi.tistory.com/26?category=950190)으로 이전되었습니다.
+
+
+<!--
 이번 포스팅에서는 `Dockerfile`에 대해 **이해 및 제작**하고 도커의 이미지파일을 생성함으로서 서버에서 구동할 수 있게끔 일련의 준비물들을 마련하는 과정에 대해 포스팅한다.
 
 <br>
