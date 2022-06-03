@@ -9,6 +9,9 @@ published: true
 header-img: img\algorithm\main.png
 ---
 
+해당 포스팅은 [링크](https://zunoxi.tistory.com/11?category=816767) 로 이전되었습니다.
+
+<!--
 ## 개요
 > [백준] 9663번 nqueen java(자바) 알고리즘 문제풀이와 소스코드 기록
   
@@ -249,3 +252,5 @@ public class Main {
 <br>
 
 사실 이문제 처음풀때는 재귀를 막 접했을때라 다른분 블로그를 보고, 1차원 배열을 사용해서 풀었었는데 그것도 좋은 방법인것 같다. 일차원 배열도 한번 고려해보고 다방면으로 문제에 접근하는것이 좋을 것 같다.
+
+-->
