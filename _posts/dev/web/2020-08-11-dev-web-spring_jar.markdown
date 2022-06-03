@@ -74,7 +74,7 @@ pom.xml 파일 내용
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.3.2.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath/> <!-- lookup parent from repository 
 	</parent>
 	<groupId>com.example</groupId>
 	<artifactId>DockerTest</artifactId>
@@ -111,7 +111,6 @@ pom.xml 파일 내용
 			</exclusions>
 		</dependency>
 		
-		<!-- jsp jar -->
 		<dependency>
 			<groupId>org.apache.tomcat.embed</groupId>
 			<artifactId>tomcat-embed-jasper</artifactId>
