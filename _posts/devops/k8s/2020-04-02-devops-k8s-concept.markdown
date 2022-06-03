@@ -9,6 +9,9 @@ published: true
 header-img: img/devops/k8s/install/logo.png
 ---
 
+해당 포스팅은 [https://zunoxi.tistory.com/30?category=950191](https://zunoxi.tistory.com/30?category=950191) 으로 이전되었습니다.
+
+<!--
 ## 개요
 > `Kubernetes` 란, 쿠버네티스에 대한 개념이해
   
@@ -130,3 +133,5 @@ ___
 클러스터안에 `Namespace` 라는 것이 쿠버네티스 오브젝트들을 독립된 공간으로 분리되게 만들어준다. 다음 포스팅에서 이 쿠버네티스라는것을 실제로 서버환경에서 설치해보고, 어떻게 활용하는 것인지 알아보겠다.
 
 > 쿠버네티스 2부에서 계속 :)
+
+-->
