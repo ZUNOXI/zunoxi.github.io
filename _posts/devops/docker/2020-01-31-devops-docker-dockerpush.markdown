@@ -9,6 +9,10 @@ published: true
 header-img: img/devops/docker/logo.png
 ---
 
+
+해당 포스팅은 [https://zunoxi.tistory.com/27?category=950190](https://zunoxi.tistory.com/27?category=950190) 으로 이전되었습니다.
+
+<!--
 이번 포스팅에서는 이전 포스팅에서 만든 도커 이미지를 **Docker Hub** 상에 docker push와 docker pull을 이용하여 **로컬환경에서 개발한 어플리케이션**을 도커 이미지로 로딩함으로써 **서버에서도 구동**이 가능하게끔 해볼예정이다.
 
 <br>
