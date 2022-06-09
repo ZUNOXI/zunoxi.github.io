@@ -9,6 +9,10 @@ published: true
 header-img: img/infra/linux/chown/logo.png
 ---
 
+해당 포스팅은 [https://zunoxi.tistory.com/95?category=950184](https://zunoxi.tistory.com/95?category=950184) 으로 이전되었습니다.
+
+<!--
+
 ## 개요
 > `리눅스(centos7)` 에서 `su와 su -` 의 차이
   
@@ -50,3 +54,5 @@ root에서 계정전환시에는 비밀번호가 필요없지만 tomcat에서 ro
 
 
 필자는 바보같게도 jeus 운영이 미숙하여 su jeus로 전환 후 아무리 `jboot, jdown, ja` 명령어를 사용해도 환경변수가 없어 명령어가 실행되지않는 경험을 했다. 이 글을 보는 분들은 그런일이 없길 기원한다..
+
+-->
