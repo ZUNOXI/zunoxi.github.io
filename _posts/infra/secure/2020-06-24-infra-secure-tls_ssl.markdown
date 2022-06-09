@@ -9,6 +9,10 @@ published: true
 header-img: img/infra/secure/tlsssl/tlsssl.jpg
 ---
 
+해당 포스팅은 [https://zunoxi.tistory.com/104?category=950186](https://zunoxi.tistory.com/104?category=950186)으로 이전되었습니다.
+
+<!--
+
 ## 개요
 > `TLS`와 `SSL`에 대한 정의와 그차이
   
@@ -85,3 +89,5 @@ SSL2와 SSL3는 상호운용되지 않으며, SSL3과 TLS1도 서로호환되지
 <br>
 
 본 포스팅은 `링크의 포스팅`(https://smartits.tistory.com/209)을 읽고 정리함.
+
+-->
