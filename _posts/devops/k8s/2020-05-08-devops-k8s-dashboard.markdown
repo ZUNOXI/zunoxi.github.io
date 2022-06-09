@@ -9,6 +9,10 @@ published: true
 header-img: img/devops/k8s/install/logo.png
 ---
 
+해당 포스팅은 [https://zunoxi.tistory.com/45?category=950191](https://zunoxi.tistory.com/45?category=950191)으로 이전되었습니다.
+
+<!--
+
 ## 개요
 > `Kubernetes` 클러스터에 `Dashboard`설치
   
@@ -81,3 +85,5 @@ nohup kubectl proxy --port=8001 --address="본인 ip" --accept-hosts='^*$' >/dev
 ```
 
 요 작업만 다시 해주면 된다 😁
+
+-->
