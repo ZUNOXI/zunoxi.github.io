@@ -9,6 +9,11 @@ header-img: img/devops/k8s/kube.png
 published: true
 ---
 
+
+해당 포스팅은 [https://zunoxi.tistory.com/87?category=950191](https://zunoxi.tistory.com/87?category=950191) 으로 이전되었습니다.
+
+<!--
+
 ## 개요
 > 쿠버네티스의 `Deployment`에 대한이해
   
@@ -116,3 +121,5 @@ Blue/Green 방식은 디플로이먼트가 자체적으로 제공하는 기능�
 > 참고
 > - [`쿠버네티스 공식문서`](https://kubernetes.io/ko/docs/concepts/workloads/controllers/deployment/)
 > - [`김태민님의 쿠버네티스 강의`](https://www.inflearn.com/course/%EC%BF%A0%EB%B2%84%EB%84%A4%ED%8B%B0%EC%8A%A4-%EA%B8%B0%EC%B4%88#)
+
+-->
