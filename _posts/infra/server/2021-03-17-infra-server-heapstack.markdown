@@ -9,6 +9,10 @@ published: true
 header-img: img/infra/linux/memory/memory.jpg
 ---
 
+해당 포스팅은 [https://zunoxi.tistory.com/100?category=950184](https://zunoxi.tistory.com/100?category=950184)으로 이전되었습니다.
+
+<!--
+
 ## 개요
 > 프로그램이 운영체제로부터 할당받는 Heap, Stack 메모리 영역에대한 정리
   
@@ -84,3 +88,5 @@ header-img: img/infra/linux/memory/memory.jpg
 
 - Stack Overflow : 스택이 힙 영역을 침범하는 경우
 - Hip Overflow : 힙이 스택 영역을 침범하는 경우
+
+-->
