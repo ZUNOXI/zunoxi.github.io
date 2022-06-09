@@ -9,6 +9,10 @@ published: true
 header-img: img/infra/server/hourly/tomcat.png
 ---
 
+해당 포스팅은 [https://zunoxi.tistory.com/63?category=950181](https://zunoxi.tistory.com/63?category=950181) 으로 이전되었습니다.
+
+<!--
+
 ## 개요
 > `Tomcat`의 catalina.out 로그를 `시간별로 분리`하여 효율적인 로그관리를 해보기
   
@@ -186,3 +190,5 @@ lograte를 사용하면 된다고하는데 내가 원하는데로 100메가 이�
 
 - [`http://www.chlux.co.kr/bbs/board.php?bo_table=board02&wr_id=11`](http://www.chlux.co.kr/bbs/board.php?bo_table=board02&wr_id=11)
 - [`https://cassandra.tistory.com/5`](https://cassandra.tistory.com/5)
+
+-->
