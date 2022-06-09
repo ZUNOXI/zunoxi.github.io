@@ -9,6 +9,10 @@ header-img: img/devops/k8s/kube.png
 published: true
 ---
 
+해당 포스팅은 [https://zunoxi.tistory.com/74?category=950191](https://zunoxi.tistory.com/74?category=950191)으로 이전되었습니다.
+
+<!--
+
 ## 개요
 > 쿠버네티스의 `Namespace`에 대한이해
   
@@ -83,3 +87,5 @@ Resource Quota를 설정한 경우에, 해당 Namespace에 들어오는 pod들�
 > 참고
 > - [`쿠버네티스 공식문서`](https://kubernetes.io/ko/docs/concepts/overview/working-with-objects/namespaces/)
 > - [`김태민님의 쿠버네티스 강의`](https://www.inflearn.com/course/%EC%BF%A0%EB%B2%84%EB%84%A4%ED%8B%B0%EC%8A%A4-%EA%B8%B0%EC%B4%88#)
+
+-->
