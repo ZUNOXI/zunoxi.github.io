@@ -9,6 +9,11 @@ published: true
 header-img: img/infra/linux/hyper/1.png
 ---
 
+해당 포스팅은 [https://zunoxi.tistory.com/70?category=950184](https://zunoxi.tistory.com/70?category=950184)으로 이전되었습니다.
+
+<!--
+
+
 ## 개요
 > `하이퍼바이저(hypervisor)` 에대한 이해
   
@@ -95,3 +100,4 @@ header-img: img/infra/linux/hyper/1.png
 
 [https://zunoxi.tistory.com/36?category=871487](https://zunoxi.tistory.com/36?category=871487)
 
+-->
