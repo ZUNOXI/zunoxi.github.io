@@ -9,6 +9,11 @@ published: true
 header-img: img/infra/linux/chown/logo.png
 ---
 
+해당 포스팅은 [https://zunoxi.tistory.com/73?category=950184](https://zunoxi.tistory.com/73?category=950184) 으로 이전되었습니다.
+
+<!--
+
+
 ## 개요
 > `리눅스(centos7)` 에서 `chmod,chown` 를 통해 접근권한을 관리
   
@@ -113,4 +118,4 @@ $ chown ituser:itteam /u01/infra/test.sh
 
 > 포스팅에 잘못된 부분이나 추가되었으면 좋을 부분은 지적해주시면 적극 반영하겠습니다 😌
 
-
+-->
