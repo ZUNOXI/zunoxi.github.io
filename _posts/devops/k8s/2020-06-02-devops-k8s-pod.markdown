@@ -9,6 +9,10 @@ header-img: img/devops/k8s/kube.png
 published: true
 ---
 
+해당 포스팅은 [https://zunoxi.tistory.com/52?category=950191](https://zunoxi.tistory.com/52?category=950191) 으로 이전되었습니다.
+
+<!--
+
 ## 개요
 > 쿠버네티스에서의 `Pod`와 `Service`에 대한이해
   
@@ -144,3 +148,5 @@ Cluster IP의 Service는 `Cluster내부에서만 접근이 가능`하다. (외�
 (GCP, AWS Azures는 기본적으로 제공하며 사전에 ip를 지정해 줘야 한다.)
 
 외부 시스템 노출용은 type에 `LoadBalancer`를 지정해줘야한다.
+
+-->
