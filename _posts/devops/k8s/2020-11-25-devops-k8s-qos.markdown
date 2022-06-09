@@ -9,6 +9,10 @@ header-img: img/devops/k8s/kube.png
 published: true
 ---
 
+해당 포스팅은 [https://zunoxi.tistory.com/93?category=950191](https://zunoxi.tistory.com/93?category=950191) 으로 이전되었습니다.
+
+<!--
+
 ## 개요
 > 쿠버네티스의 `QoS classes`에 대한이해
   
@@ -100,4 +104,4 @@ Burstable은 설정은 되어있는데 어딘가 조금 부족한(?)상태로 �
 모든 Container에 Request와 Limit가 설정되어있고, Request와 Limit에는 Memory와 CPU가 모두 설정되어있다. 각 Container내에 Memory와 CPU의 Request와 Limit값이 같아야한다.
 
 
-
+-->
