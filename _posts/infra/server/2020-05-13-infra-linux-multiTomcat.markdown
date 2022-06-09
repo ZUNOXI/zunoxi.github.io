@@ -9,6 +9,10 @@ published: true
 header-img: img/infra/server/hourly/tomcat.png
 ---
 
+해당 포스팅은 [https://zunoxi.tistory.com/46?category=950181](https://zunoxi.tistory.com/46?category=950181)으로 이전되었습니다.
+
+<!-- 
+
 ## 개요
 > `Centos7` tomcat 다중서버 구동하기
   
@@ -197,3 +201,5 @@ netstat -nltp
 (자동실행을 추가로 설정하고 싶다면 아래의 블로그를 참조)
 
 [https://idchowto.com/?p=51853](https://idchowto.com/?p=51853)
+
+-->
