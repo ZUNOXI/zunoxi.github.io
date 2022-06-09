@@ -9,6 +9,10 @@ published: true
 header-img: img/infra/linux/memory/memory.jpg
 ---
 
+해당 포스팅은 [https://zunoxi.tistory.com/47?category=950184](https://zunoxi.tistory.com/47?category=950184) 으로 이전되었습니다.
+
+<!--
+
 ## 개요
 > `Linux`에 `Alias`설정하기
   
@@ -72,3 +76,5 @@ source ~/.bashrc
 tomcat1만 쉘에 입력했는데 해당 경로로 바로 이동된다.
 
 alias를 사용하면 이러한 이동뿐만아니라 다양한 `사용자 명령어`를 만들 수 있다는 장점이있다.(물론 시스템명령어를 중복되게 입력하면 안된다..!)
+
+-->
