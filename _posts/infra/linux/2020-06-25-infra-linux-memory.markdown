@@ -9,6 +9,10 @@ published: true
 header-img: img/infra/linux/memory/memory.jpg
 ---
 
+해당 포스팅은 [https://zunoxi.tistory.com/62?category=950184](https://zunoxi.tistory.com/62?category=950184) 으로 이전되었습니다.
+
+<!--
+
 ## 개요
 > `Linux 메모리` 사용량 확인 및 관리
   
@@ -160,3 +164,5 @@ header-img: img/infra/linux/memory/memory.jpg
 [`https://brunch.co.kr/@alden/25`](https://brunch.co.kr/@alden/25)
 
 [`https://ironmask.net/355`](https://ironmask.net/355)
+
+-->
