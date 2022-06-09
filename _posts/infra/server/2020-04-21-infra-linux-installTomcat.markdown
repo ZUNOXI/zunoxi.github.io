@@ -9,6 +9,10 @@ published: true
 header-img: img/infra/server/hourly/tomcat.png
 ---
 
+해당 포스팅은 [https://zunoxi.tistory.com/41?category=950181](https://zunoxi.tistory.com/41?category=950181) 으로 이전되었습니다.
+
+<!--
+
 ## 개요
 > `centos7`에 apache tomcat 설치
 
@@ -179,3 +183,5 @@ ps -ef | grep tomcat
 다음과 같이 출력되면 서비스 자동 실행도 완료 된것이다.
 
 ---
+
+-->
