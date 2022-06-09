@@ -9,6 +9,10 @@ published: true
 header-img: img/infra/db/jdbc/db.jpg
 ---
 
+해당 포스팅은 [https://zunoxi.tistory.com/58?category=950182](https://zunoxi.tistory.com/58?category=950182) 으로 이전되었습니다.
+
+<!--
+
 ## 개요
 > `JDBC, DBCP, JNDI` 와 datasource, connection pool에 대한 이해
 
@@ -125,3 +129,5 @@ Spring-boot 같은 경우는 Embedded Tomcat을 사용하기 때문에 스프링
 
 
 > 각 방법마다 장단점이 있기 때문에 무조건 좋은것은 없다.
+
+-->
