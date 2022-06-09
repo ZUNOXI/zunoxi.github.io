@@ -9,6 +9,10 @@ published: true
 header-img: img/infra/server/hourly/tomcat.png
 ---
 
+해당 포스팅은 [https://zunoxi.tistory.com/49?category=950181](https://zunoxi.tistory.com/49?category=950181) 으로 이전되었습니다.
+
+<!--
+
 ## 개요
 > `Centos7` Apache(Webserver)와 Tomcat(WAS) 연동하기
   
@@ -279,3 +283,5 @@ systemctl start httpd.service
 위 사진 처럼 웹서버와 WAS가 정상적으로 연동되어 있는것을 알수 있다.
 
 ★ 다음 포스팅에서는 SSL 인증으로 HTTPS 보안서버를 구축해볼 예정 :)
+
+-->
