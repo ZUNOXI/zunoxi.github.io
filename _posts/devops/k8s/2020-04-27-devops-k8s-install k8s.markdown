@@ -9,6 +9,11 @@ published: true
 header-img: img/devops/k8s/install/logo.png
 ---
 
+
+해당 포스팅은 [https://zunoxi.tistory.com/42?category=950191](https://zunoxi.tistory.com/42?category=950191) 으로 이전되었습니다.
+
+<!--
+
 ## 개요
 > `Centos7`에 `Kubernetes` 클러스터 설치하기
   
@@ -403,3 +408,5 @@ Dashboard 띄워보겠다고 삽질했던 과정은 다음 포스팅에서 다�
 
 
 > 다음포스팅 : [Kubernetes 4. 쿠버네티스 네트워크/Dashboard 설정하기](#https://zunoxi.github.io/devops/2020/05/08/devops-k8s-dashboard/)
+
+-->
