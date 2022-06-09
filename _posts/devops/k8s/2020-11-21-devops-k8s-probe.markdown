@@ -9,6 +9,10 @@ header-img: img/devops/k8s/kube.png
 published: true
 ---
 
+해당 포스팅은 [https://zunoxi.tistory.com/92?category=950191](https://zunoxi.tistory.com/92?category=950191) 으로 이전되었습니다.
+
+<!--
+
 ## 개요
 > 쿠버네티스의 Container `Probe`에 대한이해
   
@@ -100,3 +104,4 @@ published: true
 
 이때 앱에대한 장애상황을 감지해주는게 `Liveness Probe`이다. 파드를 만들때 Liveness Probe를 달아주게되면 해당앱에 문제가 생긴 후 파드를 재실행하게 만들어서 잠깐의 트래픽에러는 발생하겠지만, 지속적으로 에러가 발생하여 장애상황이 생기는것을 방지해준다.
 
+-->
