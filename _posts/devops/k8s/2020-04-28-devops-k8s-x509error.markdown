@@ -9,6 +9,10 @@ published: true
 header-img: img/devops/k8s/install/logo.png
 ---
 
+해당 포스팅은 [https://zunoxi.tistory.com/43?category=950191](https://zunoxi.tistory.com/43?category=950191) 로 이전되었습니다.
+
+<!--
+
 ## 개요
 > 쿠버네티스 Unable to connect to the server x509 에러
   
@@ -47,3 +51,6 @@ export KUBECONFIG=/etc/kubernetes/admin.conf
 출처 : [https://www.edureka.co/community/23959/unable-connect-server-certificate-signed-unknown-authority](https://www.edureka.co/community/23959/unable-connect-server-certificate-signed-unknown-authority)
 
 위의 링크를 참고한다면 더 정확한 해답을 얻을수 있을것 같다.  🙃
+
+
+-->
